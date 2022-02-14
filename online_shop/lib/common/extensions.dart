@@ -8,13 +8,28 @@ extension BlocExtension on BuildContext {
 extension BlocProviderExtension on Widget {
   Widget createWithProvider<T extends BlocBase<Object?>>(
     T Function(BuildContext context) createBloc, {
-    bool lazy = true,
+    bool lazy = false,
     Key? key,
   }) {
-    return BlocProvider(
+    return BlocProvider<T>(
       create: createBloc,
       key: key,
       lazy: lazy,
+      child: this,
+    );
+  }
+}
+
+extension BlocMultyProviderExtension on Widget {
+  Widget createWithMultiProvider(
+    List<BlocProvider> blocProviders, {
+    bool lazy = false,
+    Key? key,
+  }) {
+    return MultiBlocProvider(
+      providers: 
+        blocProviders,
+      key: key,
       child: this,
     );
   }

@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:online_shop/bloc/bloc.dart';
 import 'package:online_shop/common/extensions.dart';
 import 'package:online_shop/view/view.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await BlocFactory.instance.initialize();
+
   runApp(const MyApp());
 }
 
@@ -13,14 +17,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const LoginPage().createWithProvider<LoginBloc>(
-              (_) => BlocFactory.instance.get<LoginBloc>()
-                ..add(const LoginEvent.initialize()),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const LoginPage().createWithMultiProvider(
+              [
+                BlocProvider<LoginBloc>(
+                  create: (_) => BlocFactory.instance.get<LoginBloc>(),
+                ),
+              ],
             ),
+      },
     );
   }
 }
