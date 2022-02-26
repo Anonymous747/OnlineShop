@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:online_shop/bloc/login_bloc/login_bloc.dart';
 import 'package:online_shop/common/common.dart';
-import 'package:online_shop/ui_kit/ui_kit.dart';
+import 'package:online_shop/presentation/bloc/bloc.dart';
+import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -128,6 +128,15 @@ class _LoginPageState extends State<LoginPage> {
                         borderRadius: BorderRadius.all(Radius.circular(10)),
                         buttonColor: Colors.blue.shade500,
                         onPressed: () {},
+                      ),
+                      SizedBox(height: 60),
+                      Row(
+                        children: [
+                          Text('New User? '),
+                          GestureDetector(
+                            child: Text('Signup'),
+                          ),
+                        ],
                       ),
                     ],
                   ),
