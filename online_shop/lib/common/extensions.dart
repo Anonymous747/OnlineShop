@@ -27,8 +27,7 @@ extension BlocMultyProviderExtension on Widget {
     Key? key,
   }) {
     return MultiBlocProvider(
-      providers: 
-        blocProviders,
+      providers: blocProviders,
       key: key,
       child: this,
     );

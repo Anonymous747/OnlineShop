@@ -1,3 +1,3 @@
-export 'extensions.dart';
-export 'service_locator.dart';
+export 'abstractions/service_locator.dart';
 export 'constants/pages.dart';
+export 'extensions.dart';
