@@ -1,0 +1,4 @@
+enum ExsoText {
+  firstText,
+  secondText,
+}

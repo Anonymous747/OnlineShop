@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:online_shop/common/common.dart';
+import 'package:online_shop/domain/view_model/view_model.dart';
 import 'package:online_shop/presentation/bloc/bloc.dart';
 import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
 
@@ -44,7 +45,7 @@ class _LoginPageState extends State<LoginPage> {
                           padding: EdgeInsets.only(
                               left: MediaQuery.of(context).size.height * 0.1),
                           child: RichText(
-                            text: TextSpan(
+                            text: const TextSpan(
                                 style: TextStyle(
                                   fontSize: 90,
                                   color: Colors.white,
@@ -67,7 +68,7 @@ class _LoginPageState extends State<LoginPage> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
-                      Text(
+                      const Text(
                         'Login',
                         style: TextStyle(
                           fontSize: 40,
@@ -76,7 +77,7 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       ),
                       const SizedBox(height: 20),
-                      Text(
+                      const Text(
                         'Welcome back! Please login to your account.',
                         style: TextStyle(
                           fontSize: 15,
@@ -85,7 +86,7 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       ),
                       const SizedBox(height: 60),
-                      Text(
+                      const Text(
                         'User Name',
                         style: TextStyle(
                           fontSize: 15,
@@ -93,12 +94,12 @@ class _LoginPageState extends State<LoginPage> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      SizedBox(height: 10),
-                      CustomTextField(
+                      const SizedBox(height: 10),
+                      const CustomTextField(
                         hintText: 'Hint text',
                       ),
                       const SizedBox(height: 20),
-                      Text(
+                      const Text(
                         'Password',
                         style: TextStyle(
                           fontSize: 15,
@@ -106,13 +107,13 @@ class _LoginPageState extends State<LoginPage> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      SizedBox(height: 10),
-                      CustomTextField(
+                      const SizedBox(height: 10),
+                      const CustomTextField(
                         hintText: 'Hint text',
                       ),
-                      SizedBox(height: 20),
+                      const SizedBox(height: 20),
                       Row(
-                        children: [
+                        children: const [
                           Expanded(
                             child: CheckboxField(
                               text: Text('Remember me'),
@@ -121,20 +122,26 @@ class _LoginPageState extends State<LoginPage> {
                           Text('Forgot password'),
                         ],
                       ),
-                      SizedBox(height: 40),
+                      const SizedBox(height: 40),
                       UiMaterialButton(
-                        child: Text('Login'),
+                        child: const Text('Login'),
                         height: 60,
-                        borderRadius: BorderRadius.all(Radius.circular(10)),
-                        buttonColor: Colors.blue.shade500,
+                        borderRadius:
+                            const BorderRadius.all(Radius.circular(10)),
+                        buttonColor: context.styling.getColor(ExsoColor.black),
                         onPressed: () {},
                       ),
-                      SizedBox(height: 60),
+                      const SizedBox(height: 60),
                       Row(
                         children: [
-                          Text('New User? '),
+                          const Text('New User? '),
                           GestureDetector(
-                            child: Text('Signup'),
+                            child: const Text(
+                              'Signup',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ),
                         ],
                       ),
