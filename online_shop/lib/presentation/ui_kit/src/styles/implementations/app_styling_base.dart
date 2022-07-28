@@ -16,12 +16,12 @@ class AppStylingBase implements AppStyling {
   @override
   Color getColor(ExsoColor color) {
     switch (color) {
-      case ExsoColor.black:
-        return appColor.black;
-      case ExsoColor.white:
-        return appColor.white;
-      case ExsoColor.black26:
-        return appColor.black26;
+      case ExsoColor.textOnInteraction:
+        return appColor.textOnInteraction;
+      case ExsoColor.textPrimary:
+        return appColor.textPrimary;
+      case ExsoColor.textSecondary:
+        return appColor.textSecondary;
     }
   }
 

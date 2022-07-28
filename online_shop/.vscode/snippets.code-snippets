@@ -1,0 +1,11 @@
+{
+    "print": {
+		"prefix": [
+			"pcf",
+			"printcf"
+		],
+		"body": [
+			"print(\"========== ${TM_FILENAME_BASE} $1\");"
+		],
+	}
+}
