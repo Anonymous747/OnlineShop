@@ -6,26 +6,6 @@ import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
 import 'package:online_shop/presentation/view/view.dart';
 import 'package:provider/provider.dart';
 
-// class App extends StatefulWidget {
-//   const App({Key? key}) : super(key: key);
-
-//   static _AppState of(BuildContext context) {
-//     return context.findAncestorStateOfType<_AppState>()!;
-//   }
-
-//   @override
-//   State<App> createState() => _AppState();
-// }
-
-// class _AppState extends State<App> {
-//   ThemeMode _themeMode = ThemeMode.dark;
-
-// void switchTheme() {
-//   setState(() {
-//     _themeMode =
-//         _themeMode == ThemeMode.light ? ThemeMode.dark : ThemeMode.light;
-//   });
-// }
 class App extends StatelessWidget {
   const App({Key? key}) : super(key: key);
 
