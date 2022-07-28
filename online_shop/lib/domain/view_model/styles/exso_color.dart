@@ -1,5 +1,5 @@
 enum ExsoColor {
-  black,
-  white,
-  black26,
+  textOnInteraction,
+  textPrimary,
+  textSecondary,
 }

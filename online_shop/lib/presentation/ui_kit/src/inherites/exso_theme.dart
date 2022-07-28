@@ -12,8 +12,12 @@ class ExsoTheme extends InheritedWidget {
   const ExsoTheme(this.styling, {required Widget child, Key? key})
       : super(key: key, child: child);
 
+  static ExsoTheme of(BuildContext context) {
+    return context.dependOnInheritedWidgetOfExactType<ExsoTheme>()!;
+  }
+
   @override
-  bool updateShouldNotify(covariant InheritedWidget oldWidget) {
-    throw false;
+  bool updateShouldNotify(ExsoTheme oldWidget) {
+    return oldWidget.styling != styling;
   }
 }

@@ -4,6 +4,7 @@ import 'package:online_shop/common/common.dart';
 import 'package:online_shop/domain/view_model/view_model.dart';
 import 'package:online_shop/presentation/bloc/bloc.dart';
 import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
+import 'package:provider/provider.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -128,8 +129,19 @@ class _LoginPageState extends State<LoginPage> {
                         height: 60,
                         borderRadius:
                             const BorderRadius.all(Radius.circular(10)),
-                        buttonColor: context.styling.getColor(ExsoColor.black),
-                        onPressed: () {},
+                        buttonColor: context.styling
+                            .getColor(ExsoColor.textOnInteraction),
+                        onPressed: () {
+                          final colorKind = Provider.of<AppColorProvider>(
+                                  context,
+                                  listen: false)
+                              .appColorKind;
+
+                          Provider.of<AppColorProvider>(context, listen: false)
+                              .toggleAppColor(colorKind == AppColorKind.dark
+                                  ? AppColorKind.light
+                                  : AppColorKind.dark);
+                        },
                       ),
                       const SizedBox(height: 60),
                       Row(
