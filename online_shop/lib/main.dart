@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:online_shop/presentation/app.dart';
-import 'package:online_shop/presentation/bloc/bloc.dart';
+import 'package:online_shop/presentation/presentation.dart';
 
 import 'common/common.dart';
-import 'data/repository/repository_provider.dart';
+import 'data/data.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

@@ -2,18 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:online_shop/common/common.dart';
 import 'package:online_shop/domain/view_model/view_model.dart';
-import 'package:online_shop/presentation/bloc/bloc.dart';
-import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
-import 'package:provider/provider.dart';
+import 'package:online_shop/presentation/presentation.dart';
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({Key? key}) : super(key: key);
+class OtherLoginPage extends StatefulWidget {
+  const OtherLoginPage({Key? key}) : super(key: key);
 
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  State<OtherLoginPage> createState() => _OtherLoginPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _OtherLoginPageState extends State<OtherLoginPage> {
   late LoginBloc bloc;
 
   @override
@@ -132,15 +130,18 @@ class _LoginPageState extends State<LoginPage> {
                         buttonColor: context.styling
                             .getColor(ExsoColor.textOnInteraction),
                         onPressed: () {
-                          final colorKind = Provider.of<AppColorProvider>(
-                                  context,
-                                  listen: false)
-                              .appColorKind;
+                          // final colorKind = Provider.of<AppColorProvider>(
+                          //         context,
+                          //         listen: false)
+                          //     .appColorKind;
 
-                          Provider.of<AppColorProvider>(context, listen: false)
-                              .toggleAppColor(colorKind == AppColorKind.dark
-                                  ? AppColorKind.light
-                                  : AppColorKind.dark);
+                          // Provider.of<AppColorProvider>(context, listen: false)
+                          //     .toggleAppColor(colorKind == AppColorKind.dark
+                          //         ? AppColorKind.light
+                          //         : AppColorKind.dark);
+
+                          Navigator.of(context)
+                              .push(Navigation.route(context, Pages.kMainPage));
                         },
                       ),
                       const SizedBox(height: 60),

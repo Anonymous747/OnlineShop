@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:online_shop/common/common.dart';
-import 'package:online_shop/presentation/bloc/bloc.dart';
-import 'package:online_shop/presentation/view/view.dart';
+
+import 'presentation.dart';
 
 class Navigation extends StatelessWidget {
   final BuildContext context;
@@ -25,14 +25,14 @@ class Navigation extends StatelessWidget {
   Widget build(BuildContext context) {
     switch (page) {
       case Pages.kLoginPage:
-        return const LoginPage().createWithProvider<LoginBloc>((context) =>
+        return const LoginContainer().createWithProvider<LoginBloc>((context) =>
             BlocFactory.instance.get<LoginBloc>()
               ..add(const LoginEvent.initialize()));
       case Pages.kMainPage:
-        return const MainPage().createWithProvider<MainBloc>(
+        return const LoginContainer().createWithProvider<MainBloc>(
             (context) => BlocFactory.instance.get<MainBloc>());
       default:
-        return const LoginPage().createWithProvider<LoginBloc>((context) =>
+        return const LoginContainer().createWithProvider<LoginBloc>((context) =>
             BlocFactory.instance.get<LoginBloc>()
               ..add(const LoginEvent.initialize()));
     }
