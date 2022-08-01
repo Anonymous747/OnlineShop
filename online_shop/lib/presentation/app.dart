@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_gen/gen_l10n/s.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:online_shop/common/common.dart';
 import 'package:provider/provider.dart';
 
@@ -18,6 +20,16 @@ class App extends StatelessWidget {
         final appColorProvider = Provider.of<AppColorProvider>(context);
 
         return MaterialApp(
+          localizationsDelegates: const [
+            AppLocalizations.delegate,
+            GlobalMaterialLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+          ],
+          supportedLocales: const [
+            Locale('en', ''),
+            Locale('ru', ''),
+          ],
           home: ExsoTheme(
             ExsoStyling(appColorProvider.appColor),
             child: const LoginContainer().createWithMultiProvider(
