@@ -19,15 +19,15 @@ class _CustomTextFieldState extends State<CustomTextField> {
         contentPadding: const EdgeInsets.symmetric(
           vertical: 2,
         ),
-        border:
-            OutlineInputBorder(borderSide: BorderSide(color: Colors.black26)),
+        border: const OutlineInputBorder(
+            borderSide: BorderSide(color: Colors.black26)),
         errorBorder: InputBorder.none,
         disabledBorder: InputBorder.none,
         hintText: widget.hintText,
         prefix: Container(
           width: 20,
         ),
-        hintStyle: TextStyle(
+        hintStyle: const TextStyle(
           color: Colors.black26,
         ),
         alignLabelWithHint: true,
