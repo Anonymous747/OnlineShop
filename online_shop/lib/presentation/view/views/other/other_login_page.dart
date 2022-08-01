@@ -23,14 +23,14 @@ class _OtherLoginPageState extends State<OtherLoginPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: BlocBuilder<LoginBloc, LoginState>(
-        builder: (context, state) {
-          return state.map(initial: (initial) {
-            return Row(
+    return BlocBuilder<LoginBloc, LoginState>(
+      builder: (context, state) {
+        return state.map(initial: (initial) {
+          return Flexible(
+            child: Row(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                Expanded(
+                Flexible(
                   child: Stack(
                     fit: StackFit.expand,
                     children: [
@@ -60,7 +60,7 @@ class _OtherLoginPageState extends State<OtherLoginPage> {
                     ],
                   ),
                 ),
-                Expanded(
+                Flexible(
                     child: Padding(
                   padding:
                       const EdgeInsets.only(left: 100, top: 60, right: 100),
@@ -162,10 +162,10 @@ class _OtherLoginPageState extends State<OtherLoginPage> {
                   ),
                 )),
               ],
-            );
-          });
-        },
-      ),
+            ),
+          );
+        });
+      },
     );
   }
 }

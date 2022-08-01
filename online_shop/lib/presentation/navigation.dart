@@ -29,8 +29,8 @@ class Navigation extends StatelessWidget {
             BlocFactory.instance.get<LoginBloc>()
               ..add(const LoginEvent.initialize()));
       case Pages.kMainPage:
-        return const LoginContainer().createWithProvider<MainBloc>(
-            (context) => BlocFactory.instance.get<MainBloc>());
+        return const LoginContainer().createWithProvider<HomeBloc>(
+            (context) => BlocFactory.instance.get<HomeBloc>());
       default:
         return const LoginContainer().createWithProvider<LoginBloc>((context) =>
             BlocFactory.instance.get<LoginBloc>()

@@ -29,7 +29,7 @@ dev_dependencies:
   freezed: 0.14.5
   http: ^0.13.0
   json_serializable: 5.0.2
-  swagger_dart_code_generator: 2.2.0
+  # swagger_dart_code_generator: 2.2.0
   flutter_lints: ^1.0.0
 
 flutter:

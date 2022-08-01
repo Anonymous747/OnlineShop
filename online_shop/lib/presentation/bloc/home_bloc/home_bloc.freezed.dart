@@ -2,7 +2,7 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
-part of 'main_bloc.dart';
+part of 'home_bloc.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -14,30 +14,30 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
-class _$MainEventTearOff {
-  const _$MainEventTearOff();
+class _$HomeEventTearOff {
+  const _$HomeEventTearOff();
 
-  _MainInitializePageEvent initializePage() {
-    return const _MainInitializePageEvent();
+  _HomeInitializePageEvent initializePage() {
+    return const _HomeInitializePageEvent();
   }
 
-  _MainSignInEvent signIn({required String email, required String password}) {
-    return _MainSignInEvent(
+  _HomeSignInEvent signIn({required String email, required String password}) {
+    return _HomeSignInEvent(
       email: email,
       password: password,
     );
   }
 
-  _MainSkipSignInEvent skipSignIn() {
-    return const _MainSkipSignInEvent();
+  _HomeSkipSignInEvent skipSignIn() {
+    return const _HomeSkipSignInEvent();
   }
 }
 
 /// @nodoc
-const $MainEvent = _$MainEventTearOff();
+const $HomeEvent = _$HomeEventTearOff();
 
 /// @nodoc
-mixin _$MainEvent {
+mixin _$HomeEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initializePage,
@@ -62,76 +62,76 @@ mixin _$MainEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_MainInitializePageEvent value) initializePage,
-    required TResult Function(_MainSignInEvent value) signIn,
-    required TResult Function(_MainSkipSignInEvent value) skipSignIn,
+    required TResult Function(_HomeInitializePageEvent value) initializePage,
+    required TResult Function(_HomeSignInEvent value) signIn,
+    required TResult Function(_HomeSkipSignInEvent value) skipSignIn,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MainInitializePageEvent value)? initializePage,
-    TResult Function(_MainSignInEvent value)? signIn,
-    TResult Function(_MainSkipSignInEvent value)? skipSignIn,
+    TResult Function(_HomeInitializePageEvent value)? initializePage,
+    TResult Function(_HomeSignInEvent value)? signIn,
+    TResult Function(_HomeSkipSignInEvent value)? skipSignIn,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_MainInitializePageEvent value)? initializePage,
-    TResult Function(_MainSignInEvent value)? signIn,
-    TResult Function(_MainSkipSignInEvent value)? skipSignIn,
+    TResult Function(_HomeInitializePageEvent value)? initializePage,
+    TResult Function(_HomeSignInEvent value)? signIn,
+    TResult Function(_HomeSkipSignInEvent value)? skipSignIn,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $MainEventCopyWith<$Res> {
-  factory $MainEventCopyWith(MainEvent value, $Res Function(MainEvent) then) =
-      _$MainEventCopyWithImpl<$Res>;
+abstract class $HomeEventCopyWith<$Res> {
+  factory $HomeEventCopyWith(HomeEvent value, $Res Function(HomeEvent) then) =
+      _$HomeEventCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$MainEventCopyWithImpl<$Res> implements $MainEventCopyWith<$Res> {
-  _$MainEventCopyWithImpl(this._value, this._then);
+class _$HomeEventCopyWithImpl<$Res> implements $HomeEventCopyWith<$Res> {
+  _$HomeEventCopyWithImpl(this._value, this._then);
 
-  final MainEvent _value;
+  final HomeEvent _value;
   // ignore: unused_field
-  final $Res Function(MainEvent) _then;
+  final $Res Function(HomeEvent) _then;
 }
 
 /// @nodoc
-abstract class _$MainInitializePageEventCopyWith<$Res> {
-  factory _$MainInitializePageEventCopyWith(_MainInitializePageEvent value,
-          $Res Function(_MainInitializePageEvent) then) =
-      __$MainInitializePageEventCopyWithImpl<$Res>;
+abstract class _$HomeInitializePageEventCopyWith<$Res> {
+  factory _$HomeInitializePageEventCopyWith(_HomeInitializePageEvent value,
+          $Res Function(_HomeInitializePageEvent) then) =
+      __$HomeInitializePageEventCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$MainInitializePageEventCopyWithImpl<$Res>
-    extends _$MainEventCopyWithImpl<$Res>
-    implements _$MainInitializePageEventCopyWith<$Res> {
-  __$MainInitializePageEventCopyWithImpl(_MainInitializePageEvent _value,
-      $Res Function(_MainInitializePageEvent) _then)
-      : super(_value, (v) => _then(v as _MainInitializePageEvent));
+class __$HomeInitializePageEventCopyWithImpl<$Res>
+    extends _$HomeEventCopyWithImpl<$Res>
+    implements _$HomeInitializePageEventCopyWith<$Res> {
+  __$HomeInitializePageEventCopyWithImpl(_HomeInitializePageEvent _value,
+      $Res Function(_HomeInitializePageEvent) _then)
+      : super(_value, (v) => _then(v as _HomeInitializePageEvent));
 
   @override
-  _MainInitializePageEvent get _value =>
-      super._value as _MainInitializePageEvent;
+  _HomeInitializePageEvent get _value =>
+      super._value as _HomeInitializePageEvent;
 }
 
 /// @nodoc
 
-class _$_MainInitializePageEvent implements _MainInitializePageEvent {
-  const _$_MainInitializePageEvent();
+class _$_HomeInitializePageEvent implements _HomeInitializePageEvent {
+  const _$_HomeInitializePageEvent();
 
   @override
   String toString() {
-    return 'MainEvent.initializePage()';
+    return 'HomeEvent.initializePage()';
   }
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _MainInitializePageEvent);
+    return identical(this, other) || (other is _HomeInitializePageEvent);
   }
 
   @override
@@ -174,9 +174,9 @@ class _$_MainInitializePageEvent implements _MainInitializePageEvent {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_MainInitializePageEvent value) initializePage,
-    required TResult Function(_MainSignInEvent value) signIn,
-    required TResult Function(_MainSkipSignInEvent value) skipSignIn,
+    required TResult Function(_HomeInitializePageEvent value) initializePage,
+    required TResult Function(_HomeSignInEvent value) signIn,
+    required TResult Function(_HomeSkipSignInEvent value) skipSignIn,
   }) {
     return initializePage(this);
   }
@@ -184,9 +184,9 @@ class _$_MainInitializePageEvent implements _MainInitializePageEvent {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MainInitializePageEvent value)? initializePage,
-    TResult Function(_MainSignInEvent value)? signIn,
-    TResult Function(_MainSkipSignInEvent value)? skipSignIn,
+    TResult Function(_HomeInitializePageEvent value)? initializePage,
+    TResult Function(_HomeSignInEvent value)? signIn,
+    TResult Function(_HomeSkipSignInEvent value)? skipSignIn,
   }) {
     return initializePage?.call(this);
   }
@@ -194,9 +194,9 @@ class _$_MainInitializePageEvent implements _MainInitializePageEvent {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_MainInitializePageEvent value)? initializePage,
-    TResult Function(_MainSignInEvent value)? signIn,
-    TResult Function(_MainSkipSignInEvent value)? skipSignIn,
+    TResult Function(_HomeInitializePageEvent value)? initializePage,
+    TResult Function(_HomeSignInEvent value)? signIn,
+    TResult Function(_HomeSkipSignInEvent value)? skipSignIn,
     required TResult orElse(),
   }) {
     if (initializePage != null) {
@@ -206,34 +206,34 @@ class _$_MainInitializePageEvent implements _MainInitializePageEvent {
   }
 }
 
-abstract class _MainInitializePageEvent implements MainEvent {
-  const factory _MainInitializePageEvent() = _$_MainInitializePageEvent;
+abstract class _HomeInitializePageEvent implements HomeEvent {
+  const factory _HomeInitializePageEvent() = _$_HomeInitializePageEvent;
 }
 
 /// @nodoc
-abstract class _$MainSignInEventCopyWith<$Res> {
-  factory _$MainSignInEventCopyWith(
-          _MainSignInEvent value, $Res Function(_MainSignInEvent) then) =
-      __$MainSignInEventCopyWithImpl<$Res>;
+abstract class _$HomeSignInEventCopyWith<$Res> {
+  factory _$HomeSignInEventCopyWith(
+          _HomeSignInEvent value, $Res Function(_HomeSignInEvent) then) =
+      __$HomeSignInEventCopyWithImpl<$Res>;
   $Res call({String email, String password});
 }
 
 /// @nodoc
-class __$MainSignInEventCopyWithImpl<$Res> extends _$MainEventCopyWithImpl<$Res>
-    implements _$MainSignInEventCopyWith<$Res> {
-  __$MainSignInEventCopyWithImpl(
-      _MainSignInEvent _value, $Res Function(_MainSignInEvent) _then)
-      : super(_value, (v) => _then(v as _MainSignInEvent));
+class __$HomeSignInEventCopyWithImpl<$Res> extends _$HomeEventCopyWithImpl<$Res>
+    implements _$HomeSignInEventCopyWith<$Res> {
+  __$HomeSignInEventCopyWithImpl(
+      _HomeSignInEvent _value, $Res Function(_HomeSignInEvent) _then)
+      : super(_value, (v) => _then(v as _HomeSignInEvent));
 
   @override
-  _MainSignInEvent get _value => super._value as _MainSignInEvent;
+  _HomeSignInEvent get _value => super._value as _HomeSignInEvent;
 
   @override
   $Res call({
     Object? email = freezed,
     Object? password = freezed,
   }) {
-    return _then(_MainSignInEvent(
+    return _then(_HomeSignInEvent(
       email: email == freezed
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
@@ -248,8 +248,8 @@ class __$MainSignInEventCopyWithImpl<$Res> extends _$MainEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_MainSignInEvent implements _MainSignInEvent {
-  const _$_MainSignInEvent({required this.email, required this.password});
+class _$_HomeSignInEvent implements _HomeSignInEvent {
+  const _$_HomeSignInEvent({required this.email, required this.password});
 
   @override
   final String email;
@@ -258,13 +258,13 @@ class _$_MainSignInEvent implements _MainSignInEvent {
 
   @override
   String toString() {
-    return 'MainEvent.signIn(email: $email, password: $password)';
+    return 'HomeEvent.signIn(email: $email, password: $password)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _MainSignInEvent &&
+        (other is _HomeSignInEvent &&
             (identical(other.email, email) ||
                 const DeepCollectionEquality().equals(other.email, email)) &&
             (identical(other.password, password) ||
@@ -280,8 +280,8 @@ class _$_MainSignInEvent implements _MainSignInEvent {
 
   @JsonKey(ignore: true)
   @override
-  _$MainSignInEventCopyWith<_MainSignInEvent> get copyWith =>
-      __$MainSignInEventCopyWithImpl<_MainSignInEvent>(this, _$identity);
+  _$HomeSignInEventCopyWith<_HomeSignInEvent> get copyWith =>
+      __$HomeSignInEventCopyWithImpl<_HomeSignInEvent>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -320,9 +320,9 @@ class _$_MainSignInEvent implements _MainSignInEvent {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_MainInitializePageEvent value) initializePage,
-    required TResult Function(_MainSignInEvent value) signIn,
-    required TResult Function(_MainSkipSignInEvent value) skipSignIn,
+    required TResult Function(_HomeInitializePageEvent value) initializePage,
+    required TResult Function(_HomeSignInEvent value) signIn,
+    required TResult Function(_HomeSkipSignInEvent value) skipSignIn,
   }) {
     return signIn(this);
   }
@@ -330,9 +330,9 @@ class _$_MainSignInEvent implements _MainSignInEvent {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MainInitializePageEvent value)? initializePage,
-    TResult Function(_MainSignInEvent value)? signIn,
-    TResult Function(_MainSkipSignInEvent value)? skipSignIn,
+    TResult Function(_HomeInitializePageEvent value)? initializePage,
+    TResult Function(_HomeSignInEvent value)? signIn,
+    TResult Function(_HomeSkipSignInEvent value)? skipSignIn,
   }) {
     return signIn?.call(this);
   }
@@ -340,9 +340,9 @@ class _$_MainSignInEvent implements _MainSignInEvent {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_MainInitializePageEvent value)? initializePage,
-    TResult Function(_MainSignInEvent value)? signIn,
-    TResult Function(_MainSkipSignInEvent value)? skipSignIn,
+    TResult Function(_HomeInitializePageEvent value)? initializePage,
+    TResult Function(_HomeSignInEvent value)? signIn,
+    TResult Function(_HomeSkipSignInEvent value)? skipSignIn,
     required TResult orElse(),
   }) {
     if (signIn != null) {
@@ -352,49 +352,49 @@ class _$_MainSignInEvent implements _MainSignInEvent {
   }
 }
 
-abstract class _MainSignInEvent implements MainEvent {
-  const factory _MainSignInEvent(
-      {required String email, required String password}) = _$_MainSignInEvent;
+abstract class _HomeSignInEvent implements HomeEvent {
+  const factory _HomeSignInEvent(
+      {required String email, required String password}) = _$_HomeSignInEvent;
 
   String get email => throw _privateConstructorUsedError;
   String get password => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  _$MainSignInEventCopyWith<_MainSignInEvent> get copyWith =>
+  _$HomeSignInEventCopyWith<_HomeSignInEvent> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$MainSkipSignInEventCopyWith<$Res> {
-  factory _$MainSkipSignInEventCopyWith(_MainSkipSignInEvent value,
-          $Res Function(_MainSkipSignInEvent) then) =
-      __$MainSkipSignInEventCopyWithImpl<$Res>;
+abstract class _$HomeSkipSignInEventCopyWith<$Res> {
+  factory _$HomeSkipSignInEventCopyWith(_HomeSkipSignInEvent value,
+          $Res Function(_HomeSkipSignInEvent) then) =
+      __$HomeSkipSignInEventCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$MainSkipSignInEventCopyWithImpl<$Res>
-    extends _$MainEventCopyWithImpl<$Res>
-    implements _$MainSkipSignInEventCopyWith<$Res> {
-  __$MainSkipSignInEventCopyWithImpl(
-      _MainSkipSignInEvent _value, $Res Function(_MainSkipSignInEvent) _then)
-      : super(_value, (v) => _then(v as _MainSkipSignInEvent));
+class __$HomeSkipSignInEventCopyWithImpl<$Res>
+    extends _$HomeEventCopyWithImpl<$Res>
+    implements _$HomeSkipSignInEventCopyWith<$Res> {
+  __$HomeSkipSignInEventCopyWithImpl(
+      _HomeSkipSignInEvent _value, $Res Function(_HomeSkipSignInEvent) _then)
+      : super(_value, (v) => _then(v as _HomeSkipSignInEvent));
 
   @override
-  _MainSkipSignInEvent get _value => super._value as _MainSkipSignInEvent;
+  _HomeSkipSignInEvent get _value => super._value as _HomeSkipSignInEvent;
 }
 
 /// @nodoc
 
-class _$_MainSkipSignInEvent implements _MainSkipSignInEvent {
-  const _$_MainSkipSignInEvent();
+class _$_HomeSkipSignInEvent implements _HomeSkipSignInEvent {
+  const _$_HomeSkipSignInEvent();
 
   @override
   String toString() {
-    return 'MainEvent.skipSignIn()';
+    return 'HomeEvent.skipSignIn()';
   }
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _MainSkipSignInEvent);
+    return identical(this, other) || (other is _HomeSkipSignInEvent);
   }
 
   @override
@@ -437,9 +437,9 @@ class _$_MainSkipSignInEvent implements _MainSkipSignInEvent {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_MainInitializePageEvent value) initializePage,
-    required TResult Function(_MainSignInEvent value) signIn,
-    required TResult Function(_MainSkipSignInEvent value) skipSignIn,
+    required TResult Function(_HomeInitializePageEvent value) initializePage,
+    required TResult Function(_HomeSignInEvent value) signIn,
+    required TResult Function(_HomeSkipSignInEvent value) skipSignIn,
   }) {
     return skipSignIn(this);
   }
@@ -447,9 +447,9 @@ class _$_MainSkipSignInEvent implements _MainSkipSignInEvent {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MainInitializePageEvent value)? initializePage,
-    TResult Function(_MainSignInEvent value)? signIn,
-    TResult Function(_MainSkipSignInEvent value)? skipSignIn,
+    TResult Function(_HomeInitializePageEvent value)? initializePage,
+    TResult Function(_HomeSignInEvent value)? signIn,
+    TResult Function(_HomeSkipSignInEvent value)? skipSignIn,
   }) {
     return skipSignIn?.call(this);
   }
@@ -457,9 +457,9 @@ class _$_MainSkipSignInEvent implements _MainSkipSignInEvent {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_MainInitializePageEvent value)? initializePage,
-    TResult Function(_MainSignInEvent value)? signIn,
-    TResult Function(_MainSkipSignInEvent value)? skipSignIn,
+    TResult Function(_HomeInitializePageEvent value)? initializePage,
+    TResult Function(_HomeSignInEvent value)? signIn,
+    TResult Function(_HomeSkipSignInEvent value)? skipSignIn,
     required TResult orElse(),
   }) {
     if (skipSignIn != null) {
@@ -469,32 +469,32 @@ class _$_MainSkipSignInEvent implements _MainSkipSignInEvent {
   }
 }
 
-abstract class _MainSkipSignInEvent implements MainEvent {
-  const factory _MainSkipSignInEvent() = _$_MainSkipSignInEvent;
+abstract class _HomeSkipSignInEvent implements HomeEvent {
+  const factory _HomeSkipSignInEvent() = _$_HomeSkipSignInEvent;
 }
 
 /// @nodoc
-class _$MainStateTearOff {
-  const _$MainStateTearOff();
+class _$HomeStateTearOff {
+  const _$HomeStateTearOff();
 
-  _MainInitialState initial() {
-    return const _MainInitialState();
+  _HomeInitialState initial() {
+    return const _HomeInitialState();
   }
 
-  _MainLoadedState loaded() {
-    return const _MainLoadedState();
+  _HomeLoadedState loaded() {
+    return const _HomeLoadedState();
   }
 
-  _MainLoggingState logging() {
-    return const _MainLoggingState();
+  _HomeLoggingState logging() {
+    return const _HomeLoggingState();
   }
 }
 
 /// @nodoc
-const $MainState = _$MainStateTearOff();
+const $HomeState = _$HomeStateTearOff();
 
 /// @nodoc
-mixin _$MainState {
+mixin _$HomeState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
@@ -519,75 +519,75 @@ mixin _$MainState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_MainInitialState value) initial,
-    required TResult Function(_MainLoadedState value) loaded,
-    required TResult Function(_MainLoggingState value) logging,
+    required TResult Function(_HomeInitialState value) initial,
+    required TResult Function(_HomeLoadedState value) loaded,
+    required TResult Function(_HomeLoggingState value) logging,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MainInitialState value)? initial,
-    TResult Function(_MainLoadedState value)? loaded,
-    TResult Function(_MainLoggingState value)? logging,
+    TResult Function(_HomeInitialState value)? initial,
+    TResult Function(_HomeLoadedState value)? loaded,
+    TResult Function(_HomeLoggingState value)? logging,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_MainInitialState value)? initial,
-    TResult Function(_MainLoadedState value)? loaded,
-    TResult Function(_MainLoggingState value)? logging,
+    TResult Function(_HomeInitialState value)? initial,
+    TResult Function(_HomeLoadedState value)? loaded,
+    TResult Function(_HomeLoggingState value)? logging,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $MainStateCopyWith<$Res> {
-  factory $MainStateCopyWith(MainState value, $Res Function(MainState) then) =
-      _$MainStateCopyWithImpl<$Res>;
+abstract class $HomeStateCopyWith<$Res> {
+  factory $HomeStateCopyWith(HomeState value, $Res Function(HomeState) then) =
+      _$HomeStateCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$MainStateCopyWithImpl<$Res> implements $MainStateCopyWith<$Res> {
-  _$MainStateCopyWithImpl(this._value, this._then);
+class _$HomeStateCopyWithImpl<$Res> implements $HomeStateCopyWith<$Res> {
+  _$HomeStateCopyWithImpl(this._value, this._then);
 
-  final MainState _value;
+  final HomeState _value;
   // ignore: unused_field
-  final $Res Function(MainState) _then;
+  final $Res Function(HomeState) _then;
 }
 
 /// @nodoc
-abstract class _$MainInitialStateCopyWith<$Res> {
-  factory _$MainInitialStateCopyWith(
-          _MainInitialState value, $Res Function(_MainInitialState) then) =
-      __$MainInitialStateCopyWithImpl<$Res>;
+abstract class _$HomeInitialStateCopyWith<$Res> {
+  factory _$HomeInitialStateCopyWith(
+          _HomeInitialState value, $Res Function(_HomeInitialState) then) =
+      __$HomeInitialStateCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$MainInitialStateCopyWithImpl<$Res>
-    extends _$MainStateCopyWithImpl<$Res>
-    implements _$MainInitialStateCopyWith<$Res> {
-  __$MainInitialStateCopyWithImpl(
-      _MainInitialState _value, $Res Function(_MainInitialState) _then)
-      : super(_value, (v) => _then(v as _MainInitialState));
+class __$HomeInitialStateCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res>
+    implements _$HomeInitialStateCopyWith<$Res> {
+  __$HomeInitialStateCopyWithImpl(
+      _HomeInitialState _value, $Res Function(_HomeInitialState) _then)
+      : super(_value, (v) => _then(v as _HomeInitialState));
 
   @override
-  _MainInitialState get _value => super._value as _MainInitialState;
+  _HomeInitialState get _value => super._value as _HomeInitialState;
 }
 
 /// @nodoc
 
-class _$_MainInitialState implements _MainInitialState {
-  const _$_MainInitialState();
+class _$_HomeInitialState implements _HomeInitialState {
+  const _$_HomeInitialState();
 
   @override
   String toString() {
-    return 'MainState.initial()';
+    return 'HomeState.initial()';
   }
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _MainInitialState);
+    return identical(this, other) || (other is _HomeInitialState);
   }
 
   @override
@@ -630,9 +630,9 @@ class _$_MainInitialState implements _MainInitialState {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_MainInitialState value) initial,
-    required TResult Function(_MainLoadedState value) loaded,
-    required TResult Function(_MainLoggingState value) logging,
+    required TResult Function(_HomeInitialState value) initial,
+    required TResult Function(_HomeLoadedState value) loaded,
+    required TResult Function(_HomeLoggingState value) logging,
   }) {
     return initial(this);
   }
@@ -640,9 +640,9 @@ class _$_MainInitialState implements _MainInitialState {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MainInitialState value)? initial,
-    TResult Function(_MainLoadedState value)? loaded,
-    TResult Function(_MainLoggingState value)? logging,
+    TResult Function(_HomeInitialState value)? initial,
+    TResult Function(_HomeLoadedState value)? loaded,
+    TResult Function(_HomeLoggingState value)? logging,
   }) {
     return initial?.call(this);
   }
@@ -650,9 +650,9 @@ class _$_MainInitialState implements _MainInitialState {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_MainInitialState value)? initial,
-    TResult Function(_MainLoadedState value)? loaded,
-    TResult Function(_MainLoggingState value)? logging,
+    TResult Function(_HomeInitialState value)? initial,
+    TResult Function(_HomeLoadedState value)? loaded,
+    TResult Function(_HomeLoggingState value)? logging,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -662,41 +662,41 @@ class _$_MainInitialState implements _MainInitialState {
   }
 }
 
-abstract class _MainInitialState implements MainState {
-  const factory _MainInitialState() = _$_MainInitialState;
+abstract class _HomeInitialState implements HomeState {
+  const factory _HomeInitialState() = _$_HomeInitialState;
 }
 
 /// @nodoc
-abstract class _$MainLoadedStateCopyWith<$Res> {
-  factory _$MainLoadedStateCopyWith(
-          _MainLoadedState value, $Res Function(_MainLoadedState) then) =
-      __$MainLoadedStateCopyWithImpl<$Res>;
+abstract class _$HomeLoadedStateCopyWith<$Res> {
+  factory _$HomeLoadedStateCopyWith(
+          _HomeLoadedState value, $Res Function(_HomeLoadedState) then) =
+      __$HomeLoadedStateCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$MainLoadedStateCopyWithImpl<$Res> extends _$MainStateCopyWithImpl<$Res>
-    implements _$MainLoadedStateCopyWith<$Res> {
-  __$MainLoadedStateCopyWithImpl(
-      _MainLoadedState _value, $Res Function(_MainLoadedState) _then)
-      : super(_value, (v) => _then(v as _MainLoadedState));
+class __$HomeLoadedStateCopyWithImpl<$Res> extends _$HomeStateCopyWithImpl<$Res>
+    implements _$HomeLoadedStateCopyWith<$Res> {
+  __$HomeLoadedStateCopyWithImpl(
+      _HomeLoadedState _value, $Res Function(_HomeLoadedState) _then)
+      : super(_value, (v) => _then(v as _HomeLoadedState));
 
   @override
-  _MainLoadedState get _value => super._value as _MainLoadedState;
+  _HomeLoadedState get _value => super._value as _HomeLoadedState;
 }
 
 /// @nodoc
 
-class _$_MainLoadedState implements _MainLoadedState {
-  const _$_MainLoadedState();
+class _$_HomeLoadedState implements _HomeLoadedState {
+  const _$_HomeLoadedState();
 
   @override
   String toString() {
-    return 'MainState.loaded()';
+    return 'HomeState.loaded()';
   }
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _MainLoadedState);
+    return identical(this, other) || (other is _HomeLoadedState);
   }
 
   @override
@@ -739,9 +739,9 @@ class _$_MainLoadedState implements _MainLoadedState {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_MainInitialState value) initial,
-    required TResult Function(_MainLoadedState value) loaded,
-    required TResult Function(_MainLoggingState value) logging,
+    required TResult Function(_HomeInitialState value) initial,
+    required TResult Function(_HomeLoadedState value) loaded,
+    required TResult Function(_HomeLoggingState value) logging,
   }) {
     return loaded(this);
   }
@@ -749,9 +749,9 @@ class _$_MainLoadedState implements _MainLoadedState {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MainInitialState value)? initial,
-    TResult Function(_MainLoadedState value)? loaded,
-    TResult Function(_MainLoggingState value)? logging,
+    TResult Function(_HomeInitialState value)? initial,
+    TResult Function(_HomeLoadedState value)? loaded,
+    TResult Function(_HomeLoggingState value)? logging,
   }) {
     return loaded?.call(this);
   }
@@ -759,9 +759,9 @@ class _$_MainLoadedState implements _MainLoadedState {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_MainInitialState value)? initial,
-    TResult Function(_MainLoadedState value)? loaded,
-    TResult Function(_MainLoggingState value)? logging,
+    TResult Function(_HomeInitialState value)? initial,
+    TResult Function(_HomeLoadedState value)? loaded,
+    TResult Function(_HomeLoggingState value)? logging,
     required TResult orElse(),
   }) {
     if (loaded != null) {
@@ -771,42 +771,42 @@ class _$_MainLoadedState implements _MainLoadedState {
   }
 }
 
-abstract class _MainLoadedState implements MainState {
-  const factory _MainLoadedState() = _$_MainLoadedState;
+abstract class _HomeLoadedState implements HomeState {
+  const factory _HomeLoadedState() = _$_HomeLoadedState;
 }
 
 /// @nodoc
-abstract class _$MainLoggingStateCopyWith<$Res> {
-  factory _$MainLoggingStateCopyWith(
-          _MainLoggingState value, $Res Function(_MainLoggingState) then) =
-      __$MainLoggingStateCopyWithImpl<$Res>;
+abstract class _$HomeLoggingStateCopyWith<$Res> {
+  factory _$HomeLoggingStateCopyWith(
+          _HomeLoggingState value, $Res Function(_HomeLoggingState) then) =
+      __$HomeLoggingStateCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$MainLoggingStateCopyWithImpl<$Res>
-    extends _$MainStateCopyWithImpl<$Res>
-    implements _$MainLoggingStateCopyWith<$Res> {
-  __$MainLoggingStateCopyWithImpl(
-      _MainLoggingState _value, $Res Function(_MainLoggingState) _then)
-      : super(_value, (v) => _then(v as _MainLoggingState));
+class __$HomeLoggingStateCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res>
+    implements _$HomeLoggingStateCopyWith<$Res> {
+  __$HomeLoggingStateCopyWithImpl(
+      _HomeLoggingState _value, $Res Function(_HomeLoggingState) _then)
+      : super(_value, (v) => _then(v as _HomeLoggingState));
 
   @override
-  _MainLoggingState get _value => super._value as _MainLoggingState;
+  _HomeLoggingState get _value => super._value as _HomeLoggingState;
 }
 
 /// @nodoc
 
-class _$_MainLoggingState implements _MainLoggingState {
-  const _$_MainLoggingState();
+class _$_HomeLoggingState implements _HomeLoggingState {
+  const _$_HomeLoggingState();
 
   @override
   String toString() {
-    return 'MainState.logging()';
+    return 'HomeState.logging()';
   }
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _MainLoggingState);
+    return identical(this, other) || (other is _HomeLoggingState);
   }
 
   @override
@@ -849,9 +849,9 @@ class _$_MainLoggingState implements _MainLoggingState {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_MainInitialState value) initial,
-    required TResult Function(_MainLoadedState value) loaded,
-    required TResult Function(_MainLoggingState value) logging,
+    required TResult Function(_HomeInitialState value) initial,
+    required TResult Function(_HomeLoadedState value) loaded,
+    required TResult Function(_HomeLoggingState value) logging,
   }) {
     return logging(this);
   }
@@ -859,9 +859,9 @@ class _$_MainLoggingState implements _MainLoggingState {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_MainInitialState value)? initial,
-    TResult Function(_MainLoadedState value)? loaded,
-    TResult Function(_MainLoggingState value)? logging,
+    TResult Function(_HomeInitialState value)? initial,
+    TResult Function(_HomeLoadedState value)? loaded,
+    TResult Function(_HomeLoggingState value)? logging,
   }) {
     return logging?.call(this);
   }
@@ -869,9 +869,9 @@ class _$_MainLoggingState implements _MainLoggingState {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_MainInitialState value)? initial,
-    TResult Function(_MainLoadedState value)? loaded,
-    TResult Function(_MainLoggingState value)? logging,
+    TResult Function(_HomeInitialState value)? initial,
+    TResult Function(_HomeLoadedState value)? loaded,
+    TResult Function(_HomeLoggingState value)? logging,
     required TResult orElse(),
   }) {
     if (logging != null) {
@@ -881,6 +881,6 @@ class _$_MainLoggingState implements _MainLoggingState {
   }
 }
 
-abstract class _MainLoggingState implements MainState {
-  const factory _MainLoggingState() = _$_MainLoggingState;
+abstract class _HomeLoggingState implements HomeState {
+  const factory _HomeLoggingState() = _$_HomeLoggingState;
 }
