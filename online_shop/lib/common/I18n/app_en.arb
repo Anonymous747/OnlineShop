@@ -3,5 +3,7 @@
     "@helloWorld": {
       "description": "The conventional newborn programmer greeting"
     },
-    "helloWorld1": "Hello World!!!"
+    "helloWorld1": "Hello World!!!",
+    "generalHeaderLableText": "Small shop discover",
+    "generalHeaderSecondLableText": "Be a Gift Giving Hero When You Buy Small!"
 }

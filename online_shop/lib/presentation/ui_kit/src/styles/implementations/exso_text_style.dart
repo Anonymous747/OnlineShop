@@ -4,7 +4,11 @@ import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
 class ExsoTextStyle extends AppTextStyle {
   @override
   TextStyle getBodyLTextStyle(Color? color) {
-    return const TextStyle();
+    return const TextStyle(
+      color: PaletteColor.white,
+      fontSize: 25,
+      fontWeight: FontWeight.w400,
+    );
   }
 
   @override
