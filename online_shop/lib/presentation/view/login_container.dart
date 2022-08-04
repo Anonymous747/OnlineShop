@@ -6,8 +6,8 @@ class LoginContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ExsoWrapper(
-      child: ResponsiveWidget(
+    return Scaffold(
+      body: ResponsiveWidget(
         small: (context) => const SmallLoginPage(),
         other: (context) => const OtherLoginPage(),
       ),

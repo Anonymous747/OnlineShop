@@ -10,8 +10,8 @@ class OtherHomePage extends StatefulWidget {
 class _OtherHomePageState extends State<OtherHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(),
+    return Container(
+      child: const Text('OtherHomePage'),
     );
   }
 }

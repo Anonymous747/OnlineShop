@@ -9,11 +9,15 @@ class ExsoWrapper extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Column(
-      children: [
+        body: CustomScrollView(
+      slivers: [
         const ExsoTopBar(),
-        child,
-        const ExsoFooter(),
+        SliverToBoxAdapter(
+          child: child,
+        ),
+        const SliverToBoxAdapter(
+          child: ExsoFooter(),
+        ),
       ],
     ));
   }

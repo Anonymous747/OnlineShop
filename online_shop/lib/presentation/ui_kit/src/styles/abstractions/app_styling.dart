@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:online_shop/domain/view_model/styles/exso_text.dart';
 import 'package:online_shop/domain/view_model/view_model.dart';
 
 abstract class AppStyling {

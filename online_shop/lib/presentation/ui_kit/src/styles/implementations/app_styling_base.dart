@@ -34,10 +34,12 @@ class AppStylingBase implements AppStyling {
     final color = exsoColor == null ? null : getColor(exsoColor);
 
     switch (exsoText) {
-      case ExsoText.firstText:
+      case ExsoText.BodyLText:
         return appTextstyle.getBodyLTextStyle(color);
-      case ExsoText.secondText:
+      case ExsoText.BodyMText:
         return appTextstyle.getBodyMTextStyle(color);
+      case ExsoText.BodySText:
+        return appTextstyle.getBodySTextStyle(color);
     }
   }
 }
