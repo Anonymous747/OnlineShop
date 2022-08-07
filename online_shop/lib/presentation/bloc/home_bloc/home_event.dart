@@ -1,7 +1,7 @@
 part of 'home_bloc.dart';
 
 @freezed
-class HomeEvent with _$HomeEvent {
+class HomeEvent extends BaseEvent with _$HomeEvent {
   const factory HomeEvent.initializePage() = _HomeInitializePageEvent;
 
   const factory HomeEvent.signIn({

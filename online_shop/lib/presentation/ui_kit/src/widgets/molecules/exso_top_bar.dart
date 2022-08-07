@@ -25,10 +25,10 @@ class _ExsoTopBarState extends State<ExsoTopBar> {
                 children: [
                   Text(context.s.generalHeaderLableText,
                       style: context.styling
-                          .getTextStyle(exsoText: ExsoText.BodyLText)),
+                          .getTextStyle(exsoText: ExsoText.bodyLText)),
                   Text(context.s.generalHeaderSecondLableText,
                       style: context.styling
-                          .getTextStyle(exsoText: ExsoText.BodyLText)),
+                          .getTextStyle(exsoText: ExsoText.bodyLText)),
                 ],
               )
             ]),

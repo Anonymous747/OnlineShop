@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:online_shop/domain/view_model/styles/exso_text.dart';
 import 'package:online_shop/domain/view_model/view_model.dart';
 
 import '../../../ui_kit.dart';
@@ -34,11 +33,11 @@ class AppStylingBase implements AppStyling {
     final color = exsoColor == null ? null : getColor(exsoColor);
 
     switch (exsoText) {
-      case ExsoText.BodyLText:
+      case ExsoText.bodyLText:
         return appTextstyle.getBodyLTextStyle(color);
-      case ExsoText.BodyMText:
+      case ExsoText.bodyMText:
         return appTextstyle.getBodyMTextStyle(color);
-      case ExsoText.BodySText:
+      case ExsoText.bodySText:
         return appTextstyle.getBodySTextStyle(color);
     }
   }

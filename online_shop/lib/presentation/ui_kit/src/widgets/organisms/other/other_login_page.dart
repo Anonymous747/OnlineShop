@@ -146,8 +146,10 @@ class _OtherLoginPageState extends State<OtherLoginPage> {
                             //         ? AppColorKind.light
                             //         : AppColorKind.dark);
 
-                            Navigator.of(context).push(
-                                Navigation.route(context, Pages.kHomePage));
+                            // Navigator.of(context).push(
+                            //     Navigation.route(context, Pages.kHomePage));
+                            // context.router.push(RouteData.home());
+                            _bloc.add(const LoginEvent.success());
                           },
                         ),
                         const SizedBox(height: 60),
