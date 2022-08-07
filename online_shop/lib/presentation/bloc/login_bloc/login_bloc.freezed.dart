@@ -20,6 +20,10 @@ class _$LoginEventTearOff {
   _LoginInitialEvent initialize() {
     return const _LoginInitialEvent();
   }
+
+  _LoginSuccessEvent success() {
+    return const _LoginSuccessEvent();
+  }
 }
 
 /// @nodoc
@@ -30,32 +34,38 @@ mixin _$LoginEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initialize,
+    required TResult Function() success,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? initialize,
+    TResult Function()? success,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initialize,
+    TResult Function()? success,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_LoginInitialEvent value) initialize,
+    required TResult Function(_LoginSuccessEvent value) success,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_LoginInitialEvent value)? initialize,
+    TResult Function(_LoginSuccessEvent value)? success,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_LoginInitialEvent value)? initialize,
+    TResult Function(_LoginSuccessEvent value)? success,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -118,6 +128,7 @@ class _$_LoginInitialEvent implements _LoginInitialEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initialize,
+    required TResult Function() success,
   }) {
     return initialize();
   }
@@ -126,6 +137,7 @@ class _$_LoginInitialEvent implements _LoginInitialEvent {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? initialize,
+    TResult Function()? success,
   }) {
     return initialize?.call();
   }
@@ -134,6 +146,7 @@ class _$_LoginInitialEvent implements _LoginInitialEvent {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initialize,
+    TResult Function()? success,
     required TResult orElse(),
   }) {
     if (initialize != null) {
@@ -146,6 +159,7 @@ class _$_LoginInitialEvent implements _LoginInitialEvent {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_LoginInitialEvent value) initialize,
+    required TResult Function(_LoginSuccessEvent value) success,
   }) {
     return initialize(this);
   }
@@ -154,6 +168,7 @@ class _$_LoginInitialEvent implements _LoginInitialEvent {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_LoginInitialEvent value)? initialize,
+    TResult Function(_LoginSuccessEvent value)? success,
   }) {
     return initialize?.call(this);
   }
@@ -162,6 +177,7 @@ class _$_LoginInitialEvent implements _LoginInitialEvent {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_LoginInitialEvent value)? initialize,
+    TResult Function(_LoginSuccessEvent value)? success,
     required TResult orElse(),
   }) {
     if (initialize != null) {
@@ -173,6 +189,110 @@ class _$_LoginInitialEvent implements _LoginInitialEvent {
 
 abstract class _LoginInitialEvent implements LoginEvent {
   const factory _LoginInitialEvent() = _$_LoginInitialEvent;
+}
+
+/// @nodoc
+abstract class _$LoginSuccessEventCopyWith<$Res> {
+  factory _$LoginSuccessEventCopyWith(
+          _LoginSuccessEvent value, $Res Function(_LoginSuccessEvent) then) =
+      __$LoginSuccessEventCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$LoginSuccessEventCopyWithImpl<$Res>
+    extends _$LoginEventCopyWithImpl<$Res>
+    implements _$LoginSuccessEventCopyWith<$Res> {
+  __$LoginSuccessEventCopyWithImpl(
+      _LoginSuccessEvent _value, $Res Function(_LoginSuccessEvent) _then)
+      : super(_value, (v) => _then(v as _LoginSuccessEvent));
+
+  @override
+  _LoginSuccessEvent get _value => super._value as _LoginSuccessEvent;
+}
+
+/// @nodoc
+
+class _$_LoginSuccessEvent implements _LoginSuccessEvent {
+  const _$_LoginSuccessEvent();
+
+  @override
+  String toString() {
+    return 'LoginEvent.success()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) || (other is _LoginSuccessEvent);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initialize,
+    required TResult Function() success,
+  }) {
+    return success();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? initialize,
+    TResult Function()? success,
+  }) {
+    return success?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initialize,
+    TResult Function()? success,
+    required TResult orElse(),
+  }) {
+    if (success != null) {
+      return success();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_LoginInitialEvent value) initialize,
+    required TResult Function(_LoginSuccessEvent value) success,
+  }) {
+    return success(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_LoginInitialEvent value)? initialize,
+    TResult Function(_LoginSuccessEvent value)? success,
+  }) {
+    return success?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_LoginInitialEvent value)? initialize,
+    TResult Function(_LoginSuccessEvent value)? success,
+    required TResult orElse(),
+  }) {
+    if (success != null) {
+      return success(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _LoginSuccessEvent implements LoginEvent {
+  const factory _LoginSuccessEvent() = _$_LoginSuccessEvent;
 }
 
 /// @nodoc

@@ -1,5 +1,5 @@
 enum ExsoText {
-  BodyLText,
-  BodyMText,
-  BodySText,
+  bodyLText,
+  bodyMText,
+  bodySText,
 }

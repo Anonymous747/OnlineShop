@@ -7,7 +7,6 @@ class ServiceProvider extends ServiceLocator {
   static final instance = ServiceProvider();
 
   Future<void> initialize(ServicesModel servicesModel) async {
-    this.registerLazySingleton<AuthorizationService>(
-        MainAuthorizationService.new);
+    registerLazySingleton<AuthorizationService>(MainAuthorizationService.new);
   }
 }

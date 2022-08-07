@@ -6,9 +6,11 @@ class HomeContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ResponsiveWidget(
-      large: (_) => const OtherHomePage(),
-      other: (_) => const SmallHomePage(),
+    return ExsoWrapper(
+      child: ResponsiveWidget(
+        large: (_) => const OtherHomePage(),
+        other: (_) => const SmallHomePage(),
+      ),
     );
   }
 }

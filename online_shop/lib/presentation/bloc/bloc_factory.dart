@@ -8,7 +8,11 @@ class BlocFactory extends ServiceLocator {
   Future<void> initialize() async {
     await RepositoryProvider.instance.initialize();
 
-    registerFactory<LoginBloc>(() => LoginBloc());
-    registerFactory<HomeBloc>(() => HomeBloc());
+    this
+      ..registerFactory<LoginBloc>(LoginBloc.new)
+      ..registerFactory<HomeBloc>(HomeBloc.new)
+      ..registerLazySingleton<NavigationBloc>(NavigationBloc.new);
+
+    BaseHandler.setDependencies(navigationBloc: get);
   }
 }
