@@ -10,6 +10,7 @@ class ExsoBackButtonDispatcher extends RootBackButtonDispatcher {
 
   @override
   Future<bool> didPopRoute() async {
+    print("========== back_button_dispatcher pop");
     return _routerDelegate.popRoute();
   }
 }

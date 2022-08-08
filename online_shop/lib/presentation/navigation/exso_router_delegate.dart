@@ -25,6 +25,7 @@ class ExsoRouterDelegate extends RouterDelegate<RouteInfo>
     return Navigator(
       key: navigatorKey,
       pages: currentConfiguration.data.map((e) => e.routeToPage).toList(),
+      onPopPage: _onPopPage,
       observers: [
         NavigationListener(
           onPush: (route) {
@@ -38,8 +39,10 @@ class ExsoRouterDelegate extends RouterDelegate<RouteInfo>
     );
   }
 
-  @override
-  Future<bool> popRoute() async {
+  bool _onPopPage(Route<dynamic> route, dynamic result) {
+    if (bloc.hasOnlyOnePage || !route.didPop(result)) {
+      return false;
+    }
     bloc.add(NavigationEvent.pop());
     return true;
   }
