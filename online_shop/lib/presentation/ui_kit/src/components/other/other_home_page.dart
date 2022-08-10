@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:online_shop/presentation/presentation.dart';
 
 class OtherHomePage extends StatefulWidget {
   const OtherHomePage({Key? key}) : super(key: key);
@@ -10,8 +11,12 @@ class OtherHomePage extends StatefulWidget {
 class _OtherHomePageState extends State<OtherHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: const Text('OtherHomePage'),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: const [
+        PosterSearch(),
+        FacilityBox(),
+      ],
     );
   }
 }

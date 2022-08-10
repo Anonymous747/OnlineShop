@@ -11,4 +11,10 @@ class ExsoLightAppColor extends AppColor {
 
   @override
   Color get textSecondary => ExsoPaletteColor.white;
+
+  @override
+  Color get primaryHeader => ExsoPaletteColor.white;
+
+  @override
+  Color get buttonText => ExsoPaletteColor.white;
 }

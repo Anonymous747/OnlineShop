@@ -11,4 +11,10 @@ class ExsoDarkAppColor extends AppColor {
 
   @override
   Color get textSecondary => ExsoPaletteColor.black;
+
+  @override
+  Color get primaryHeader => ExsoPaletteColor.white;
+
+  @override
+  Color get buttonText => ExsoPaletteColor.white;
 }

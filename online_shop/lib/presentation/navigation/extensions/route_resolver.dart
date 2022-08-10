@@ -9,7 +9,7 @@ extension RouteResolver on String {
       case Pages.kLoginPage:
         return RouteData.login();
       default:
-        return RouteData.login();
+        return RouteData.home();
     }
     // print("========== route_resolver ${this}");
     // return RouteData.login();

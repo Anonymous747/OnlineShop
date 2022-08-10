@@ -8,8 +8,8 @@ class HomeContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return ExsoWrapper(
       child: ResponsiveWidget(
-        large: (_) => const OtherHomePage(),
-        other: (_) => const SmallHomePage(),
+        small: (_) => const SmallHomePage(),
+        other: (_) => const OtherHomePage(),
       ),
     );
   }

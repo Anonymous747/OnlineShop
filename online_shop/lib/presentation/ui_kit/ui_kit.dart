@@ -1,3 +1,4 @@
+export './src/components/index.dart';
 export './src/inherites/index.dart';
 export './src/models/index.dart';
 export './src/responsive/index.dart';
