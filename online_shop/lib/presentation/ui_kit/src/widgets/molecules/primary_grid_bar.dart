@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:online_shop/common/common.dart';
+import 'package:online_shop/domain/domain.dart';
 import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
 
 const double kPrimaryGridBarHeight = 50;
@@ -22,7 +23,7 @@ class PrimaryGridBar extends StatelessWidget {
 
     return Container(
         height: kPrimaryGridBarHeight,
-        color: PaletteColor.grey,
+        color: context.styling.getColor(ExsoColor.detailsBackground),
         child: Padding(
           padding: const EdgeInsets.symmetric(
               horizontal: ScreenSizes.kHeaderHorizontalPadding),

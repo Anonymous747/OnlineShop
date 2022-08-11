@@ -12,10 +12,11 @@ class _OtherHomePageState extends State<OtherHomePage> {
   @override
   Widget build(BuildContext context) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: const [
         PosterSearch(),
         FacilityBox(),
+        SizedBox(height: 60),
+        NewestMembersBox(),
       ],
     );
   }

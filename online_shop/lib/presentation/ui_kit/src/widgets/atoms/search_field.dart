@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:online_shop/common/common.dart';
+import 'package:online_shop/domain/domain.dart';
 import 'package:online_shop/presentation/presentation.dart';
 
 class SearchField extends StatefulWidget {
@@ -20,9 +22,9 @@ class _SearchFieldState extends State<SearchField> {
         Container(
           height: 40,
           width: 50,
-          decoration: const BoxDecoration(
-            color: PaletteColor.grey,
-            borderRadius: BorderRadius.only(
+          decoration: BoxDecoration(
+            color: context.styling.getColor(ExsoColor.detailsBackground),
+            borderRadius: const BorderRadius.only(
               topLeft: Radius.circular(4),
               bottomLeft: Radius.circular(4),
             ),

@@ -26,7 +26,9 @@ class _SearchBoxState extends State<SearchBox> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: PaletteColor.grey.withOpacity(0.8),
+        color: context.styling
+            .getColor(ExsoColor.detailsBackground)
+            .withOpacity(0.8),
         borderRadius: const BorderRadius.all(Radius.circular(10)),
       ),
       height: _kSearchBoxContentHeight,

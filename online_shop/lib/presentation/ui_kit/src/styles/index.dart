@@ -1,7 +1,7 @@
 export './abstractions/app_color.dart';
 export './abstractions/app_styling.dart';
 export './abstractions/app_text_style.dart';
-export './abstractions/exso_palette_color.dart';
+export './abstractions/palette_color.dart';
 export './implementations/app_color_provider.dart';
 export './implementations/app_styling_base.dart';
 export './implementations/exso_dark_app_color.dart';

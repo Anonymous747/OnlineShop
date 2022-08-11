@@ -6,4 +6,7 @@ abstract class AppColor {
   Color get textSecondary;
   Color get primaryHeader;
   Color get buttonText;
+  Color get selectedPrimaryText;
+  Color get primaryButton;
+  Color get detailsBackground;
 }

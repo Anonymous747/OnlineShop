@@ -9,5 +9,5 @@ class FacilityViewModel with _$FacilityViewModel {
     required Icon icon,
     @Default('') String title,
     @Default('') String description,
-  }) = _FecilityViewModel;
+  }) = _FacilityViewModel;
 }

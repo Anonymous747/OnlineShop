@@ -17,9 +17,9 @@ final _privateConstructorUsedError = UnsupportedError(
 class _$FacilityViewModelTearOff {
   const _$FacilityViewModelTearOff();
 
-  _FecilityViewModel call(
+  _FacilityViewModel call(
       {required Icon icon, String title = '', String description = ''}) {
-    return _FecilityViewModel(
+    return _FacilityViewModel(
       icon: icon,
       title: title,
       description: description,
@@ -82,25 +82,25 @@ class _$FacilityViewModelCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$FecilityViewModelCopyWith<$Res>
+abstract class _$FacilityViewModelCopyWith<$Res>
     implements $FacilityViewModelCopyWith<$Res> {
-  factory _$FecilityViewModelCopyWith(
-          _FecilityViewModel value, $Res Function(_FecilityViewModel) then) =
-      __$FecilityViewModelCopyWithImpl<$Res>;
+  factory _$FacilityViewModelCopyWith(
+          _FacilityViewModel value, $Res Function(_FacilityViewModel) then) =
+      __$FacilityViewModelCopyWithImpl<$Res>;
   @override
   $Res call({Icon icon, String title, String description});
 }
 
 /// @nodoc
-class __$FecilityViewModelCopyWithImpl<$Res>
+class __$FacilityViewModelCopyWithImpl<$Res>
     extends _$FacilityViewModelCopyWithImpl<$Res>
-    implements _$FecilityViewModelCopyWith<$Res> {
-  __$FecilityViewModelCopyWithImpl(
-      _FecilityViewModel _value, $Res Function(_FecilityViewModel) _then)
-      : super(_value, (v) => _then(v as _FecilityViewModel));
+    implements _$FacilityViewModelCopyWith<$Res> {
+  __$FacilityViewModelCopyWithImpl(
+      _FacilityViewModel _value, $Res Function(_FacilityViewModel) _then)
+      : super(_value, (v) => _then(v as _FacilityViewModel));
 
   @override
-  _FecilityViewModel get _value => super._value as _FecilityViewModel;
+  _FacilityViewModel get _value => super._value as _FacilityViewModel;
 
   @override
   $Res call({
@@ -108,7 +108,7 @@ class __$FecilityViewModelCopyWithImpl<$Res>
     Object? title = freezed,
     Object? description = freezed,
   }) {
-    return _then(_FecilityViewModel(
+    return _then(_FacilityViewModel(
       icon: icon == freezed
           ? _value.icon
           : icon // ignore: cast_nullable_to_non_nullable
@@ -127,8 +127,8 @@ class __$FecilityViewModelCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_FecilityViewModel implements _FecilityViewModel {
-  const _$_FecilityViewModel(
+class _$_FacilityViewModel implements _FacilityViewModel {
+  const _$_FacilityViewModel(
       {required this.icon, this.title = '', this.description = ''});
 
   @override
@@ -148,7 +148,7 @@ class _$_FecilityViewModel implements _FecilityViewModel {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _FecilityViewModel &&
+        (other is _FacilityViewModel &&
             (identical(other.icon, icon) ||
                 const DeepCollectionEquality().equals(other.icon, icon)) &&
             (identical(other.title, title) ||
@@ -167,15 +167,15 @@ class _$_FecilityViewModel implements _FecilityViewModel {
 
   @JsonKey(ignore: true)
   @override
-  _$FecilityViewModelCopyWith<_FecilityViewModel> get copyWith =>
-      __$FecilityViewModelCopyWithImpl<_FecilityViewModel>(this, _$identity);
+  _$FacilityViewModelCopyWith<_FacilityViewModel> get copyWith =>
+      __$FacilityViewModelCopyWithImpl<_FacilityViewModel>(this, _$identity);
 }
 
-abstract class _FecilityViewModel implements FacilityViewModel {
-  const factory _FecilityViewModel(
+abstract class _FacilityViewModel implements FacilityViewModel {
+  const factory _FacilityViewModel(
       {required Icon icon,
       String title,
-      String description}) = _$_FecilityViewModel;
+      String description}) = _$_FacilityViewModel;
 
   @override
   Icon get icon => throw _privateConstructorUsedError;
@@ -185,6 +185,6 @@ abstract class _FecilityViewModel implements FacilityViewModel {
   String get description => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$FecilityViewModelCopyWith<_FecilityViewModel> get copyWith =>
+  _$FacilityViewModelCopyWith<_FacilityViewModel> get copyWith =>
       throw _privateConstructorUsedError;
 }

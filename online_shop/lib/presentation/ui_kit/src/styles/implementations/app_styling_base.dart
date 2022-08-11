@@ -25,6 +25,12 @@ class AppStylingBase implements AppStyling {
         return appColor.primaryHeader;
       case ExsoColor.buttonText:
         return appColor.buttonText;
+      case ExsoColor.selectedPrimaryText:
+        return appColor.selectedPrimaryText;
+      case ExsoColor.primaryButton:
+        return appColor.primaryButton;
+      case ExsoColor.detailsBackground:
+        return appColor.detailsBackground;
     }
   }
 

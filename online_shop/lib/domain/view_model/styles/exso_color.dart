@@ -4,4 +4,7 @@ enum ExsoColor {
   textSecondary,
   primaryHeader,
   buttonText,
+  selectedPrimaryText,
+  primaryButton,
+  detailsBackground,
 }

@@ -50,7 +50,8 @@ class ExsoTopBarHeader extends StatelessWidget {
                   const SizedBox(width: 14),
                   UiMaterialButton(
                     child: const Text('Makers - Get Listed Today'),
-                    buttonColor: PaletteColor.red,
+                    buttonColor:
+                        context.styling.getColor(ExsoColor.detailsBackground),
                     height: 40,
                     onPressed: () {},
                   ),
