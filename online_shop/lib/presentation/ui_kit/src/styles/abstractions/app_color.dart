@@ -9,4 +9,6 @@ abstract class AppColor {
   Color get selectedPrimaryText;
   Color get primaryButton;
   Color get detailsBackground;
+  Color get semiTransparentBackground;
+  Color get transparent;
 }

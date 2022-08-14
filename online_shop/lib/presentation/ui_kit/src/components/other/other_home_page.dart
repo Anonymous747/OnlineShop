@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:online_shop/presentation/presentation.dart';
 
+const double _kPaddingBetweenElements = 60;
+
 class OtherHomePage extends StatefulWidget {
   const OtherHomePage({Key? key}) : super(key: key);
 
@@ -15,8 +17,10 @@ class _OtherHomePageState extends State<OtherHomePage> {
       children: const [
         PosterSearch(),
         FacilityBox(),
-        SizedBox(height: 60),
+        SizedBox(height: _kPaddingBetweenElements),
         NewestMembersBox(),
+        SizedBox(height: _kPaddingBetweenElements),
+        PopularCategories(),
       ],
     );
   }

@@ -31,6 +31,10 @@ class AppStylingBase implements AppStyling {
         return appColor.primaryButton;
       case ExsoColor.detailsBackground:
         return appColor.detailsBackground;
+      case ExsoColor.semiTransparentBackground:
+        return appColor.semiTransparentBackground;
+      case ExsoColor.transparent:
+        return appColor.transparent;
     }
   }
 

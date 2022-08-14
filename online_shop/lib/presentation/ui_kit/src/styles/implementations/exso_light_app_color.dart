@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:flutter/material.dart';
 import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
 
 class ExsoLightAppColor extends AppColor {
@@ -26,4 +27,10 @@ class ExsoLightAppColor extends AppColor {
 
   @override
   Color get detailsBackground => PaletteColor.grey;
+
+  @override
+  Color get semiTransparentBackground => PaletteColor.black.withOpacity(0.2);
+
+  @override
+  Color get transparent => Colors.transparent;
 }

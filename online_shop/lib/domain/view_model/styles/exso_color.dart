@@ -7,4 +7,6 @@ enum ExsoColor {
   selectedPrimaryText,
   primaryButton,
   detailsBackground,
+  semiTransparentBackground,
+  transparent,
 }
