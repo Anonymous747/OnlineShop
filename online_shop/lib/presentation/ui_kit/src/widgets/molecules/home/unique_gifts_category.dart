@@ -13,12 +13,12 @@ class UniqueGiftsCategory extends StatelessWidget {
         width: context._calculateLayoutWidth(),
         child: CollectionLayout(
           title: Text(
-            'Discover Unique Gifts',
+            context.s.uniqueGiftsTitle,
             style: context.styling.getTextStyle(exsoText: ExsoText.bodyLText),
           ),
           actionComponent: (_) => UiMaterialButton(
             child: Text(
-              'View All',
+              context.s.viewAllButtonText,
               style: context.styling.getTextStyle(
                 exsoText: ExsoText.bodyMText,
                 exsoColor: ExsoColor.buttonText,
@@ -34,6 +34,7 @@ class UniqueGiftsCategory extends StatelessWidget {
                   _popularCategory.length,
                   (index) => SelectableCard(
                         viewModel: _popularCategory[index],
+                        cardButtonText: context.s.uniqueGiftsCardButtonText,
                         withSeparatedLine: false,
                       )),
             );

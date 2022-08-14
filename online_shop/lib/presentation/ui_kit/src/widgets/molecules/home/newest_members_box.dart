@@ -12,7 +12,7 @@ class NewestMembersBox extends StatelessWidget {
         width: context._calculateLayoutWidth(),
         child: CollectionLayout(
           title: Text(
-            'Newest Members',
+            context.s.newestMembersTitle,
             style: context.styling.getTextStyle(exsoText: ExsoText.bodyLText),
           ),
           collectionComponent: (context) {

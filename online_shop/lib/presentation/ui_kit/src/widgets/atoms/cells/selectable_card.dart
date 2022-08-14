@@ -8,10 +8,12 @@ const double _kNewestMemberCardTitleHeight = 40;
 
 class SelectableCard extends StatefulWidget {
   final SelectableCardViewModel viewModel;
+  final String cardButtonText;
   final bool withSeparatedLine;
 
   const SelectableCard({
     required this.viewModel,
+    required this.cardButtonText,
     this.withSeparatedLine = true,
     Key? key,
   }) : super(key: key);
@@ -87,7 +89,7 @@ class _SelectableCardState extends State<SelectableCard> {
                       height: _kNewestMemberCardHeight,
                       width: context._cellWidth,
                       title: widget.viewModel.title,
-                      buttonText: 'View details',
+                      buttonText: context.s.uniqueGiftsCardButtonText,
                       withSeparatedLine: widget.withSeparatedLine,
                       onPress: () =>
                           print("========== selectable_card Uinimplemented! "),

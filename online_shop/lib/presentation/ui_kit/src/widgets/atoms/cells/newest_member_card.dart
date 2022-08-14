@@ -52,15 +52,15 @@ class NewestMemberCard extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text('Specialty'),
+                      Text(context.s.newestMembersCardSpeciality),
                       Text(viewModel.specialty),
                       const SizedBox(height: 10),
-                      const Text('Located In'),
+                      Text(context.s.newestMembersCardLocation),
                       Text(viewModel.location),
                       const SizedBox(height: 10),
                       UiMaterialButton(
                           child: Text(
-                            'View listing',
+                            context.s.newestMembersCardButtonText,
                             style: context.styling.getTextStyle(
                               exsoText: ExsoText.bodySText,
                               exsoColor: ExsoColor.buttonText,

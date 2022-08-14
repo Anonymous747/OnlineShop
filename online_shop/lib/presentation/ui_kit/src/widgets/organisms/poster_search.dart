@@ -30,7 +30,7 @@ class PosterSearch extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Find the Perfect Handmade \nGift...',
+                    context.s.posterSearchTitle,
                     style: context.styling.getTextStyle(
                       exsoText: ExsoText.headerLText,
                       exsoColor: ExsoColor.primaryHeader,

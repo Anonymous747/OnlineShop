@@ -16,5 +16,14 @@
 		"body": [
 			"print(\"========== ${TM_FILENAME_BASE} Uinimplemented! \");"
 		],
+	},
+	"localizationPhrase": {
+		"prefix": [
+			"lp",
+			"locp"
+		],
+		"body": [
+			"\"$0\": \"\","
+		]
 	}
 }
