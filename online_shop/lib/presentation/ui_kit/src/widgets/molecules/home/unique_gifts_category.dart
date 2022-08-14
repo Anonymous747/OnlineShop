@@ -4,8 +4,8 @@ import 'package:online_shop/domain/domain.dart';
 import 'package:online_shop/presentation/ui_kit/src/widgets/atoms/cells/selectable_card.dart';
 import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
 
-class PopularCategories extends StatelessWidget {
-  const PopularCategories({Key? key}) : super(key: key);
+class UniqueGiftsCategory extends StatelessWidget {
+  const UniqueGiftsCategory({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,7 @@ class PopularCategories extends StatelessWidget {
         width: context._calculateLayoutWidth(),
         child: CollectionLayout(
           title: Text(
-            'Search Popular Categories',
+            'Discover Unique Gifts',
             style: context.styling.getTextStyle(exsoText: ExsoText.bodyLText),
           ),
           actionComponent: (_) => UiMaterialButton(
@@ -34,6 +34,7 @@ class PopularCategories extends StatelessWidget {
                   _popularCategory.length,
                   (index) => SelectableCard(
                         viewModel: _popularCategory[index],
+                        withSeparatedLine: false,
                       )),
             );
           },

@@ -21,6 +21,8 @@ class _OtherHomePageState extends State<OtherHomePage> {
         NewestMembersBox(),
         SizedBox(height: _kPaddingBetweenElements),
         PopularCategories(),
+        SizedBox(height: _kPaddingBetweenElements),
+        UniqueGiftsCategory(),
       ],
     );
   }

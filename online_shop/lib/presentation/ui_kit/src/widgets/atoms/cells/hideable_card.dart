@@ -7,12 +7,16 @@ class HideableCard extends StatelessWidget {
   final double height;
   final double width;
   final String title;
+  final String buttonText;
   final VoidCallback? onPress;
+  final bool withSeparatedLine;
 
   const HideableCard(
       {required this.height,
       required this.width,
       required this.title,
+      required this.buttonText,
+      this.withSeparatedLine = true,
       this.onPress,
       Key? key})
       : super(key: key);
@@ -36,12 +40,13 @@ class HideableCard extends StatelessWidget {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 40),
-              child: SeparatedLine(
-                color: context.styling.getColor(ExsoColor.detailsBackground),
+            if (withSeparatedLine)
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 40),
+                child: SeparatedLine(
+                  color: context.styling.getColor(ExsoColor.detailsBackground),
+                ),
               ),
-            ),
             const Spacer(),
             Container(
               height: 40,
@@ -49,7 +54,7 @@ class HideableCard extends StatelessWidget {
               color: context.styling.getColor(ExsoColor.primaryButton),
               child: Center(
                 child: Text(
-                  'View Category',
+                  buttonText,
                   style: context.styling.getTextStyle(
                     exsoText: ExsoText.bodySText,
                     exsoColor: ExsoColor.buttonText,
