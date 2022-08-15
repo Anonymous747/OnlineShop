@@ -23,18 +23,14 @@ class SelectableCard extends StatefulWidget {
 }
 
 class _SelectableCardState extends State<SelectableCard> {
-  bool _animated = false;
+  ValueNotifier<bool> animated = ValueNotifier(false);
 
   void _onEnter() {
-    setState(() {
-      _animated = true;
-    });
+    animated.value = true;
   }
 
   void _onExit() {
-    setState(() {
-      _animated = false;
-    });
+    animated.value = false;
   }
 
   @override
@@ -53,48 +49,52 @@ class _SelectableCardState extends State<SelectableCard> {
             fit: StackFit.expand,
             children: [
               Image.asset(widget.viewModel.path, fit: BoxFit.fitWidth),
-              AnimatedPositioned(
-                width: context._cellWidth,
-                bottom: _animated
-                    ? 0
-                    : _kNewestMemberCardTitleHeight - _kNewestMemberCardHeight,
-                duration: const Duration(milliseconds: 200),
-                curve: Curves.easeIn,
-                child: Stack(
-                  fit: StackFit.loose,
-                  children: [
-                    ShaderMask(
-                      shaderCallback: (rect) {
-                        return LinearGradient(
-                            begin: Alignment.topCenter,
-                            end: Alignment.bottomCenter,
-                            stops: const [
-                              0.5,
-                              0.6,
-                            ],
-                            colors: [
-                              Colors.white,
-                              context.styling.getColor(
-                                  ExsoColor.semiTransparentBackground),
-                            ]).createShader(rect);
-                      },
-                      child: Container(
-                        alignment: Alignment.topCenter,
-                        height: _kNewestMemberCardHeight,
-                        color: context.styling
-                            .getColor(ExsoColor.semiTransparentBackground),
+              ValueListenableBuilder<bool>(
+                valueListenable: animated,
+                builder: (context, animated, _) => AnimatedPositioned(
+                  width: context._cellWidth,
+                  bottom: animated
+                      ? 0
+                      : _kNewestMemberCardTitleHeight -
+                          _kNewestMemberCardHeight,
+                  duration: const Duration(milliseconds: 200),
+                  curve: Curves.easeIn,
+                  child: Stack(
+                    fit: StackFit.loose,
+                    children: [
+                      ShaderMask(
+                        shaderCallback: (rect) {
+                          return LinearGradient(
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter,
+                              stops: const [
+                                0.5,
+                                0.6,
+                              ],
+                              colors: [
+                                Colors.white,
+                                context.styling.getColor(
+                                    ExsoColor.semiTransparentBackground),
+                              ]).createShader(rect);
+                        },
+                        child: Container(
+                          alignment: Alignment.topCenter,
+                          height: _kNewestMemberCardHeight,
+                          color: context.styling
+                              .getColor(ExsoColor.semiTransparentBackground),
+                        ),
                       ),
-                    ),
-                    HideableCard(
-                      height: _kNewestMemberCardHeight,
-                      width: context._cellWidth,
-                      title: widget.viewModel.title,
-                      buttonText: context.s.uniqueGiftsCardButtonText,
-                      withSeparatedLine: widget.withSeparatedLine,
-                      onPress: () =>
-                          print("========== selectable_card Uinimplemented! "),
-                    )
-                  ],
+                      HideableCard(
+                        height: _kNewestMemberCardHeight,
+                        width: context._cellWidth,
+                        title: widget.viewModel.title,
+                        buttonText: context.s.uniqueGiftsCardButtonText,
+                        withSeparatedLine: widget.withSeparatedLine,
+                        onPress: () => print(
+                            "========== selectable_card Uinimplemented! "),
+                      )
+                    ],
+                  ),
                 ),
               ),
             ],
