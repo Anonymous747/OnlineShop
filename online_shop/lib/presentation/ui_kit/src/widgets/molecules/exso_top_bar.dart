@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:online_shop/common/common.dart';
-import 'package:online_shop/domain/view_model/styles/exso_text.dart';
+import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
 
 typedef WidgetFunction = Widget Function(BuildContext);
 
@@ -17,21 +16,16 @@ class _ExsoTopBarState extends State<ExsoTopBar> {
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
-        title: const Text('hello'),
+        toolbarHeight: 200,
+        backgroundColor: PaletteColor.transparent,
         flexibleSpace: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Row(children: [
-              Column(
-                children: [
-                  Text(context.s.generalHeaderLableText,
-                      style: context.styling
-                          .getTextStyle(exsoText: ExsoText.bodyLText)),
-                  Text(context.s.generalHeaderSecondLableText,
-                      style: context.styling
-                          .getTextStyle(exsoText: ExsoText.bodyLText)),
-                ],
-              )
-            ]),
+            const ExsoTopBarHeader(),
+            Align(
+              alignment: Alignment.bottomCenter,
+              child: PrimaryGridBar(),
+            ),
           ],
         ));
   }

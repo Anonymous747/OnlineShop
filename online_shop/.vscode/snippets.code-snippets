@@ -7,5 +7,23 @@
 		"body": [
 			"print(\"========== ${TM_FILENAME_BASE} $1\");"
 		],
+	},
+	"printUnimplemented": {
+		"prefix": [
+			"pui",
+			"printui"
+		],
+		"body": [
+			"print(\"========== ${TM_FILENAME_BASE} Uinimplemented! \");"
+		],
+	},
+	"localizationPhrase": {
+		"prefix": [
+			"lp",
+			"locp"
+		],
+		"body": [
+			"\"$0\": \"\","
+		]
 	}
 }

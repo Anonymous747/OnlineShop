@@ -21,6 +21,20 @@ class AppStylingBase implements AppStyling {
         return appColor.textPrimary;
       case ExsoColor.textSecondary:
         return appColor.textSecondary;
+      case ExsoColor.primaryHeader:
+        return appColor.primaryHeader;
+      case ExsoColor.buttonText:
+        return appColor.buttonText;
+      case ExsoColor.selectedPrimaryText:
+        return appColor.selectedPrimaryText;
+      case ExsoColor.primaryButton:
+        return appColor.primaryButton;
+      case ExsoColor.detailsBackground:
+        return appColor.detailsBackground;
+      case ExsoColor.semiTransparentBackground:
+        return appColor.semiTransparentBackground;
+      case ExsoColor.transparent:
+        return appColor.transparent;
     }
   }
 
@@ -37,8 +51,12 @@ class AppStylingBase implements AppStyling {
         return appTextstyle.getBodyLTextStyle(color);
       case ExsoText.bodyMText:
         return appTextstyle.getBodyMTextStyle(color);
+      case ExsoText.bodyMSemiBoldText:
+        return appTextstyle.getBodyMSemiBoldTextStyle(color);
       case ExsoText.bodySText:
         return appTextstyle.getBodySTextStyle(color);
+      case ExsoText.headerLText:
+        return appTextstyle.getHeaderLTextStyle(color);
     }
   }
 }

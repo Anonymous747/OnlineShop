@@ -1,6 +1,22 @@
 {
     "helloWorld": "Привет, мир!",
     "helloWorld1": "Hello World!!!",
+    
     "generalHeaderLableText": "Small shop discover",
-    "generalHeaderSecondLableText": "Be a Gift Giving Hero When You Buy Small!"
+    "generalHeaderSecondLableText": "Be a Gift Giving Hero When You Buy Small!",
+    
+    "posterSearchTitle": "Find the Perfect Handmade \nGift...",
+    
+    "newestMembersTitle": "Newest Members",
+    "newestMembersCardSpeciality": "Specialty",
+    "newestMembersCardLocation": "Located In",
+    "newestMembersCardButtonText": "View listing",
+    
+    "popularCategoriesTitle": "Search Popular Categories",
+    "popularCategoriesCardButtonText": "View details",
+    
+    "viewAllButtonText": "View All",
+    
+    "uniqueGiftsTitle": "Discover Unique Gifts",
+    "uniqueGiftsCardButtonText": "View details"
 }

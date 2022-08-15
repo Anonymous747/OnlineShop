@@ -38,7 +38,7 @@ class _AppState extends State<App> {
 
   @override
   Widget build(BuildContext context) {
-    const appColorKind = AppColorKind.light;
+    const appColorKind = AppColorKind.dark;
 
     return FutureBuilder<bool>(
         future: _initializationFlow,

@@ -53,7 +53,6 @@ class NavigationBloc extends BaseBloc<NavigationEvent, NavigationState> {
           info: RouteInfo(data: NavigationBlocExtension._routingHistory.last),
           lastRoute: lastRoute));
     } else {
-      print("========== navigation_bloc pop");
       navigateBrowserBack();
     }
   }
