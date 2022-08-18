@@ -13,70 +13,46 @@ class NewestMemberCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.all(10),
+    return PersonCardLayout(
       width: context._cellWidth,
-      height: _kNewestMemberCardHeight,
-      child: Card(
-        borderOnForeground: true,
-        elevation: 6,
-        color: context.styling.getColor(ExsoColor.detailsBackground),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(viewModel.title,
-                  textAlign: TextAlign.start,
+      margin: const EdgeInsets.all(10),
+      backgroundColor: context.styling.getColor(ExsoColor.detailsBackground),
+      elevation: 6,
+      titleBuilder: (context) => Text(
+        viewModel.title,
+        textAlign: TextAlign.start,
+        style: context.styling.getTextStyle(
+          exsoText: ExsoText.bodyMSemiBoldText,
+          exsoColor: ExsoColor.selectedPrimaryText,
+        ),
+      ),
+      image: Image.asset(
+        viewModel.path,
+        fit: BoxFit.cover,
+      ),
+      detailBuilder: (context) => Expanded(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Text(context.s.newestMembersCardSpeciality),
+            Text(viewModel.specialty),
+            const SizedBox(height: 10),
+            Text(context.s.newestMembersCardLocation),
+            Text(viewModel.location),
+            const SizedBox(height: 10),
+            UiMaterialButton(
+                child: Text(
+                  context.s.newestMembersCardButtonText,
                   style: context.styling.getTextStyle(
-                    exsoText: ExsoText.bodyMSemiBoldText,
-                    exsoColor: ExsoColor.selectedPrimaryText,
-                  )),
-              const SizedBox(height: 10),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  SizedBox(
-                    height: _kImageSize,
-                    width: _kImageSize,
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(_kImageSize / 2),
-                      child: Image.asset(
-                        viewModel.path,
-                        fit: BoxFit.cover,
-                      ),
-                    ),
+                    exsoText: ExsoText.bodySText,
+                    exsoColor: ExsoColor.buttonText,
                   ),
-                  const SizedBox(width: 20),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(context.s.newestMembersCardSpeciality),
-                      Text(viewModel.specialty),
-                      const SizedBox(height: 10),
-                      Text(context.s.newestMembersCardLocation),
-                      Text(viewModel.location),
-                      const SizedBox(height: 10),
-                      UiMaterialButton(
-                          child: Text(
-                            context.s.newestMembersCardButtonText,
-                            style: context.styling.getTextStyle(
-                              exsoText: ExsoText.bodySText,
-                              exsoColor: ExsoColor.buttonText,
-                            ),
-                          ),
-                          borderRadius: BorderRadius.circular(4),
-                          buttonColor:
-                              context.styling.getColor(ExsoColor.primaryButton),
-                          onPressed: () => print(
-                              "========== newest_member_card Uinimplemented!")),
-                    ],
-                  )
-                ],
-              )
-            ],
-          ),
+                ),
+                borderRadius: BorderRadius.circular(4),
+                buttonColor: context.styling.getColor(ExsoColor.primaryButton),
+                onPressed: () =>
+                    print("========== newest_member_card Uinimplemented!")),
+          ],
         ),
       ),
     );

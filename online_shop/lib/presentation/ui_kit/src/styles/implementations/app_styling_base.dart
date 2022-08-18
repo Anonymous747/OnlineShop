@@ -35,6 +35,8 @@ class AppStylingBase implements AppStyling {
         return appColor.semiTransparentBackground;
       case ExsoColor.transparent:
         return appColor.transparent;
+      case ExsoColor.emphasizedText:
+        return appColor.emphasizedText;
     }
   }
 

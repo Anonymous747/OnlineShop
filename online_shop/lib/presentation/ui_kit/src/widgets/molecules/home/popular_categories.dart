@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:online_shop/common/common.dart';
 import 'package:online_shop/domain/domain.dart';
-import 'package:online_shop/presentation/ui_kit/src/widgets/atoms/cells/selectable_card.dart';
 import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
 
 class PopularCategories extends StatelessWidget {

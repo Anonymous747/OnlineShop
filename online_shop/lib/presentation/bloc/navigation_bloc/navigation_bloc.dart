@@ -19,6 +19,7 @@ class NavigationBloc extends BaseBloc<NavigationEvent, NavigationState> {
 
   void _handlePushEvent(
       _NavigationPushEvent event, Emitter<NavigationState> emitter) {
+    print("========== navigation_bloc push");
     final newStack = <RouteData>[
       ...NavigationBlocExtension._routingHistory.last
     ];

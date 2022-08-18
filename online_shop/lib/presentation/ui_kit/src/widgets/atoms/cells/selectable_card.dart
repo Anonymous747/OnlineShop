@@ -10,11 +10,13 @@ class SelectableCard extends StatefulWidget {
   final SelectableCardViewModel viewModel;
   final String cardButtonText;
   final bool withSeparatedLine;
+  final VoidCallback? onPress;
 
   const SelectableCard({
     required this.viewModel,
     required this.cardButtonText,
     this.withSeparatedLine = true,
+    this.onPress,
     Key? key,
   }) : super(key: key);
 
@@ -77,11 +79,14 @@ class _SelectableCardState extends State<SelectableCard> {
                                     ExsoColor.semiTransparentBackground),
                               ]).createShader(rect);
                         },
-                        child: Container(
-                          alignment: Alignment.topCenter,
-                          height: _kNewestMemberCardHeight,
-                          color: context.styling
-                              .getColor(ExsoColor.semiTransparentBackground),
+                        child: GestureDetector(
+                          onTap: widget.onPress,
+                          child: Container(
+                            alignment: Alignment.topCenter,
+                            height: _kNewestMemberCardHeight,
+                            color: context.styling
+                                .getColor(ExsoColor.semiTransparentBackground),
+                          ),
                         ),
                       ),
                       HideableCard(
@@ -90,8 +95,6 @@ class _SelectableCardState extends State<SelectableCard> {
                         title: widget.viewModel.title,
                         buttonText: context.s.uniqueGiftsCardButtonText,
                         withSeparatedLine: widget.withSeparatedLine,
-                        onPress: () => print(
-                            "========== selectable_card Uinimplemented! "),
                       )
                     ],
                   ),

@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:online_shop/common/common.dart';
 import 'package:online_shop/domain/domain.dart';
-import 'package:online_shop/presentation/ui_kit/src/widgets/atoms/cells/selectable_card.dart';
-import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
+import 'package:online_shop/presentation/presentation.dart';
 
 class UniqueGiftsCategory extends StatelessWidget {
   const UniqueGiftsCategory({Key? key}) : super(key: key);
@@ -10,36 +9,40 @@ class UniqueGiftsCategory extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-        width: context._calculateLayoutWidth(),
-        child: CollectionLayout(
-          title: Text(
-            context.s.uniqueGiftsTitle,
-            style: context.styling.getTextStyle(exsoText: ExsoText.bodyLText),
+      width: context._calculateLayoutWidth(),
+      child: CollectionLayout(
+        title: Text(
+          context.s.uniqueGiftsTitle,
+          style: context.styling.getTextStyle(exsoText: ExsoText.bodyLText),
+        ),
+        actionComponent: (_) => UiMaterialButton(
+          child: Text(
+            context.s.viewAllButtonText,
+            style: context.styling.getTextStyle(
+              exsoText: ExsoText.bodyMText,
+              exsoColor: ExsoColor.buttonText,
+            ),
           ),
-          actionComponent: (_) => UiMaterialButton(
-            child: Text(
-              context.s.viewAllButtonText,
-              style: context.styling.getTextStyle(
-                exsoText: ExsoText.bodyMText,
-                exsoColor: ExsoColor.buttonText,
+          onPressed: () {},
+        ),
+        collectionComponent: (context) {
+          return Wrap(
+            alignment: WrapAlignment.center,
+            direction: Axis.horizontal,
+            children: List.generate(
+              _popularCategory.length,
+              (index) => SelectableCard(
+                viewModel: _popularCategory[index],
+                cardButtonText: context.s.uniqueGiftsCardButtonText,
+                withSeparatedLine: false,
+                onPress: () =>
+                    context.router.push(RouteData.details(id: 'details-page')),
               ),
             ),
-            onPressed: () {},
-          ),
-          collectionComponent: (context) {
-            return Wrap(
-              alignment: WrapAlignment.center,
-              direction: Axis.horizontal,
-              children: List.generate(
-                  _popularCategory.length,
-                  (index) => SelectableCard(
-                        viewModel: _popularCategory[index],
-                        cardButtonText: context.s.uniqueGiftsCardButtonText,
-                        withSeparatedLine: false,
-                      )),
-            );
-          },
-        ));
+          );
+        },
+      ),
+    );
   }
 }
 

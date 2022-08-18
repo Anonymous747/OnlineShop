@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
 
@@ -33,4 +31,7 @@ class ExsoLightAppColor extends AppColor {
 
   @override
   Color get transparent => Colors.transparent;
+
+  @override
+  Color get emphasizedText => PaletteColor.darkBlue;
 }
