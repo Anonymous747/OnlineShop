@@ -5,12 +5,14 @@ class CustomTextField extends StatefulWidget {
   final String hintText;
   final TextStyle? style;
   final BorderRadius? borderRadius;
+  final Color? borderColor;
   final TextEditingController? controller;
 
   const CustomTextField({
     this.controller,
     this.hintText = '',
     this.borderRadius,
+    this.borderColor,
     this.style,
     Key? key,
   }) : super(key: key);
@@ -25,15 +27,14 @@ class _CustomTextFieldState extends State<CustomTextField> {
       style: widget.style,
       textAlignVertical: TextAlignVertical.bottom,
       decoration: InputDecoration(
-        // contentPadding: const EdgeInsets.symmetric(
-        //   horizontal: 1,
-        // ),
         fillColor: PaletteColor.white,
         border: OutlineInputBorder(
           borderRadius: widget.borderRadius ??
-              const BorderRadius.all(Radius.circular(4.0)),
-          borderSide: const BorderSide(
-            color: Colors.black26,
+              const BorderRadius.all(
+                Radius.circular(4.0),
+              ),
+          borderSide: BorderSide(
+            color: widget.borderColor ?? Colors.black26,
           ),
         ),
         errorBorder: InputBorder.none,

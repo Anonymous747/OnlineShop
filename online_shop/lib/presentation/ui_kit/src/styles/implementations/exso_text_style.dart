@@ -43,4 +43,13 @@ class ExsoTextStyle extends AppTextStyle {
       color: color,
     );
   }
+
+  @override
+  TextStyle getHeaderMBoldTextStyle(Color? color) {
+    return TextStyle(
+      fontSize: 34,
+      fontWeight: FontWeight.bold,
+      color: color,
+    );
+  }
 }

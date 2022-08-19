@@ -10,4 +10,6 @@ enum ExsoColor {
   semiTransparentBackground,
   transparent,
   emphasizedText,
+  brightDetails,
+  primaryTextWithLittleOpacity,
 }

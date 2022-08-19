@@ -12,4 +12,6 @@ abstract class AppColor {
   Color get semiTransparentBackground;
   Color get transparent;
   Color get emphasizedText;
+  Color get brightDetails;
+  Color get primaryTextWithLittleOpacity;
 }

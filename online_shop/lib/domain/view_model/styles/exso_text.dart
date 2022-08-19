@@ -4,4 +4,5 @@ enum ExsoText {
   bodyMSemiBoldText,
   bodySText,
   headerLText,
+  headetMBoldText,
 }

@@ -11,31 +11,42 @@ class ExsoTopBarHeader extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(
         horizontal: ScreenSizes.kHeaderHorizontalPadding,
-        vertical: 10,
+        vertical: 20,
       ),
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Padding(
-            padding: const EdgeInsets.only(top: 40),
-            child:
-                Row(crossAxisAlignment: CrossAxisAlignment.center, children: [
-              const Icon(Icons.flutter_dash),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(context.s.generalHeaderLableText,
-                      style: context.styling.getTextStyle(
-                        exsoText: ExsoText.bodyLText,
-                        exsoColor: ExsoColor.textPrimary,
-                      )),
-                  Text(context.s.generalHeaderSecondLableText,
+          Expanded(
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.flutter_dash,
+                  size: 40,
+                  color: context.styling.getColor(
+                    ExsoColor.brightDetails,
+                  ),
+                ),
+                const SizedBox(width: 10),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(context.s.generalHeaderLableText,
+                        style: context.styling.getTextStyle(
+                          exsoText: ExsoText.headetMBoldText,
+                          exsoColor: ExsoColor.textPrimary,
+                        )),
+                    Text(
+                      context.s.generalHeaderSecondLableText,
                       style: context.styling.getTextStyle(
                         exsoText: ExsoText.bodyMText,
-                        exsoColor: ExsoColor.textPrimary,
-                      )),
-                ],
-              )
-            ]),
+                        exsoColor: ExsoColor.primaryTextWithLittleOpacity,
+                      ),
+                    ),
+                  ],
+                )
+              ],
+            ),
           ),
           Expanded(
               child: Column(
@@ -44,23 +55,39 @@ class ExsoTopBarHeader extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  const Text('Contact Us'),
+                  Text(context.s.generalHeaderFirstLable),
                   const SizedBox(width: 14),
-                  const Text('Member Login'),
+                  Text(context.s.generalHeaderSecondLable),
                   const SizedBox(width: 14),
                   UiMaterialButton(
-                    child: const Text('Makers - Get Listed Today'),
-                    buttonColor:
-                        context.styling.getColor(ExsoColor.detailsBackground),
+                    child: Text(
+                      context.s.generalHeaderMakersButtonText,
+                      style: context.styling.getTextStyle(
+                        exsoText: ExsoText.bodySText,
+                        exsoColor: ExsoColor.buttonText,
+                      ),
+                    ),
+                    borderRadius: BorderRadius.circular(4),
+                    buttonColor: context.styling.getColor(
+                      ExsoColor.brightDetails,
+                    ),
                     height: 40,
                     onPressed: () {},
                   ),
                 ],
               ),
-              const Padding(
-                padding: EdgeInsets.only(top: 20),
-                child: SearchField(
-                  width: 200,
+              Padding(
+                padding: const EdgeInsets.only(top: 20),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    const SearchField(
+                      width: 200,
+                      height: 40,
+                    ),
+                    UiMaterialButton(
+                        child: const Text('fdfdds'), onPressed: () {})
+                  ],
                 ),
               ),
             ],

@@ -34,4 +34,10 @@ class ExsoLightAppColor extends AppColor {
 
   @override
   Color get emphasizedText => PaletteColor.darkBlue;
+
+  @override
+  Color get brightDetails => PaletteColor.red;
+
+  @override
+  Color get primaryTextWithLittleOpacity => PaletteColor.black.withOpacity(0.8);
 }

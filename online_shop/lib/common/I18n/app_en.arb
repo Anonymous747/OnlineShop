@@ -4,11 +4,16 @@
       "description": "The conventional newborn programmer greeting"
     },
     "helloWorld1": "Hello World!!!",
-    
+
     "generalHeaderLableText": "Small shop discover",
     "generalHeaderSecondLableText": "Be a Gift Giving Hero When You Buy Small!",
-    
+    "generalHeaderFirstLable": "Contact Us",
+    "generalHeaderSecondLable": "Member Login",
+    "generalHeaderMakersButtonText": "Makers - Get Listed Today",
+
     "posterSearchTitle": "Find the Perfect Handmade \nGift...",
+    "posterSearchContainerTitle": "What do you need:",
+    "seachNowButtonText": "Search Now",
     
     "newestMembersTitle": "Newest Members",
     "newestMembersCardSpeciality": "Specialty",

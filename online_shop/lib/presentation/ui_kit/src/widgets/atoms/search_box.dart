@@ -43,9 +43,11 @@ class _SearchBoxState extends State<SearchBox> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'What do you need:',
-              style: context.styling
-                  .getTextStyle(exsoText: ExsoText.bodyMSemiBoldText),
+              context.s.posterSearchContainerTitle,
+              style: context.styling.getTextStyle(
+                exsoText: ExsoText.bodyMSemiBoldText,
+                exsoColor: ExsoColor.primaryTextWithLittleOpacity,
+              ),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -62,7 +64,7 @@ class _SearchBoxState extends State<SearchBox> {
                     height: 50,
                     width: _calculateSearchButtonWidth(context),
                     child: Text(
-                      'Search Now',
+                      context.s.seachNowButtonText,
                       style: context.styling.getTextStyle(
                         exsoText: ExsoText.bodySText,
                         exsoColor: ExsoColor.buttonText,
