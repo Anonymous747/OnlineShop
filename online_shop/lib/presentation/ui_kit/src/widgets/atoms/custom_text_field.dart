@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
 
+const _kBorderColor = Colors.black26;
+
 class CustomTextField extends StatefulWidget {
   final String hintText;
   final TextStyle? style;
   final BorderRadius? borderRadius;
   final Color? borderColor;
   final TextEditingController? controller;
+  final Widget? prefix;
 
   const CustomTextField({
     this.controller,
@@ -14,6 +17,7 @@ class CustomTextField extends StatefulWidget {
     this.borderRadius,
     this.borderColor,
     this.style,
+    this.prefix,
     Key? key,
   }) : super(key: key);
   @override
@@ -27,6 +31,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
       style: widget.style,
       textAlignVertical: TextAlignVertical.bottom,
       decoration: InputDecoration(
+        prefixIcon: widget.prefix,
         fillColor: PaletteColor.white,
         border: OutlineInputBorder(
           borderRadius: widget.borderRadius ??

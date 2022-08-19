@@ -5,12 +5,16 @@ import 'package:online_shop/presentation/presentation.dart';
 
 class SearchField extends StatefulWidget {
   final double? width;
+  final double? iconWidth;
+  final double? iconSize;
   final double? height;
   final TextEditingController? controller;
 
   const SearchField({
     this.controller,
     this.height,
+    this.iconWidth = 50,
+    this.iconSize,
     this.width,
     Key? key,
   }) : super(key: key);
@@ -29,16 +33,16 @@ class _SearchFieldState extends State<SearchField> {
       children: [
         Container(
           height: widget.height,
-          width: 50,
+          width: widget.iconWidth,
           decoration: BoxDecoration(
             color: context.styling.getColor(ExsoColor.detailsBackground),
-            border: const Border(
-              bottom: BorderSide(color: _kBorderColor),
-              top: BorderSide(color: _kBorderColor),
-              left: BorderSide(color: _kBorderColor),
+            border: Border.all(color: _kBorderColor),
+            borderRadius: const BorderRadius.only(
+              topLeft: Radius.circular(6),
+              bottomLeft: Radius.circular(6),
             ),
           ),
-          child: const Icon(Icons.search),
+          child: Icon(Icons.search, size: widget.iconSize),
         ),
         SizedBox(
           width: widget.width,

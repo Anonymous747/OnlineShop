@@ -54,8 +54,10 @@ class _SearchBoxState extends State<SearchBox> {
               mainAxisSize: MainAxisSize.min,
               children: [
                 SearchField(
-                    width: _calculateSearchButtonWidth(context) -
-                        _kSearchBoxIconWidth),
+                  width: _calculateSearchButtonWidth(context) -
+                      _kSearchBoxIconWidth,
+                  height: 40,
+                ),
                 const SizedBox(width: 10),
                 Flexible(
                   child: UiMaterialButton(

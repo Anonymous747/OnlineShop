@@ -18,6 +18,8 @@ class UiMaterialButton extends StatelessWidget {
     Key? key,
   }) : super(key: key);
 
+  // const factory UiMaterialButton
+
   @override
   Widget build(BuildContext context) {
     return MaterialButton(
