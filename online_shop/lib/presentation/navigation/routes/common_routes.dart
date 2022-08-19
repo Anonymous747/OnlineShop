@@ -11,6 +11,8 @@ class DetailsRoute extends ExsoRoute {
   DetailsRoute() : super('details');
 
   @override
-  RouteData getRouteData(List<String> segments) =>
-      RouteData.details(id: 'details');
+  RouteData getRouteData(List<String> segments) {
+    print("========== common_routes segments = $segments");
+    return RouteData.details(id: segments[1]);
+  }
 }

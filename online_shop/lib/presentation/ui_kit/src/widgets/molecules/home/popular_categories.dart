@@ -4,7 +4,10 @@ import 'package:online_shop/domain/domain.dart';
 import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
 
 class PopularCategories extends StatelessWidget {
-  const PopularCategories({Key? key}) : super(key: key);
+  final List<SelectableCardViewModel> popularCategories;
+
+  const PopularCategories({required this.popularCategories, Key? key})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -30,9 +33,9 @@ class PopularCategories extends StatelessWidget {
               alignment: WrapAlignment.center,
               direction: Axis.horizontal,
               children: List.generate(
-                  _popularCategory.length,
+                  popularCategories.length,
                   (index) => SelectableCard(
-                        viewModel: _popularCategory[index],
+                        viewModel: popularCategories[index],
                         cardButtonText:
                             context.s.popularCategoriesCardButtonText,
                       )),
@@ -47,54 +50,3 @@ extension on BuildContext {
     return screenWidth - ScreenSizes.kHeaderHorizontalPadding * 2;
   }
 }
-
-const List<SelectableCardViewModel> _popularCategory = [
-  SelectableCardViewModel(
-    path: 'assets/general/toy1.jpg',
-    title: 'A Splash of Joy',
-  ),
-  SelectableCardViewModel(
-    path: 'assets/general/toy1.jpg',
-    title: 'A Splash of Joy',
-  ),
-  SelectableCardViewModel(
-    path: 'assets/general/toy1.jpg',
-    title: 'A Splash of Joy',
-  ),
-  SelectableCardViewModel(
-    path: 'assets/general/toy1.jpg',
-    title: 'A Splash of Joy',
-  ),
-  SelectableCardViewModel(
-    path: 'assets/general/toy1.jpg',
-    title: 'A Splash of Joy',
-  ),
-  SelectableCardViewModel(
-    path: 'assets/general/toy1.jpg',
-    title: 'A Splash of Joy',
-  ),
-  SelectableCardViewModel(
-    path: 'assets/general/toy1.jpg',
-    title: 'A Splash of Joy',
-  ),
-  SelectableCardViewModel(
-    path: 'assets/general/toy1.jpg',
-    title: 'A Splash of Joy',
-  ),
-  SelectableCardViewModel(
-    path: 'assets/general/toy1.jpg',
-    title: 'A Splash of Joy',
-  ),
-  SelectableCardViewModel(
-    path: 'assets/general/toy1.jpg',
-    title: 'A Splash of Joy',
-  ),
-  SelectableCardViewModel(
-    path: 'assets/general/toy1.jpg',
-    title: 'A Splash of Joy',
-  ),
-  SelectableCardViewModel(
-    path: 'assets/general/toy1.jpg',
-    title: 'A Splash of Joy',
-  ),
-];

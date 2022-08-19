@@ -1,15 +1,43 @@
 import 'package:flutter/material.dart';
-import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:online_shop/common/common.dart';
+import 'package:online_shop/presentation/presentation.dart';
 
-class HomeContainer extends StatelessWidget {
+class HomeContainer extends StatefulWidget {
   const HomeContainer({Key? key}) : super(key: key);
+
+  @override
+  State<HomeContainer> createState() => _HomeContainerState();
+}
+
+class _HomeContainerState extends State<HomeContainer> {
+  late HomeBloc _bloc;
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+
+    _bloc = context.bloc<HomeBloc>();
+  }
 
   @override
   Widget build(BuildContext context) {
     return ExsoWrapper(
-      child: ResponsiveWidget(
-        small: (_) => const SmallHomePage(),
-        other: (_) => const OtherHomePage(),
+      child: BlocBuilder<HomeBloc, HomeState>(
+        bloc: _bloc,
+        builder: (context, state) {
+          return state.maybeMap(
+            orElse: () => const Center(
+              child: CircularProgressIndicator(),
+            ),
+            loaded: (loadedState) {
+              return ResponsiveWidget(
+                small: (_) => SmallHomePage(viewModel: loadedState.viewModel),
+                other: (_) => OtherHomePage(viewModel: loadedState.viewModel),
+              );
+            },
+          );
+        },
       ),
     );
   }

@@ -14,6 +14,7 @@ class LoginBloc extends BaseBloc<LoginEvent, LoginState> {
 
   void _handleSuccessEvent(
       _LoginSuccessEvent event, Emitter<LoginState> emitter) {
-    navigationBloc.add(NavigationEvent.push(data: RouteData.home()));
+    navigationBloc.add(NavigationEvent.cleanAndPush(
+        info: RouteInfo(data: [RouteData.home()])));
   }
 }

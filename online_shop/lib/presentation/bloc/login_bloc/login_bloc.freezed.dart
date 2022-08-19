@@ -21,6 +21,17 @@ class _$LoginEventTearOff {
     return const _LoginInitialEvent();
   }
 
+  _LoginSignInEvent signIn({required String email, required String password}) {
+    return _LoginSignInEvent(
+      email: email,
+      password: password,
+    );
+  }
+
+  _LoginSkipSignInEvent skipSignIn() {
+    return const _LoginSkipSignInEvent();
+  }
+
   _LoginSuccessEvent success() {
     return const _LoginSuccessEvent();
   }
@@ -34,18 +45,24 @@ mixin _$LoginEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initialize,
+    required TResult Function(String email, String password) signIn,
+    required TResult Function() skipSignIn,
     required TResult Function() success,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? initialize,
+    TResult Function(String email, String password)? signIn,
+    TResult Function()? skipSignIn,
     TResult Function()? success,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initialize,
+    TResult Function(String email, String password)? signIn,
+    TResult Function()? skipSignIn,
     TResult Function()? success,
     required TResult orElse(),
   }) =>
@@ -53,18 +70,24 @@ mixin _$LoginEvent {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_LoginInitialEvent value) initialize,
+    required TResult Function(_LoginSignInEvent value) signIn,
+    required TResult Function(_LoginSkipSignInEvent value) skipSignIn,
     required TResult Function(_LoginSuccessEvent value) success,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_LoginInitialEvent value)? initialize,
+    TResult Function(_LoginSignInEvent value)? signIn,
+    TResult Function(_LoginSkipSignInEvent value)? skipSignIn,
     TResult Function(_LoginSuccessEvent value)? success,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_LoginInitialEvent value)? initialize,
+    TResult Function(_LoginSignInEvent value)? signIn,
+    TResult Function(_LoginSkipSignInEvent value)? skipSignIn,
     TResult Function(_LoginSuccessEvent value)? success,
     required TResult orElse(),
   }) =>
@@ -128,6 +151,8 @@ class _$_LoginInitialEvent implements _LoginInitialEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initialize,
+    required TResult Function(String email, String password) signIn,
+    required TResult Function() skipSignIn,
     required TResult Function() success,
   }) {
     return initialize();
@@ -137,6 +162,8 @@ class _$_LoginInitialEvent implements _LoginInitialEvent {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? initialize,
+    TResult Function(String email, String password)? signIn,
+    TResult Function()? skipSignIn,
     TResult Function()? success,
   }) {
     return initialize?.call();
@@ -146,6 +173,8 @@ class _$_LoginInitialEvent implements _LoginInitialEvent {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initialize,
+    TResult Function(String email, String password)? signIn,
+    TResult Function()? skipSignIn,
     TResult Function()? success,
     required TResult orElse(),
   }) {
@@ -159,6 +188,8 @@ class _$_LoginInitialEvent implements _LoginInitialEvent {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_LoginInitialEvent value) initialize,
+    required TResult Function(_LoginSignInEvent value) signIn,
+    required TResult Function(_LoginSkipSignInEvent value) skipSignIn,
     required TResult Function(_LoginSuccessEvent value) success,
   }) {
     return initialize(this);
@@ -168,6 +199,8 @@ class _$_LoginInitialEvent implements _LoginInitialEvent {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_LoginInitialEvent value)? initialize,
+    TResult Function(_LoginSignInEvent value)? signIn,
+    TResult Function(_LoginSkipSignInEvent value)? skipSignIn,
     TResult Function(_LoginSuccessEvent value)? success,
   }) {
     return initialize?.call(this);
@@ -177,6 +210,8 @@ class _$_LoginInitialEvent implements _LoginInitialEvent {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_LoginInitialEvent value)? initialize,
+    TResult Function(_LoginSignInEvent value)? signIn,
+    TResult Function(_LoginSkipSignInEvent value)? skipSignIn,
     TResult Function(_LoginSuccessEvent value)? success,
     required TResult orElse(),
   }) {
@@ -189,6 +224,282 @@ class _$_LoginInitialEvent implements _LoginInitialEvent {
 
 abstract class _LoginInitialEvent implements LoginEvent {
   const factory _LoginInitialEvent() = _$_LoginInitialEvent;
+}
+
+/// @nodoc
+abstract class _$LoginSignInEventCopyWith<$Res> {
+  factory _$LoginSignInEventCopyWith(
+          _LoginSignInEvent value, $Res Function(_LoginSignInEvent) then) =
+      __$LoginSignInEventCopyWithImpl<$Res>;
+  $Res call({String email, String password});
+}
+
+/// @nodoc
+class __$LoginSignInEventCopyWithImpl<$Res>
+    extends _$LoginEventCopyWithImpl<$Res>
+    implements _$LoginSignInEventCopyWith<$Res> {
+  __$LoginSignInEventCopyWithImpl(
+      _LoginSignInEvent _value, $Res Function(_LoginSignInEvent) _then)
+      : super(_value, (v) => _then(v as _LoginSignInEvent));
+
+  @override
+  _LoginSignInEvent get _value => super._value as _LoginSignInEvent;
+
+  @override
+  $Res call({
+    Object? email = freezed,
+    Object? password = freezed,
+  }) {
+    return _then(_LoginSignInEvent(
+      email: email == freezed
+          ? _value.email
+          : email // ignore: cast_nullable_to_non_nullable
+              as String,
+      password: password == freezed
+          ? _value.password
+          : password // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$_LoginSignInEvent implements _LoginSignInEvent {
+  const _$_LoginSignInEvent({required this.email, required this.password});
+
+  @override
+  final String email;
+  @override
+  final String password;
+
+  @override
+  String toString() {
+    return 'LoginEvent.signIn(email: $email, password: $password)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other is _LoginSignInEvent &&
+            (identical(other.email, email) ||
+                const DeepCollectionEquality().equals(other.email, email)) &&
+            (identical(other.password, password) ||
+                const DeepCollectionEquality()
+                    .equals(other.password, password)));
+  }
+
+  @override
+  int get hashCode =>
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(email) ^
+      const DeepCollectionEquality().hash(password);
+
+  @JsonKey(ignore: true)
+  @override
+  _$LoginSignInEventCopyWith<_LoginSignInEvent> get copyWith =>
+      __$LoginSignInEventCopyWithImpl<_LoginSignInEvent>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initialize,
+    required TResult Function(String email, String password) signIn,
+    required TResult Function() skipSignIn,
+    required TResult Function() success,
+  }) {
+    return signIn(email, password);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? initialize,
+    TResult Function(String email, String password)? signIn,
+    TResult Function()? skipSignIn,
+    TResult Function()? success,
+  }) {
+    return signIn?.call(email, password);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initialize,
+    TResult Function(String email, String password)? signIn,
+    TResult Function()? skipSignIn,
+    TResult Function()? success,
+    required TResult orElse(),
+  }) {
+    if (signIn != null) {
+      return signIn(email, password);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_LoginInitialEvent value) initialize,
+    required TResult Function(_LoginSignInEvent value) signIn,
+    required TResult Function(_LoginSkipSignInEvent value) skipSignIn,
+    required TResult Function(_LoginSuccessEvent value) success,
+  }) {
+    return signIn(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_LoginInitialEvent value)? initialize,
+    TResult Function(_LoginSignInEvent value)? signIn,
+    TResult Function(_LoginSkipSignInEvent value)? skipSignIn,
+    TResult Function(_LoginSuccessEvent value)? success,
+  }) {
+    return signIn?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_LoginInitialEvent value)? initialize,
+    TResult Function(_LoginSignInEvent value)? signIn,
+    TResult Function(_LoginSkipSignInEvent value)? skipSignIn,
+    TResult Function(_LoginSuccessEvent value)? success,
+    required TResult orElse(),
+  }) {
+    if (signIn != null) {
+      return signIn(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _LoginSignInEvent implements LoginEvent {
+  const factory _LoginSignInEvent(
+      {required String email, required String password}) = _$_LoginSignInEvent;
+
+  String get email => throw _privateConstructorUsedError;
+  String get password => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  _$LoginSignInEventCopyWith<_LoginSignInEvent> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$LoginSkipSignInEventCopyWith<$Res> {
+  factory _$LoginSkipSignInEventCopyWith(_LoginSkipSignInEvent value,
+          $Res Function(_LoginSkipSignInEvent) then) =
+      __$LoginSkipSignInEventCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$LoginSkipSignInEventCopyWithImpl<$Res>
+    extends _$LoginEventCopyWithImpl<$Res>
+    implements _$LoginSkipSignInEventCopyWith<$Res> {
+  __$LoginSkipSignInEventCopyWithImpl(
+      _LoginSkipSignInEvent _value, $Res Function(_LoginSkipSignInEvent) _then)
+      : super(_value, (v) => _then(v as _LoginSkipSignInEvent));
+
+  @override
+  _LoginSkipSignInEvent get _value => super._value as _LoginSkipSignInEvent;
+}
+
+/// @nodoc
+
+class _$_LoginSkipSignInEvent implements _LoginSkipSignInEvent {
+  const _$_LoginSkipSignInEvent();
+
+  @override
+  String toString() {
+    return 'LoginEvent.skipSignIn()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) || (other is _LoginSkipSignInEvent);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initialize,
+    required TResult Function(String email, String password) signIn,
+    required TResult Function() skipSignIn,
+    required TResult Function() success,
+  }) {
+    return skipSignIn();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? initialize,
+    TResult Function(String email, String password)? signIn,
+    TResult Function()? skipSignIn,
+    TResult Function()? success,
+  }) {
+    return skipSignIn?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initialize,
+    TResult Function(String email, String password)? signIn,
+    TResult Function()? skipSignIn,
+    TResult Function()? success,
+    required TResult orElse(),
+  }) {
+    if (skipSignIn != null) {
+      return skipSignIn();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_LoginInitialEvent value) initialize,
+    required TResult Function(_LoginSignInEvent value) signIn,
+    required TResult Function(_LoginSkipSignInEvent value) skipSignIn,
+    required TResult Function(_LoginSuccessEvent value) success,
+  }) {
+    return skipSignIn(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_LoginInitialEvent value)? initialize,
+    TResult Function(_LoginSignInEvent value)? signIn,
+    TResult Function(_LoginSkipSignInEvent value)? skipSignIn,
+    TResult Function(_LoginSuccessEvent value)? success,
+  }) {
+    return skipSignIn?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_LoginInitialEvent value)? initialize,
+    TResult Function(_LoginSignInEvent value)? signIn,
+    TResult Function(_LoginSkipSignInEvent value)? skipSignIn,
+    TResult Function(_LoginSuccessEvent value)? success,
+    required TResult orElse(),
+  }) {
+    if (skipSignIn != null) {
+      return skipSignIn(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _LoginSkipSignInEvent implements LoginEvent {
+  const factory _LoginSkipSignInEvent() = _$_LoginSkipSignInEvent;
 }
 
 /// @nodoc
@@ -232,6 +543,8 @@ class _$_LoginSuccessEvent implements _LoginSuccessEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initialize,
+    required TResult Function(String email, String password) signIn,
+    required TResult Function() skipSignIn,
     required TResult Function() success,
   }) {
     return success();
@@ -241,6 +554,8 @@ class _$_LoginSuccessEvent implements _LoginSuccessEvent {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? initialize,
+    TResult Function(String email, String password)? signIn,
+    TResult Function()? skipSignIn,
     TResult Function()? success,
   }) {
     return success?.call();
@@ -250,6 +565,8 @@ class _$_LoginSuccessEvent implements _LoginSuccessEvent {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initialize,
+    TResult Function(String email, String password)? signIn,
+    TResult Function()? skipSignIn,
     TResult Function()? success,
     required TResult orElse(),
   }) {
@@ -263,6 +580,8 @@ class _$_LoginSuccessEvent implements _LoginSuccessEvent {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_LoginInitialEvent value) initialize,
+    required TResult Function(_LoginSignInEvent value) signIn,
+    required TResult Function(_LoginSkipSignInEvent value) skipSignIn,
     required TResult Function(_LoginSuccessEvent value) success,
   }) {
     return success(this);
@@ -272,6 +591,8 @@ class _$_LoginSuccessEvent implements _LoginSuccessEvent {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_LoginInitialEvent value)? initialize,
+    TResult Function(_LoginSignInEvent value)? signIn,
+    TResult Function(_LoginSkipSignInEvent value)? skipSignIn,
     TResult Function(_LoginSuccessEvent value)? success,
   }) {
     return success?.call(this);
@@ -281,6 +602,8 @@ class _$_LoginSuccessEvent implements _LoginSuccessEvent {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_LoginInitialEvent value)? initialize,
+    TResult Function(_LoginSignInEvent value)? signIn,
+    TResult Function(_LoginSkipSignInEvent value)? skipSignIn,
     TResult Function(_LoginSuccessEvent value)? success,
     required TResult orElse(),
   }) {
