@@ -15,18 +15,12 @@ class ExsoTopBar extends StatefulWidget {
 class _ExsoTopBarState extends State<ExsoTopBar> {
   @override
   Widget build(BuildContext context) {
-    return SliverAppBar(
-        toolbarHeight: 180,
-        backgroundColor: PaletteColor.transparent,
-        flexibleSpace: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            const ExsoTopBarHeader(),
-            Align(
-              alignment: Alignment.bottomCenter,
-              child: PrimaryGridBar(),
-            ),
-          ],
-        ));
+    return const SliverAppBar(
+      toolbarHeight: 130,
+      backgroundColor: PaletteColor.transparent,
+      flexibleSpace: FlexibleSpaceBar(
+        background: ExsoTopBarHeader(),
+      ),
+    );
   }
 }

@@ -12,6 +12,11 @@ class ExsoWrapper extends StatelessWidget {
         body: CustomScrollView(
       slivers: [
         const ExsoTopBar(),
+        SliverAppBar(
+          toolbarHeight: 50,
+          pinned: true,
+          flexibleSpace: PrimaryGridBar(),
+        ),
         SliverToBoxAdapter(
           child: child,
         ),

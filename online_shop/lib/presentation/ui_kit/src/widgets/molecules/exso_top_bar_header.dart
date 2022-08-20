@@ -59,20 +59,14 @@ class ExsoTopBarHeader extends StatelessWidget {
                   const SizedBox(width: 14),
                   Text(context.s.generalHeaderSecondLable),
                   const SizedBox(width: 14),
-                  UiMaterialButton(
-                    child: Text(
-                      context.s.generalHeaderMakersButtonText,
-                      style: context.styling.getTextStyle(
-                        exsoText: ExsoText.bodySText,
-                        exsoColor: ExsoColor.buttonText,
-                      ),
-                    ),
-                    borderRadius: BorderRadius.circular(4),
+                  UiMaterialButton.roundedWithDefaultText(
+                    context: context,
+                    text: context.s.generalHeaderMakersButtonText,
                     buttonColor: context.styling.getColor(
                       ExsoColor.brightDetails,
                     ),
                     height: 40,
-                    onPressed: () {},
+                    onTap: () {},
                   ),
                 ],
               ),
