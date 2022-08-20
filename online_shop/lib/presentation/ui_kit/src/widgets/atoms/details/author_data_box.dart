@@ -38,17 +38,10 @@ class AuthorDataBox extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            UiMaterialButton(
-              child: Text(
-                'Contact This Member',
-                style: context.styling.getTextStyle(
-                  exsoText: ExsoText.bodySText,
-                  exsoColor: ExsoColor.buttonText,
-                ),
-              ),
-              buttonColor: context.styling.getColor(ExsoColor.primaryButton),
-              borderRadius: BorderRadius.circular(6),
-              onPressed: viewModel.onContact ?? () {},
+            UiMaterialButton.roundedWithDefaultText(
+              context: context,
+              text: 'Contact This Member',
+              onTap: viewModel.onContact ?? () {},
             ),
             const SizedBox(height: 10),
             UiMaterialButton(
@@ -65,7 +58,6 @@ class AuthorDataBox extends StatelessWidget {
                       exsoText: ExsoText.bodySText,
                       exsoColor: ExsoColor.buttonText,
                     ),
-                    textAlign: TextAlign.center,
                   ),
                 ],
               ),

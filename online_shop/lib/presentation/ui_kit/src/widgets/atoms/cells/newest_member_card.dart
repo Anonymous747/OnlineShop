@@ -40,17 +40,10 @@ class NewestMemberCard extends StatelessWidget {
             Text(context.s.newestMembersCardLocation),
             Text(viewModel.location),
             const SizedBox(height: 10),
-            UiMaterialButton(
-                child: Text(
-                  context.s.newestMembersCardButtonText,
-                  style: context.styling.getTextStyle(
-                    exsoText: ExsoText.bodySText,
-                    exsoColor: ExsoColor.buttonText,
-                  ),
-                ),
-                borderRadius: BorderRadius.circular(4),
-                buttonColor: context.styling.getColor(ExsoColor.primaryButton),
-                onPressed: () =>
+            UiMaterialButton.roundedWithDefaultText(
+                context: context,
+                text: context.s.newestMembersCardButtonText,
+                onTap: () =>
                     print("========== newest_member_card Uinimplemented!")),
           ],
         ),

@@ -60,19 +60,13 @@ class _SearchBoxState extends State<SearchBox> {
                 ),
                 const SizedBox(width: 10),
                 Flexible(
-                  child: UiMaterialButton(
-                    borderRadius: BorderRadius.circular(4),
+                  child: UiMaterialButton.roundedWithDefaultText(
+                    context: context,
                     buttonColor: PaletteColor.blue,
                     height: 50,
                     width: _calculateSearchButtonWidth(context),
-                    child: Text(
-                      context.s.seachNowButtonText,
-                      style: context.styling.getTextStyle(
-                        exsoText: ExsoText.bodySText,
-                        exsoColor: ExsoColor.buttonText,
-                      ),
-                    ),
-                    onPressed: widget.onSearch,
+                    text: context.s.seachNowButtonText,
+                    onTap: widget.onSearch,
                   ),
                 )
               ],

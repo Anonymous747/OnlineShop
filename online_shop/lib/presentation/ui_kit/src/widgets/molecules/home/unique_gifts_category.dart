@@ -18,15 +18,11 @@ class UniqueGiftsCategory extends StatelessWidget {
           context.s.uniqueGiftsTitle,
           style: context.styling.getTextStyle(exsoText: ExsoText.bodyLText),
         ),
-        actionComponent: (_) => UiMaterialButton(
-          child: Text(
-            context.s.viewAllButtonText,
-            style: context.styling.getTextStyle(
-              exsoText: ExsoText.bodyMText,
-              exsoColor: ExsoColor.buttonText,
-            ),
-          ),
-          onPressed: () {},
+        actionComponent: (_) => UiMaterialButton.roundedWithDefaultText(
+          context: context,
+          text: context.s.viewAllButtonText,
+          exsoText: ExsoText.bodyMText,
+          onTap: () {},
         ),
         collectionComponent: (context) {
           return Wrap(

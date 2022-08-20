@@ -16,7 +16,7 @@ class _ExsoTopBarState extends State<ExsoTopBar> {
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
-        toolbarHeight: 200,
+        toolbarHeight: 180,
         backgroundColor: PaletteColor.transparent,
         flexibleSpace: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,

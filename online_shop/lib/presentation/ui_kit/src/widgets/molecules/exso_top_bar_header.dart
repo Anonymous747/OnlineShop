@@ -82,13 +82,18 @@ class ExsoTopBarHeader extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     const SearchField(
-                      width: 140,
+                      width: 160,
                       iconWidth: 40,
                       iconSize: 20,
+                      cursorHeight: 14,
                       height: 30,
                     ),
-                    UiMaterialButton(
-                        child: const Text('fdfdds'), onPressed: () {})
+                    const SizedBox(width: 10),
+                    UiMaterialButton.roundedWithDefaultText(
+                      context: context,
+                      text: 'Search',
+                      onTap: () {},
+                    )
                   ],
                 ),
               ),

@@ -9,6 +9,7 @@ class CustomTextField extends StatefulWidget {
   final BorderRadius? borderRadius;
   final Color? borderColor;
   final TextEditingController? controller;
+  final double? cursorHeight;
   final Widget? prefix;
 
   const CustomTextField({
@@ -17,6 +18,7 @@ class CustomTextField extends StatefulWidget {
     this.borderRadius,
     this.borderColor,
     this.style,
+    this.cursorHeight,
     this.prefix,
     Key? key,
   }) : super(key: key);
@@ -30,6 +32,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
     return TextFormField(
       style: widget.style,
       textAlignVertical: TextAlignVertical.bottom,
+      cursorHeight: widget.cursorHeight,
       decoration: InputDecoration(
         prefixIcon: widget.prefix,
         fillColor: PaletteColor.white,
