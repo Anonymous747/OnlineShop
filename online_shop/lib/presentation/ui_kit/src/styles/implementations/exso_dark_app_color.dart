@@ -40,4 +40,7 @@ class ExsoDarkAppColor extends AppColor {
 
   @override
   Color get primaryTextWithLittleOpacity => PaletteColor.black.withOpacity(0.8);
+
+  @override
+  Color get selectableDetail => PaletteColor.black26.withOpacity(0.1);
 }

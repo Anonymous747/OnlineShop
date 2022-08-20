@@ -14,4 +14,5 @@ abstract class AppColor {
   Color get emphasizedText;
   Color get brightDetails;
   Color get primaryTextWithLittleOpacity;
+  Color get selectableDetail;
 }

@@ -40,6 +40,8 @@ class AppStylingBase implements AppStyling {
         return appColor.brightDetails;
       case ExsoColor.primaryTextWithLittleOpacity:
         return appColor.primaryTextWithLittleOpacity;
+      case ExsoColor.selectableDetail:
+        return appColor.selectableDetail;
     }
   }
 

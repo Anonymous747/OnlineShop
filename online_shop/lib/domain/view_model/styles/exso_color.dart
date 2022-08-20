@@ -12,4 +12,5 @@ enum ExsoColor {
   emphasizedText,
   brightDetails,
   primaryTextWithLittleOpacity,
+  selectableDetail,
 }

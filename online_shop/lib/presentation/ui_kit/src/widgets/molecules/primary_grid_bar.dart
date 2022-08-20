@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:online_shop/common/common.dart';
-import 'package:online_shop/domain/domain.dart';
 import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
 
-const double kPrimaryGridBarHeight = 50;
-
 class PrimaryGridBar extends StatelessWidget {
-  PrimaryGridBar({Key? key}) : super(key: key);
+  final Color backroundColor;
+  final double height;
+
+  PrimaryGridBar({
+    required this.backroundColor,
+    required this.height,
+    Key? key,
+  }) : super(key: key);
 
   final List<String> cells = [
     'Home',
@@ -21,27 +25,30 @@ class PrimaryGridBar extends StatelessWidget {
   Widget build(BuildContext context) {
     final cellWidth = _computePrimaryGridCellWidth(context);
 
-    return Container(
-        height: kPrimaryGridBarHeight,
-        color: context.styling.getColor(ExsoColor.detailsBackground),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(
-              horizontal: ScreenSizes.kHeaderHorizontalPadding),
-          child: Center(
-            child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemCount: cells.length,
-                itemBuilder: (context, index) {
-                  return PrimaryGridBarCell(
-                    title: cells[index],
-                    width: cellWidth,
-                    height: kPrimaryGridBarHeight,
-                    isBorderNeed: index != cells.length - 1,
-                    onPress: () {},
-                  );
-                }),
-          ),
-        ));
+    return Scaffold(
+      body: Container(
+          height: height,
+          color: backroundColor,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(
+                horizontal: ScreenSizes.kHeaderHorizontalPadding),
+            child: Center(
+              child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: cells.length,
+                  itemBuilder: (context, index) {
+                    return PrimaryGridBarCell(
+                      title: cells[index],
+                      width: cellWidth,
+                      height: height,
+                      isBorderNeed: index != cells.length - 1,
+                      backgroundColor: backroundColor,
+                      onPress: () {},
+                    );
+                  }),
+            ),
+          )),
+    );
   }
 
   double _computePrimaryGridCellWidth(BuildContext context) {
