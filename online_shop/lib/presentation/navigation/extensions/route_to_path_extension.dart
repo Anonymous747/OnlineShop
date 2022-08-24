@@ -4,6 +4,7 @@ extension RouteToPathExtension on RouteData {
   String get routeToPath => maybeMap(
         login: (_) => '/login',
         home: (_) => '/home',
-        orElse: () => '/${route.toLowerCase()}',
+        details: (_) => '/details/${_.id}',
+        orElse: () => route.toLowerCase(),
       );
 }

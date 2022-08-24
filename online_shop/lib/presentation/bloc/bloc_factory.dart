@@ -10,8 +10,11 @@ class BlocFactory extends ServiceLocator {
 
     this
       ..registerFactory<LoginBloc>(LoginBloc.new)
-      ..registerFactory<HomeBloc>(HomeBloc.new)
-      ..registerLazySingleton<NavigationBloc>(NavigationBloc.new);
+      ..registerFactory<HomeBloc>(() => HomeBloc(
+            get(),
+          ))
+      ..registerLazySingleton<NavigationBloc>(NavigationBloc.new)
+      ..registerFactory<HomeMapper>(HomeMapper.new);
 
     BaseHandler.setDependencies(navigationBloc: get);
   }

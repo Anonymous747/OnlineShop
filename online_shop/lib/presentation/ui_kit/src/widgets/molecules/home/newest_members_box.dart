@@ -4,7 +4,12 @@ import 'package:online_shop/domain/domain.dart';
 import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
 
 class NewestMembersBox extends StatelessWidget {
-  const NewestMembersBox({Key? key}) : super(key: key);
+  final List<NewestMemberViewModel> newestMembers;
+
+  const NewestMembersBox({
+    required this.newestMembers,
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,9 +25,9 @@ class NewestMembersBox extends StatelessWidget {
               alignment: WrapAlignment.center,
               direction: Axis.horizontal,
               children: List.generate(
-                  _newest.length,
+                  newestMembers.length,
                   (index) => NewestMemberCard(
-                        viewModel: _newest[index],
+                        viewModel: newestMembers[index],
                       )),
             );
           },
@@ -35,42 +40,3 @@ extension on BuildContext {
     return screenWidth - ScreenSizes.kHeaderHorizontalPadding * 2;
   }
 }
-
-const List<NewestMemberViewModel> _newest = [
-  NewestMemberViewModel(
-    path: 'assets/general/toy1.jpg',
-    title: 'A Splash of Joy',
-    location: 'Winter Springs, Fl',
-    specialty: 'Custom Gifts',
-  ),
-  NewestMemberViewModel(
-    path: 'assets/general/toy1.jpg',
-    title: 'A Splash of Joy',
-    location: 'Winter Springs, Fl',
-    specialty: 'Custom Gifts',
-  ),
-  NewestMemberViewModel(
-    path: 'assets/general/toy1.jpg',
-    title: 'A Splash of Joy',
-    location: 'Winter Springs, Fl',
-    specialty: 'Custom Gifts',
-  ),
-  NewestMemberViewModel(
-    path: 'assets/general/toy1.jpg',
-    title: 'A Splash of Joy',
-    location: 'Winter Springs, Fl',
-    specialty: 'Custom Gifts',
-  ),
-  NewestMemberViewModel(
-    path: 'assets/general/toy1.jpg',
-    title: 'A Splash of Joy',
-    location: 'Winter Springs, Fl',
-    specialty: 'Custom Gifts',
-  ),
-  NewestMemberViewModel(
-    path: 'assets/general/toy1.jpg',
-    title: 'A Splash of Joy',
-    location: 'Winter Springs, Fl',
-    specialty: 'Custom Gifts',
-  ),
-];

@@ -11,4 +11,10 @@ abstract class AppColor {
   Color get detailsBackground;
   Color get semiTransparentBackground;
   Color get transparent;
+  Color get emphasizedText;
+  Color get brightDetails;
+  Color get primaryTextWithLittleOpacity;
+  Color get selectableDetail;
+  Color get lightBackground;
+  Color get defaultBackroundColor;
 }

@@ -5,5 +5,6 @@ extension RouteToDelegateExtension on RouteData {
   Page<Object> get routeToPage => map(
         home: (_) => HomePage.new(),
         login: (_) => LoginPage.new(),
+        details: (_) => DetailsPage.new(),
       );
 }

@@ -9,9 +9,12 @@ class RouteData with _$RouteData {
 
   factory RouteData.login() = LoginRouteData;
 
+  factory RouteData.details({required String id}) = DetailsRouteData;
+
   String get route => map(
         home: (_) => Pages.kHomePage,
         login: (_) => Pages.kLoginPage,
+        details: (_) => Pages.kDetailsPage,
       );
 
   static final List<RouteData> initialStack = [

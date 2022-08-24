@@ -1,3 +1,4 @@
+export './details/index.dart';
 export './exso_footer.dart';
 export './exso_top_bar.dart';
 export './exso_top_bar_header.dart';

@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:online_shop/domain/domain.dart';
 
 class SmallHomePage extends StatefulWidget {
-  const SmallHomePage({Key? key}) : super(key: key);
+  final HomeViewModel viewModel;
+
+  const SmallHomePage({required this.viewModel, Key? key}) : super(key: key);
 
   @override
   State<SmallHomePage> createState() => _SmallHomePageState();

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:online_shop/domain/view_model/view_model.dart';
-
-import '../../../ui_kit.dart';
+import 'package:online_shop/presentation/presentation.dart';
 
 class AppStylingBase implements AppStyling {
   final AppColor appColor;
@@ -35,6 +34,18 @@ class AppStylingBase implements AppStyling {
         return appColor.semiTransparentBackground;
       case ExsoColor.transparent:
         return appColor.transparent;
+      case ExsoColor.emphasizedText:
+        return appColor.emphasizedText;
+      case ExsoColor.brightDetails:
+        return appColor.brightDetails;
+      case ExsoColor.primaryTextWithLittleOpacity:
+        return appColor.primaryTextWithLittleOpacity;
+      case ExsoColor.selectableDetail:
+        return appColor.selectableDetail;
+      case ExsoColor.lightBackground:
+        return appColor.lightBackground;
+      case ExsoColor.defaultBackground:
+        return appColor.defaultBackroundColor;
     }
   }
 
@@ -57,6 +68,12 @@ class AppStylingBase implements AppStyling {
         return appTextstyle.getBodySTextStyle(color);
       case ExsoText.headerLText:
         return appTextstyle.getHeaderLTextStyle(color);
+      case ExsoText.headetMBoldText:
+        return appTextstyle.getHeaderMBoldTextStyle(color);
+      case ExsoText.bodySBoldText:
+        return appTextstyle.getBodySBoldTextStyle(color);
+      case ExsoText.bodySTinyText:
+        return appTextstyle.getBodySTinyTextStyle(color);
     }
   }
 }

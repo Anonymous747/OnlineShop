@@ -9,4 +9,10 @@ enum ExsoColor {
   detailsBackground,
   semiTransparentBackground,
   transparent,
+  emphasizedText,
+  brightDetails,
+  primaryTextWithLittleOpacity,
+  selectableDetail,
+  lightBackground,
+  defaultBackground,
 }

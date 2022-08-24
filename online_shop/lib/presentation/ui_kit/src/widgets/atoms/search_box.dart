@@ -43,32 +43,30 @@ class _SearchBoxState extends State<SearchBox> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'What do you need:',
-              style: context.styling
-                  .getTextStyle(exsoText: ExsoText.bodyMSemiBoldText),
+              context.s.posterSearchContainerTitle,
+              style: context.styling.getTextStyle(
+                exsoText: ExsoText.bodyMSemiBoldText,
+                exsoColor: ExsoColor.primaryTextWithLittleOpacity,
+              ),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               mainAxisSize: MainAxisSize.min,
               children: [
                 SearchField(
-                    width: _calculateSearchButtonWidth(context) -
-                        _kSearchBoxIconWidth),
+                  width: _calculateSearchButtonWidth(context) -
+                      _kSearchBoxIconWidth,
+                  height: 40,
+                ),
                 const SizedBox(width: 10),
                 Flexible(
-                  child: UiMaterialButton(
-                    borderRadius: BorderRadius.circular(4),
+                  child: UiMaterialButton.roundedWithDefaultText(
+                    context: context,
                     buttonColor: PaletteColor.blue,
                     height: 50,
                     width: _calculateSearchButtonWidth(context),
-                    child: Text(
-                      'Search Now',
-                      style: context.styling.getTextStyle(
-                        exsoText: ExsoText.bodySText,
-                        exsoColor: ExsoColor.buttonText,
-                      ),
-                    ),
-                    onPressed: widget.onSearch,
+                    text: context.s.seachNowButtonText,
+                    onTap: widget.onSearch,
                   ),
                 )
               ],

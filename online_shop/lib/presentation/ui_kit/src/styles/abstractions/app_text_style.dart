@@ -6,4 +6,7 @@ abstract class AppTextStyle {
   TextStyle getBodyMSemiBoldTextStyle(Color? color);
   TextStyle getBodyLTextStyle(Color? color);
   TextStyle getHeaderLTextStyle(Color? color);
+  TextStyle getHeaderMBoldTextStyle(Color? color);
+  TextStyle getBodySBoldTextStyle(Color? color);
+  TextStyle getBodySTinyTextStyle(Color? color);
 }

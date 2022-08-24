@@ -1,11 +1,9 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
 
 class ExsoDarkAppColor extends AppColor {
   @override
-  Color get textOnInteraction => PaletteColor.black;
+  Color get textOnInteraction => PaletteColor.white;
 
   @override
   Color get textPrimary => PaletteColor.black;
@@ -33,4 +31,22 @@ class ExsoDarkAppColor extends AppColor {
 
   @override
   Color get transparent => Colors.transparent;
+
+  @override
+  Color get emphasizedText => PaletteColor.darkBlue;
+
+  @override
+  Color get brightDetails => PaletteColor.red;
+
+  @override
+  Color get primaryTextWithLittleOpacity => PaletteColor.black.withOpacity(0.8);
+
+  @override
+  Color get selectableDetail => PaletteColor.black26.withOpacity(0.1);
+
+  @override
+  Color get lightBackground => PaletteColor.lightGrey;
+
+  @override
+  Color get defaultBackroundColor => PaletteColor.black;
 }
