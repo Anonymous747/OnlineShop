@@ -3,12 +3,10 @@ import 'package:online_shop/common/common.dart';
 import 'package:online_shop/domain/view_model/view_model.dart';
 import 'package:online_shop/presentation/presentation.dart';
 
-typedef BuilderComponent = Widget Function(BuildContext);
-
 class CollectionLayout extends StatelessWidget {
   final Text title;
-  final BuilderComponent collectionComponent;
-  final BuilderComponent? actionComponent;
+  final ComponentBuilder collectionComponent;
+  final ComponentBuilder? actionComponent;
 
   const CollectionLayout({
     required this.title,

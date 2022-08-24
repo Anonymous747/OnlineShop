@@ -21,12 +21,14 @@ class _$PhotoDemonstratorViewModelTearOff {
       {required double cost,
       required List<String> images,
       String lable = '',
+      String description = '',
       void Function()? onScale,
       void Function()? onView}) {
     return _PhotoDemonstratorViewModel(
       cost: cost,
       images: images,
       lable: lable,
+      description: description,
       onScale: onScale,
       onView: onView,
     );
@@ -41,6 +43,7 @@ mixin _$PhotoDemonstratorViewModel {
   double get cost => throw _privateConstructorUsedError;
   List<String> get images => throw _privateConstructorUsedError;
   String get lable => throw _privateConstructorUsedError;
+  String get description => throw _privateConstructorUsedError;
   void Function()? get onScale => throw _privateConstructorUsedError;
   void Function()? get onView => throw _privateConstructorUsedError;
 
@@ -58,6 +61,7 @@ abstract class $PhotoDemonstratorViewModelCopyWith<$Res> {
       {double cost,
       List<String> images,
       String lable,
+      String description,
       void Function()? onScale,
       void Function()? onView});
 }
@@ -76,6 +80,7 @@ class _$PhotoDemonstratorViewModelCopyWithImpl<$Res>
     Object? cost = freezed,
     Object? images = freezed,
     Object? lable = freezed,
+    Object? description = freezed,
     Object? onScale = freezed,
     Object? onView = freezed,
   }) {
@@ -91,6 +96,10 @@ class _$PhotoDemonstratorViewModelCopyWithImpl<$Res>
       lable: lable == freezed
           ? _value.lable
           : lable // ignore: cast_nullable_to_non_nullable
+              as String,
+      description: description == freezed
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
               as String,
       onScale: onScale == freezed
           ? _value.onScale
@@ -116,6 +125,7 @@ abstract class _$PhotoDemonstratorViewModelCopyWith<$Res>
       {double cost,
       List<String> images,
       String lable,
+      String description,
       void Function()? onScale,
       void Function()? onView});
 }
@@ -137,6 +147,7 @@ class __$PhotoDemonstratorViewModelCopyWithImpl<$Res>
     Object? cost = freezed,
     Object? images = freezed,
     Object? lable = freezed,
+    Object? description = freezed,
     Object? onScale = freezed,
     Object? onView = freezed,
   }) {
@@ -152,6 +163,10 @@ class __$PhotoDemonstratorViewModelCopyWithImpl<$Res>
       lable: lable == freezed
           ? _value.lable
           : lable // ignore: cast_nullable_to_non_nullable
+              as String,
+      description: description == freezed
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
               as String,
       onScale: onScale == freezed
           ? _value.onScale
@@ -172,6 +187,7 @@ class _$_PhotoDemonstratorViewModel implements _PhotoDemonstratorViewModel {
       {required this.cost,
       required this.images,
       this.lable = '',
+      this.description = '',
       this.onScale,
       this.onView});
 
@@ -182,6 +198,9 @@ class _$_PhotoDemonstratorViewModel implements _PhotoDemonstratorViewModel {
   @JsonKey(defaultValue: '')
   @override
   final String lable;
+  @JsonKey(defaultValue: '')
+  @override
+  final String description;
   @override
   final void Function()? onScale;
   @override
@@ -189,7 +208,7 @@ class _$_PhotoDemonstratorViewModel implements _PhotoDemonstratorViewModel {
 
   @override
   String toString() {
-    return 'PhotoDemonstratorViewModel(cost: $cost, images: $images, lable: $lable, onScale: $onScale, onView: $onView)';
+    return 'PhotoDemonstratorViewModel(cost: $cost, images: $images, lable: $lable, description: $description, onScale: $onScale, onView: $onView)';
   }
 
   @override
@@ -202,6 +221,9 @@ class _$_PhotoDemonstratorViewModel implements _PhotoDemonstratorViewModel {
                 const DeepCollectionEquality().equals(other.images, images)) &&
             (identical(other.lable, lable) ||
                 const DeepCollectionEquality().equals(other.lable, lable)) &&
+            (identical(other.description, description) ||
+                const DeepCollectionEquality()
+                    .equals(other.description, description)) &&
             (identical(other.onScale, onScale) ||
                 const DeepCollectionEquality()
                     .equals(other.onScale, onScale)) &&
@@ -215,6 +237,7 @@ class _$_PhotoDemonstratorViewModel implements _PhotoDemonstratorViewModel {
       const DeepCollectionEquality().hash(cost) ^
       const DeepCollectionEquality().hash(images) ^
       const DeepCollectionEquality().hash(lable) ^
+      const DeepCollectionEquality().hash(description) ^
       const DeepCollectionEquality().hash(onScale) ^
       const DeepCollectionEquality().hash(onView);
 
@@ -231,6 +254,7 @@ abstract class _PhotoDemonstratorViewModel
       {required double cost,
       required List<String> images,
       String lable,
+      String description,
       void Function()? onScale,
       void Function()? onView}) = _$_PhotoDemonstratorViewModel;
 
@@ -240,6 +264,8 @@ abstract class _PhotoDemonstratorViewModel
   List<String> get images => throw _privateConstructorUsedError;
   @override
   String get lable => throw _privateConstructorUsedError;
+  @override
+  String get description => throw _privateConstructorUsedError;
   @override
   void Function()? get onScale => throw _privateConstructorUsedError;
   @override

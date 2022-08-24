@@ -4,16 +4,20 @@ import 'package:online_shop/domain/domain.dart';
 import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
 
 class ImageSlider extends StatefulWidget {
-  final String imagePath;
-  final int index;
+  final List<String> images;
+  final String description;
+  final int imageIndex;
   final VoidCallback onSwitchToLeft;
   final VoidCallback onSwitchToRight;
+  final PageController? pageController;
 
   const ImageSlider({
-    required this.imagePath,
-    required this.index,
+    required this.images,
+    required this.imageIndex,
     required this.onSwitchToLeft,
     required this.onSwitchToRight,
+    this.pageController,
+    this.description = '',
     Key? key,
   }) : super(key: key);
 
@@ -46,9 +50,16 @@ class _ImageSliderState extends State<ImageSlider> {
               child: Stack(
                 fit: StackFit.expand,
                 children: [
-                  Image.asset(
-                    widget.imagePath,
-                    fit: BoxFit.fitHeight,
+                  PageView.builder(
+                    physics: const NeverScrollableScrollPhysics(),
+                    itemCount: widget.images.length,
+                    controller: widget.pageController,
+                    itemBuilder: (context, index) {
+                      return Image.asset(
+                        widget.images[index],
+                        fit: BoxFit.fitHeight,
+                      );
+                    },
                   ),
                   Align(
                     alignment: Alignment.topRight,
@@ -57,11 +68,12 @@ class _ImageSliderState extends State<ImageSlider> {
                       iconColor:
                           context.styling.getColor(ExsoColor.primaryHeader),
                       backgroundColor: context.styling
-                          .getColor(ExsoColor.primaryTextWithLittleOpacity)
+                          .getColor(ExsoColor.semiTransparentBackground)
                           .withOpacity(0.7),
                       selectionColor: context.styling
                           .getColor(ExsoColor.primaryTextWithLittleOpacity),
                       margin: const EdgeInsets.only(top: 10, right: 10),
+                      padding: const EdgeInsets.all(8),
                       onPress: () {},
                     ),
                   ),
@@ -75,12 +87,13 @@ class _ImageSliderState extends State<ImageSlider> {
                         iconColor:
                             context.styling.getColor(ExsoColor.primaryHeader),
                         backgroundColor: context.styling
-                            .getColor(ExsoColor.primaryTextWithLittleOpacity)
+                            .getColor(ExsoColor.semiTransparentBackground)
                             .withOpacity(0.7),
                         selectionColor: context.styling
                             .getColor(ExsoColor.primaryTextWithLittleOpacity),
                         margin: const EdgeInsets.only(left: 10),
-                        onPress: () {},
+                        padding: const EdgeInsets.all(8),
+                        onPress: widget.onSwitchToLeft,
                       ),
                     ),
                   ),
@@ -94,21 +107,44 @@ class _ImageSliderState extends State<ImageSlider> {
                         iconColor:
                             context.styling.getColor(ExsoColor.primaryHeader),
                         backgroundColor: context.styling
-                            .getColor(ExsoColor.semiTransparentBackground),
+                            .getColor(ExsoColor.semiTransparentBackground)
+                            .withOpacity(0.7),
                         selectionColor: context.styling
                             .getColor(ExsoColor.primaryTextWithLittleOpacity),
                         margin: const EdgeInsets.only(right: 10),
-                        onPress: () {},
+                        padding: const EdgeInsets.all(8),
+                        onPress: widget.onSwitchToRight,
                       ),
                     ),
                   ),
                   Align(
-                    alignment: Alignment.bottomCenter,
+                    alignment: Alignment.bottomLeft,
                     child: Container(
                       color: context.styling
                           .getColor(ExsoColor.semiTransparentBackground)
                           .withOpacity(0.7),
-                      child: const Text('dfsdsd'),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 8, vertical: 4),
+                            child: Text('Photo #${widget.imageIndex + 1}',
+                                style: context.styling.getTextStyle(
+                                  exsoText: ExsoText.bodyMText,
+                                  exsoColor: ExsoColor.buttonText,
+                                )),
+                          ),
+                          if (widget.description.isNotEmpty)
+                            Text(widget.description,
+                                style: context.styling.getTextStyle(
+                                  exsoText: ExsoText.bodyMText,
+                                  exsoColor: ExsoColor.buttonText,
+                                )),
+                        ],
+                      ),
                     ),
                   ),
                 ],

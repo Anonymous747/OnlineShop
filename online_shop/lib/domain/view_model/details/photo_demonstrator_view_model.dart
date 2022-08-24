@@ -9,6 +9,7 @@ class PhotoDemonstratorViewModel with _$PhotoDemonstratorViewModel {
     required double cost,
     required List<String> images,
     @Default('') String lable,
+    @Default('') String description,
     VoidCallback? onScale,
     VoidCallback? onView,
   }) = _PhotoDemonstratorViewModel;

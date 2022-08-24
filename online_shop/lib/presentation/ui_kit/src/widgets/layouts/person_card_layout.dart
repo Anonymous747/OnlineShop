@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:online_shop/common/common.dart';
 import 'package:online_shop/domain/domain.dart';
-import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
 
 const double _kImageSize = 100;
 
 class PersonCardLayout extends StatelessWidget {
-  final BuilderComponent titleBuilder;
-  final BuilderComponent detailBuilder;
+  final ComponentBuilder titleBuilder;
+  final ComponentBuilder detailBuilder;
   final Image image;
   final double? elevation;
   final EdgeInsetsGeometry? margin;

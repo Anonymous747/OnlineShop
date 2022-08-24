@@ -14,6 +14,9 @@ class PhotoDemonstrator extends StatefulWidget {
 }
 
 class _PhotoDemonstratorState extends State<PhotoDemonstrator> {
+  final ValueNotifier<int> _currentPhoto = ValueNotifier<int>(0);
+  final PageController _pageController = PageController(initialPage: 0);
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -42,13 +45,65 @@ class _PhotoDemonstratorState extends State<PhotoDemonstrator> {
             ),
           ),
         ),
-        ImageSlider(
-          imagePath: 'assets/general/toy1.jpg',
-          index: 3,
-          onSwitchToLeft: () {},
-          onSwitchToRight: () {},
+        ValueListenableBuilder<int>(
+          valueListenable: _currentPhoto,
+          builder: (context, index, _) {
+            return ImageSlider(
+              images: widget.viewModel.images,
+              pageController: _pageController,
+              imageIndex: index,
+              onSwitchToLeft: _switchImageToLeft,
+              onSwitchToRight: _switchImageToRight,
+            );
+          },
         ),
+        ValueListenableBuilder<int>(
+          valueListenable: _currentPhoto,
+          builder: (context, index, _) {
+            return ImageSwitcher(
+              currentIndex: index,
+              onSwitchImage: _switchImage,
+              images: widget.viewModel.images,
+            );
+          },
+        ),
+        const SizedBox(height: 4),
+        UiMaterialButton.roundedWithDefaultText(
+          context: context,
+          text: 'Contact this member',
+          exsoText: ExsoText.bodyMText,
+          padding: const EdgeInsets.symmetric(vertical: 10),
+          onTap: () {},
+        )
       ],
     );
+  }
+
+  void _animateToPage() {
+    _pageController.animateToPage(
+      _currentPhoto.value,
+      duration: const Duration(milliseconds: 400),
+      curve: Curves.ease,
+    );
+  }
+
+  void _switchImageToLeft() {
+    _currentPhoto.value = _currentPhoto.value == 0
+        ? widget.viewModel.images.length - 1
+        : _currentPhoto.value - 1;
+    _animateToPage();
+  }
+
+  void _switchImageToRight() {
+    _currentPhoto.value =
+        _currentPhoto.value == widget.viewModel.images.length - 1
+            ? 0
+            : _currentPhoto.value + 1;
+    _animateToPage();
+  }
+
+  void _switchImage(int index) {
+    _currentPhoto.value = index;
+    _animateToPage();
   }
 }
