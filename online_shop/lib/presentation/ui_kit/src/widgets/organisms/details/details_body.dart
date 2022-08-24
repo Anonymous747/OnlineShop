@@ -25,7 +25,8 @@ class DetailsBody extends StatelessWidget {
         const LocationTitle(viewModel: locationData),
         const SizedBox(height: 10),
         const PhotoDemonstrator(viewModel: photoDemonstrator),
-        const DescriptionBox(),
+        const SizedBox(height: 10),
+        const DescriptionBox(viewModel: detailsDesription),
       ],
     );
   }
@@ -47,7 +48,19 @@ const photoDemonstrator = PhotoDemonstratorViewModel(
   images: [
     'assets/general/toy1.jpg',
     'assets/general/toy2.jpg',
+    'assets/general/toy3.jpg',
     'assets/general/toy4.jpg',
+    'assets/general/toy5.jpg',
   ],
   lable: 'Custom lable',
+);
+
+const detailsDesription = DetailsDescriptionViewModel(
+  desription:
+      'This macrame wall decor is a very cute decor for every room including baby nursery, kid room, teen room. It will look beautiful among pictures of you, your family, friends or your child, above a crib, bed or a desk. My decors are made with certified cords, safe for kids, no chemicals were used. ',
+  tags: [
+    'macrame wall hanging',
+    'boho wall decor',
+    'graduation',
+  ],
 );

@@ -24,6 +24,7 @@ class UiMaterialButton extends StatelessWidget {
     required VoidCallback onTap,
     required BuildContext context,
     required String text,
+    EdgeInsets? padding,
     ExsoText? exsoText,
     Color? buttonColor,
     double? height,
@@ -38,11 +39,14 @@ class UiMaterialButton extends StatelessWidget {
             ExsoColor.primaryButton,
           ),
       onPressed: onTap,
-      child: Text(
-        text,
-        style: context.styling.getTextStyle(
-          exsoText: exsoText ?? ExsoText.bodySText,
-          exsoColor: ExsoColor.buttonText,
+      child: Padding(
+        padding: padding ?? const EdgeInsets.all(0),
+        child: Text(
+          text,
+          style: context.styling.getTextStyle(
+            exsoText: exsoText ?? ExsoText.bodySText,
+            exsoColor: ExsoColor.buttonText,
+          ),
         ),
       ),
     );
