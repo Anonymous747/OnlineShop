@@ -8,8 +8,13 @@ class DetailsExtraPosts extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
       children: const [
-        AuthorDataBox(viewModel: _author),
+        Padding(
+          padding: EdgeInsets.fromLTRB(0, 0, 0, 10),
+          child: AuthorDataBox(viewModel: _author),
+        ),
+        SizedBox(height: 20),
         RelatedPosts(viewModels: _relatedPosts),
         // ShareBox(),
       ],

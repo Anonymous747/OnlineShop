@@ -13,4 +13,6 @@ enum ExsoColor {
   brightDetails,
   primaryTextWithLittleOpacity,
   selectableDetail,
+  lightBackground,
+  defaultBackground,
 }

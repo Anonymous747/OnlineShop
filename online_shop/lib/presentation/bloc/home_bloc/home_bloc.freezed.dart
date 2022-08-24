@@ -500,6 +500,8 @@ abstract class _$HomeLoadedStateCopyWith<$Res> {
           _HomeLoadedState value, $Res Function(_HomeLoadedState) then) =
       __$HomeLoadedStateCopyWithImpl<$Res>;
   $Res call({HomeViewModel viewModel});
+
+  $HomeViewModelCopyWith<$Res> get viewModel;
 }
 
 /// @nodoc
@@ -522,6 +524,13 @@ class __$HomeLoadedStateCopyWithImpl<$Res> extends _$HomeStateCopyWithImpl<$Res>
           : viewModel // ignore: cast_nullable_to_non_nullable
               as HomeViewModel,
     ));
+  }
+
+  @override
+  $HomeViewModelCopyWith<$Res> get viewModel {
+    return $HomeViewModelCopyWith<$Res>(_value.viewModel, (value) {
+      return _then(_value.copyWith(viewModel: value));
+    });
   }
 }
 

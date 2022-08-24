@@ -15,4 +15,9 @@ class DetailsRoute extends ExsoRoute {
     print("========== common_routes segments = $segments");
     return RouteData.details(id: segments[1]);
   }
+
+  @override
+  int getSegmentsNumber(List<String> segments) {
+    return segments.length > 1 ? 2 : 1;
+  }
 }

@@ -52,4 +52,21 @@ class ExsoTextStyle extends AppTextStyle {
       color: color,
     );
   }
+
+  @override
+  TextStyle getBodySBoldTextStyle(Color? color) {
+    return TextStyle(
+      fontWeight: FontWeight.bold,
+      color: color,
+    );
+  }
+
+  @override
+  TextStyle getBodySTinyTextStyle(Color? color) {
+    return TextStyle(
+      fontSize: 12,
+      fontWeight: FontWeight.w600,
+      color: color,
+    );
+  }
 }

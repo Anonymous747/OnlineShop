@@ -43,4 +43,10 @@ class ExsoLightAppColor extends AppColor {
 
   @override
   Color get selectableDetail => PaletteColor.black26.withOpacity(0.1);
+
+  @override
+  Color get lightBackground => PaletteColor.lightGrey;
+
+  @override
+  Color get defaultBackroundColor => PaletteColor.white;
 }

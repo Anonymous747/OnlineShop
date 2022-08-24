@@ -33,36 +33,35 @@ class PersonCardLayout extends StatelessWidget {
       height: height,
       width: width,
       margin: margin,
-      child: Card(
-        borderOnForeground: true,
-        elevation: elevation,
+      decoration: BoxDecoration(
         color: backgroundColor ??
             context.styling.getColor(ExsoColor.detailsBackground),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
+        border: Border.all(
+            color: context.styling.getColor(ExsoColor.detailsBackground)),
+        borderRadius: BorderRadius.circular(4),
+      ),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          titleBuilder.call(context),
+          const SizedBox(height: 10),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              titleBuilder.call(context),
-              const SizedBox(height: 10),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  SizedBox(
-                    height: _kImageSize,
-                    width: _kImageSize,
-                    child: ClipRRect(
-                        borderRadius: BorderRadius.circular(_kImageSize / 2),
-                        child: image),
-                  ),
-                  const SizedBox(width: 20),
-                  detailBuilder.call(context),
-                ],
-              )
+              SizedBox(
+                height: _kImageSize,
+                width: _kImageSize,
+                child: ClipRRect(
+                    borderRadius: BorderRadius.circular(_kImageSize / 2),
+                    child: image),
+              ),
+              const SizedBox(width: 20),
+              detailBuilder.call(context),
             ],
-          ),
-        ),
+          )
+        ],
       ),
     );
   }

@@ -3,6 +3,8 @@ enum ExsoText {
   bodyMText,
   bodyMSemiBoldText,
   bodySText,
+  bodySBoldText,
+  bodySTinyText,
   headerLText,
   headetMBoldText,
 }

@@ -25,5 +25,24 @@
 		"body": [
 			"\"$0\": \"\","
 		]
+	},
+	"viewModelLayout": {
+		"prefix": [
+			"vml",
+			"vm",
+		],
+		"body": [
+			"import 'package:flutter/material.dart';",
+			"import 'package:freezed_annotation/freezed_annotation.dart';",
+			"",
+			"part '${TM_FILENAME_BASE}.freezed.dart';",
+			"",
+			"@freezed",
+			"class $1ViewModel with _$$1ViewModel {",
+			  "const factory $1ViewModel({",
+				"required String name,",
+			  "}) = _$1ViewModel;",
+			"}",
+		]
 	}
 }

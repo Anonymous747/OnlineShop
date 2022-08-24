@@ -14,10 +14,8 @@ class AuthorDataBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PersonCardLayout(
-      width: 400,
-      margin: const EdgeInsets.all(10),
-      backgroundColor: context.styling.getColor(ExsoColor.detailsBackground),
-      elevation: 6,
+      width: ScreenSizes.kGeneralHorizontalPostsWidth,
+      backgroundColor: context.styling.getColor(ExsoColor.lightBackground),
       titleBuilder: (context) => Text.rich(TextSpan(children: [
         TextSpan(
             text: 'Posted By ',
@@ -50,8 +48,10 @@ class AuthorDataBox extends StatelessWidget {
                 children: [
                   Icon(
                     Icons.person_pin,
+                    size: 16,
                     color: context.styling.getColor(ExsoColor.buttonText),
                   ),
+                  const SizedBox(width: 4),
                   Text(
                     'View Listing',
                     style: context.styling.getTextStyle(
