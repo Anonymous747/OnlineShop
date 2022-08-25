@@ -36,6 +36,12 @@ class _$NavigationEventTearOff {
       info: info,
     );
   }
+
+  _NavigationReplaceEvent replace({required RouteData data}) {
+    return _NavigationReplaceEvent(
+      data: data,
+    );
+  }
 }
 
 /// @nodoc
@@ -49,6 +55,7 @@ mixin _$NavigationEvent {
     required TResult Function() pop,
     required TResult Function() fallback,
     required TResult Function(RouteInfo info) cleanAndPush,
+    required TResult Function(RouteData data) replace,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -57,6 +64,7 @@ mixin _$NavigationEvent {
     TResult Function()? pop,
     TResult Function()? fallback,
     TResult Function(RouteInfo info)? cleanAndPush,
+    TResult Function(RouteData data)? replace,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -65,6 +73,7 @@ mixin _$NavigationEvent {
     TResult Function()? pop,
     TResult Function()? fallback,
     TResult Function(RouteInfo info)? cleanAndPush,
+    TResult Function(RouteData data)? replace,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -74,6 +83,7 @@ mixin _$NavigationEvent {
     required TResult Function(_NavigationPopEvent value) pop,
     required TResult Function(_NavigationFallbackEvent value) fallback,
     required TResult Function(_NavigationCleanAndPushEvent value) cleanAndPush,
+    required TResult Function(_NavigationReplaceEvent value) replace,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -82,6 +92,7 @@ mixin _$NavigationEvent {
     TResult Function(_NavigationPopEvent value)? pop,
     TResult Function(_NavigationFallbackEvent value)? fallback,
     TResult Function(_NavigationCleanAndPushEvent value)? cleanAndPush,
+    TResult Function(_NavigationReplaceEvent value)? replace,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -90,6 +101,7 @@ mixin _$NavigationEvent {
     TResult Function(_NavigationPopEvent value)? pop,
     TResult Function(_NavigationFallbackEvent value)? fallback,
     TResult Function(_NavigationCleanAndPushEvent value)? cleanAndPush,
+    TResult Function(_NavigationReplaceEvent value)? replace,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -191,6 +203,7 @@ class _$_NavigationPushEvent implements _NavigationPushEvent {
     required TResult Function() pop,
     required TResult Function() fallback,
     required TResult Function(RouteInfo info) cleanAndPush,
+    required TResult Function(RouteData data) replace,
   }) {
     return push(data);
   }
@@ -202,6 +215,7 @@ class _$_NavigationPushEvent implements _NavigationPushEvent {
     TResult Function()? pop,
     TResult Function()? fallback,
     TResult Function(RouteInfo info)? cleanAndPush,
+    TResult Function(RouteData data)? replace,
   }) {
     return push?.call(data);
   }
@@ -213,6 +227,7 @@ class _$_NavigationPushEvent implements _NavigationPushEvent {
     TResult Function()? pop,
     TResult Function()? fallback,
     TResult Function(RouteInfo info)? cleanAndPush,
+    TResult Function(RouteData data)? replace,
     required TResult orElse(),
   }) {
     if (push != null) {
@@ -228,6 +243,7 @@ class _$_NavigationPushEvent implements _NavigationPushEvent {
     required TResult Function(_NavigationPopEvent value) pop,
     required TResult Function(_NavigationFallbackEvent value) fallback,
     required TResult Function(_NavigationCleanAndPushEvent value) cleanAndPush,
+    required TResult Function(_NavigationReplaceEvent value) replace,
   }) {
     return push(this);
   }
@@ -239,6 +255,7 @@ class _$_NavigationPushEvent implements _NavigationPushEvent {
     TResult Function(_NavigationPopEvent value)? pop,
     TResult Function(_NavigationFallbackEvent value)? fallback,
     TResult Function(_NavigationCleanAndPushEvent value)? cleanAndPush,
+    TResult Function(_NavigationReplaceEvent value)? replace,
   }) {
     return push?.call(this);
   }
@@ -250,6 +267,7 @@ class _$_NavigationPushEvent implements _NavigationPushEvent {
     TResult Function(_NavigationPopEvent value)? pop,
     TResult Function(_NavigationFallbackEvent value)? fallback,
     TResult Function(_NavigationCleanAndPushEvent value)? cleanAndPush,
+    TResult Function(_NavigationReplaceEvent value)? replace,
     required TResult orElse(),
   }) {
     if (push != null) {
@@ -313,6 +331,7 @@ class _$_NavigationPopEvent implements _NavigationPopEvent {
     required TResult Function() pop,
     required TResult Function() fallback,
     required TResult Function(RouteInfo info) cleanAndPush,
+    required TResult Function(RouteData data) replace,
   }) {
     return pop();
   }
@@ -324,6 +343,7 @@ class _$_NavigationPopEvent implements _NavigationPopEvent {
     TResult Function()? pop,
     TResult Function()? fallback,
     TResult Function(RouteInfo info)? cleanAndPush,
+    TResult Function(RouteData data)? replace,
   }) {
     return pop?.call();
   }
@@ -335,6 +355,7 @@ class _$_NavigationPopEvent implements _NavigationPopEvent {
     TResult Function()? pop,
     TResult Function()? fallback,
     TResult Function(RouteInfo info)? cleanAndPush,
+    TResult Function(RouteData data)? replace,
     required TResult orElse(),
   }) {
     if (pop != null) {
@@ -350,6 +371,7 @@ class _$_NavigationPopEvent implements _NavigationPopEvent {
     required TResult Function(_NavigationPopEvent value) pop,
     required TResult Function(_NavigationFallbackEvent value) fallback,
     required TResult Function(_NavigationCleanAndPushEvent value) cleanAndPush,
+    required TResult Function(_NavigationReplaceEvent value) replace,
   }) {
     return pop(this);
   }
@@ -361,6 +383,7 @@ class _$_NavigationPopEvent implements _NavigationPopEvent {
     TResult Function(_NavigationPopEvent value)? pop,
     TResult Function(_NavigationFallbackEvent value)? fallback,
     TResult Function(_NavigationCleanAndPushEvent value)? cleanAndPush,
+    TResult Function(_NavigationReplaceEvent value)? replace,
   }) {
     return pop?.call(this);
   }
@@ -372,6 +395,7 @@ class _$_NavigationPopEvent implements _NavigationPopEvent {
     TResult Function(_NavigationPopEvent value)? pop,
     TResult Function(_NavigationFallbackEvent value)? fallback,
     TResult Function(_NavigationCleanAndPushEvent value)? cleanAndPush,
+    TResult Function(_NavigationReplaceEvent value)? replace,
     required TResult orElse(),
   }) {
     if (pop != null) {
@@ -430,6 +454,7 @@ class _$_NavigationFallbackEvent implements _NavigationFallbackEvent {
     required TResult Function() pop,
     required TResult Function() fallback,
     required TResult Function(RouteInfo info) cleanAndPush,
+    required TResult Function(RouteData data) replace,
   }) {
     return fallback();
   }
@@ -441,6 +466,7 @@ class _$_NavigationFallbackEvent implements _NavigationFallbackEvent {
     TResult Function()? pop,
     TResult Function()? fallback,
     TResult Function(RouteInfo info)? cleanAndPush,
+    TResult Function(RouteData data)? replace,
   }) {
     return fallback?.call();
   }
@@ -452,6 +478,7 @@ class _$_NavigationFallbackEvent implements _NavigationFallbackEvent {
     TResult Function()? pop,
     TResult Function()? fallback,
     TResult Function(RouteInfo info)? cleanAndPush,
+    TResult Function(RouteData data)? replace,
     required TResult orElse(),
   }) {
     if (fallback != null) {
@@ -467,6 +494,7 @@ class _$_NavigationFallbackEvent implements _NavigationFallbackEvent {
     required TResult Function(_NavigationPopEvent value) pop,
     required TResult Function(_NavigationFallbackEvent value) fallback,
     required TResult Function(_NavigationCleanAndPushEvent value) cleanAndPush,
+    required TResult Function(_NavigationReplaceEvent value) replace,
   }) {
     return fallback(this);
   }
@@ -478,6 +506,7 @@ class _$_NavigationFallbackEvent implements _NavigationFallbackEvent {
     TResult Function(_NavigationPopEvent value)? pop,
     TResult Function(_NavigationFallbackEvent value)? fallback,
     TResult Function(_NavigationCleanAndPushEvent value)? cleanAndPush,
+    TResult Function(_NavigationReplaceEvent value)? replace,
   }) {
     return fallback?.call(this);
   }
@@ -489,6 +518,7 @@ class _$_NavigationFallbackEvent implements _NavigationFallbackEvent {
     TResult Function(_NavigationPopEvent value)? pop,
     TResult Function(_NavigationFallbackEvent value)? fallback,
     TResult Function(_NavigationCleanAndPushEvent value)? cleanAndPush,
+    TResult Function(_NavigationReplaceEvent value)? replace,
     required TResult orElse(),
   }) {
     if (fallback != null) {
@@ -584,6 +614,7 @@ class _$_NavigationCleanAndPushEvent implements _NavigationCleanAndPushEvent {
     required TResult Function() pop,
     required TResult Function() fallback,
     required TResult Function(RouteInfo info) cleanAndPush,
+    required TResult Function(RouteData data) replace,
   }) {
     return cleanAndPush(info);
   }
@@ -595,6 +626,7 @@ class _$_NavigationCleanAndPushEvent implements _NavigationCleanAndPushEvent {
     TResult Function()? pop,
     TResult Function()? fallback,
     TResult Function(RouteInfo info)? cleanAndPush,
+    TResult Function(RouteData data)? replace,
   }) {
     return cleanAndPush?.call(info);
   }
@@ -606,6 +638,7 @@ class _$_NavigationCleanAndPushEvent implements _NavigationCleanAndPushEvent {
     TResult Function()? pop,
     TResult Function()? fallback,
     TResult Function(RouteInfo info)? cleanAndPush,
+    TResult Function(RouteData data)? replace,
     required TResult orElse(),
   }) {
     if (cleanAndPush != null) {
@@ -621,6 +654,7 @@ class _$_NavigationCleanAndPushEvent implements _NavigationCleanAndPushEvent {
     required TResult Function(_NavigationPopEvent value) pop,
     required TResult Function(_NavigationFallbackEvent value) fallback,
     required TResult Function(_NavigationCleanAndPushEvent value) cleanAndPush,
+    required TResult Function(_NavigationReplaceEvent value) replace,
   }) {
     return cleanAndPush(this);
   }
@@ -632,6 +666,7 @@ class _$_NavigationCleanAndPushEvent implements _NavigationCleanAndPushEvent {
     TResult Function(_NavigationPopEvent value)? pop,
     TResult Function(_NavigationFallbackEvent value)? fallback,
     TResult Function(_NavigationCleanAndPushEvent value)? cleanAndPush,
+    TResult Function(_NavigationReplaceEvent value)? replace,
   }) {
     return cleanAndPush?.call(this);
   }
@@ -643,6 +678,7 @@ class _$_NavigationCleanAndPushEvent implements _NavigationCleanAndPushEvent {
     TResult Function(_NavigationPopEvent value)? pop,
     TResult Function(_NavigationFallbackEvent value)? fallback,
     TResult Function(_NavigationCleanAndPushEvent value)? cleanAndPush,
+    TResult Function(_NavigationReplaceEvent value)? replace,
     required TResult orElse(),
   }) {
     if (cleanAndPush != null) {
@@ -660,6 +696,169 @@ abstract class _NavigationCleanAndPushEvent implements NavigationEvent {
   @JsonKey(ignore: true)
   _$NavigationCleanAndPushEventCopyWith<_NavigationCleanAndPushEvent>
       get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$NavigationReplaceEventCopyWith<$Res> {
+  factory _$NavigationReplaceEventCopyWith(_NavigationReplaceEvent value,
+          $Res Function(_NavigationReplaceEvent) then) =
+      __$NavigationReplaceEventCopyWithImpl<$Res>;
+  $Res call({RouteData data});
+
+  $RouteDataCopyWith<$Res> get data;
+}
+
+/// @nodoc
+class __$NavigationReplaceEventCopyWithImpl<$Res>
+    extends _$NavigationEventCopyWithImpl<$Res>
+    implements _$NavigationReplaceEventCopyWith<$Res> {
+  __$NavigationReplaceEventCopyWithImpl(_NavigationReplaceEvent _value,
+      $Res Function(_NavigationReplaceEvent) _then)
+      : super(_value, (v) => _then(v as _NavigationReplaceEvent));
+
+  @override
+  _NavigationReplaceEvent get _value => super._value as _NavigationReplaceEvent;
+
+  @override
+  $Res call({
+    Object? data = freezed,
+  }) {
+    return _then(_NavigationReplaceEvent(
+      data: data == freezed
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as RouteData,
+    ));
+  }
+
+  @override
+  $RouteDataCopyWith<$Res> get data {
+    return $RouteDataCopyWith<$Res>(_value.data, (value) {
+      return _then(_value.copyWith(data: value));
+    });
+  }
+}
+
+/// @nodoc
+
+class _$_NavigationReplaceEvent implements _NavigationReplaceEvent {
+  _$_NavigationReplaceEvent({required this.data});
+
+  @override
+  final RouteData data;
+
+  @override
+  String toString() {
+    return 'NavigationEvent.replace(data: $data)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other is _NavigationReplaceEvent &&
+            (identical(other.data, data) ||
+                const DeepCollectionEquality().equals(other.data, data)));
+  }
+
+  @override
+  int get hashCode =>
+      runtimeType.hashCode ^ const DeepCollectionEquality().hash(data);
+
+  @JsonKey(ignore: true)
+  @override
+  _$NavigationReplaceEventCopyWith<_NavigationReplaceEvent> get copyWith =>
+      __$NavigationReplaceEventCopyWithImpl<_NavigationReplaceEvent>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(RouteData data) push,
+    required TResult Function() pop,
+    required TResult Function() fallback,
+    required TResult Function(RouteInfo info) cleanAndPush,
+    required TResult Function(RouteData data) replace,
+  }) {
+    return replace(data);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function(RouteData data)? push,
+    TResult Function()? pop,
+    TResult Function()? fallback,
+    TResult Function(RouteInfo info)? cleanAndPush,
+    TResult Function(RouteData data)? replace,
+  }) {
+    return replace?.call(data);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(RouteData data)? push,
+    TResult Function()? pop,
+    TResult Function()? fallback,
+    TResult Function(RouteInfo info)? cleanAndPush,
+    TResult Function(RouteData data)? replace,
+    required TResult orElse(),
+  }) {
+    if (replace != null) {
+      return replace(data);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_NavigationPushEvent value) push,
+    required TResult Function(_NavigationPopEvent value) pop,
+    required TResult Function(_NavigationFallbackEvent value) fallback,
+    required TResult Function(_NavigationCleanAndPushEvent value) cleanAndPush,
+    required TResult Function(_NavigationReplaceEvent value) replace,
+  }) {
+    return replace(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_NavigationPushEvent value)? push,
+    TResult Function(_NavigationPopEvent value)? pop,
+    TResult Function(_NavigationFallbackEvent value)? fallback,
+    TResult Function(_NavigationCleanAndPushEvent value)? cleanAndPush,
+    TResult Function(_NavigationReplaceEvent value)? replace,
+  }) {
+    return replace?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_NavigationPushEvent value)? push,
+    TResult Function(_NavigationPopEvent value)? pop,
+    TResult Function(_NavigationFallbackEvent value)? fallback,
+    TResult Function(_NavigationCleanAndPushEvent value)? cleanAndPush,
+    TResult Function(_NavigationReplaceEvent value)? replace,
+    required TResult orElse(),
+  }) {
+    if (replace != null) {
+      return replace(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _NavigationReplaceEvent implements NavigationEvent {
+  factory _NavigationReplaceEvent({required RouteData data}) =
+      _$_NavigationReplaceEvent;
+
+  RouteData get data => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  _$NavigationReplaceEventCopyWith<_NavigationReplaceEvent> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc

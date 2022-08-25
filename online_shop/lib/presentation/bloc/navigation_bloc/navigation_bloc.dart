@@ -15,11 +15,11 @@ class NavigationBloc extends BaseBloc<NavigationEvent, NavigationState> {
     on<_NavigationPushEvent>(_handlePushEvent);
     on<_NavigationPopEvent>(_handlePopEvent);
     on<_NavigationCleanAndPushEvent>(_handleCleanAndPushEvent);
+    on<_NavigationReplaceEvent>(_handleReplaceEvent);
   }
 
   void _handlePushEvent(
       _NavigationPushEvent event, Emitter<NavigationState> emitter) {
-    print("========== navigation_bloc push");
     final newStack = <RouteData>[
       ...NavigationBlocExtension._routingHistory.last
     ];
@@ -68,6 +68,12 @@ class NavigationBloc extends BaseBloc<NavigationEvent, NavigationState> {
       ..add(configuration);
     emitter(NavigationPushState(
         info: RouteInfo(data: configuration, params: event.info.params)));
+  }
+
+  void _handleReplaceEvent(
+      _NavigationReplaceEvent event, Emitter<NavigationState> emitter) {
+    NavigationBlocExtension._routingHistory.removeLast();
+    add(NavigationEvent.push(data: event.data));
   }
 }
 

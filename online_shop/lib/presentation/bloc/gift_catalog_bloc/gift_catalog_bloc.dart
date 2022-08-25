@@ -7,7 +7,7 @@ part 'gift_catalog_bloc.freezed.dart';
 part 'gift_catalog_event.dart';
 part 'gift_catalog_state.dart';
 
-class GiftCatalogBloc extends Bloc<GiftCatalogEvent, GiftCatalogState> {
+class GiftCatalogBloc extends BaseBloc<GiftCatalogEvent, GiftCatalogState> {
   GiftCatalogBloc() : super(const _GiftCatalogInitialState()) {
     on<GiftCatalogEvent>(_handleInitialEvent);
   }
