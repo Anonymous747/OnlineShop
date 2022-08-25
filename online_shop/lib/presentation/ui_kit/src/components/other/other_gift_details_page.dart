@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:online_shop/common/constants/screen_sizes.dart';
+import 'package:online_shop/domain/view_model/details/index.dart';
 import 'package:online_shop/presentation/presentation.dart';
 
 const double _kSpaceBetweenColumns = 40;
 
 class OtherGiftDetailsPage extends StatelessWidget {
-  const OtherGiftDetailsPage({Key? key}) : super(key: key);
+  final DetailsViewModel viewModel;
+
+  const OtherGiftDetailsPage({required this.viewModel, Key? key})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -25,10 +29,10 @@ class OtherGiftDetailsPage extends StatelessWidget {
           ),
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
-              Expanded(child: DetailsBody()),
-              SizedBox(width: _kSpaceBetweenColumns),
-              DetailsExtraPosts(),
+            children: [
+              Expanded(child: DetailsBody(viewModel: viewModel)),
+              const SizedBox(width: _kSpaceBetweenColumns),
+              DetailsExtraPosts(viewModel: viewModel),
             ],
           ),
           const SizedBox(height: 80),

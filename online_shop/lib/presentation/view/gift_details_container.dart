@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:online_shop/presentation/presentation.dart';
 
 class GiftDetailsContainer extends StatelessWidget {
   const GiftDetailsContainer({Key? key}) : super(key: key);
@@ -7,9 +8,20 @@ class GiftDetailsContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ExsoWrapper(
-      child: ResponsiveWidget(
-        small: (_) => const SmallGiftDetailsPage(),
-        other: (_) => const OtherGiftDetailsPage(),
+      child: BlocBuilder<DetailsBloc, DetailsState>(
+        builder: (context, state) {
+          return state.maybeMap(
+            orElse: () => const Center(child: CircularProgressIndicator()),
+            loaded: (loadedState) {
+              return ResponsiveWidget(
+                small: (_) =>
+                    SmallGiftDetailsPage(viewModel: loadedState.viewModel),
+                other: (_) =>
+                    OtherGiftDetailsPage(viewModel: loadedState.viewModel),
+              );
+            },
+          );
+        },
       ),
     );
   }

@@ -1,5 +1,6 @@
 export './base_bloc.dart';
 export './bloc_factory.dart';
+export './details_bloc/details_bloc.dart';
 export './home_bloc/home_bloc.dart';
 export './login_bloc/login_bloc.dart';
 export './mixin/index.dart';
