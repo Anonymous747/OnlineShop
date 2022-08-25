@@ -6,3 +6,10 @@ class HomeRoute extends ExsoRoute {
   @override
   RouteData getRouteData(List<String> segments) => RouteData.home();
 }
+
+class GiftCatalogRoute extends ExsoRoute {
+  GiftCatalogRoute() : super('gift-shop-catalog');
+
+  @override
+  RouteData getRouteData(List<String> segments) => RouteData.giftCatalog();
+}

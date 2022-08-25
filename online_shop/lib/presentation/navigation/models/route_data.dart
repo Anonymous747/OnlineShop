@@ -11,10 +11,13 @@ class RouteData with _$RouteData {
 
   factory RouteData.details({required String id}) = DetailsRouteData;
 
+  factory RouteData.giftCatalog() = GiftCatalogRouteData;
+
   String get route => map(
         home: (_) => Pages.kHomePage,
         login: (_) => Pages.kLoginPage,
         details: (_) => Pages.kDetailsPage,
+        giftCatalog: (_) => Pages.kGiftShopCatalog,
       );
 
   static final List<RouteData> initialStack = [

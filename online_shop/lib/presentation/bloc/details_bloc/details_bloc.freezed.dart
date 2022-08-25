@@ -361,6 +361,8 @@ abstract class _$DetailsLoadedStateCopyWith<$Res> {
           _DetailsLoadedState value, $Res Function(_DetailsLoadedState) then) =
       __$DetailsLoadedStateCopyWithImpl<$Res>;
   $Res call({DetailsViewModel viewModel});
+
+  $DetailsViewModelCopyWith<$Res> get viewModel;
 }
 
 /// @nodoc
@@ -384,6 +386,13 @@ class __$DetailsLoadedStateCopyWithImpl<$Res>
           : viewModel // ignore: cast_nullable_to_non_nullable
               as DetailsViewModel,
     ));
+  }
+
+  @override
+  $DetailsViewModelCopyWith<$Res> get viewModel {
+    return $DetailsViewModelCopyWith<$Res>(_value.viewModel, (value) {
+      return _then(_value.copyWith(viewModel: value));
+    });
   }
 }
 

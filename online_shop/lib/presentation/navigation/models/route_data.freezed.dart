@@ -30,6 +30,10 @@ class _$RouteDataTearOff {
       id: id,
     );
   }
+
+  GiftCatalogRouteData giftCatalog() {
+    return GiftCatalogRouteData();
+  }
 }
 
 /// @nodoc
@@ -42,6 +46,7 @@ mixin _$RouteData {
     required TResult Function() home,
     required TResult Function() login,
     required TResult Function(String id) details,
+    required TResult Function() giftCatalog,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -49,6 +54,7 @@ mixin _$RouteData {
     TResult Function()? home,
     TResult Function()? login,
     TResult Function(String id)? details,
+    TResult Function()? giftCatalog,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -56,6 +62,7 @@ mixin _$RouteData {
     TResult Function()? home,
     TResult Function()? login,
     TResult Function(String id)? details,
+    TResult Function()? giftCatalog,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -64,6 +71,7 @@ mixin _$RouteData {
     required TResult Function(HomeRouteData value) home,
     required TResult Function(LoginRouteData value) login,
     required TResult Function(DetailsRouteData value) details,
+    required TResult Function(GiftCatalogRouteData value) giftCatalog,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -71,6 +79,7 @@ mixin _$RouteData {
     TResult Function(HomeRouteData value)? home,
     TResult Function(LoginRouteData value)? login,
     TResult Function(DetailsRouteData value)? details,
+    TResult Function(GiftCatalogRouteData value)? giftCatalog,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -78,6 +87,7 @@ mixin _$RouteData {
     TResult Function(HomeRouteData value)? home,
     TResult Function(LoginRouteData value)? login,
     TResult Function(DetailsRouteData value)? details,
+    TResult Function(GiftCatalogRouteData value)? giftCatalog,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -140,6 +150,7 @@ class _$HomeRouteData extends HomeRouteData {
     required TResult Function() home,
     required TResult Function() login,
     required TResult Function(String id) details,
+    required TResult Function() giftCatalog,
   }) {
     return home();
   }
@@ -150,6 +161,7 @@ class _$HomeRouteData extends HomeRouteData {
     TResult Function()? home,
     TResult Function()? login,
     TResult Function(String id)? details,
+    TResult Function()? giftCatalog,
   }) {
     return home?.call();
   }
@@ -160,6 +172,7 @@ class _$HomeRouteData extends HomeRouteData {
     TResult Function()? home,
     TResult Function()? login,
     TResult Function(String id)? details,
+    TResult Function()? giftCatalog,
     required TResult orElse(),
   }) {
     if (home != null) {
@@ -174,6 +187,7 @@ class _$HomeRouteData extends HomeRouteData {
     required TResult Function(HomeRouteData value) home,
     required TResult Function(LoginRouteData value) login,
     required TResult Function(DetailsRouteData value) details,
+    required TResult Function(GiftCatalogRouteData value) giftCatalog,
   }) {
     return home(this);
   }
@@ -184,6 +198,7 @@ class _$HomeRouteData extends HomeRouteData {
     TResult Function(HomeRouteData value)? home,
     TResult Function(LoginRouteData value)? login,
     TResult Function(DetailsRouteData value)? details,
+    TResult Function(GiftCatalogRouteData value)? giftCatalog,
   }) {
     return home?.call(this);
   }
@@ -194,6 +209,7 @@ class _$HomeRouteData extends HomeRouteData {
     TResult Function(HomeRouteData value)? home,
     TResult Function(LoginRouteData value)? login,
     TResult Function(DetailsRouteData value)? details,
+    TResult Function(GiftCatalogRouteData value)? giftCatalog,
     required TResult orElse(),
   }) {
     if (home != null) {
@@ -250,6 +266,7 @@ class _$LoginRouteData extends LoginRouteData {
     required TResult Function() home,
     required TResult Function() login,
     required TResult Function(String id) details,
+    required TResult Function() giftCatalog,
   }) {
     return login();
   }
@@ -260,6 +277,7 @@ class _$LoginRouteData extends LoginRouteData {
     TResult Function()? home,
     TResult Function()? login,
     TResult Function(String id)? details,
+    TResult Function()? giftCatalog,
   }) {
     return login?.call();
   }
@@ -270,6 +288,7 @@ class _$LoginRouteData extends LoginRouteData {
     TResult Function()? home,
     TResult Function()? login,
     TResult Function(String id)? details,
+    TResult Function()? giftCatalog,
     required TResult orElse(),
   }) {
     if (login != null) {
@@ -284,6 +303,7 @@ class _$LoginRouteData extends LoginRouteData {
     required TResult Function(HomeRouteData value) home,
     required TResult Function(LoginRouteData value) login,
     required TResult Function(DetailsRouteData value) details,
+    required TResult Function(GiftCatalogRouteData value) giftCatalog,
   }) {
     return login(this);
   }
@@ -294,6 +314,7 @@ class _$LoginRouteData extends LoginRouteData {
     TResult Function(HomeRouteData value)? home,
     TResult Function(LoginRouteData value)? login,
     TResult Function(DetailsRouteData value)? details,
+    TResult Function(GiftCatalogRouteData value)? giftCatalog,
   }) {
     return login?.call(this);
   }
@@ -304,6 +325,7 @@ class _$LoginRouteData extends LoginRouteData {
     TResult Function(HomeRouteData value)? home,
     TResult Function(LoginRouteData value)? login,
     TResult Function(DetailsRouteData value)? details,
+    TResult Function(GiftCatalogRouteData value)? giftCatalog,
     required TResult orElse(),
   }) {
     if (login != null) {
@@ -385,6 +407,7 @@ class _$DetailsRouteData extends DetailsRouteData {
     required TResult Function() home,
     required TResult Function() login,
     required TResult Function(String id) details,
+    required TResult Function() giftCatalog,
   }) {
     return details(id);
   }
@@ -395,6 +418,7 @@ class _$DetailsRouteData extends DetailsRouteData {
     TResult Function()? home,
     TResult Function()? login,
     TResult Function(String id)? details,
+    TResult Function()? giftCatalog,
   }) {
     return details?.call(id);
   }
@@ -405,6 +429,7 @@ class _$DetailsRouteData extends DetailsRouteData {
     TResult Function()? home,
     TResult Function()? login,
     TResult Function(String id)? details,
+    TResult Function()? giftCatalog,
     required TResult orElse(),
   }) {
     if (details != null) {
@@ -419,6 +444,7 @@ class _$DetailsRouteData extends DetailsRouteData {
     required TResult Function(HomeRouteData value) home,
     required TResult Function(LoginRouteData value) login,
     required TResult Function(DetailsRouteData value) details,
+    required TResult Function(GiftCatalogRouteData value) giftCatalog,
   }) {
     return details(this);
   }
@@ -429,6 +455,7 @@ class _$DetailsRouteData extends DetailsRouteData {
     TResult Function(HomeRouteData value)? home,
     TResult Function(LoginRouteData value)? login,
     TResult Function(DetailsRouteData value)? details,
+    TResult Function(GiftCatalogRouteData value)? giftCatalog,
   }) {
     return details?.call(this);
   }
@@ -439,6 +466,7 @@ class _$DetailsRouteData extends DetailsRouteData {
     TResult Function(HomeRouteData value)? home,
     TResult Function(LoginRouteData value)? login,
     TResult Function(DetailsRouteData value)? details,
+    TResult Function(GiftCatalogRouteData value)? giftCatalog,
     required TResult orElse(),
   }) {
     if (details != null) {
@@ -456,4 +484,121 @@ abstract class DetailsRouteData extends RouteData {
   @JsonKey(ignore: true)
   $DetailsRouteDataCopyWith<DetailsRouteData> get copyWith =>
       throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $GiftCatalogRouteDataCopyWith<$Res> {
+  factory $GiftCatalogRouteDataCopyWith(GiftCatalogRouteData value,
+          $Res Function(GiftCatalogRouteData) then) =
+      _$GiftCatalogRouteDataCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class _$GiftCatalogRouteDataCopyWithImpl<$Res>
+    extends _$RouteDataCopyWithImpl<$Res>
+    implements $GiftCatalogRouteDataCopyWith<$Res> {
+  _$GiftCatalogRouteDataCopyWithImpl(
+      GiftCatalogRouteData _value, $Res Function(GiftCatalogRouteData) _then)
+      : super(_value, (v) => _then(v as GiftCatalogRouteData));
+
+  @override
+  GiftCatalogRouteData get _value => super._value as GiftCatalogRouteData;
+}
+
+/// @nodoc
+
+class _$GiftCatalogRouteData extends GiftCatalogRouteData {
+  _$GiftCatalogRouteData() : super._();
+
+  @override
+  String toString() {
+    return 'RouteData.giftCatalog()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) || (other is GiftCatalogRouteData);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() home,
+    required TResult Function() login,
+    required TResult Function(String id) details,
+    required TResult Function() giftCatalog,
+  }) {
+    return giftCatalog();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? home,
+    TResult Function()? login,
+    TResult Function(String id)? details,
+    TResult Function()? giftCatalog,
+  }) {
+    return giftCatalog?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? home,
+    TResult Function()? login,
+    TResult Function(String id)? details,
+    TResult Function()? giftCatalog,
+    required TResult orElse(),
+  }) {
+    if (giftCatalog != null) {
+      return giftCatalog();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(HomeRouteData value) home,
+    required TResult Function(LoginRouteData value) login,
+    required TResult Function(DetailsRouteData value) details,
+    required TResult Function(GiftCatalogRouteData value) giftCatalog,
+  }) {
+    return giftCatalog(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(HomeRouteData value)? home,
+    TResult Function(LoginRouteData value)? login,
+    TResult Function(DetailsRouteData value)? details,
+    TResult Function(GiftCatalogRouteData value)? giftCatalog,
+  }) {
+    return giftCatalog?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(HomeRouteData value)? home,
+    TResult Function(LoginRouteData value)? login,
+    TResult Function(DetailsRouteData value)? details,
+    TResult Function(GiftCatalogRouteData value)? giftCatalog,
+    required TResult orElse(),
+  }) {
+    if (giftCatalog != null) {
+      return giftCatalog(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class GiftCatalogRouteData extends RouteData {
+  factory GiftCatalogRouteData() = _$GiftCatalogRouteData;
+  GiftCatalogRouteData._() : super._();
 }
