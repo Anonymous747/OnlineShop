@@ -20,7 +20,7 @@ class _$GiftKindViewModelTearOff {
   _GiftKindViewModel call(
       {required String image,
       required String title,
-      dynamic searchKeyword = ''}) {
+      String searchKeyword = ''}) {
     return _GiftKindViewModel(
       image: image,
       title: title,
@@ -36,7 +36,7 @@ const $GiftKindViewModel = _$GiftKindViewModelTearOff();
 mixin _$GiftKindViewModel {
   String get image => throw _privateConstructorUsedError;
   String get title => throw _privateConstructorUsedError;
-  dynamic get searchKeyword => throw _privateConstructorUsedError;
+  String get searchKeyword => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $GiftKindViewModelCopyWith<GiftKindViewModel> get copyWith =>
@@ -48,7 +48,7 @@ abstract class $GiftKindViewModelCopyWith<$Res> {
   factory $GiftKindViewModelCopyWith(
           GiftKindViewModel value, $Res Function(GiftKindViewModel) then) =
       _$GiftKindViewModelCopyWithImpl<$Res>;
-  $Res call({String image, String title, dynamic searchKeyword});
+  $Res call({String image, String title, String searchKeyword});
 }
 
 /// @nodoc
@@ -78,7 +78,7 @@ class _$GiftKindViewModelCopyWithImpl<$Res>
       searchKeyword: searchKeyword == freezed
           ? _value.searchKeyword
           : searchKeyword // ignore: cast_nullable_to_non_nullable
-              as dynamic,
+              as String,
     ));
   }
 }
@@ -90,7 +90,7 @@ abstract class _$GiftKindViewModelCopyWith<$Res>
           _GiftKindViewModel value, $Res Function(_GiftKindViewModel) then) =
       __$GiftKindViewModelCopyWithImpl<$Res>;
   @override
-  $Res call({String image, String title, dynamic searchKeyword});
+  $Res call({String image, String title, String searchKeyword});
 }
 
 /// @nodoc
@@ -119,8 +119,10 @@ class __$GiftKindViewModelCopyWithImpl<$Res>
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      searchKeyword:
-          searchKeyword == freezed ? _value.searchKeyword : searchKeyword,
+      searchKeyword: searchKeyword == freezed
+          ? _value.searchKeyword
+          : searchKeyword // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -137,7 +139,7 @@ class _$_GiftKindViewModel implements _GiftKindViewModel {
   final String title;
   @JsonKey(defaultValue: '')
   @override
-  final dynamic searchKeyword;
+  final String searchKeyword;
 
   @override
   String toString() {
@@ -174,14 +176,14 @@ abstract class _GiftKindViewModel implements GiftKindViewModel {
   const factory _GiftKindViewModel(
       {required String image,
       required String title,
-      dynamic searchKeyword}) = _$_GiftKindViewModel;
+      String searchKeyword}) = _$_GiftKindViewModel;
 
   @override
   String get image => throw _privateConstructorUsedError;
   @override
   String get title => throw _privateConstructorUsedError;
   @override
-  dynamic get searchKeyword => throw _privateConstructorUsedError;
+  String get searchKeyword => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$GiftKindViewModelCopyWith<_GiftKindViewModel> get copyWith =>

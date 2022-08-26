@@ -20,6 +20,12 @@ class _$GiftCatalogEventTearOff {
   _GiftCatalogInitializeEvent initialize() {
     return const _GiftCatalogInitializeEvent();
   }
+
+  _GiftCatalogSearchCategoryEvent searchCategory(String searchKeyword) {
+    return _GiftCatalogSearchCategoryEvent(
+      searchKeyword,
+    );
+  }
 }
 
 /// @nodoc
@@ -30,32 +36,39 @@ mixin _$GiftCatalogEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initialize,
+    required TResult Function(String searchKeyword) searchCategory,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? initialize,
+    TResult Function(String searchKeyword)? searchCategory,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initialize,
+    TResult Function(String searchKeyword)? searchCategory,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_GiftCatalogInitializeEvent value) initialize,
+    required TResult Function(_GiftCatalogSearchCategoryEvent value)
+        searchCategory,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_GiftCatalogInitializeEvent value)? initialize,
+    TResult Function(_GiftCatalogSearchCategoryEvent value)? searchCategory,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_GiftCatalogInitializeEvent value)? initialize,
+    TResult Function(_GiftCatalogSearchCategoryEvent value)? searchCategory,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -121,6 +134,7 @@ class _$_GiftCatalogInitializeEvent implements _GiftCatalogInitializeEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initialize,
+    required TResult Function(String searchKeyword) searchCategory,
   }) {
     return initialize();
   }
@@ -129,6 +143,7 @@ class _$_GiftCatalogInitializeEvent implements _GiftCatalogInitializeEvent {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? initialize,
+    TResult Function(String searchKeyword)? searchCategory,
   }) {
     return initialize?.call();
   }
@@ -137,6 +152,7 @@ class _$_GiftCatalogInitializeEvent implements _GiftCatalogInitializeEvent {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initialize,
+    TResult Function(String searchKeyword)? searchCategory,
     required TResult orElse(),
   }) {
     if (initialize != null) {
@@ -149,6 +165,8 @@ class _$_GiftCatalogInitializeEvent implements _GiftCatalogInitializeEvent {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_GiftCatalogInitializeEvent value) initialize,
+    required TResult Function(_GiftCatalogSearchCategoryEvent value)
+        searchCategory,
   }) {
     return initialize(this);
   }
@@ -157,6 +175,7 @@ class _$_GiftCatalogInitializeEvent implements _GiftCatalogInitializeEvent {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_GiftCatalogInitializeEvent value)? initialize,
+    TResult Function(_GiftCatalogSearchCategoryEvent value)? searchCategory,
   }) {
     return initialize?.call(this);
   }
@@ -165,6 +184,7 @@ class _$_GiftCatalogInitializeEvent implements _GiftCatalogInitializeEvent {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_GiftCatalogInitializeEvent value)? initialize,
+    TResult Function(_GiftCatalogSearchCategoryEvent value)? searchCategory,
     required TResult orElse(),
   }) {
     if (initialize != null) {
@@ -176,6 +196,148 @@ class _$_GiftCatalogInitializeEvent implements _GiftCatalogInitializeEvent {
 
 abstract class _GiftCatalogInitializeEvent implements GiftCatalogEvent {
   const factory _GiftCatalogInitializeEvent() = _$_GiftCatalogInitializeEvent;
+}
+
+/// @nodoc
+abstract class _$GiftCatalogSearchCategoryEventCopyWith<$Res> {
+  factory _$GiftCatalogSearchCategoryEventCopyWith(
+          _GiftCatalogSearchCategoryEvent value,
+          $Res Function(_GiftCatalogSearchCategoryEvent) then) =
+      __$GiftCatalogSearchCategoryEventCopyWithImpl<$Res>;
+  $Res call({String searchKeyword});
+}
+
+/// @nodoc
+class __$GiftCatalogSearchCategoryEventCopyWithImpl<$Res>
+    extends _$GiftCatalogEventCopyWithImpl<$Res>
+    implements _$GiftCatalogSearchCategoryEventCopyWith<$Res> {
+  __$GiftCatalogSearchCategoryEventCopyWithImpl(
+      _GiftCatalogSearchCategoryEvent _value,
+      $Res Function(_GiftCatalogSearchCategoryEvent) _then)
+      : super(_value, (v) => _then(v as _GiftCatalogSearchCategoryEvent));
+
+  @override
+  _GiftCatalogSearchCategoryEvent get _value =>
+      super._value as _GiftCatalogSearchCategoryEvent;
+
+  @override
+  $Res call({
+    Object? searchKeyword = freezed,
+  }) {
+    return _then(_GiftCatalogSearchCategoryEvent(
+      searchKeyword == freezed
+          ? _value.searchKeyword
+          : searchKeyword // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$_GiftCatalogSearchCategoryEvent
+    implements _GiftCatalogSearchCategoryEvent {
+  const _$_GiftCatalogSearchCategoryEvent(this.searchKeyword);
+
+  @override
+  final String searchKeyword;
+
+  @override
+  String toString() {
+    return 'GiftCatalogEvent.searchCategory(searchKeyword: $searchKeyword)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other is _GiftCatalogSearchCategoryEvent &&
+            (identical(other.searchKeyword, searchKeyword) ||
+                const DeepCollectionEquality()
+                    .equals(other.searchKeyword, searchKeyword)));
+  }
+
+  @override
+  int get hashCode =>
+      runtimeType.hashCode ^ const DeepCollectionEquality().hash(searchKeyword);
+
+  @JsonKey(ignore: true)
+  @override
+  _$GiftCatalogSearchCategoryEventCopyWith<_GiftCatalogSearchCategoryEvent>
+      get copyWith => __$GiftCatalogSearchCategoryEventCopyWithImpl<
+          _GiftCatalogSearchCategoryEvent>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initialize,
+    required TResult Function(String searchKeyword) searchCategory,
+  }) {
+    return searchCategory(searchKeyword);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? initialize,
+    TResult Function(String searchKeyword)? searchCategory,
+  }) {
+    return searchCategory?.call(searchKeyword);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initialize,
+    TResult Function(String searchKeyword)? searchCategory,
+    required TResult orElse(),
+  }) {
+    if (searchCategory != null) {
+      return searchCategory(searchKeyword);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_GiftCatalogInitializeEvent value) initialize,
+    required TResult Function(_GiftCatalogSearchCategoryEvent value)
+        searchCategory,
+  }) {
+    return searchCategory(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_GiftCatalogInitializeEvent value)? initialize,
+    TResult Function(_GiftCatalogSearchCategoryEvent value)? searchCategory,
+  }) {
+    return searchCategory?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_GiftCatalogInitializeEvent value)? initialize,
+    TResult Function(_GiftCatalogSearchCategoryEvent value)? searchCategory,
+    required TResult orElse(),
+  }) {
+    if (searchCategory != null) {
+      return searchCategory(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _GiftCatalogSearchCategoryEvent implements GiftCatalogEvent {
+  const factory _GiftCatalogSearchCategoryEvent(String searchKeyword) =
+      _$_GiftCatalogSearchCategoryEvent;
+
+  String get searchKeyword => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  _$GiftCatalogSearchCategoryEventCopyWith<_GiftCatalogSearchCategoryEvent>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc

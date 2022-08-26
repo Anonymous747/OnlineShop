@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:online_shop/domain/domain.dart';
 
 class SmallGiftCatalogPage extends StatelessWidget {
-  const SmallGiftCatalogPage({Key? key}) : super(key: key);
+  final GiftCatalogViewModel viewModel;
+
+  const SmallGiftCatalogPage({required this.viewModel, Key? key})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {

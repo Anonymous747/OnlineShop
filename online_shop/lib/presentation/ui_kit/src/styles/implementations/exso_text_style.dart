@@ -69,4 +69,13 @@ class ExsoTextStyle extends AppTextStyle {
       color: color,
     );
   }
+
+  @override
+  TextStyle getHeaderLSmallerTextStyle(Color? color) {
+    return TextStyle(
+      fontSize: 40,
+      fontWeight: FontWeight.w600,
+      color: color,
+    );
+  }
 }

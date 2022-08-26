@@ -7,6 +7,6 @@ class GiftKindViewModel with _$GiftKindViewModel {
   const factory GiftKindViewModel({
     required String image,
     required String title,
-    @Default('') searchKeyword,
+    @Default('') String searchKeyword,
   }) = _GiftKindViewModel;
 }

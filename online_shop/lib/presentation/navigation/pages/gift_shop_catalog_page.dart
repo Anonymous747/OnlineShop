@@ -7,7 +7,8 @@ class GiftShopCatalogPage extends Page<Object> {
   Route<Object> createRoute(BuildContext context) {
     return getRoute(
         const GiftShopCatalogContainer().createWithProvider<GiftCatalogBloc>(
-      (_) => BlocFactory.instance.get<GiftCatalogBloc>(),
+      (_) => BlocFactory.instance.get<GiftCatalogBloc>()
+        ..add(const GiftCatalogEvent.initialize()),
     ));
   }
 }

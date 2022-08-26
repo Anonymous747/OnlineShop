@@ -74,6 +74,8 @@ class AppStylingBase implements AppStyling {
         return appTextstyle.getBodySBoldTextStyle(color);
       case ExsoText.bodySTinyText:
         return appTextstyle.getBodySTinyTextStyle(color);
+      case ExsoText.headerLSmallerText:
+        return appTextstyle.getHeaderLSmallerTextStyle(color);
     }
   }
 }

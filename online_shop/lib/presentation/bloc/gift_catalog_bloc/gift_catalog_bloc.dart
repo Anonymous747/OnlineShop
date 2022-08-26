@@ -9,12 +9,19 @@ part 'gift_catalog_state.dart';
 
 class GiftCatalogBloc extends BaseBloc<GiftCatalogEvent, GiftCatalogState> {
   GiftCatalogBloc() : super(const _GiftCatalogInitialState()) {
-    on<GiftCatalogEvent>(_handleInitialEvent);
+    on<_GiftCatalogInitializeEvent>(_handleInitialEvent);
+    on<_GiftCatalogSearchCategoryEvent>(_handleSearchCategoryEvent);
   }
 
-  Future<void> _handleInitialEvent(
-      GiftCatalogEvent event, Emitter<GiftCatalogState> emitter) async {
+  Future<void> _handleInitialEvent(_GiftCatalogInitializeEvent event,
+      Emitter<GiftCatalogState> emitter) async {
     emitter(const GiftCatalogState.loaded(viewModel));
+  }
+
+  Future<void> _handleSearchCategoryEvent(_GiftCatalogSearchCategoryEvent event,
+      Emitter<GiftCatalogState> emitter) async {
+    print(
+        "========== gift_catalog_bloc searchCategory event.keyWord = ${event.searchKeyword}");
   }
 }
 

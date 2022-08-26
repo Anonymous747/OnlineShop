@@ -9,4 +9,5 @@ abstract class AppTextStyle {
   TextStyle getHeaderMBoldTextStyle(Color? color);
   TextStyle getBodySBoldTextStyle(Color? color);
   TextStyle getBodySTinyTextStyle(Color? color);
+  TextStyle getHeaderLSmallerTextStyle(Color? color);
 }
