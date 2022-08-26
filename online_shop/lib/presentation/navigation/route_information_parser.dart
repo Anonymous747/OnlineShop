@@ -8,7 +8,6 @@ class ExsoRouteInformationParser extends RouteInformationParser<RouteInfo> {
     final route = routeInformation.location ?? '';
     final uri = _getUri(route);
     final path = [...uri.pathSegments];
-    print("========== route_information_parser uri = $uri");
 
     List<RouteData> routeData;
     try {
@@ -17,13 +16,10 @@ class ExsoRouteInformationParser extends RouteInformationParser<RouteInfo> {
       routeData = RouteData.fallbackStack;
     }
 
-    print("========== route_information_parser routeData = $routeData");
-
     return RouteInfo(data: routeData);
   }
 
   Uri _getUri(String url) {
-    print("========== route_information_parser url = $url");
     final uriString =
         url.endsWith('/') ? url.substring(0, url.length - 1) : url;
     return Uri.parse(Uri.decodeFull(uriString));
@@ -34,8 +30,6 @@ class ExsoRouteInformationParser extends RouteInformationParser<RouteInfo> {
     RouteInfo configuration,
   ) {
     final buffer = StringBuffer();
-    print(
-        "========== route_information_parser configuration.data = ${configuration.data}");
     for (var e in configuration.data) {
       buffer.write(e.routeToPath);
     }

@@ -13,11 +13,14 @@ class RouteData with _$RouteData {
 
   factory RouteData.giftCatalog() = GiftCatalogRouteData;
 
+  factory RouteData.giftSearch({String? keyWord}) = GiftSearchRouteData;
+
   String get route => map(
         home: (_) => Pages.kHomePage,
         login: (_) => Pages.kLoginPage,
         details: (_) => Pages.kDetailsPage,
         giftCatalog: (_) => Pages.kGiftShopCatalog,
+        giftSearch: (_) => Pages.kGiftShopSearch,
       );
 
   static final List<RouteData> initialStack = [

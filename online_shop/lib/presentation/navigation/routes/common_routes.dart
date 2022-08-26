@@ -12,8 +12,25 @@ class DetailsRoute extends ExsoRoute {
 
   @override
   RouteData getRouteData(List<String> segments) {
-    print("========== common_routes segments = $segments");
     return RouteData.details(id: segments[1]);
+  }
+
+  @override
+  int getSegmentsNumber(List<String> segments) {
+    return segments.length > 1 ? 2 : 1;
+  }
+}
+
+class GiftShopSearchRoute extends ExsoRoute {
+  GiftShopSearchRoute() : super('gift-shop-search');
+
+  @override
+  RouteData getRouteData(List<String> segments) {
+    if (segments.length == 1) {
+      return RouteData.giftSearch();
+    }
+
+    return RouteData.giftSearch(keyWord: segments[1]);
   }
 
   @override

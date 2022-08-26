@@ -17,7 +17,7 @@ class SearchField extends StatefulWidget {
     this.iconWidth = 50,
     this.iconSize,
     this.cursorHeight,
-    this.width,
+    this.width = 100,
     Key? key,
   }) : super(key: key);
 
@@ -46,9 +46,11 @@ class _SearchFieldState extends State<SearchField> {
           ),
           child: Icon(Icons.search, size: widget.iconSize),
         ),
-        SizedBox(
-          width: widget.width,
-          height: widget.height,
+        ConstrainedBox(
+          constraints: BoxConstraints.tightFor(
+            width: (widget.width ?? 0 - (widget.iconWidth ?? 0)),
+            height: widget.height,
+          ),
           child: CustomTextField(
             borderColor: _kBorderColor,
             borderRadius: const BorderRadius.only(
