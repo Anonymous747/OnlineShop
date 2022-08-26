@@ -4,14 +4,16 @@ import 'package:online_shop/domain/view_model/view_model.dart';
 import 'package:online_shop/presentation/presentation.dart';
 
 class CollectionLayout extends StatelessWidget {
-  final Text title;
+  final Widget title;
   final ComponentBuilder collectionComponent;
   final ComponentBuilder? actionComponent;
+  final double padding;
 
   const CollectionLayout({
     required this.title,
     required this.collectionComponent,
     this.actionComponent,
+    this.padding = 10,
     Key? key,
   }) : super(key: key);
 
@@ -27,10 +29,11 @@ class CollectionLayout extends StatelessWidget {
             actionComponent?.call(context) ?? Container(),
           ],
         ),
-        const SizedBox(height: 10),
-        SeparatedLine(
-            color: context.styling.getColor(ExsoColor.detailsBackground)),
-        const SizedBox(height: 10),
+        Padding(
+          padding: EdgeInsets.symmetric(vertical: padding),
+          child: SeparatedLine(
+              color: context.styling.getColor(ExsoColor.detailsBackground)),
+        ),
         collectionComponent.call(context),
       ],
     );

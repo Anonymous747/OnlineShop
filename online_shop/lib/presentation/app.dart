@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_gen/gen_l10n/s.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:online_shop/common/extensions/bloc_extensions.dart';
 import 'package:provider/provider.dart';
 
 import 'presentation.dart';
@@ -68,7 +70,12 @@ class _AppState extends State<App> {
                     child: child!,
                   );
                 },
-              );
+              ).createWithMultiProvider([
+                BlocProvider<PrimaryBarBloc>(
+                  create: (context) =>
+                      BlocFactory.instance.get<PrimaryBarBloc>(),
+                )
+              ]);
             },
           );
         });

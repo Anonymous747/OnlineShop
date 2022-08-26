@@ -1,4 +1,5 @@
 export './facility_cell.dart';
+export './gift_kind_cell.dart';
 export './hideable_card.dart';
 export './icon_with_text_box.dart';
 export './newest_member_card.dart';

@@ -7,4 +7,5 @@ enum ExsoText {
   bodySTinyText,
   headerLText,
   headetMBoldText,
+  headerLSmallerText,
 }

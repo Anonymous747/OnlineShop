@@ -11,4 +11,7 @@ class NavigationEvent extends BaseEvent with _$NavigationEvent {
 
   factory NavigationEvent.cleanAndPush({required RouteInfo info}) =
       _NavigationCleanAndPushEvent;
+
+  factory NavigationEvent.replace({required RouteData data}) =
+      _NavigationReplaceEvent;
 }

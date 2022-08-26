@@ -3,9 +3,6 @@ import 'package:online_shop/common/common.dart';
 import 'package:online_shop/domain/domain.dart';
 import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
 
-const double _kNewestMemberCardHeight = 190;
-const double _kImageSize = 100;
-
 class NewestMemberCard extends StatelessWidget {
   final NewestMemberViewModel viewModel;
 
@@ -34,10 +31,18 @@ class NewestMemberCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Text(context.s.newestMembersCardSpeciality),
+            Text(
+              context.s.newestMembersCardSpeciality,
+              style: context.styling
+                  .getTextStyle(exsoText: ExsoText.bodySBoldText),
+            ),
             Text(viewModel.specialty),
             const SizedBox(height: 10),
-            Text(context.s.newestMembersCardLocation),
+            Text(
+              context.s.newestMembersCardLocation,
+              style: context.styling
+                  .getTextStyle(exsoText: ExsoText.bodySBoldText),
+            ),
             Text(viewModel.location),
             const SizedBox(height: 10),
             UiMaterialButton.roundedWithDefaultText(
