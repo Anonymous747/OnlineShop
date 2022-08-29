@@ -9,8 +9,8 @@ class SeparatedLine extends StatelessWidget {
   const SeparatedLine({
     this.padding = 0,
     this.color,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

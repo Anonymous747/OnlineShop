@@ -24,11 +24,11 @@ class RouteData with _$RouteData {
       );
 
   static final List<RouteData> initialStack = [
-    RouteData.login(),
+    RouteData.home(),
   ];
 
   static final List<RouteData> fallbackStack = [
-    RouteData.login(),
+    RouteData.home(),
   ];
 
   RouteData._();

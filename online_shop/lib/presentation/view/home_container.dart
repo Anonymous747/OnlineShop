@@ -4,7 +4,7 @@ import 'package:online_shop/common/common.dart';
 import 'package:online_shop/presentation/presentation.dart';
 
 class HomeContainer extends StatefulWidget {
-  const HomeContainer({Key? key}) : super(key: key);
+  const HomeContainer({super.key});
 
   @override
   State<HomeContainer> createState() => _HomeContainerState();

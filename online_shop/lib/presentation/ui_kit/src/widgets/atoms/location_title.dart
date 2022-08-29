@@ -5,7 +5,7 @@ import 'package:online_shop/domain/domain.dart';
 class LocationTitle extends StatelessWidget {
   final LocationDataViewModel viewModel;
 
-  const LocationTitle({required this.viewModel, Key? key}) : super(key: key);
+  const LocationTitle({required this.viewModel, super.key});
 
   @override
   Widget build(BuildContext context) {

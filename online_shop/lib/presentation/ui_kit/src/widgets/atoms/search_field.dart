@@ -18,8 +18,8 @@ class SearchField extends StatefulWidget {
     this.iconSize,
     this.cursorHeight,
     this.width = 100,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<SearchField> createState() => _SearchFieldState();

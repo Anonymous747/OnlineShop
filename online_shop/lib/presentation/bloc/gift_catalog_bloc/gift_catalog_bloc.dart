@@ -8,7 +8,7 @@ part 'gift_catalog_event.dart';
 part 'gift_catalog_state.dart';
 
 class GiftCatalogBloc extends BaseBloc<GiftCatalogEvent, GiftCatalogState> {
-  GiftCatalogBloc() : super(const _GiftCatalogInitialState()) {
+  GiftCatalogBloc() : super(_GiftCatalogInitialState()) {
     on<_GiftCatalogInitializeEvent>(_handleInitialEvent);
     on<_GiftCatalogSearchCategoryEvent>(_handleSearchCategoryEvent);
   }

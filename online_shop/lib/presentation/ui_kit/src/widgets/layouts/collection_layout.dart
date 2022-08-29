@@ -14,8 +14,8 @@ class CollectionLayout extends StatelessWidget {
     required this.collectionComponent,
     this.actionComponent,
     this.padding = 10,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

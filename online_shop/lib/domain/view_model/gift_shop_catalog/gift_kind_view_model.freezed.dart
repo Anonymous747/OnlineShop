@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'gift_kind_view_model.dart';
@@ -11,26 +12,7 @@ part of 'gift_kind_view_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$GiftKindViewModelTearOff {
-  const _$GiftKindViewModelTearOff();
-
-  _GiftKindViewModel call(
-      {required String image,
-      required String title,
-      String searchKeyword = ''}) {
-    return _GiftKindViewModel(
-      image: image,
-      title: title,
-      searchKeyword: searchKeyword,
-    );
-  }
-}
-
-/// @nodoc
-const $GiftKindViewModel = _$GiftKindViewModelTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$GiftKindViewModel {
@@ -84,25 +66,25 @@ class _$GiftKindViewModelCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$GiftKindViewModelCopyWith<$Res>
+abstract class _$$_GiftKindViewModelCopyWith<$Res>
     implements $GiftKindViewModelCopyWith<$Res> {
-  factory _$GiftKindViewModelCopyWith(
-          _GiftKindViewModel value, $Res Function(_GiftKindViewModel) then) =
-      __$GiftKindViewModelCopyWithImpl<$Res>;
+  factory _$$_GiftKindViewModelCopyWith(_$_GiftKindViewModel value,
+          $Res Function(_$_GiftKindViewModel) then) =
+      __$$_GiftKindViewModelCopyWithImpl<$Res>;
   @override
   $Res call({String image, String title, String searchKeyword});
 }
 
 /// @nodoc
-class __$GiftKindViewModelCopyWithImpl<$Res>
+class __$$_GiftKindViewModelCopyWithImpl<$Res>
     extends _$GiftKindViewModelCopyWithImpl<$Res>
-    implements _$GiftKindViewModelCopyWith<$Res> {
-  __$GiftKindViewModelCopyWithImpl(
-      _GiftKindViewModel _value, $Res Function(_GiftKindViewModel) _then)
-      : super(_value, (v) => _then(v as _GiftKindViewModel));
+    implements _$$_GiftKindViewModelCopyWith<$Res> {
+  __$$_GiftKindViewModelCopyWithImpl(
+      _$_GiftKindViewModel _value, $Res Function(_$_GiftKindViewModel) _then)
+      : super(_value, (v) => _then(v as _$_GiftKindViewModel));
 
   @override
-  _GiftKindViewModel get _value => super._value as _GiftKindViewModel;
+  _$_GiftKindViewModel get _value => super._value as _$_GiftKindViewModel;
 
   @override
   $Res call({
@@ -110,7 +92,7 @@ class __$GiftKindViewModelCopyWithImpl<$Res>
     Object? title = freezed,
     Object? searchKeyword = freezed,
   }) {
-    return _then(_GiftKindViewModel(
+    return _then(_$_GiftKindViewModel(
       image: image == freezed
           ? _value.image
           : image // ignore: cast_nullable_to_non_nullable
@@ -137,8 +119,8 @@ class _$_GiftKindViewModel implements _GiftKindViewModel {
   final String image;
   @override
   final String title;
-  @JsonKey(defaultValue: '')
   @override
+  @JsonKey()
   final String searchKeyword;
 
   @override
@@ -149,43 +131,42 @@ class _$_GiftKindViewModel implements _GiftKindViewModel {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _GiftKindViewModel &&
-            (identical(other.image, image) ||
-                const DeepCollectionEquality().equals(other.image, image)) &&
-            (identical(other.title, title) ||
-                const DeepCollectionEquality().equals(other.title, title)) &&
-            (identical(other.searchKeyword, searchKeyword) ||
-                const DeepCollectionEquality()
-                    .equals(other.searchKeyword, searchKeyword)));
+        (other.runtimeType == runtimeType &&
+            other is _$_GiftKindViewModel &&
+            const DeepCollectionEquality().equals(other.image, image) &&
+            const DeepCollectionEquality().equals(other.title, title) &&
+            const DeepCollectionEquality()
+                .equals(other.searchKeyword, searchKeyword));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(image) ^
-      const DeepCollectionEquality().hash(title) ^
-      const DeepCollectionEquality().hash(searchKeyword);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(image),
+      const DeepCollectionEquality().hash(title),
+      const DeepCollectionEquality().hash(searchKeyword));
 
   @JsonKey(ignore: true)
   @override
-  _$GiftKindViewModelCopyWith<_GiftKindViewModel> get copyWith =>
-      __$GiftKindViewModelCopyWithImpl<_GiftKindViewModel>(this, _$identity);
+  _$$_GiftKindViewModelCopyWith<_$_GiftKindViewModel> get copyWith =>
+      __$$_GiftKindViewModelCopyWithImpl<_$_GiftKindViewModel>(
+          this, _$identity);
 }
 
 abstract class _GiftKindViewModel implements GiftKindViewModel {
   const factory _GiftKindViewModel(
-      {required String image,
-      required String title,
-      String searchKeyword}) = _$_GiftKindViewModel;
+      {required final String image,
+      required final String title,
+      final String searchKeyword}) = _$_GiftKindViewModel;
 
   @override
-  String get image => throw _privateConstructorUsedError;
+  String get image;
   @override
-  String get title => throw _privateConstructorUsedError;
+  String get title;
   @override
-  String get searchKeyword => throw _privateConstructorUsedError;
+  String get searchKeyword;
   @override
   @JsonKey(ignore: true)
-  _$GiftKindViewModelCopyWith<_GiftKindViewModel> get copyWith =>
+  _$$_GiftKindViewModelCopyWith<_$_GiftKindViewModel> get copyWith =>
       throw _privateConstructorUsedError;
 }

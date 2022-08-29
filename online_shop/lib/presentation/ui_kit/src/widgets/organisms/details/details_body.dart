@@ -6,7 +6,7 @@ import 'package:online_shop/presentation/presentation.dart';
 class DetailsBody extends StatelessWidget {
   final DetailsViewModel viewModel;
 
-  const DetailsBody({required this.viewModel, Key? key}) : super(key: key);
+  const DetailsBody({required this.viewModel, super.key});
 
   @override
   Widget build(BuildContext context) {

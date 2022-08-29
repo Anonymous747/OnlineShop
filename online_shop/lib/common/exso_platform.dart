@@ -35,7 +35,7 @@ abstract class ExsoPlatform {
     // try {
     //   return await _dispayMetricsMethodChannel.invokeMethod('shortestSide');
     // } catch (e) {
-    return MediaQueryData.fromWindow(WidgetsBinding.instance!.window)
+    return MediaQueryData.fromWindow(WidgetsBinding.instance.window)
         .size
         .shortestSide;
     // }

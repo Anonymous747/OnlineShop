@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'footer_hint_view_model.dart';
@@ -11,23 +12,7 @@ part of 'footer_hint_view_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$FooterHintViewModelTearOff {
-  const _$FooterHintViewModelTearOff();
-
-  _FooterHintViewModel call(
-      {required String title, required List<String> hints}) {
-    return _FooterHintViewModel(
-      title: title,
-      hints: hints,
-    );
-  }
-}
-
-/// @nodoc
-const $FooterHintViewModel = _$FooterHintViewModelTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$FooterHintViewModel {
@@ -75,38 +60,38 @@ class _$FooterHintViewModelCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$FooterHintViewModelCopyWith<$Res>
+abstract class _$$_FooterHintViewModelCopyWith<$Res>
     implements $FooterHintViewModelCopyWith<$Res> {
-  factory _$FooterHintViewModelCopyWith(_FooterHintViewModel value,
-          $Res Function(_FooterHintViewModel) then) =
-      __$FooterHintViewModelCopyWithImpl<$Res>;
+  factory _$$_FooterHintViewModelCopyWith(_$_FooterHintViewModel value,
+          $Res Function(_$_FooterHintViewModel) then) =
+      __$$_FooterHintViewModelCopyWithImpl<$Res>;
   @override
   $Res call({String title, List<String> hints});
 }
 
 /// @nodoc
-class __$FooterHintViewModelCopyWithImpl<$Res>
+class __$$_FooterHintViewModelCopyWithImpl<$Res>
     extends _$FooterHintViewModelCopyWithImpl<$Res>
-    implements _$FooterHintViewModelCopyWith<$Res> {
-  __$FooterHintViewModelCopyWithImpl(
-      _FooterHintViewModel _value, $Res Function(_FooterHintViewModel) _then)
-      : super(_value, (v) => _then(v as _FooterHintViewModel));
+    implements _$$_FooterHintViewModelCopyWith<$Res> {
+  __$$_FooterHintViewModelCopyWithImpl(_$_FooterHintViewModel _value,
+      $Res Function(_$_FooterHintViewModel) _then)
+      : super(_value, (v) => _then(v as _$_FooterHintViewModel));
 
   @override
-  _FooterHintViewModel get _value => super._value as _FooterHintViewModel;
+  _$_FooterHintViewModel get _value => super._value as _$_FooterHintViewModel;
 
   @override
   $Res call({
     Object? title = freezed,
     Object? hints = freezed,
   }) {
-    return _then(_FooterHintViewModel(
+    return _then(_$_FooterHintViewModel(
       title: title == freezed
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
       hints: hints == freezed
-          ? _value.hints
+          ? _value._hints
           : hints // ignore: cast_nullable_to_non_nullable
               as List<String>,
     ));
@@ -116,12 +101,18 @@ class __$FooterHintViewModelCopyWithImpl<$Res>
 /// @nodoc
 
 class _$_FooterHintViewModel implements _FooterHintViewModel {
-  const _$_FooterHintViewModel({required this.title, required this.hints});
+  const _$_FooterHintViewModel(
+      {required this.title, required final List<String> hints})
+      : _hints = hints;
 
   @override
   final String title;
+  final List<String> _hints;
   @override
-  final List<String> hints;
+  List<String> get hints {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_hints);
+  }
 
   @override
   String toString() {
@@ -131,37 +122,36 @@ class _$_FooterHintViewModel implements _FooterHintViewModel {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _FooterHintViewModel &&
-            (identical(other.title, title) ||
-                const DeepCollectionEquality().equals(other.title, title)) &&
-            (identical(other.hints, hints) ||
-                const DeepCollectionEquality().equals(other.hints, hints)));
+        (other.runtimeType == runtimeType &&
+            other is _$_FooterHintViewModel &&
+            const DeepCollectionEquality().equals(other.title, title) &&
+            const DeepCollectionEquality().equals(other._hints, _hints));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(title) ^
-      const DeepCollectionEquality().hash(hints);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(title),
+      const DeepCollectionEquality().hash(_hints));
 
   @JsonKey(ignore: true)
   @override
-  _$FooterHintViewModelCopyWith<_FooterHintViewModel> get copyWith =>
-      __$FooterHintViewModelCopyWithImpl<_FooterHintViewModel>(
+  _$$_FooterHintViewModelCopyWith<_$_FooterHintViewModel> get copyWith =>
+      __$$_FooterHintViewModelCopyWithImpl<_$_FooterHintViewModel>(
           this, _$identity);
 }
 
 abstract class _FooterHintViewModel implements FooterHintViewModel {
   const factory _FooterHintViewModel(
-      {required String title,
-      required List<String> hints}) = _$_FooterHintViewModel;
+      {required final String title,
+      required final List<String> hints}) = _$_FooterHintViewModel;
 
   @override
-  String get title => throw _privateConstructorUsedError;
+  String get title;
   @override
-  List<String> get hints => throw _privateConstructorUsedError;
+  List<String> get hints;
   @override
   @JsonKey(ignore: true)
-  _$FooterHintViewModelCopyWith<_FooterHintViewModel> get copyWith =>
+  _$$_FooterHintViewModelCopyWith<_$_FooterHintViewModel> get copyWith =>
       throw _privateConstructorUsedError;
 }

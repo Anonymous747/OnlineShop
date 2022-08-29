@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class GiftSearchBody extends StatelessWidget {
-  const GiftSearchBody({Key? key}) : super(key: key);
+  const GiftSearchBody({super.key});
 
   @override
   Widget build(BuildContext context) {

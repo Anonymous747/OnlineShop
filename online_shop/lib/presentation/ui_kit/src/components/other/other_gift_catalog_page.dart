@@ -8,8 +8,7 @@ import 'package:online_shop/presentation/presentation.dart';
 class OtherGiftCatalogPage extends StatelessWidget {
   final GiftCatalogViewModel viewModel;
 
-  const OtherGiftCatalogPage({required this.viewModel, Key? key})
-      : super(key: key);
+  const OtherGiftCatalogPage({required this.viewModel, super.key});
 
   @override
   Widget build(BuildContext context) {

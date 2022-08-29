@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'details_view_models.dart';
@@ -11,32 +12,7 @@ part of 'details_view_models.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$DetailsViewModelTearOff {
-  const _$DetailsViewModelTearOff();
-
-  _DetailsViewModel call(
-      {required AuthorDataViewModel authorData,
-      required DetailsDescriptionViewModel detailsDescription,
-      required LocationDataViewModel locationData,
-      required PhotoDemonstratorViewModel photoDemonstrator,
-      required PostedDataViewModel postedData,
-      required List<RelatedPostViewModel> relatedPost}) {
-    return _DetailsViewModel(
-      authorData: authorData,
-      detailsDescription: detailsDescription,
-      locationData: locationData,
-      photoDemonstrator: photoDemonstrator,
-      postedData: postedData,
-      relatedPost: relatedPost,
-    );
-  }
-}
-
-/// @nodoc
-const $DetailsViewModel = _$DetailsViewModelTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$DetailsViewModel {
@@ -160,11 +136,11 @@ class _$DetailsViewModelCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$DetailsViewModelCopyWith<$Res>
+abstract class _$$_DetailsViewModelCopyWith<$Res>
     implements $DetailsViewModelCopyWith<$Res> {
-  factory _$DetailsViewModelCopyWith(
-          _DetailsViewModel value, $Res Function(_DetailsViewModel) then) =
-      __$DetailsViewModelCopyWithImpl<$Res>;
+  factory _$$_DetailsViewModelCopyWith(
+          _$_DetailsViewModel value, $Res Function(_$_DetailsViewModel) then) =
+      __$$_DetailsViewModelCopyWithImpl<$Res>;
   @override
   $Res call(
       {AuthorDataViewModel authorData,
@@ -187,15 +163,15 @@ abstract class _$DetailsViewModelCopyWith<$Res>
 }
 
 /// @nodoc
-class __$DetailsViewModelCopyWithImpl<$Res>
+class __$$_DetailsViewModelCopyWithImpl<$Res>
     extends _$DetailsViewModelCopyWithImpl<$Res>
-    implements _$DetailsViewModelCopyWith<$Res> {
-  __$DetailsViewModelCopyWithImpl(
-      _DetailsViewModel _value, $Res Function(_DetailsViewModel) _then)
-      : super(_value, (v) => _then(v as _DetailsViewModel));
+    implements _$$_DetailsViewModelCopyWith<$Res> {
+  __$$_DetailsViewModelCopyWithImpl(
+      _$_DetailsViewModel _value, $Res Function(_$_DetailsViewModel) _then)
+      : super(_value, (v) => _then(v as _$_DetailsViewModel));
 
   @override
-  _DetailsViewModel get _value => super._value as _DetailsViewModel;
+  _$_DetailsViewModel get _value => super._value as _$_DetailsViewModel;
 
   @override
   $Res call({
@@ -206,7 +182,7 @@ class __$DetailsViewModelCopyWithImpl<$Res>
     Object? postedData = freezed,
     Object? relatedPost = freezed,
   }) {
-    return _then(_DetailsViewModel(
+    return _then(_$_DetailsViewModel(
       authorData: authorData == freezed
           ? _value.authorData
           : authorData // ignore: cast_nullable_to_non_nullable
@@ -228,7 +204,7 @@ class __$DetailsViewModelCopyWithImpl<$Res>
           : postedData // ignore: cast_nullable_to_non_nullable
               as PostedDataViewModel,
       relatedPost: relatedPost == freezed
-          ? _value.relatedPost
+          ? _value._relatedPost
           : relatedPost // ignore: cast_nullable_to_non_nullable
               as List<RelatedPostViewModel>,
     ));
@@ -244,7 +220,8 @@ class _$_DetailsViewModel implements _DetailsViewModel {
       required this.locationData,
       required this.photoDemonstrator,
       required this.postedData,
-      required this.relatedPost});
+      required final List<RelatedPostViewModel> relatedPost})
+      : _relatedPost = relatedPost;
 
   @override
   final AuthorDataViewModel authorData;
@@ -256,8 +233,12 @@ class _$_DetailsViewModel implements _DetailsViewModel {
   final PhotoDemonstratorViewModel photoDemonstrator;
   @override
   final PostedDataViewModel postedData;
+  final List<RelatedPostViewModel> _relatedPost;
   @override
-  final List<RelatedPostViewModel> relatedPost;
+  List<RelatedPostViewModel> get relatedPost {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_relatedPost);
+  }
 
   @override
   String toString() {
@@ -267,69 +248,62 @@ class _$_DetailsViewModel implements _DetailsViewModel {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _DetailsViewModel &&
-            (identical(other.authorData, authorData) ||
-                const DeepCollectionEquality()
-                    .equals(other.authorData, authorData)) &&
-            (identical(other.detailsDescription, detailsDescription) ||
-                const DeepCollectionEquality()
-                    .equals(other.detailsDescription, detailsDescription)) &&
-            (identical(other.locationData, locationData) ||
-                const DeepCollectionEquality()
-                    .equals(other.locationData, locationData)) &&
-            (identical(other.photoDemonstrator, photoDemonstrator) ||
-                const DeepCollectionEquality()
-                    .equals(other.photoDemonstrator, photoDemonstrator)) &&
-            (identical(other.postedData, postedData) ||
-                const DeepCollectionEquality()
-                    .equals(other.postedData, postedData)) &&
-            (identical(other.relatedPost, relatedPost) ||
-                const DeepCollectionEquality()
-                    .equals(other.relatedPost, relatedPost)));
+        (other.runtimeType == runtimeType &&
+            other is _$_DetailsViewModel &&
+            const DeepCollectionEquality()
+                .equals(other.authorData, authorData) &&
+            const DeepCollectionEquality()
+                .equals(other.detailsDescription, detailsDescription) &&
+            const DeepCollectionEquality()
+                .equals(other.locationData, locationData) &&
+            const DeepCollectionEquality()
+                .equals(other.photoDemonstrator, photoDemonstrator) &&
+            const DeepCollectionEquality()
+                .equals(other.postedData, postedData) &&
+            const DeepCollectionEquality()
+                .equals(other._relatedPost, _relatedPost));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(authorData) ^
-      const DeepCollectionEquality().hash(detailsDescription) ^
-      const DeepCollectionEquality().hash(locationData) ^
-      const DeepCollectionEquality().hash(photoDemonstrator) ^
-      const DeepCollectionEquality().hash(postedData) ^
-      const DeepCollectionEquality().hash(relatedPost);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(authorData),
+      const DeepCollectionEquality().hash(detailsDescription),
+      const DeepCollectionEquality().hash(locationData),
+      const DeepCollectionEquality().hash(photoDemonstrator),
+      const DeepCollectionEquality().hash(postedData),
+      const DeepCollectionEquality().hash(_relatedPost));
 
   @JsonKey(ignore: true)
   @override
-  _$DetailsViewModelCopyWith<_DetailsViewModel> get copyWith =>
-      __$DetailsViewModelCopyWithImpl<_DetailsViewModel>(this, _$identity);
+  _$$_DetailsViewModelCopyWith<_$_DetailsViewModel> get copyWith =>
+      __$$_DetailsViewModelCopyWithImpl<_$_DetailsViewModel>(this, _$identity);
 }
 
 abstract class _DetailsViewModel implements DetailsViewModel {
   const factory _DetailsViewModel(
-      {required AuthorDataViewModel authorData,
-      required DetailsDescriptionViewModel detailsDescription,
-      required LocationDataViewModel locationData,
-      required PhotoDemonstratorViewModel photoDemonstrator,
-      required PostedDataViewModel postedData,
-      required List<RelatedPostViewModel> relatedPost}) = _$_DetailsViewModel;
+          {required final AuthorDataViewModel authorData,
+          required final DetailsDescriptionViewModel detailsDescription,
+          required final LocationDataViewModel locationData,
+          required final PhotoDemonstratorViewModel photoDemonstrator,
+          required final PostedDataViewModel postedData,
+          required final List<RelatedPostViewModel> relatedPost}) =
+      _$_DetailsViewModel;
 
   @override
-  AuthorDataViewModel get authorData => throw _privateConstructorUsedError;
+  AuthorDataViewModel get authorData;
   @override
-  DetailsDescriptionViewModel get detailsDescription =>
-      throw _privateConstructorUsedError;
+  DetailsDescriptionViewModel get detailsDescription;
   @override
-  LocationDataViewModel get locationData => throw _privateConstructorUsedError;
+  LocationDataViewModel get locationData;
   @override
-  PhotoDemonstratorViewModel get photoDemonstrator =>
-      throw _privateConstructorUsedError;
+  PhotoDemonstratorViewModel get photoDemonstrator;
   @override
-  PostedDataViewModel get postedData => throw _privateConstructorUsedError;
+  PostedDataViewModel get postedData;
   @override
-  List<RelatedPostViewModel> get relatedPost =>
-      throw _privateConstructorUsedError;
+  List<RelatedPostViewModel> get relatedPost;
   @override
   @JsonKey(ignore: true)
-  _$DetailsViewModelCopyWith<_DetailsViewModel> get copyWith =>
+  _$$_DetailsViewModelCopyWith<_$_DetailsViewModel> get copyWith =>
       throw _privateConstructorUsedError;
 }

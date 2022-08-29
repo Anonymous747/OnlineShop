@@ -8,7 +8,7 @@ const double _kPrimaryBarHeight = 50;
 class ExsoWrapper extends StatelessWidget {
   final Widget child;
 
-  const ExsoWrapper({required this.child, Key? key}) : super(key: key);
+  const ExsoWrapper({required this.child, super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -7,7 +7,7 @@ const double _kPaddingBetweenElements = 60;
 class OtherHomePage extends StatelessWidget {
   final HomeViewModel viewModel;
 
-  const OtherHomePage({required this.viewModel, Key? key}) : super(key: key);
+  const OtherHomePage({required this.viewModel, super.key});
 
   @override
   Widget build(BuildContext context) {

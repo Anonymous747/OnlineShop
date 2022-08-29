@@ -15,8 +15,8 @@ class IconWithTextBox extends StatelessWidget {
     this.margin,
     this.padding,
     this.color,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

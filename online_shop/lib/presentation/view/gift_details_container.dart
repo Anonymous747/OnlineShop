@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:online_shop/presentation/presentation.dart';
 
 class GiftDetailsContainer extends StatelessWidget {
-  const GiftDetailsContainer({Key? key}) : super(key: key);
+  const GiftDetailsContainer({super.key});
 
   @override
   Widget build(BuildContext context) {

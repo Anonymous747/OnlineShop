@@ -4,7 +4,7 @@ import 'package:online_shop/domain/domain.dart';
 class SmallHomePage extends StatefulWidget {
   final HomeViewModel viewModel;
 
-  const SmallHomePage({required this.viewModel, Key? key}) : super(key: key);
+  const SmallHomePage({required this.viewModel, super.key});
 
   @override
   State<SmallHomePage> createState() => _SmallHomePageState();

@@ -6,7 +6,7 @@ import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
 const double _kPosterSearchHeight = 360;
 
 class PosterSearch extends StatelessWidget {
-  const PosterSearch({Key? key}) : super(key: key);
+  const PosterSearch({super.key});
 
   @override
   Widget build(BuildContext context) {

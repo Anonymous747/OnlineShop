@@ -18,8 +18,8 @@ class ImageSlider extends StatefulWidget {
     required this.onSwitchToRight,
     this.pageController,
     this.description = '',
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<ImageSlider> createState() => _ImageSliderState();

@@ -8,8 +8,8 @@ class AuthorDataBox extends StatelessWidget {
 
   const AuthorDataBox({
     required this.viewModel,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

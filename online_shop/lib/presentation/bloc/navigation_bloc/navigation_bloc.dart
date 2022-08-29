@@ -78,11 +78,11 @@ class NavigationBloc extends BaseBloc<NavigationEvent, NavigationState> {
 }
 
 extension NavigationBlocExtension on NavigationBloc {
-  bool get hasOnlyOnePage => _routingHistory.lastOrNull?.length == 1;
+  bool get hasOnlyOnePage => _routingHistory.last.length == 1;
 
   static final _routingHistory = <List<RouteData>>[RouteData.initialStack];
 
-  static RouteData? get currentPage => _routingHistory.lastOrNull?.lastOrNull;
+  static RouteData? get currentPage => _routingHistory.last.last;
 
   static List<RouteData> get previousPage {
     if (_routingHistory.isNotEmpty && _routingHistory.length >= 2) {

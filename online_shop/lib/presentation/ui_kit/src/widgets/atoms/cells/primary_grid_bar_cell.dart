@@ -17,8 +17,8 @@ class PrimaryGridBarCell extends StatefulWidget {
     this.width = 0,
     this.height = 60,
     this.isBorderNeed = true,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<PrimaryGridBarCell> createState() => _PrimaryGridBarCellState();

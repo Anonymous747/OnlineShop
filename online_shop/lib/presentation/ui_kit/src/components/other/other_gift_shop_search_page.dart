@@ -6,8 +6,7 @@ import 'package:online_shop/presentation/presentation.dart';
 class OtherGiftShopSearchPage extends StatelessWidget {
   final GiftShopSearchViewModel viewModel;
 
-  const OtherGiftShopSearchPage({required this.viewModel, Key? key})
-      : super(key: key);
+  const OtherGiftShopSearchPage({required this.viewModel, super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,9 +14,9 @@ class OtherGiftShopSearchPage extends StatelessWidget {
       padding: const EdgeInsets.symmetric(
           horizontal: ScreenSizes.kHeaderHorizontalPadding, vertical: 20),
       child: Row(
-        children: const [
-          GiftSearchExtraPart(),
-          GiftSearchBody(),
+        children: [
+          GiftSearchExtraPart(viewModel: viewModel),
+          const GiftSearchBody(),
         ],
       ),
     );

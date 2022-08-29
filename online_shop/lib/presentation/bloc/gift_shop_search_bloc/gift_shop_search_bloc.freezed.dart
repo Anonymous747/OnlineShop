@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'gift_shop_search_bloc.dart';
@@ -11,51 +12,45 @@ part of 'gift_shop_search_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$GiftShopSearchEventTearOff {
-  const _$GiftShopSearchEventTearOff();
-
-  _GiftSearchInitializeEvent initialize() {
-    return const _GiftSearchInitializeEvent();
-  }
-}
-
-/// @nodoc
-const $GiftShopSearchEvent = _$GiftShopSearchEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$GiftShopSearchEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initialize,
+    required TResult Function() seekFor,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? initialize,
+    TResult Function()? seekFor,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initialize,
+    TResult Function()? seekFor,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_GiftSearchInitializeEvent value) initialize,
+    required TResult Function(_GiftSearchSeekForEvent value) seekFor,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_GiftSearchInitializeEvent value)? initialize,
+    TResult Function(_GiftSearchSeekForEvent value)? seekFor,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_GiftSearchInitializeEvent value)? initialize,
+    TResult Function(_GiftSearchSeekForEvent value)? seekFor,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -79,23 +74,25 @@ class _$GiftShopSearchEventCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$GiftSearchInitializeEventCopyWith<$Res> {
-  factory _$GiftSearchInitializeEventCopyWith(_GiftSearchInitializeEvent value,
-          $Res Function(_GiftSearchInitializeEvent) then) =
-      __$GiftSearchInitializeEventCopyWithImpl<$Res>;
+abstract class _$$_GiftSearchInitializeEventCopyWith<$Res> {
+  factory _$$_GiftSearchInitializeEventCopyWith(
+          _$_GiftSearchInitializeEvent value,
+          $Res Function(_$_GiftSearchInitializeEvent) then) =
+      __$$_GiftSearchInitializeEventCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$GiftSearchInitializeEventCopyWithImpl<$Res>
+class __$$_GiftSearchInitializeEventCopyWithImpl<$Res>
     extends _$GiftShopSearchEventCopyWithImpl<$Res>
-    implements _$GiftSearchInitializeEventCopyWith<$Res> {
-  __$GiftSearchInitializeEventCopyWithImpl(_GiftSearchInitializeEvent _value,
-      $Res Function(_GiftSearchInitializeEvent) _then)
-      : super(_value, (v) => _then(v as _GiftSearchInitializeEvent));
+    implements _$$_GiftSearchInitializeEventCopyWith<$Res> {
+  __$$_GiftSearchInitializeEventCopyWithImpl(
+      _$_GiftSearchInitializeEvent _value,
+      $Res Function(_$_GiftSearchInitializeEvent) _then)
+      : super(_value, (v) => _then(v as _$_GiftSearchInitializeEvent));
 
   @override
-  _GiftSearchInitializeEvent get _value =>
-      super._value as _GiftSearchInitializeEvent;
+  _$_GiftSearchInitializeEvent get _value =>
+      super._value as _$_GiftSearchInitializeEvent;
 }
 
 /// @nodoc
@@ -110,7 +107,9 @@ class _$_GiftSearchInitializeEvent implements _GiftSearchInitializeEvent {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _GiftSearchInitializeEvent);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_GiftSearchInitializeEvent);
   }
 
   @override
@@ -120,6 +119,7 @@ class _$_GiftSearchInitializeEvent implements _GiftSearchInitializeEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initialize,
+    required TResult Function() seekFor,
   }) {
     return initialize();
   }
@@ -128,6 +128,7 @@ class _$_GiftSearchInitializeEvent implements _GiftSearchInitializeEvent {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? initialize,
+    TResult Function()? seekFor,
   }) {
     return initialize?.call();
   }
@@ -136,6 +137,7 @@ class _$_GiftSearchInitializeEvent implements _GiftSearchInitializeEvent {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initialize,
+    TResult Function()? seekFor,
     required TResult orElse(),
   }) {
     if (initialize != null) {
@@ -148,6 +150,7 @@ class _$_GiftSearchInitializeEvent implements _GiftSearchInitializeEvent {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_GiftSearchInitializeEvent value) initialize,
+    required TResult Function(_GiftSearchSeekForEvent value) seekFor,
   }) {
     return initialize(this);
   }
@@ -156,6 +159,7 @@ class _$_GiftSearchInitializeEvent implements _GiftSearchInitializeEvent {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_GiftSearchInitializeEvent value)? initialize,
+    TResult Function(_GiftSearchSeekForEvent value)? seekFor,
   }) {
     return initialize?.call(this);
   }
@@ -164,6 +168,7 @@ class _$_GiftSearchInitializeEvent implements _GiftSearchInitializeEvent {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_GiftSearchInitializeEvent value)? initialize,
+    TResult Function(_GiftSearchSeekForEvent value)? seekFor,
     required TResult orElse(),
   }) {
     if (initialize != null) {
@@ -178,22 +183,111 @@ abstract class _GiftSearchInitializeEvent implements GiftShopSearchEvent {
 }
 
 /// @nodoc
-class _$GiftShopSearchStateTearOff {
-  const _$GiftShopSearchStateTearOff();
-
-  _GiftSearchInitialState initial() {
-    return const _GiftSearchInitialState();
-  }
-
-  _GiftSearchLoadedState loaded(GiftShopSearchViewModel viewModel) {
-    return _GiftSearchLoadedState(
-      viewModel,
-    );
-  }
+abstract class _$$_GiftSearchSeekForEventCopyWith<$Res> {
+  factory _$$_GiftSearchSeekForEventCopyWith(_$_GiftSearchSeekForEvent value,
+          $Res Function(_$_GiftSearchSeekForEvent) then) =
+      __$$_GiftSearchSeekForEventCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-const $GiftShopSearchState = _$GiftShopSearchStateTearOff();
+class __$$_GiftSearchSeekForEventCopyWithImpl<$Res>
+    extends _$GiftShopSearchEventCopyWithImpl<$Res>
+    implements _$$_GiftSearchSeekForEventCopyWith<$Res> {
+  __$$_GiftSearchSeekForEventCopyWithImpl(_$_GiftSearchSeekForEvent _value,
+      $Res Function(_$_GiftSearchSeekForEvent) _then)
+      : super(_value, (v) => _then(v as _$_GiftSearchSeekForEvent));
+
+  @override
+  _$_GiftSearchSeekForEvent get _value =>
+      super._value as _$_GiftSearchSeekForEvent;
+}
+
+/// @nodoc
+
+class _$_GiftSearchSeekForEvent implements _GiftSearchSeekForEvent {
+  const _$_GiftSearchSeekForEvent();
+
+  @override
+  String toString() {
+    return 'GiftShopSearchEvent.seekFor()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_GiftSearchSeekForEvent);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initialize,
+    required TResult Function() seekFor,
+  }) {
+    return seekFor();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? initialize,
+    TResult Function()? seekFor,
+  }) {
+    return seekFor?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initialize,
+    TResult Function()? seekFor,
+    required TResult orElse(),
+  }) {
+    if (seekFor != null) {
+      return seekFor();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_GiftSearchInitializeEvent value) initialize,
+    required TResult Function(_GiftSearchSeekForEvent value) seekFor,
+  }) {
+    return seekFor(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_GiftSearchInitializeEvent value)? initialize,
+    TResult Function(_GiftSearchSeekForEvent value)? seekFor,
+  }) {
+    return seekFor?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_GiftSearchInitializeEvent value)? initialize,
+    TResult Function(_GiftSearchSeekForEvent value)? seekFor,
+    required TResult orElse(),
+  }) {
+    if (seekFor != null) {
+      return seekFor(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _GiftSearchSeekForEvent implements GiftShopSearchEvent {
+  const factory _GiftSearchSeekForEvent() = _$_GiftSearchSeekForEvent;
+}
 
 /// @nodoc
 mixin _$GiftShopSearchState {
@@ -255,22 +349,23 @@ class _$GiftShopSearchStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$GiftSearchInitialStateCopyWith<$Res> {
-  factory _$GiftSearchInitialStateCopyWith(_GiftSearchInitialState value,
-          $Res Function(_GiftSearchInitialState) then) =
-      __$GiftSearchInitialStateCopyWithImpl<$Res>;
+abstract class _$$_GiftSearchInitialStateCopyWith<$Res> {
+  factory _$$_GiftSearchInitialStateCopyWith(_$_GiftSearchInitialState value,
+          $Res Function(_$_GiftSearchInitialState) then) =
+      __$$_GiftSearchInitialStateCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$GiftSearchInitialStateCopyWithImpl<$Res>
+class __$$_GiftSearchInitialStateCopyWithImpl<$Res>
     extends _$GiftShopSearchStateCopyWithImpl<$Res>
-    implements _$GiftSearchInitialStateCopyWith<$Res> {
-  __$GiftSearchInitialStateCopyWithImpl(_GiftSearchInitialState _value,
-      $Res Function(_GiftSearchInitialState) _then)
-      : super(_value, (v) => _then(v as _GiftSearchInitialState));
+    implements _$$_GiftSearchInitialStateCopyWith<$Res> {
+  __$$_GiftSearchInitialStateCopyWithImpl(_$_GiftSearchInitialState _value,
+      $Res Function(_$_GiftSearchInitialState) _then)
+      : super(_value, (v) => _then(v as _$_GiftSearchInitialState));
 
   @override
-  _GiftSearchInitialState get _value => super._value as _GiftSearchInitialState;
+  _$_GiftSearchInitialState get _value =>
+      super._value as _$_GiftSearchInitialState;
 }
 
 /// @nodoc
@@ -285,7 +380,9 @@ class _$_GiftSearchInitialState implements _GiftSearchInitialState {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _GiftSearchInitialState);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_GiftSearchInitialState);
   }
 
   @override
@@ -359,31 +456,32 @@ abstract class _GiftSearchInitialState implements GiftShopSearchState {
 }
 
 /// @nodoc
-abstract class _$GiftSearchLoadedStateCopyWith<$Res> {
-  factory _$GiftSearchLoadedStateCopyWith(_GiftSearchLoadedState value,
-          $Res Function(_GiftSearchLoadedState) then) =
-      __$GiftSearchLoadedStateCopyWithImpl<$Res>;
+abstract class _$$_GiftSearchLoadedStateCopyWith<$Res> {
+  factory _$$_GiftSearchLoadedStateCopyWith(_$_GiftSearchLoadedState value,
+          $Res Function(_$_GiftSearchLoadedState) then) =
+      __$$_GiftSearchLoadedStateCopyWithImpl<$Res>;
   $Res call({GiftShopSearchViewModel viewModel});
 
   $GiftShopSearchViewModelCopyWith<$Res> get viewModel;
 }
 
 /// @nodoc
-class __$GiftSearchLoadedStateCopyWithImpl<$Res>
+class __$$_GiftSearchLoadedStateCopyWithImpl<$Res>
     extends _$GiftShopSearchStateCopyWithImpl<$Res>
-    implements _$GiftSearchLoadedStateCopyWith<$Res> {
-  __$GiftSearchLoadedStateCopyWithImpl(_GiftSearchLoadedState _value,
-      $Res Function(_GiftSearchLoadedState) _then)
-      : super(_value, (v) => _then(v as _GiftSearchLoadedState));
+    implements _$$_GiftSearchLoadedStateCopyWith<$Res> {
+  __$$_GiftSearchLoadedStateCopyWithImpl(_$_GiftSearchLoadedState _value,
+      $Res Function(_$_GiftSearchLoadedState) _then)
+      : super(_value, (v) => _then(v as _$_GiftSearchLoadedState));
 
   @override
-  _GiftSearchLoadedState get _value => super._value as _GiftSearchLoadedState;
+  _$_GiftSearchLoadedState get _value =>
+      super._value as _$_GiftSearchLoadedState;
 
   @override
   $Res call({
     Object? viewModel = freezed,
   }) {
-    return _then(_GiftSearchLoadedState(
+    return _then(_$_GiftSearchLoadedState(
       viewModel == freezed
           ? _value.viewModel
           : viewModel // ignore: cast_nullable_to_non_nullable
@@ -415,20 +513,19 @@ class _$_GiftSearchLoadedState implements _GiftSearchLoadedState {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _GiftSearchLoadedState &&
-            (identical(other.viewModel, viewModel) ||
-                const DeepCollectionEquality()
-                    .equals(other.viewModel, viewModel)));
+        (other.runtimeType == runtimeType &&
+            other is _$_GiftSearchLoadedState &&
+            const DeepCollectionEquality().equals(other.viewModel, viewModel));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(viewModel);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(viewModel));
 
   @JsonKey(ignore: true)
   @override
-  _$GiftSearchLoadedStateCopyWith<_GiftSearchLoadedState> get copyWith =>
-      __$GiftSearchLoadedStateCopyWithImpl<_GiftSearchLoadedState>(
+  _$$_GiftSearchLoadedStateCopyWith<_$_GiftSearchLoadedState> get copyWith =>
+      __$$_GiftSearchLoadedStateCopyWithImpl<_$_GiftSearchLoadedState>(
           this, _$identity);
 
   @override
@@ -495,11 +592,11 @@ class _$_GiftSearchLoadedState implements _GiftSearchLoadedState {
 }
 
 abstract class _GiftSearchLoadedState implements GiftShopSearchState {
-  const factory _GiftSearchLoadedState(GiftShopSearchViewModel viewModel) =
-      _$_GiftSearchLoadedState;
+  const factory _GiftSearchLoadedState(
+      final GiftShopSearchViewModel viewModel) = _$_GiftSearchLoadedState;
 
-  GiftShopSearchViewModel get viewModel => throw _privateConstructorUsedError;
+  GiftShopSearchViewModel get viewModel;
   @JsonKey(ignore: true)
-  _$GiftSearchLoadedStateCopyWith<_GiftSearchLoadedState> get copyWith =>
+  _$$_GiftSearchLoadedStateCopyWith<_$_GiftSearchLoadedState> get copyWith =>
       throw _privateConstructorUsedError;
 }

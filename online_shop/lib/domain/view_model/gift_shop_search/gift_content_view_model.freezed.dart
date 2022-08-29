@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'gift_content_view_model.dart';
@@ -11,32 +12,7 @@ part of 'gift_content_view_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$GiftContentViewModelTearOff {
-  const _$GiftContentViewModelTearOff();
-
-  _GiftContentViewModel call(
-      {required String title,
-      required String author,
-      required StockState stockState,
-      required String postedDate,
-      required GiftCategory category,
-      bool liked = false}) {
-    return _GiftContentViewModel(
-      title: title,
-      author: author,
-      stockState: stockState,
-      postedDate: postedDate,
-      category: category,
-      liked: liked,
-    );
-  }
-}
-
-/// @nodoc
-const $GiftContentViewModel = _$GiftContentViewModelTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$GiftContentViewModel {
@@ -114,11 +90,11 @@ class _$GiftContentViewModelCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$GiftContentViewModelCopyWith<$Res>
+abstract class _$$_GiftContentViewModelCopyWith<$Res>
     implements $GiftContentViewModelCopyWith<$Res> {
-  factory _$GiftContentViewModelCopyWith(_GiftContentViewModel value,
-          $Res Function(_GiftContentViewModel) then) =
-      __$GiftContentViewModelCopyWithImpl<$Res>;
+  factory _$$_GiftContentViewModelCopyWith(_$_GiftContentViewModel value,
+          $Res Function(_$_GiftContentViewModel) then) =
+      __$$_GiftContentViewModelCopyWithImpl<$Res>;
   @override
   $Res call(
       {String title,
@@ -130,15 +106,15 @@ abstract class _$GiftContentViewModelCopyWith<$Res>
 }
 
 /// @nodoc
-class __$GiftContentViewModelCopyWithImpl<$Res>
+class __$$_GiftContentViewModelCopyWithImpl<$Res>
     extends _$GiftContentViewModelCopyWithImpl<$Res>
-    implements _$GiftContentViewModelCopyWith<$Res> {
-  __$GiftContentViewModelCopyWithImpl(
-      _GiftContentViewModel _value, $Res Function(_GiftContentViewModel) _then)
-      : super(_value, (v) => _then(v as _GiftContentViewModel));
+    implements _$$_GiftContentViewModelCopyWith<$Res> {
+  __$$_GiftContentViewModelCopyWithImpl(_$_GiftContentViewModel _value,
+      $Res Function(_$_GiftContentViewModel) _then)
+      : super(_value, (v) => _then(v as _$_GiftContentViewModel));
 
   @override
-  _GiftContentViewModel get _value => super._value as _GiftContentViewModel;
+  _$_GiftContentViewModel get _value => super._value as _$_GiftContentViewModel;
 
   @override
   $Res call({
@@ -149,7 +125,7 @@ class __$GiftContentViewModelCopyWithImpl<$Res>
     Object? category = freezed,
     Object? liked = freezed,
   }) {
-    return _then(_GiftContentViewModel(
+    return _then(_$_GiftContentViewModel(
       title: title == freezed
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -199,8 +175,8 @@ class _$_GiftContentViewModel implements _GiftContentViewModel {
   final String postedDate;
   @override
   final GiftCategory category;
-  @JsonKey(defaultValue: false)
   @override
+  @JsonKey()
   final bool liked;
 
   @override
@@ -211,64 +187,58 @@ class _$_GiftContentViewModel implements _GiftContentViewModel {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _GiftContentViewModel &&
-            (identical(other.title, title) ||
-                const DeepCollectionEquality().equals(other.title, title)) &&
-            (identical(other.author, author) ||
-                const DeepCollectionEquality().equals(other.author, author)) &&
-            (identical(other.stockState, stockState) ||
-                const DeepCollectionEquality()
-                    .equals(other.stockState, stockState)) &&
-            (identical(other.postedDate, postedDate) ||
-                const DeepCollectionEquality()
-                    .equals(other.postedDate, postedDate)) &&
-            (identical(other.category, category) ||
-                const DeepCollectionEquality()
-                    .equals(other.category, category)) &&
-            (identical(other.liked, liked) ||
-                const DeepCollectionEquality().equals(other.liked, liked)));
+        (other.runtimeType == runtimeType &&
+            other is _$_GiftContentViewModel &&
+            const DeepCollectionEquality().equals(other.title, title) &&
+            const DeepCollectionEquality().equals(other.author, author) &&
+            const DeepCollectionEquality()
+                .equals(other.stockState, stockState) &&
+            const DeepCollectionEquality()
+                .equals(other.postedDate, postedDate) &&
+            const DeepCollectionEquality().equals(other.category, category) &&
+            const DeepCollectionEquality().equals(other.liked, liked));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(title) ^
-      const DeepCollectionEquality().hash(author) ^
-      const DeepCollectionEquality().hash(stockState) ^
-      const DeepCollectionEquality().hash(postedDate) ^
-      const DeepCollectionEquality().hash(category) ^
-      const DeepCollectionEquality().hash(liked);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(title),
+      const DeepCollectionEquality().hash(author),
+      const DeepCollectionEquality().hash(stockState),
+      const DeepCollectionEquality().hash(postedDate),
+      const DeepCollectionEquality().hash(category),
+      const DeepCollectionEquality().hash(liked));
 
   @JsonKey(ignore: true)
   @override
-  _$GiftContentViewModelCopyWith<_GiftContentViewModel> get copyWith =>
-      __$GiftContentViewModelCopyWithImpl<_GiftContentViewModel>(
+  _$$_GiftContentViewModelCopyWith<_$_GiftContentViewModel> get copyWith =>
+      __$$_GiftContentViewModelCopyWithImpl<_$_GiftContentViewModel>(
           this, _$identity);
 }
 
 abstract class _GiftContentViewModel implements GiftContentViewModel {
   const factory _GiftContentViewModel(
-      {required String title,
-      required String author,
-      required StockState stockState,
-      required String postedDate,
-      required GiftCategory category,
-      bool liked}) = _$_GiftContentViewModel;
+      {required final String title,
+      required final String author,
+      required final StockState stockState,
+      required final String postedDate,
+      required final GiftCategory category,
+      final bool liked}) = _$_GiftContentViewModel;
 
   @override
-  String get title => throw _privateConstructorUsedError;
+  String get title;
   @override
-  String get author => throw _privateConstructorUsedError;
+  String get author;
   @override
-  StockState get stockState => throw _privateConstructorUsedError;
+  StockState get stockState;
   @override
-  String get postedDate => throw _privateConstructorUsedError;
+  String get postedDate;
   @override
-  GiftCategory get category => throw _privateConstructorUsedError;
+  GiftCategory get category;
   @override
-  bool get liked => throw _privateConstructorUsedError;
+  bool get liked;
   @override
   @JsonKey(ignore: true)
-  _$GiftContentViewModelCopyWith<_GiftContentViewModel> get copyWith =>
+  _$$_GiftContentViewModelCopyWith<_$_GiftContentViewModel> get copyWith =>
       throw _privateConstructorUsedError;
 }

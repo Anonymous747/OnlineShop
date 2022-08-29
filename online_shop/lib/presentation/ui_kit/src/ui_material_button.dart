@@ -17,8 +17,8 @@ class UiMaterialButton extends StatelessWidget {
     this.width,
     this.buttonColor,
     this.borderRadius = BorderRadius.zero,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   factory UiMaterialButton.roundedWithDefaultText({
     required VoidCallback onTap,

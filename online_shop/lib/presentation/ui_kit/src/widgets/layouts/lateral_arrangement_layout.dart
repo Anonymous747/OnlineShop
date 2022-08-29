@@ -15,8 +15,8 @@ class LateralArrangementLayout extends StatelessWidget {
     this.borderColor,
     this.color,
     this.padding,
-    Key? key,
-  }) : super(key: key);
+    super. key,
+  }) ;
 
   @override
   Widget build(BuildContext context) {

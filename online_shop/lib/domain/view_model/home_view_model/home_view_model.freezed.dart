@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'home_view_model.dart';
@@ -11,28 +12,7 @@ part of 'home_view_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$HomeViewModelTearOff {
-  const _$HomeViewModelTearOff();
-
-  _HomeViewModel call(
-      {required List<FacilityViewModel> facilities,
-      required List<NewestMemberViewModel> newestMembers,
-      required List<SelectableCardViewModel> popularCategories,
-      required List<SelectableCardViewModel> uniqueGifts}) {
-    return _HomeViewModel(
-      facilities: facilities,
-      newestMembers: newestMembers,
-      popularCategories: popularCategories,
-      uniqueGifts: uniqueGifts,
-    );
-  }
-}
-
-/// @nodoc
-const $HomeViewModel = _$HomeViewModelTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$HomeViewModel {
@@ -99,11 +79,11 @@ class _$HomeViewModelCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$HomeViewModelCopyWith<$Res>
+abstract class _$$_HomeViewModelCopyWith<$Res>
     implements $HomeViewModelCopyWith<$Res> {
-  factory _$HomeViewModelCopyWith(
-          _HomeViewModel value, $Res Function(_HomeViewModel) then) =
-      __$HomeViewModelCopyWithImpl<$Res>;
+  factory _$$_HomeViewModelCopyWith(
+          _$_HomeViewModel value, $Res Function(_$_HomeViewModel) then) =
+      __$$_HomeViewModelCopyWithImpl<$Res>;
   @override
   $Res call(
       {List<FacilityViewModel> facilities,
@@ -113,15 +93,15 @@ abstract class _$HomeViewModelCopyWith<$Res>
 }
 
 /// @nodoc
-class __$HomeViewModelCopyWithImpl<$Res>
+class __$$_HomeViewModelCopyWithImpl<$Res>
     extends _$HomeViewModelCopyWithImpl<$Res>
-    implements _$HomeViewModelCopyWith<$Res> {
-  __$HomeViewModelCopyWithImpl(
-      _HomeViewModel _value, $Res Function(_HomeViewModel) _then)
-      : super(_value, (v) => _then(v as _HomeViewModel));
+    implements _$$_HomeViewModelCopyWith<$Res> {
+  __$$_HomeViewModelCopyWithImpl(
+      _$_HomeViewModel _value, $Res Function(_$_HomeViewModel) _then)
+      : super(_value, (v) => _then(v as _$_HomeViewModel));
 
   @override
-  _HomeViewModel get _value => super._value as _HomeViewModel;
+  _$_HomeViewModel get _value => super._value as _$_HomeViewModel;
 
   @override
   $Res call({
@@ -130,21 +110,21 @@ class __$HomeViewModelCopyWithImpl<$Res>
     Object? popularCategories = freezed,
     Object? uniqueGifts = freezed,
   }) {
-    return _then(_HomeViewModel(
+    return _then(_$_HomeViewModel(
       facilities: facilities == freezed
-          ? _value.facilities
+          ? _value._facilities
           : facilities // ignore: cast_nullable_to_non_nullable
               as List<FacilityViewModel>,
       newestMembers: newestMembers == freezed
-          ? _value.newestMembers
+          ? _value._newestMembers
           : newestMembers // ignore: cast_nullable_to_non_nullable
               as List<NewestMemberViewModel>,
       popularCategories: popularCategories == freezed
-          ? _value.popularCategories
+          ? _value._popularCategories
           : popularCategories // ignore: cast_nullable_to_non_nullable
               as List<SelectableCardViewModel>,
       uniqueGifts: uniqueGifts == freezed
-          ? _value.uniqueGifts
+          ? _value._uniqueGifts
           : uniqueGifts // ignore: cast_nullable_to_non_nullable
               as List<SelectableCardViewModel>,
     ));
@@ -155,19 +135,42 @@ class __$HomeViewModelCopyWithImpl<$Res>
 
 class _$_HomeViewModel implements _HomeViewModel {
   const _$_HomeViewModel(
-      {required this.facilities,
-      required this.newestMembers,
-      required this.popularCategories,
-      required this.uniqueGifts});
+      {required final List<FacilityViewModel> facilities,
+      required final List<NewestMemberViewModel> newestMembers,
+      required final List<SelectableCardViewModel> popularCategories,
+      required final List<SelectableCardViewModel> uniqueGifts})
+      : _facilities = facilities,
+        _newestMembers = newestMembers,
+        _popularCategories = popularCategories,
+        _uniqueGifts = uniqueGifts;
 
+  final List<FacilityViewModel> _facilities;
   @override
-  final List<FacilityViewModel> facilities;
+  List<FacilityViewModel> get facilities {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_facilities);
+  }
+
+  final List<NewestMemberViewModel> _newestMembers;
   @override
-  final List<NewestMemberViewModel> newestMembers;
+  List<NewestMemberViewModel> get newestMembers {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_newestMembers);
+  }
+
+  final List<SelectableCardViewModel> _popularCategories;
   @override
-  final List<SelectableCardViewModel> popularCategories;
+  List<SelectableCardViewModel> get popularCategories {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_popularCategories);
+  }
+
+  final List<SelectableCardViewModel> _uniqueGifts;
   @override
-  final List<SelectableCardViewModel> uniqueGifts;
+  List<SelectableCardViewModel> get uniqueGifts {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_uniqueGifts);
+  }
 
   @override
   String toString() {
@@ -177,55 +180,50 @@ class _$_HomeViewModel implements _HomeViewModel {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _HomeViewModel &&
-            (identical(other.facilities, facilities) ||
-                const DeepCollectionEquality()
-                    .equals(other.facilities, facilities)) &&
-            (identical(other.newestMembers, newestMembers) ||
-                const DeepCollectionEquality()
-                    .equals(other.newestMembers, newestMembers)) &&
-            (identical(other.popularCategories, popularCategories) ||
-                const DeepCollectionEquality()
-                    .equals(other.popularCategories, popularCategories)) &&
-            (identical(other.uniqueGifts, uniqueGifts) ||
-                const DeepCollectionEquality()
-                    .equals(other.uniqueGifts, uniqueGifts)));
+        (other.runtimeType == runtimeType &&
+            other is _$_HomeViewModel &&
+            const DeepCollectionEquality()
+                .equals(other._facilities, _facilities) &&
+            const DeepCollectionEquality()
+                .equals(other._newestMembers, _newestMembers) &&
+            const DeepCollectionEquality()
+                .equals(other._popularCategories, _popularCategories) &&
+            const DeepCollectionEquality()
+                .equals(other._uniqueGifts, _uniqueGifts));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(facilities) ^
-      const DeepCollectionEquality().hash(newestMembers) ^
-      const DeepCollectionEquality().hash(popularCategories) ^
-      const DeepCollectionEquality().hash(uniqueGifts);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(_facilities),
+      const DeepCollectionEquality().hash(_newestMembers),
+      const DeepCollectionEquality().hash(_popularCategories),
+      const DeepCollectionEquality().hash(_uniqueGifts));
 
   @JsonKey(ignore: true)
   @override
-  _$HomeViewModelCopyWith<_HomeViewModel> get copyWith =>
-      __$HomeViewModelCopyWithImpl<_HomeViewModel>(this, _$identity);
+  _$$_HomeViewModelCopyWith<_$_HomeViewModel> get copyWith =>
+      __$$_HomeViewModelCopyWithImpl<_$_HomeViewModel>(this, _$identity);
 }
 
 abstract class _HomeViewModel implements HomeViewModel {
   const factory _HomeViewModel(
-      {required List<FacilityViewModel> facilities,
-      required List<NewestMemberViewModel> newestMembers,
-      required List<SelectableCardViewModel> popularCategories,
-      required List<SelectableCardViewModel> uniqueGifts}) = _$_HomeViewModel;
+          {required final List<FacilityViewModel> facilities,
+          required final List<NewestMemberViewModel> newestMembers,
+          required final List<SelectableCardViewModel> popularCategories,
+          required final List<SelectableCardViewModel> uniqueGifts}) =
+      _$_HomeViewModel;
 
   @override
-  List<FacilityViewModel> get facilities => throw _privateConstructorUsedError;
+  List<FacilityViewModel> get facilities;
   @override
-  List<NewestMemberViewModel> get newestMembers =>
-      throw _privateConstructorUsedError;
+  List<NewestMemberViewModel> get newestMembers;
   @override
-  List<SelectableCardViewModel> get popularCategories =>
-      throw _privateConstructorUsedError;
+  List<SelectableCardViewModel> get popularCategories;
   @override
-  List<SelectableCardViewModel> get uniqueGifts =>
-      throw _privateConstructorUsedError;
+  List<SelectableCardViewModel> get uniqueGifts;
   @override
   @JsonKey(ignore: true)
-  _$HomeViewModelCopyWith<_HomeViewModel> get copyWith =>
+  _$$_HomeViewModelCopyWith<_$_HomeViewModel> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'gift_catalog_bloc.dart';
@@ -11,25 +12,7 @@ part of 'gift_catalog_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$GiftCatalogEventTearOff {
-  const _$GiftCatalogEventTearOff();
-
-  _GiftCatalogInitializeEvent initialize() {
-    return const _GiftCatalogInitializeEvent();
-  }
-
-  _GiftCatalogSearchCategoryEvent searchCategory(String searchKeyword) {
-    return _GiftCatalogSearchCategoryEvent(
-      searchKeyword,
-    );
-  }
-}
-
-/// @nodoc
-const $GiftCatalogEvent = _$GiftCatalogEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$GiftCatalogEvent {
@@ -92,24 +75,25 @@ class _$GiftCatalogEventCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$GiftCatalogInitializeEventCopyWith<$Res> {
-  factory _$GiftCatalogInitializeEventCopyWith(
-          _GiftCatalogInitializeEvent value,
-          $Res Function(_GiftCatalogInitializeEvent) then) =
-      __$GiftCatalogInitializeEventCopyWithImpl<$Res>;
+abstract class _$$_GiftCatalogInitializeEventCopyWith<$Res> {
+  factory _$$_GiftCatalogInitializeEventCopyWith(
+          _$_GiftCatalogInitializeEvent value,
+          $Res Function(_$_GiftCatalogInitializeEvent) then) =
+      __$$_GiftCatalogInitializeEventCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$GiftCatalogInitializeEventCopyWithImpl<$Res>
+class __$$_GiftCatalogInitializeEventCopyWithImpl<$Res>
     extends _$GiftCatalogEventCopyWithImpl<$Res>
-    implements _$GiftCatalogInitializeEventCopyWith<$Res> {
-  __$GiftCatalogInitializeEventCopyWithImpl(_GiftCatalogInitializeEvent _value,
-      $Res Function(_GiftCatalogInitializeEvent) _then)
-      : super(_value, (v) => _then(v as _GiftCatalogInitializeEvent));
+    implements _$$_GiftCatalogInitializeEventCopyWith<$Res> {
+  __$$_GiftCatalogInitializeEventCopyWithImpl(
+      _$_GiftCatalogInitializeEvent _value,
+      $Res Function(_$_GiftCatalogInitializeEvent) _then)
+      : super(_value, (v) => _then(v as _$_GiftCatalogInitializeEvent));
 
   @override
-  _GiftCatalogInitializeEvent get _value =>
-      super._value as _GiftCatalogInitializeEvent;
+  _$_GiftCatalogInitializeEvent get _value =>
+      super._value as _$_GiftCatalogInitializeEvent;
 }
 
 /// @nodoc
@@ -124,7 +108,9 @@ class _$_GiftCatalogInitializeEvent implements _GiftCatalogInitializeEvent {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _GiftCatalogInitializeEvent);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_GiftCatalogInitializeEvent);
   }
 
   @override
@@ -199,32 +185,32 @@ abstract class _GiftCatalogInitializeEvent implements GiftCatalogEvent {
 }
 
 /// @nodoc
-abstract class _$GiftCatalogSearchCategoryEventCopyWith<$Res> {
-  factory _$GiftCatalogSearchCategoryEventCopyWith(
-          _GiftCatalogSearchCategoryEvent value,
-          $Res Function(_GiftCatalogSearchCategoryEvent) then) =
-      __$GiftCatalogSearchCategoryEventCopyWithImpl<$Res>;
+abstract class _$$_GiftCatalogSearchCategoryEventCopyWith<$Res> {
+  factory _$$_GiftCatalogSearchCategoryEventCopyWith(
+          _$_GiftCatalogSearchCategoryEvent value,
+          $Res Function(_$_GiftCatalogSearchCategoryEvent) then) =
+      __$$_GiftCatalogSearchCategoryEventCopyWithImpl<$Res>;
   $Res call({String searchKeyword});
 }
 
 /// @nodoc
-class __$GiftCatalogSearchCategoryEventCopyWithImpl<$Res>
+class __$$_GiftCatalogSearchCategoryEventCopyWithImpl<$Res>
     extends _$GiftCatalogEventCopyWithImpl<$Res>
-    implements _$GiftCatalogSearchCategoryEventCopyWith<$Res> {
-  __$GiftCatalogSearchCategoryEventCopyWithImpl(
-      _GiftCatalogSearchCategoryEvent _value,
-      $Res Function(_GiftCatalogSearchCategoryEvent) _then)
-      : super(_value, (v) => _then(v as _GiftCatalogSearchCategoryEvent));
+    implements _$$_GiftCatalogSearchCategoryEventCopyWith<$Res> {
+  __$$_GiftCatalogSearchCategoryEventCopyWithImpl(
+      _$_GiftCatalogSearchCategoryEvent _value,
+      $Res Function(_$_GiftCatalogSearchCategoryEvent) _then)
+      : super(_value, (v) => _then(v as _$_GiftCatalogSearchCategoryEvent));
 
   @override
-  _GiftCatalogSearchCategoryEvent get _value =>
-      super._value as _GiftCatalogSearchCategoryEvent;
+  _$_GiftCatalogSearchCategoryEvent get _value =>
+      super._value as _$_GiftCatalogSearchCategoryEvent;
 
   @override
   $Res call({
     Object? searchKeyword = freezed,
   }) {
-    return _then(_GiftCatalogSearchCategoryEvent(
+    return _then(_$_GiftCatalogSearchCategoryEvent(
       searchKeyword == freezed
           ? _value.searchKeyword
           : searchKeyword // ignore: cast_nullable_to_non_nullable
@@ -250,21 +236,21 @@ class _$_GiftCatalogSearchCategoryEvent
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _GiftCatalogSearchCategoryEvent &&
-            (identical(other.searchKeyword, searchKeyword) ||
-                const DeepCollectionEquality()
-                    .equals(other.searchKeyword, searchKeyword)));
+        (other.runtimeType == runtimeType &&
+            other is _$_GiftCatalogSearchCategoryEvent &&
+            const DeepCollectionEquality()
+                .equals(other.searchKeyword, searchKeyword));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(searchKeyword);
+  int get hashCode => Object.hash(
+      runtimeType, const DeepCollectionEquality().hash(searchKeyword));
 
   @JsonKey(ignore: true)
   @override
-  _$GiftCatalogSearchCategoryEventCopyWith<_GiftCatalogSearchCategoryEvent>
-      get copyWith => __$GiftCatalogSearchCategoryEventCopyWithImpl<
-          _GiftCatalogSearchCategoryEvent>(this, _$identity);
+  _$$_GiftCatalogSearchCategoryEventCopyWith<_$_GiftCatalogSearchCategoryEvent>
+      get copyWith => __$$_GiftCatalogSearchCategoryEventCopyWithImpl<
+          _$_GiftCatalogSearchCategoryEvent>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -331,32 +317,14 @@ class _$_GiftCatalogSearchCategoryEvent
 }
 
 abstract class _GiftCatalogSearchCategoryEvent implements GiftCatalogEvent {
-  const factory _GiftCatalogSearchCategoryEvent(String searchKeyword) =
+  const factory _GiftCatalogSearchCategoryEvent(final String searchKeyword) =
       _$_GiftCatalogSearchCategoryEvent;
 
-  String get searchKeyword => throw _privateConstructorUsedError;
+  String get searchKeyword;
   @JsonKey(ignore: true)
-  _$GiftCatalogSearchCategoryEventCopyWith<_GiftCatalogSearchCategoryEvent>
+  _$$_GiftCatalogSearchCategoryEventCopyWith<_$_GiftCatalogSearchCategoryEvent>
       get copyWith => throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$GiftCatalogStateTearOff {
-  const _$GiftCatalogStateTearOff();
-
-  _GiftCatalogInitialState initial() {
-    return const _GiftCatalogInitialState();
-  }
-
-  _GiftCatalogLoadedState loaded(GiftCatalogViewModel viewModel) {
-    return _GiftCatalogLoadedState(
-      viewModel,
-    );
-  }
-}
-
-/// @nodoc
-const $GiftCatalogState = _$GiftCatalogStateTearOff();
 
 /// @nodoc
 mixin _$GiftCatalogState {
@@ -418,23 +386,23 @@ class _$GiftCatalogStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$GiftCatalogInitialStateCopyWith<$Res> {
-  factory _$GiftCatalogInitialStateCopyWith(_GiftCatalogInitialState value,
-          $Res Function(_GiftCatalogInitialState) then) =
-      __$GiftCatalogInitialStateCopyWithImpl<$Res>;
+abstract class _$$_GiftCatalogInitialStateCopyWith<$Res> {
+  factory _$$_GiftCatalogInitialStateCopyWith(_$_GiftCatalogInitialState value,
+          $Res Function(_$_GiftCatalogInitialState) then) =
+      __$$_GiftCatalogInitialStateCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$GiftCatalogInitialStateCopyWithImpl<$Res>
+class __$$_GiftCatalogInitialStateCopyWithImpl<$Res>
     extends _$GiftCatalogStateCopyWithImpl<$Res>
-    implements _$GiftCatalogInitialStateCopyWith<$Res> {
-  __$GiftCatalogInitialStateCopyWithImpl(_GiftCatalogInitialState _value,
-      $Res Function(_GiftCatalogInitialState) _then)
-      : super(_value, (v) => _then(v as _GiftCatalogInitialState));
+    implements _$$_GiftCatalogInitialStateCopyWith<$Res> {
+  __$$_GiftCatalogInitialStateCopyWithImpl(_$_GiftCatalogInitialState _value,
+      $Res Function(_$_GiftCatalogInitialState) _then)
+      : super(_value, (v) => _then(v as _$_GiftCatalogInitialState));
 
   @override
-  _GiftCatalogInitialState get _value =>
-      super._value as _GiftCatalogInitialState;
+  _$_GiftCatalogInitialState get _value =>
+      super._value as _$_GiftCatalogInitialState;
 }
 
 /// @nodoc
@@ -449,7 +417,9 @@ class _$_GiftCatalogInitialState implements _GiftCatalogInitialState {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _GiftCatalogInitialState);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_GiftCatalogInitialState);
   }
 
   @override
@@ -523,31 +493,32 @@ abstract class _GiftCatalogInitialState implements GiftCatalogState {
 }
 
 /// @nodoc
-abstract class _$GiftCatalogLoadedStateCopyWith<$Res> {
-  factory _$GiftCatalogLoadedStateCopyWith(_GiftCatalogLoadedState value,
-          $Res Function(_GiftCatalogLoadedState) then) =
-      __$GiftCatalogLoadedStateCopyWithImpl<$Res>;
+abstract class _$$_GiftCatalogLoadedStateCopyWith<$Res> {
+  factory _$$_GiftCatalogLoadedStateCopyWith(_$_GiftCatalogLoadedState value,
+          $Res Function(_$_GiftCatalogLoadedState) then) =
+      __$$_GiftCatalogLoadedStateCopyWithImpl<$Res>;
   $Res call({GiftCatalogViewModel viewModel});
 
   $GiftCatalogViewModelCopyWith<$Res> get viewModel;
 }
 
 /// @nodoc
-class __$GiftCatalogLoadedStateCopyWithImpl<$Res>
+class __$$_GiftCatalogLoadedStateCopyWithImpl<$Res>
     extends _$GiftCatalogStateCopyWithImpl<$Res>
-    implements _$GiftCatalogLoadedStateCopyWith<$Res> {
-  __$GiftCatalogLoadedStateCopyWithImpl(_GiftCatalogLoadedState _value,
-      $Res Function(_GiftCatalogLoadedState) _then)
-      : super(_value, (v) => _then(v as _GiftCatalogLoadedState));
+    implements _$$_GiftCatalogLoadedStateCopyWith<$Res> {
+  __$$_GiftCatalogLoadedStateCopyWithImpl(_$_GiftCatalogLoadedState _value,
+      $Res Function(_$_GiftCatalogLoadedState) _then)
+      : super(_value, (v) => _then(v as _$_GiftCatalogLoadedState));
 
   @override
-  _GiftCatalogLoadedState get _value => super._value as _GiftCatalogLoadedState;
+  _$_GiftCatalogLoadedState get _value =>
+      super._value as _$_GiftCatalogLoadedState;
 
   @override
   $Res call({
     Object? viewModel = freezed,
   }) {
-    return _then(_GiftCatalogLoadedState(
+    return _then(_$_GiftCatalogLoadedState(
       viewModel == freezed
           ? _value.viewModel
           : viewModel // ignore: cast_nullable_to_non_nullable
@@ -579,20 +550,19 @@ class _$_GiftCatalogLoadedState implements _GiftCatalogLoadedState {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _GiftCatalogLoadedState &&
-            (identical(other.viewModel, viewModel) ||
-                const DeepCollectionEquality()
-                    .equals(other.viewModel, viewModel)));
+        (other.runtimeType == runtimeType &&
+            other is _$_GiftCatalogLoadedState &&
+            const DeepCollectionEquality().equals(other.viewModel, viewModel));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(viewModel);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(viewModel));
 
   @JsonKey(ignore: true)
   @override
-  _$GiftCatalogLoadedStateCopyWith<_GiftCatalogLoadedState> get copyWith =>
-      __$GiftCatalogLoadedStateCopyWithImpl<_GiftCatalogLoadedState>(
+  _$$_GiftCatalogLoadedStateCopyWith<_$_GiftCatalogLoadedState> get copyWith =>
+      __$$_GiftCatalogLoadedStateCopyWithImpl<_$_GiftCatalogLoadedState>(
           this, _$identity);
 
   @override
@@ -659,11 +629,11 @@ class _$_GiftCatalogLoadedState implements _GiftCatalogLoadedState {
 }
 
 abstract class _GiftCatalogLoadedState implements GiftCatalogState {
-  const factory _GiftCatalogLoadedState(GiftCatalogViewModel viewModel) =
+  const factory _GiftCatalogLoadedState(final GiftCatalogViewModel viewModel) =
       _$_GiftCatalogLoadedState;
 
-  GiftCatalogViewModel get viewModel => throw _privateConstructorUsedError;
+  GiftCatalogViewModel get viewModel;
   @JsonKey(ignore: true)
-  _$GiftCatalogLoadedStateCopyWith<_GiftCatalogLoadedState> get copyWith =>
+  _$$_GiftCatalogLoadedStateCopyWith<_$_GiftCatalogLoadedState> get copyWith =>
       throw _privateConstructorUsedError;
 }

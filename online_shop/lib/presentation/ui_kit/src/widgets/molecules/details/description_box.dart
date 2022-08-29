@@ -6,7 +6,7 @@ import 'package:online_shop/presentation/presentation.dart';
 class DescriptionBox extends StatelessWidget {
   final DetailsDescriptionViewModel viewModel;
 
-  const DescriptionBox({required this.viewModel, Key? key}) : super(key: key);
+  const DescriptionBox({required this.viewModel, super.key});
 
   @override
   Widget build(BuildContext context) {

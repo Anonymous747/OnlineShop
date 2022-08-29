@@ -4,8 +4,7 @@ import 'package:online_shop/presentation/ui_kit/src/styles/abstractions/app_styl
 class ExsoTheme extends InheritedWidget {
   final AppStyling styling;
 
-  const ExsoTheme(this.styling, {required Widget child, Key? key})
-      : super(key: key, child: child);
+  const ExsoTheme(this.styling, {required super.child, super.key});
 
   static ExsoTheme of(BuildContext context) {
     return context.dependOnInheritedWidgetOfExactType<ExsoTheme>()!;

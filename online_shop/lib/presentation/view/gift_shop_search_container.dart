@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:online_shop/presentation/presentation.dart';
 
 class GiftShopSearchContainer extends StatelessWidget {
-  const GiftShopSearchContainer({Key? key}) : super(key: key);
+  const GiftShopSearchContainer({super.key});
 
   @override
   Widget build(BuildContext context) {

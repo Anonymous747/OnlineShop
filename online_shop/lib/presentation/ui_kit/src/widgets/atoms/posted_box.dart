@@ -6,7 +6,7 @@ import 'package:online_shop/presentation/presentation.dart';
 class PostedBox extends StatelessWidget {
   final PostedDataViewModel viewModel;
 
-  const PostedBox({required this.viewModel, Key? key}) : super(key: key);
+  const PostedBox({required this.viewModel, super.key});
 
   @override
   Widget build(BuildContext context) {

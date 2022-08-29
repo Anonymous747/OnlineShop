@@ -6,7 +6,7 @@ import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
 class NewestMemberCard extends StatelessWidget {
   final NewestMemberViewModel viewModel;
 
-  const NewestMemberCard({required this.viewModel, Key? key}) : super(key: key);
+  const NewestMemberCard({required this.viewModel, super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -4,7 +4,7 @@ import 'package:online_shop/domain/domain.dart';
 import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
 
 class ExsoFooter extends StatelessWidget {
-  const ExsoFooter({Key? key}) : super(key: key);
+  const ExsoFooter({super.key});
 
   @override
   Widget build(BuildContext context) {

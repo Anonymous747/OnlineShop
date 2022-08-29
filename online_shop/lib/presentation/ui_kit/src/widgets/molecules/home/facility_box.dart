@@ -9,8 +9,8 @@ class FacilityBox extends StatelessWidget {
 
   const FacilityBox({
     required this.facilities,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

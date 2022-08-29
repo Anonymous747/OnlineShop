@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'navigation_bloc.dart';
@@ -11,41 +12,7 @@ part of 'navigation_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$NavigationEventTearOff {
-  const _$NavigationEventTearOff();
-
-  _NavigationPushEvent push({required RouteData data}) {
-    return _NavigationPushEvent(
-      data: data,
-    );
-  }
-
-  _NavigationPopEvent pop() {
-    return _NavigationPopEvent();
-  }
-
-  _NavigationFallbackEvent fallback() {
-    return _NavigationFallbackEvent();
-  }
-
-  _NavigationCleanAndPushEvent cleanAndPush({required RouteInfo info}) {
-    return _NavigationCleanAndPushEvent(
-      info: info,
-    );
-  }
-
-  _NavigationReplaceEvent replace({required RouteData data}) {
-    return _NavigationReplaceEvent(
-      data: data,
-    );
-  }
-}
-
-/// @nodoc
-const $NavigationEvent = _$NavigationEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$NavigationEvent {
@@ -125,31 +92,31 @@ class _$NavigationEventCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$NavigationPushEventCopyWith<$Res> {
-  factory _$NavigationPushEventCopyWith(_NavigationPushEvent value,
-          $Res Function(_NavigationPushEvent) then) =
-      __$NavigationPushEventCopyWithImpl<$Res>;
+abstract class _$$_NavigationPushEventCopyWith<$Res> {
+  factory _$$_NavigationPushEventCopyWith(_$_NavigationPushEvent value,
+          $Res Function(_$_NavigationPushEvent) then) =
+      __$$_NavigationPushEventCopyWithImpl<$Res>;
   $Res call({RouteData data});
 
   $RouteDataCopyWith<$Res> get data;
 }
 
 /// @nodoc
-class __$NavigationPushEventCopyWithImpl<$Res>
+class __$$_NavigationPushEventCopyWithImpl<$Res>
     extends _$NavigationEventCopyWithImpl<$Res>
-    implements _$NavigationPushEventCopyWith<$Res> {
-  __$NavigationPushEventCopyWithImpl(
-      _NavigationPushEvent _value, $Res Function(_NavigationPushEvent) _then)
-      : super(_value, (v) => _then(v as _NavigationPushEvent));
+    implements _$$_NavigationPushEventCopyWith<$Res> {
+  __$$_NavigationPushEventCopyWithImpl(_$_NavigationPushEvent _value,
+      $Res Function(_$_NavigationPushEvent) _then)
+      : super(_value, (v) => _then(v as _$_NavigationPushEvent));
 
   @override
-  _NavigationPushEvent get _value => super._value as _NavigationPushEvent;
+  _$_NavigationPushEvent get _value => super._value as _$_NavigationPushEvent;
 
   @override
   $Res call({
     Object? data = freezed,
   }) {
-    return _then(_NavigationPushEvent(
+    return _then(_$_NavigationPushEvent(
       data: data == freezed
           ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
@@ -181,19 +148,19 @@ class _$_NavigationPushEvent implements _NavigationPushEvent {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _NavigationPushEvent &&
-            (identical(other.data, data) ||
-                const DeepCollectionEquality().equals(other.data, data)));
+        (other.runtimeType == runtimeType &&
+            other is _$_NavigationPushEvent &&
+            const DeepCollectionEquality().equals(other.data, data));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(data);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(data));
 
   @JsonKey(ignore: true)
   @override
-  _$NavigationPushEventCopyWith<_NavigationPushEvent> get copyWith =>
-      __$NavigationPushEventCopyWithImpl<_NavigationPushEvent>(
+  _$$_NavigationPushEventCopyWith<_$_NavigationPushEvent> get copyWith =>
+      __$$_NavigationPushEventCopyWithImpl<_$_NavigationPushEvent>(
           this, _$identity);
 
   @override
@@ -278,32 +245,32 @@ class _$_NavigationPushEvent implements _NavigationPushEvent {
 }
 
 abstract class _NavigationPushEvent implements NavigationEvent {
-  factory _NavigationPushEvent({required RouteData data}) =
+  factory _NavigationPushEvent({required final RouteData data}) =
       _$_NavigationPushEvent;
 
-  RouteData get data => throw _privateConstructorUsedError;
+  RouteData get data;
   @JsonKey(ignore: true)
-  _$NavigationPushEventCopyWith<_NavigationPushEvent> get copyWith =>
+  _$$_NavigationPushEventCopyWith<_$_NavigationPushEvent> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$NavigationPopEventCopyWith<$Res> {
-  factory _$NavigationPopEventCopyWith(
-          _NavigationPopEvent value, $Res Function(_NavigationPopEvent) then) =
-      __$NavigationPopEventCopyWithImpl<$Res>;
+abstract class _$$_NavigationPopEventCopyWith<$Res> {
+  factory _$$_NavigationPopEventCopyWith(_$_NavigationPopEvent value,
+          $Res Function(_$_NavigationPopEvent) then) =
+      __$$_NavigationPopEventCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$NavigationPopEventCopyWithImpl<$Res>
+class __$$_NavigationPopEventCopyWithImpl<$Res>
     extends _$NavigationEventCopyWithImpl<$Res>
-    implements _$NavigationPopEventCopyWith<$Res> {
-  __$NavigationPopEventCopyWithImpl(
-      _NavigationPopEvent _value, $Res Function(_NavigationPopEvent) _then)
-      : super(_value, (v) => _then(v as _NavigationPopEvent));
+    implements _$$_NavigationPopEventCopyWith<$Res> {
+  __$$_NavigationPopEventCopyWithImpl(
+      _$_NavigationPopEvent _value, $Res Function(_$_NavigationPopEvent) _then)
+      : super(_value, (v) => _then(v as _$_NavigationPopEvent));
 
   @override
-  _NavigationPopEvent get _value => super._value as _NavigationPopEvent;
+  _$_NavigationPopEvent get _value => super._value as _$_NavigationPopEvent;
 }
 
 /// @nodoc
@@ -318,7 +285,8 @@ class _$_NavigationPopEvent implements _NavigationPopEvent {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _NavigationPopEvent);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_NavigationPopEvent);
   }
 
   @override
@@ -410,23 +378,23 @@ abstract class _NavigationPopEvent implements NavigationEvent {
 }
 
 /// @nodoc
-abstract class _$NavigationFallbackEventCopyWith<$Res> {
-  factory _$NavigationFallbackEventCopyWith(_NavigationFallbackEvent value,
-          $Res Function(_NavigationFallbackEvent) then) =
-      __$NavigationFallbackEventCopyWithImpl<$Res>;
+abstract class _$$_NavigationFallbackEventCopyWith<$Res> {
+  factory _$$_NavigationFallbackEventCopyWith(_$_NavigationFallbackEvent value,
+          $Res Function(_$_NavigationFallbackEvent) then) =
+      __$$_NavigationFallbackEventCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$NavigationFallbackEventCopyWithImpl<$Res>
+class __$$_NavigationFallbackEventCopyWithImpl<$Res>
     extends _$NavigationEventCopyWithImpl<$Res>
-    implements _$NavigationFallbackEventCopyWith<$Res> {
-  __$NavigationFallbackEventCopyWithImpl(_NavigationFallbackEvent _value,
-      $Res Function(_NavigationFallbackEvent) _then)
-      : super(_value, (v) => _then(v as _NavigationFallbackEvent));
+    implements _$$_NavigationFallbackEventCopyWith<$Res> {
+  __$$_NavigationFallbackEventCopyWithImpl(_$_NavigationFallbackEvent _value,
+      $Res Function(_$_NavigationFallbackEvent) _then)
+      : super(_value, (v) => _then(v as _$_NavigationFallbackEvent));
 
   @override
-  _NavigationFallbackEvent get _value =>
-      super._value as _NavigationFallbackEvent;
+  _$_NavigationFallbackEvent get _value =>
+      super._value as _$_NavigationFallbackEvent;
 }
 
 /// @nodoc
@@ -441,7 +409,9 @@ class _$_NavigationFallbackEvent implements _NavigationFallbackEvent {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _NavigationFallbackEvent);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_NavigationFallbackEvent);
   }
 
   @override
@@ -533,34 +503,34 @@ abstract class _NavigationFallbackEvent implements NavigationEvent {
 }
 
 /// @nodoc
-abstract class _$NavigationCleanAndPushEventCopyWith<$Res> {
-  factory _$NavigationCleanAndPushEventCopyWith(
-          _NavigationCleanAndPushEvent value,
-          $Res Function(_NavigationCleanAndPushEvent) then) =
-      __$NavigationCleanAndPushEventCopyWithImpl<$Res>;
+abstract class _$$_NavigationCleanAndPushEventCopyWith<$Res> {
+  factory _$$_NavigationCleanAndPushEventCopyWith(
+          _$_NavigationCleanAndPushEvent value,
+          $Res Function(_$_NavigationCleanAndPushEvent) then) =
+      __$$_NavigationCleanAndPushEventCopyWithImpl<$Res>;
   $Res call({RouteInfo info});
 
   $RouteInfoCopyWith<$Res> get info;
 }
 
 /// @nodoc
-class __$NavigationCleanAndPushEventCopyWithImpl<$Res>
+class __$$_NavigationCleanAndPushEventCopyWithImpl<$Res>
     extends _$NavigationEventCopyWithImpl<$Res>
-    implements _$NavigationCleanAndPushEventCopyWith<$Res> {
-  __$NavigationCleanAndPushEventCopyWithImpl(
-      _NavigationCleanAndPushEvent _value,
-      $Res Function(_NavigationCleanAndPushEvent) _then)
-      : super(_value, (v) => _then(v as _NavigationCleanAndPushEvent));
+    implements _$$_NavigationCleanAndPushEventCopyWith<$Res> {
+  __$$_NavigationCleanAndPushEventCopyWithImpl(
+      _$_NavigationCleanAndPushEvent _value,
+      $Res Function(_$_NavigationCleanAndPushEvent) _then)
+      : super(_value, (v) => _then(v as _$_NavigationCleanAndPushEvent));
 
   @override
-  _NavigationCleanAndPushEvent get _value =>
-      super._value as _NavigationCleanAndPushEvent;
+  _$_NavigationCleanAndPushEvent get _value =>
+      super._value as _$_NavigationCleanAndPushEvent;
 
   @override
   $Res call({
     Object? info = freezed,
   }) {
-    return _then(_NavigationCleanAndPushEvent(
+    return _then(_$_NavigationCleanAndPushEvent(
       info: info == freezed
           ? _value.info
           : info // ignore: cast_nullable_to_non_nullable
@@ -592,20 +562,20 @@ class _$_NavigationCleanAndPushEvent implements _NavigationCleanAndPushEvent {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _NavigationCleanAndPushEvent &&
-            (identical(other.info, info) ||
-                const DeepCollectionEquality().equals(other.info, info)));
+        (other.runtimeType == runtimeType &&
+            other is _$_NavigationCleanAndPushEvent &&
+            const DeepCollectionEquality().equals(other.info, info));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(info);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(info));
 
   @JsonKey(ignore: true)
   @override
-  _$NavigationCleanAndPushEventCopyWith<_NavigationCleanAndPushEvent>
-      get copyWith => __$NavigationCleanAndPushEventCopyWithImpl<
-          _NavigationCleanAndPushEvent>(this, _$identity);
+  _$$_NavigationCleanAndPushEventCopyWith<_$_NavigationCleanAndPushEvent>
+      get copyWith => __$$_NavigationCleanAndPushEventCopyWithImpl<
+          _$_NavigationCleanAndPushEvent>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -689,41 +659,42 @@ class _$_NavigationCleanAndPushEvent implements _NavigationCleanAndPushEvent {
 }
 
 abstract class _NavigationCleanAndPushEvent implements NavigationEvent {
-  factory _NavigationCleanAndPushEvent({required RouteInfo info}) =
+  factory _NavigationCleanAndPushEvent({required final RouteInfo info}) =
       _$_NavigationCleanAndPushEvent;
 
-  RouteInfo get info => throw _privateConstructorUsedError;
+  RouteInfo get info;
   @JsonKey(ignore: true)
-  _$NavigationCleanAndPushEventCopyWith<_NavigationCleanAndPushEvent>
+  _$$_NavigationCleanAndPushEventCopyWith<_$_NavigationCleanAndPushEvent>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$NavigationReplaceEventCopyWith<$Res> {
-  factory _$NavigationReplaceEventCopyWith(_NavigationReplaceEvent value,
-          $Res Function(_NavigationReplaceEvent) then) =
-      __$NavigationReplaceEventCopyWithImpl<$Res>;
+abstract class _$$_NavigationReplaceEventCopyWith<$Res> {
+  factory _$$_NavigationReplaceEventCopyWith(_$_NavigationReplaceEvent value,
+          $Res Function(_$_NavigationReplaceEvent) then) =
+      __$$_NavigationReplaceEventCopyWithImpl<$Res>;
   $Res call({RouteData data});
 
   $RouteDataCopyWith<$Res> get data;
 }
 
 /// @nodoc
-class __$NavigationReplaceEventCopyWithImpl<$Res>
+class __$$_NavigationReplaceEventCopyWithImpl<$Res>
     extends _$NavigationEventCopyWithImpl<$Res>
-    implements _$NavigationReplaceEventCopyWith<$Res> {
-  __$NavigationReplaceEventCopyWithImpl(_NavigationReplaceEvent _value,
-      $Res Function(_NavigationReplaceEvent) _then)
-      : super(_value, (v) => _then(v as _NavigationReplaceEvent));
+    implements _$$_NavigationReplaceEventCopyWith<$Res> {
+  __$$_NavigationReplaceEventCopyWithImpl(_$_NavigationReplaceEvent _value,
+      $Res Function(_$_NavigationReplaceEvent) _then)
+      : super(_value, (v) => _then(v as _$_NavigationReplaceEvent));
 
   @override
-  _NavigationReplaceEvent get _value => super._value as _NavigationReplaceEvent;
+  _$_NavigationReplaceEvent get _value =>
+      super._value as _$_NavigationReplaceEvent;
 
   @override
   $Res call({
     Object? data = freezed,
   }) {
-    return _then(_NavigationReplaceEvent(
+    return _then(_$_NavigationReplaceEvent(
       data: data == freezed
           ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
@@ -755,19 +726,19 @@ class _$_NavigationReplaceEvent implements _NavigationReplaceEvent {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _NavigationReplaceEvent &&
-            (identical(other.data, data) ||
-                const DeepCollectionEquality().equals(other.data, data)));
+        (other.runtimeType == runtimeType &&
+            other is _$_NavigationReplaceEvent &&
+            const DeepCollectionEquality().equals(other.data, data));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(data);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(data));
 
   @JsonKey(ignore: true)
   @override
-  _$NavigationReplaceEventCopyWith<_NavigationReplaceEvent> get copyWith =>
-      __$NavigationReplaceEventCopyWithImpl<_NavigationReplaceEvent>(
+  _$$_NavigationReplaceEventCopyWith<_$_NavigationReplaceEvent> get copyWith =>
+      __$$_NavigationReplaceEventCopyWithImpl<_$_NavigationReplaceEvent>(
           this, _$identity);
 
   @override
@@ -852,40 +823,18 @@ class _$_NavigationReplaceEvent implements _NavigationReplaceEvent {
 }
 
 abstract class _NavigationReplaceEvent implements NavigationEvent {
-  factory _NavigationReplaceEvent({required RouteData data}) =
+  factory _NavigationReplaceEvent({required final RouteData data}) =
       _$_NavigationReplaceEvent;
 
-  RouteData get data => throw _privateConstructorUsedError;
+  RouteData get data;
   @JsonKey(ignore: true)
-  _$NavigationReplaceEventCopyWith<_NavigationReplaceEvent> get copyWith =>
+  _$$_NavigationReplaceEventCopyWith<_$_NavigationReplaceEvent> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-class _$NavigationStateTearOff {
-  const _$NavigationStateTearOff();
-
-  NavigationPushState push({required RouteInfo info}) {
-    return NavigationPushState(
-      info: info,
-    );
-  }
-
-  NavigationPopState pop({required RouteInfo info, RouteData? lastRoute}) {
-    return NavigationPopState(
-      info: info,
-      lastRoute: lastRoute,
-    );
-  }
-}
-
-/// @nodoc
-const $NavigationState = _$NavigationStateTearOff();
-
-/// @nodoc
 mixin _$NavigationState {
   RouteInfo get info => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(RouteInfo info) push,
@@ -970,11 +919,11 @@ class _$NavigationStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class $NavigationPushStateCopyWith<$Res>
+abstract class _$$NavigationPushStateCopyWith<$Res>
     implements $NavigationStateCopyWith<$Res> {
-  factory $NavigationPushStateCopyWith(
-          NavigationPushState value, $Res Function(NavigationPushState) then) =
-      _$NavigationPushStateCopyWithImpl<$Res>;
+  factory _$$NavigationPushStateCopyWith(_$NavigationPushState value,
+          $Res Function(_$NavigationPushState) then) =
+      __$$NavigationPushStateCopyWithImpl<$Res>;
   @override
   $Res call({RouteInfo info});
 
@@ -983,21 +932,21 @@ abstract class $NavigationPushStateCopyWith<$Res>
 }
 
 /// @nodoc
-class _$NavigationPushStateCopyWithImpl<$Res>
+class __$$NavigationPushStateCopyWithImpl<$Res>
     extends _$NavigationStateCopyWithImpl<$Res>
-    implements $NavigationPushStateCopyWith<$Res> {
-  _$NavigationPushStateCopyWithImpl(
-      NavigationPushState _value, $Res Function(NavigationPushState) _then)
-      : super(_value, (v) => _then(v as NavigationPushState));
+    implements _$$NavigationPushStateCopyWith<$Res> {
+  __$$NavigationPushStateCopyWithImpl(
+      _$NavigationPushState _value, $Res Function(_$NavigationPushState) _then)
+      : super(_value, (v) => _then(v as _$NavigationPushState));
 
   @override
-  NavigationPushState get _value => super._value as NavigationPushState;
+  _$NavigationPushState get _value => super._value as _$NavigationPushState;
 
   @override
   $Res call({
     Object? info = freezed,
   }) {
-    return _then(NavigationPushState(
+    return _then(_$NavigationPushState(
       info: info == freezed
           ? _value.info
           : info // ignore: cast_nullable_to_non_nullable
@@ -1022,19 +971,20 @@ class _$NavigationPushState implements NavigationPushState {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is NavigationPushState &&
-            (identical(other.info, info) ||
-                const DeepCollectionEquality().equals(other.info, info)));
+        (other.runtimeType == runtimeType &&
+            other is _$NavigationPushState &&
+            const DeepCollectionEquality().equals(other.info, info));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(info);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(info));
 
   @JsonKey(ignore: true)
   @override
-  $NavigationPushStateCopyWith<NavigationPushState> get copyWith =>
-      _$NavigationPushStateCopyWithImpl<NavigationPushState>(this, _$identity);
+  _$$NavigationPushStateCopyWith<_$NavigationPushState> get copyWith =>
+      __$$NavigationPushStateCopyWithImpl<_$NavigationPushState>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1100,23 +1050,23 @@ class _$NavigationPushState implements NavigationPushState {
 }
 
 abstract class NavigationPushState implements NavigationState {
-  const factory NavigationPushState({required RouteInfo info}) =
+  const factory NavigationPushState({required final RouteInfo info}) =
       _$NavigationPushState;
 
   @override
-  RouteInfo get info => throw _privateConstructorUsedError;
+  RouteInfo get info;
   @override
   @JsonKey(ignore: true)
-  $NavigationPushStateCopyWith<NavigationPushState> get copyWith =>
+  _$$NavigationPushStateCopyWith<_$NavigationPushState> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $NavigationPopStateCopyWith<$Res>
+abstract class _$$NavigationPopStateCopyWith<$Res>
     implements $NavigationStateCopyWith<$Res> {
-  factory $NavigationPopStateCopyWith(
-          NavigationPopState value, $Res Function(NavigationPopState) then) =
-      _$NavigationPopStateCopyWithImpl<$Res>;
+  factory _$$NavigationPopStateCopyWith(_$NavigationPopState value,
+          $Res Function(_$NavigationPopState) then) =
+      __$$NavigationPopStateCopyWithImpl<$Res>;
   @override
   $Res call({RouteInfo info, RouteData? lastRoute});
 
@@ -1126,22 +1076,22 @@ abstract class $NavigationPopStateCopyWith<$Res>
 }
 
 /// @nodoc
-class _$NavigationPopStateCopyWithImpl<$Res>
+class __$$NavigationPopStateCopyWithImpl<$Res>
     extends _$NavigationStateCopyWithImpl<$Res>
-    implements $NavigationPopStateCopyWith<$Res> {
-  _$NavigationPopStateCopyWithImpl(
-      NavigationPopState _value, $Res Function(NavigationPopState) _then)
-      : super(_value, (v) => _then(v as NavigationPopState));
+    implements _$$NavigationPopStateCopyWith<$Res> {
+  __$$NavigationPopStateCopyWithImpl(
+      _$NavigationPopState _value, $Res Function(_$NavigationPopState) _then)
+      : super(_value, (v) => _then(v as _$NavigationPopState));
 
   @override
-  NavigationPopState get _value => super._value as NavigationPopState;
+  _$NavigationPopState get _value => super._value as _$NavigationPopState;
 
   @override
   $Res call({
     Object? info = freezed,
     Object? lastRoute = freezed,
   }) {
-    return _then(NavigationPopState(
+    return _then(_$NavigationPopState(
       info: info == freezed
           ? _value.info
           : info // ignore: cast_nullable_to_non_nullable
@@ -1183,24 +1133,23 @@ class _$NavigationPopState implements NavigationPopState {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is NavigationPopState &&
-            (identical(other.info, info) ||
-                const DeepCollectionEquality().equals(other.info, info)) &&
-            (identical(other.lastRoute, lastRoute) ||
-                const DeepCollectionEquality()
-                    .equals(other.lastRoute, lastRoute)));
+        (other.runtimeType == runtimeType &&
+            other is _$NavigationPopState &&
+            const DeepCollectionEquality().equals(other.info, info) &&
+            const DeepCollectionEquality().equals(other.lastRoute, lastRoute));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(info) ^
-      const DeepCollectionEquality().hash(lastRoute);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(info),
+      const DeepCollectionEquality().hash(lastRoute));
 
   @JsonKey(ignore: true)
   @override
-  $NavigationPopStateCopyWith<NavigationPopState> get copyWith =>
-      _$NavigationPopStateCopyWithImpl<NavigationPopState>(this, _$identity);
+  _$$NavigationPopStateCopyWith<_$NavigationPopState> get copyWith =>
+      __$$NavigationPopStateCopyWithImpl<_$NavigationPopState>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1267,13 +1216,14 @@ class _$NavigationPopState implements NavigationPopState {
 
 abstract class NavigationPopState implements NavigationState {
   const factory NavigationPopState(
-      {required RouteInfo info, RouteData? lastRoute}) = _$NavigationPopState;
+      {required final RouteInfo info,
+      final RouteData? lastRoute}) = _$NavigationPopState;
 
   @override
-  RouteInfo get info => throw _privateConstructorUsedError;
-  RouteData? get lastRoute => throw _privateConstructorUsedError;
+  RouteInfo get info;
+  RouteData? get lastRoute;
   @override
   @JsonKey(ignore: true)
-  $NavigationPopStateCopyWith<NavigationPopState> get copyWith =>
+  _$$NavigationPopStateCopyWith<_$NavigationPopState> get copyWith =>
       throw _privateConstructorUsedError;
 }

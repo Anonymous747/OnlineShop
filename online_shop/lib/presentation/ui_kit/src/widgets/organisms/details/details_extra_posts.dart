@@ -5,8 +5,7 @@ import 'package:online_shop/presentation/presentation.dart';
 class DetailsExtraPosts extends StatelessWidget {
   final DetailsViewModel viewModel;
 
-  const DetailsExtraPosts({required this.viewModel, Key? key})
-      : super(key: key);
+  const DetailsExtraPosts({required this.viewModel, super.key});
 
   @override
   Widget build(BuildContext context) {

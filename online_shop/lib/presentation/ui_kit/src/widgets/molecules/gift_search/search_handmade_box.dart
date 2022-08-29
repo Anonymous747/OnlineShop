@@ -7,7 +7,9 @@ import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
 const _kContentPadding = 10;
 
 class SearchHandmadeBox extends StatelessWidget {
-  const SearchHandmadeBox({Key? key}) : super(key: key);
+  final GiftShopSearchViewModel viewModel;
+
+  const SearchHandmadeBox({required this.viewModel, super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -37,6 +39,19 @@ class SearchHandmadeBox extends StatelessWidget {
             iconWidth: 40,
             iconSize: 20,
           ),
+          CategorySelector(
+              categories:
+                  GiftCategory.values.map((cat) => cat.toString()).toList()),
+          // DropdownButton<String>(items: const [
+          //   DropdownMenuItem(
+          //     child: Text('131'),
+          //     value: '131',
+          //   ),
+          //   DropdownMenuItem(
+          //     child: Text('131'),
+          //     value: '131',
+          //   ),
+          // ], onChanged: (_) {})
         ],
       ),
     );

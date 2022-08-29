@@ -4,7 +4,7 @@ import 'package:online_shop/domain/domain.dart';
 import 'package:online_shop/presentation/presentation.dart';
 
 class ExsoTopBarHeader extends StatelessWidget {
-  const ExsoTopBarHeader({Key? key}) : super(key: key);
+  const ExsoTopBarHeader({super.key});
 
   @override
   Widget build(BuildContext context) {

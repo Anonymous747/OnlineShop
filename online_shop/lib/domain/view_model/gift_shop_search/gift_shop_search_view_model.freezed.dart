@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'gift_shop_search_view_model.dart';
@@ -11,24 +12,7 @@ part of 'gift_shop_search_view_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$GiftShopSearchViewModelTearOff {
-  const _$GiftShopSearchViewModelTearOff();
-
-  _GiftShopSearchViewModel call(
-      {required List<GiftContentViewModel> gifts,
-      required CellState cellState}) {
-    return _GiftShopSearchViewModel(
-      gifts: gifts,
-      cellState: cellState,
-    );
-  }
-}
-
-/// @nodoc
-const $GiftShopSearchViewModel = _$GiftShopSearchViewModelTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$GiftShopSearchViewModel {
@@ -76,35 +60,35 @@ class _$GiftShopSearchViewModelCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$GiftShopSearchViewModelCopyWith<$Res>
+abstract class _$$_GiftShopSearchViewModelCopyWith<$Res>
     implements $GiftShopSearchViewModelCopyWith<$Res> {
-  factory _$GiftShopSearchViewModelCopyWith(_GiftShopSearchViewModel value,
-          $Res Function(_GiftShopSearchViewModel) then) =
-      __$GiftShopSearchViewModelCopyWithImpl<$Res>;
+  factory _$$_GiftShopSearchViewModelCopyWith(_$_GiftShopSearchViewModel value,
+          $Res Function(_$_GiftShopSearchViewModel) then) =
+      __$$_GiftShopSearchViewModelCopyWithImpl<$Res>;
   @override
   $Res call({List<GiftContentViewModel> gifts, CellState cellState});
 }
 
 /// @nodoc
-class __$GiftShopSearchViewModelCopyWithImpl<$Res>
+class __$$_GiftShopSearchViewModelCopyWithImpl<$Res>
     extends _$GiftShopSearchViewModelCopyWithImpl<$Res>
-    implements _$GiftShopSearchViewModelCopyWith<$Res> {
-  __$GiftShopSearchViewModelCopyWithImpl(_GiftShopSearchViewModel _value,
-      $Res Function(_GiftShopSearchViewModel) _then)
-      : super(_value, (v) => _then(v as _GiftShopSearchViewModel));
+    implements _$$_GiftShopSearchViewModelCopyWith<$Res> {
+  __$$_GiftShopSearchViewModelCopyWithImpl(_$_GiftShopSearchViewModel _value,
+      $Res Function(_$_GiftShopSearchViewModel) _then)
+      : super(_value, (v) => _then(v as _$_GiftShopSearchViewModel));
 
   @override
-  _GiftShopSearchViewModel get _value =>
-      super._value as _GiftShopSearchViewModel;
+  _$_GiftShopSearchViewModel get _value =>
+      super._value as _$_GiftShopSearchViewModel;
 
   @override
   $Res call({
     Object? gifts = freezed,
     Object? cellState = freezed,
   }) {
-    return _then(_GiftShopSearchViewModel(
+    return _then(_$_GiftShopSearchViewModel(
       gifts: gifts == freezed
-          ? _value.gifts
+          ? _value._gifts
           : gifts // ignore: cast_nullable_to_non_nullable
               as List<GiftContentViewModel>,
       cellState: cellState == freezed
@@ -119,10 +103,17 @@ class __$GiftShopSearchViewModelCopyWithImpl<$Res>
 
 class _$_GiftShopSearchViewModel implements _GiftShopSearchViewModel {
   const _$_GiftShopSearchViewModel(
-      {required this.gifts, required this.cellState});
+      {required final List<GiftContentViewModel> gifts,
+      required this.cellState})
+      : _gifts = gifts;
 
+  final List<GiftContentViewModel> _gifts;
   @override
-  final List<GiftContentViewModel> gifts;
+  List<GiftContentViewModel> get gifts {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_gifts);
+  }
+
   @override
   final CellState cellState;
 
@@ -134,38 +125,37 @@ class _$_GiftShopSearchViewModel implements _GiftShopSearchViewModel {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _GiftShopSearchViewModel &&
-            (identical(other.gifts, gifts) ||
-                const DeepCollectionEquality().equals(other.gifts, gifts)) &&
-            (identical(other.cellState, cellState) ||
-                const DeepCollectionEquality()
-                    .equals(other.cellState, cellState)));
+        (other.runtimeType == runtimeType &&
+            other is _$_GiftShopSearchViewModel &&
+            const DeepCollectionEquality().equals(other._gifts, _gifts) &&
+            const DeepCollectionEquality().equals(other.cellState, cellState));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(gifts) ^
-      const DeepCollectionEquality().hash(cellState);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(_gifts),
+      const DeepCollectionEquality().hash(cellState));
 
   @JsonKey(ignore: true)
   @override
-  _$GiftShopSearchViewModelCopyWith<_GiftShopSearchViewModel> get copyWith =>
-      __$GiftShopSearchViewModelCopyWithImpl<_GiftShopSearchViewModel>(
-          this, _$identity);
+  _$$_GiftShopSearchViewModelCopyWith<_$_GiftShopSearchViewModel>
+      get copyWith =>
+          __$$_GiftShopSearchViewModelCopyWithImpl<_$_GiftShopSearchViewModel>(
+              this, _$identity);
 }
 
 abstract class _GiftShopSearchViewModel implements GiftShopSearchViewModel {
   const factory _GiftShopSearchViewModel(
-      {required List<GiftContentViewModel> gifts,
-      required CellState cellState}) = _$_GiftShopSearchViewModel;
+      {required final List<GiftContentViewModel> gifts,
+      required final CellState cellState}) = _$_GiftShopSearchViewModel;
 
   @override
-  List<GiftContentViewModel> get gifts => throw _privateConstructorUsedError;
+  List<GiftContentViewModel> get gifts;
   @override
-  CellState get cellState => throw _privateConstructorUsedError;
+  CellState get cellState;
   @override
   @JsonKey(ignore: true)
-  _$GiftShopSearchViewModelCopyWith<_GiftShopSearchViewModel> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$_GiftShopSearchViewModelCopyWith<_$_GiftShopSearchViewModel>
+      get copyWith => throw _privateConstructorUsedError;
 }

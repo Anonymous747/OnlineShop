@@ -11,8 +11,8 @@ class PrimaryGridBar extends StatelessWidget {
   const PrimaryGridBar({
     required this.backroundColor,
     required this.height,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
