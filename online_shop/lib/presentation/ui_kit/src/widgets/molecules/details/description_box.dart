@@ -13,7 +13,7 @@ class DescriptionBox extends StatelessWidget {
     return InkWell(
       onTap: viewModel.onTagPress,
       child: BoxLayout(
-        separateHeight: 14,
+        separateVerticalPadding: 14,
         padding: const EdgeInsets.all(10),
         topWidget: (context) => Text(viewModel.desription),
         bottomWidget: (context) => Wrap(

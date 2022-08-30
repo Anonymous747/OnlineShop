@@ -77,7 +77,7 @@ class ExsoTopBarHeader extends StatelessWidget {
                   children: [
                     const SearchField(
                       width: 160,
-                      iconWidth: 40,
+                      iconContainerWidth: 40,
                       iconSize: 20,
                       cursorHeight: 14,
                       height: 30,

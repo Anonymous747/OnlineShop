@@ -12,7 +12,7 @@ class OtherGiftShopSearchPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(
-          horizontal: ScreenSizes.kHeaderHorizontalPadding, vertical: 20),
+          horizontal: ScreenSizes.kHeaderHorizontalPadding, vertical: 40),
       child: Row(
         children: [
           GiftSearchExtraPart(viewModel: viewModel),

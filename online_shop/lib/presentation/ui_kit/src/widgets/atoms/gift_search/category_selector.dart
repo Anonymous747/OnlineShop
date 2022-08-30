@@ -12,20 +12,28 @@ class CategorySelector extends StatelessWidget {
     String value = categories[0];
 
     return DropdownButtonFormField<String>(
+      borderRadius: BorderRadius.circular(4),
+      style: context.styling.getTextStyle(exsoText: ExsoText.bodySText),
+      decoration: InputDecoration(
+        filled: true,
+        contentPadding: const EdgeInsets.symmetric(horizontal: 10),
+        fillColor: context.styling.getColor(ExsoColor.detailsBackground),
+        border: OutlineInputBorder(
+            borderSide: BorderSide.none,
+            borderRadius: BorderRadius.circular(6)),
+      ),
+      value: value,
       items: List.generate(
         categories.length,
         (index) {
           return DropdownMenuItem(
-              child: Text(categories[index]), value: categories[index]);
+              child: Padding(
+                padding: const EdgeInsets.only(left: 10),
+                child: Text(categories[index]),
+              ),
+              value: categories[index]);
         },
       ),
-      borderRadius: BorderRadius.circular(4),
-      style: context.styling.getTextStyle(exsoText: ExsoText.bodySText),
-      decoration: InputDecoration(
-        fillColor: context.styling.getColor(ExsoColor.detailsBackground),
-        border: InputBorder.none,
-      ),
-      value: value,
       onChanged: (newValue) {
         value = newValue ?? value;
       },

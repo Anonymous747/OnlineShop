@@ -21,9 +21,9 @@ class UiMaterialButton extends StatelessWidget {
   });
 
   factory UiMaterialButton.roundedWithDefaultText({
-    required VoidCallback onTap,
     required BuildContext context,
     required String text,
+    required VoidCallback onTap,
     EdgeInsets? padding,
     ExsoText? exsoText,
     Color? buttonColor,

@@ -78,4 +78,21 @@ class ExsoTextStyle extends AppTextStyle {
       color: color,
     );
   }
+
+  @override
+  TextStyle getBoxTitleTextStyle(Color? color) {
+    return TextStyle(
+      fontSize: 20,
+      fontWeight: FontWeight.w600,
+      color: color,
+    );
+  }
+
+  @override
+  TextStyle getBodyS400TextStyle(Color? color) {
+    return TextStyle(
+      fontWeight: FontWeight.w400,
+      color: color,
+    );
+  }
 }
