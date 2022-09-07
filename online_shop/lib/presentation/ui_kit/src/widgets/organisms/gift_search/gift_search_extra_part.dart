@@ -13,13 +13,14 @@ class GiftSearchExtraPart extends StatelessWidget {
     return LimitedBox(
       maxWidth: ScreenSizes.kGeneralHorizontalPostsWidth,
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           SearchHandmadeBox(viewModel: viewModel),
           const SizedBox(height: 20),
           const JoinCommunityBox(),
           const SizedBox(height: 20),
-          SubcategoriesSearchBox(),
+          const SubcategoriesSearchBox(),
         ],
       ),
     );

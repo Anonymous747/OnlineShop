@@ -74,7 +74,7 @@ class BoxLayout extends StatelessWidget {
       requireSeparateLine: false,
       backgroundColor: backgroundColor,
       borderColor: borderColor,
-      padding: padding ?? const EdgeInsets.all(20),
+      padding: padding ?? const EdgeInsets.all(10),
       margin: margin,
     );
   }

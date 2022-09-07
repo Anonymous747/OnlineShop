@@ -8,9 +8,12 @@ class GiftContentViewModel with _$GiftContentViewModel {
   const factory GiftContentViewModel({
     required String title,
     required String author,
+    required String imagePath,
     required StockState stockState,
     required String postedDate,
     required GiftCategory category,
+    required double cost,
     @Default(false) bool liked,
+    @Default('') String country,
   }) = _GiftContentViewModel;
 }

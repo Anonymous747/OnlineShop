@@ -14,9 +14,11 @@ class OtherGiftShopSearchPage extends StatelessWidget {
       padding: const EdgeInsets.symmetric(
           horizontal: ScreenSizes.kHeaderHorizontalPadding, vertical: 40),
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           GiftSearchExtraPart(viewModel: viewModel),
-          const GiftSearchBody(),
+          const SizedBox(width: 40),
+          GiftSearchBody(viewModel),
         ],
       ),
     );

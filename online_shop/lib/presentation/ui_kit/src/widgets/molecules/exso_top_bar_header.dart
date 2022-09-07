@@ -33,7 +33,7 @@ class ExsoTopBarHeader extends StatelessWidget {
                   children: [
                     Text(context.s.generalHeaderLableText,
                         style: context.styling.getTextStyle(
-                          exsoText: ExsoText.headetMBoldText,
+                          exsoText: ExsoText.headerMBoldText,
                           exsoColor: ExsoColor.textPrimary,
                         )),
                     Text(

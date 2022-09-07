@@ -43,7 +43,7 @@ class SearchHandmadeBox extends StatelessWidget {
       bottomWidget: (context) => UiMaterialButton.roundedWithDefaultText(
         context: context,
         text: context.s.searchNowButtonText,
-        height: 50,
+        height: 40,
         onTap: () {},
       ),
     );

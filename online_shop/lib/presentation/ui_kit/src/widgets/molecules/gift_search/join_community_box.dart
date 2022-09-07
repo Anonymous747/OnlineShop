@@ -32,7 +32,11 @@ class JoinCommunityBox extends StatelessWidget {
                 ]))),
       ),
       bottomWidget: (context) => UiMaterialButton.roundedWithDefaultText(
-          context: context, text: 'Get Listed Today', onTap: () {}),
+        context: context,
+        text: 'Get Listed Today',
+        height: 40,
+        onTap: () {},
+      ),
     );
   }
 }

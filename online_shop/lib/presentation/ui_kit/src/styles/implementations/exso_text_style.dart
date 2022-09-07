@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
 
 class ExsoTextStyle extends AppTextStyle {
+  const ExsoTextStyle();
+
   @override
   TextStyle getBodyLTextStyle(Color? color) {
     return TextStyle(
@@ -64,8 +66,8 @@ class ExsoTextStyle extends AppTextStyle {
   @override
   TextStyle getBodySTinyTextStyle(Color? color) {
     return TextStyle(
-      fontSize: 12,
-      fontWeight: FontWeight.w600,
+      fontSize: 11,
+      fontWeight: FontWeight.w800,
       color: color,
     );
   }

@@ -70,7 +70,7 @@ class AppStylingBase implements AppStyling {
         return appTextstyle.getBodyS400TextStyle(color);
       case ExsoText.headerLText:
         return appTextstyle.getHeaderLTextStyle(color);
-      case ExsoText.headetMBoldText:
+      case ExsoText.headerMBoldText:
         return appTextstyle.getHeaderMBoldTextStyle(color);
       case ExsoText.bodySBoldText:
         return appTextstyle.getBodySBoldTextStyle(color);

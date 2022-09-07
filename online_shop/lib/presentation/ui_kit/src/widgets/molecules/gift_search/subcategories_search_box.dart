@@ -49,6 +49,7 @@ class SubcategoriesSearchBox extends StatelessWidget {
       bottomWidget: (context) => UiMaterialButton.roundedWithDefaultText(
         context: context,
         text: 'Search Now',
+        height: 40,
         onTap: () {},
       ),
     );

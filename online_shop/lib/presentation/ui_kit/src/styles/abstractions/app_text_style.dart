@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 abstract class AppTextStyle {
+  const AppTextStyle();
+
   TextStyle getBodySTextStyle(Color? color);
   TextStyle getBodyS400TextStyle(Color? color);
   TextStyle getBodySTinyTextStyle(Color? color);

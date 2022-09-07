@@ -18,10 +18,13 @@ final _privateConstructorUsedError = UnsupportedError(
 mixin _$GiftContentViewModel {
   String get title => throw _privateConstructorUsedError;
   String get author => throw _privateConstructorUsedError;
+  String get imagePath => throw _privateConstructorUsedError;
   StockState get stockState => throw _privateConstructorUsedError;
   String get postedDate => throw _privateConstructorUsedError;
   GiftCategory get category => throw _privateConstructorUsedError;
+  double get cost => throw _privateConstructorUsedError;
   bool get liked => throw _privateConstructorUsedError;
+  String get country => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $GiftContentViewModelCopyWith<GiftContentViewModel> get copyWith =>
@@ -36,10 +39,13 @@ abstract class $GiftContentViewModelCopyWith<$Res> {
   $Res call(
       {String title,
       String author,
+      String imagePath,
       StockState stockState,
       String postedDate,
       GiftCategory category,
-      bool liked});
+      double cost,
+      bool liked,
+      String country});
 }
 
 /// @nodoc
@@ -55,10 +61,13 @@ class _$GiftContentViewModelCopyWithImpl<$Res>
   $Res call({
     Object? title = freezed,
     Object? author = freezed,
+    Object? imagePath = freezed,
     Object? stockState = freezed,
     Object? postedDate = freezed,
     Object? category = freezed,
+    Object? cost = freezed,
     Object? liked = freezed,
+    Object? country = freezed,
   }) {
     return _then(_value.copyWith(
       title: title == freezed
@@ -68,6 +77,10 @@ class _$GiftContentViewModelCopyWithImpl<$Res>
       author: author == freezed
           ? _value.author
           : author // ignore: cast_nullable_to_non_nullable
+              as String,
+      imagePath: imagePath == freezed
+          ? _value.imagePath
+          : imagePath // ignore: cast_nullable_to_non_nullable
               as String,
       stockState: stockState == freezed
           ? _value.stockState
@@ -81,10 +94,18 @@ class _$GiftContentViewModelCopyWithImpl<$Res>
           ? _value.category
           : category // ignore: cast_nullable_to_non_nullable
               as GiftCategory,
+      cost: cost == freezed
+          ? _value.cost
+          : cost // ignore: cast_nullable_to_non_nullable
+              as double,
       liked: liked == freezed
           ? _value.liked
           : liked // ignore: cast_nullable_to_non_nullable
               as bool,
+      country: country == freezed
+          ? _value.country
+          : country // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -99,10 +120,13 @@ abstract class _$$_GiftContentViewModelCopyWith<$Res>
   $Res call(
       {String title,
       String author,
+      String imagePath,
       StockState stockState,
       String postedDate,
       GiftCategory category,
-      bool liked});
+      double cost,
+      bool liked,
+      String country});
 }
 
 /// @nodoc
@@ -120,10 +144,13 @@ class __$$_GiftContentViewModelCopyWithImpl<$Res>
   $Res call({
     Object? title = freezed,
     Object? author = freezed,
+    Object? imagePath = freezed,
     Object? stockState = freezed,
     Object? postedDate = freezed,
     Object? category = freezed,
+    Object? cost = freezed,
     Object? liked = freezed,
+    Object? country = freezed,
   }) {
     return _then(_$_GiftContentViewModel(
       title: title == freezed
@@ -133,6 +160,10 @@ class __$$_GiftContentViewModelCopyWithImpl<$Res>
       author: author == freezed
           ? _value.author
           : author // ignore: cast_nullable_to_non_nullable
+              as String,
+      imagePath: imagePath == freezed
+          ? _value.imagePath
+          : imagePath // ignore: cast_nullable_to_non_nullable
               as String,
       stockState: stockState == freezed
           ? _value.stockState
@@ -146,10 +177,18 @@ class __$$_GiftContentViewModelCopyWithImpl<$Res>
           ? _value.category
           : category // ignore: cast_nullable_to_non_nullable
               as GiftCategory,
+      cost: cost == freezed
+          ? _value.cost
+          : cost // ignore: cast_nullable_to_non_nullable
+              as double,
       liked: liked == freezed
           ? _value.liked
           : liked // ignore: cast_nullable_to_non_nullable
               as bool,
+      country: country == freezed
+          ? _value.country
+          : country // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -160,15 +199,20 @@ class _$_GiftContentViewModel implements _GiftContentViewModel {
   const _$_GiftContentViewModel(
       {required this.title,
       required this.author,
+      required this.imagePath,
       required this.stockState,
       required this.postedDate,
       required this.category,
-      this.liked = false});
+      required this.cost,
+      this.liked = false,
+      this.country = ''});
 
   @override
   final String title;
   @override
   final String author;
+  @override
+  final String imagePath;
   @override
   final StockState stockState;
   @override
@@ -176,12 +220,17 @@ class _$_GiftContentViewModel implements _GiftContentViewModel {
   @override
   final GiftCategory category;
   @override
+  final double cost;
+  @override
   @JsonKey()
   final bool liked;
+  @override
+  @JsonKey()
+  final String country;
 
   @override
   String toString() {
-    return 'GiftContentViewModel(title: $title, author: $author, stockState: $stockState, postedDate: $postedDate, category: $category, liked: $liked)';
+    return 'GiftContentViewModel(title: $title, author: $author, imagePath: $imagePath, stockState: $stockState, postedDate: $postedDate, category: $category, cost: $cost, liked: $liked, country: $country)';
   }
 
   @override
@@ -191,12 +240,15 @@ class _$_GiftContentViewModel implements _GiftContentViewModel {
             other is _$_GiftContentViewModel &&
             const DeepCollectionEquality().equals(other.title, title) &&
             const DeepCollectionEquality().equals(other.author, author) &&
+            const DeepCollectionEquality().equals(other.imagePath, imagePath) &&
             const DeepCollectionEquality()
                 .equals(other.stockState, stockState) &&
             const DeepCollectionEquality()
                 .equals(other.postedDate, postedDate) &&
             const DeepCollectionEquality().equals(other.category, category) &&
-            const DeepCollectionEquality().equals(other.liked, liked));
+            const DeepCollectionEquality().equals(other.cost, cost) &&
+            const DeepCollectionEquality().equals(other.liked, liked) &&
+            const DeepCollectionEquality().equals(other.country, country));
   }
 
   @override
@@ -204,10 +256,13 @@ class _$_GiftContentViewModel implements _GiftContentViewModel {
       runtimeType,
       const DeepCollectionEquality().hash(title),
       const DeepCollectionEquality().hash(author),
+      const DeepCollectionEquality().hash(imagePath),
       const DeepCollectionEquality().hash(stockState),
       const DeepCollectionEquality().hash(postedDate),
       const DeepCollectionEquality().hash(category),
-      const DeepCollectionEquality().hash(liked));
+      const DeepCollectionEquality().hash(cost),
+      const DeepCollectionEquality().hash(liked),
+      const DeepCollectionEquality().hash(country));
 
   @JsonKey(ignore: true)
   @override
@@ -220,15 +275,20 @@ abstract class _GiftContentViewModel implements GiftContentViewModel {
   const factory _GiftContentViewModel(
       {required final String title,
       required final String author,
+      required final String imagePath,
       required final StockState stockState,
       required final String postedDate,
       required final GiftCategory category,
-      final bool liked}) = _$_GiftContentViewModel;
+      required final double cost,
+      final bool liked,
+      final String country}) = _$_GiftContentViewModel;
 
   @override
   String get title;
   @override
   String get author;
+  @override
+  String get imagePath;
   @override
   StockState get stockState;
   @override
@@ -236,7 +296,11 @@ abstract class _GiftContentViewModel implements GiftContentViewModel {
   @override
   GiftCategory get category;
   @override
+  double get cost;
+  @override
   bool get liked;
+  @override
+  String get country;
   @override
   @JsonKey(ignore: true)
   _$$_GiftContentViewModelCopyWith<_$_GiftContentViewModel> get copyWith =>

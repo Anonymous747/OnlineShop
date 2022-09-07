@@ -1,13 +1,13 @@
 enum ExsoText {
-  bodyLText,
-  bodyMText,
-  bodyMSemiBoldText,
   bodySText,
   bodyS400Text,
   bodySBoldText,
+  headerMBoldText,
+  bodyMText,
+  bodyMSemiBoldText,
   bodySTinyText,
   headerLText,
-  headetMBoldText,
   headerLSmallerText,
+  bodyLText,
   boxTitle,
 }
