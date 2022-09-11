@@ -15,8 +15,17 @@ class GiftSearchBody extends StatelessWidget {
       title: Text('Handmade Gift Shop',
           style: context.styling.getTextStyle(exsoText: ExsoText.headerLText)),
       actionComponent: (context) => Row(children: const [
-        FilledIcon(icon: Icons.grid_3x3),
-        FilledIcon(icon: Icons.collections),
+        FilledIcon(
+          icon: Icons.table_rows,
+          height: 30,
+          iconSize: 20,
+        ),
+        SizedBox(width: 10),
+        FilledIcon(
+          icon: Icons.grid_view_sharp,
+          height: 30,
+          iconSize: 20,
+        ),
       ]),
       collectionComponent: (context) => Padding(
         padding: const EdgeInsets.symmetric(vertical: 20),

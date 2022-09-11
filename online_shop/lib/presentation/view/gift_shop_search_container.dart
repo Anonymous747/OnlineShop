@@ -13,8 +13,9 @@ class GiftShopSearchContainer extends StatelessWidget {
       return state.map(
           initial: (_) => const Center(child: CircularProgressIndicator()),
           loaded: (loadedState) => ResponsiveWidget(
-                small: (context) =>
-                    SmallGiftShopSearchPage(viewModel: loadedState.viewModel),
+                small: (context) => SmallGiftShopSearchPage(
+                  viewModel: loadedState.viewModel,
+                ),
                 other: (context) => OtherGiftShopSearchPage(
                   viewModel: loadedState.viewModel,
                 ),

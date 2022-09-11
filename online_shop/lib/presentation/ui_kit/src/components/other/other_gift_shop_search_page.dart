@@ -5,6 +5,7 @@ import 'package:online_shop/presentation/presentation.dart';
 
 class OtherGiftShopSearchPage extends StatelessWidget {
   final GiftShopSearchViewModel viewModel;
+  // final VoidCallback
 
   const OtherGiftShopSearchPage({required this.viewModel, super.key});
 

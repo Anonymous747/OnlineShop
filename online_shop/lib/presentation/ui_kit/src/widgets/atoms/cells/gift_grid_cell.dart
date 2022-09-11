@@ -5,8 +5,13 @@ import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
 
 class GiftGridCell extends StatelessWidget {
   final GiftContentViewModel gift;
+  final StringBuilder onViewDetails;
 
-  const GiftGridCell(this.gift, {super.key});
+  const GiftGridCell(
+    this.gift, {
+    required this.onViewDetails,
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -83,7 +88,8 @@ class GiftGridCell extends StatelessWidget {
           UiMaterialButton.roundedWithDefaultText(
             context: context,
             text: 'View Details',
-            onTap: () {},
+            height: 40,
+            onTap: () => onViewDetails(gift.title),
           ),
           const SizedBox(height: 10),
           Text.rich(TextSpan(children: [

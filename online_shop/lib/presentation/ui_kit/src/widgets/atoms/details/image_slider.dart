@@ -64,7 +64,7 @@ class _ImageSliderState extends State<ImageSlider> {
                   Align(
                     alignment: Alignment.topRight,
                     child: FilledIcon(
-                      icon: Icons.code_outlined,
+                      icon: Icons.fullscreen,
                       iconColor:
                           context.styling.getColor(ExsoColor.primaryHeader),
                       backgroundColor: context.styling
