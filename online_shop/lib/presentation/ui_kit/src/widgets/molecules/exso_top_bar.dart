@@ -5,8 +5,8 @@ typedef WidgetFunction = Widget Function(BuildContext);
 
 class ExsoTopBar extends StatefulWidget {
   const ExsoTopBar({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<ExsoTopBar> createState() => _ExsoTopBarState();

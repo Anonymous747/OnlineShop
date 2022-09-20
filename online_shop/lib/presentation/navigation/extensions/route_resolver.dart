@@ -25,17 +25,5 @@ extension RouteResolver on List<String> {
     configuration.addAll(pathSegments.pathToRoute);
 
     return configuration;
-    // switch (this) {
-    //   case Pages.kHomePage:
-    //     return RouteData.home();
-    //   case Pages.kLoginPage:
-    //     return RouteData.login();
-    //   case Pages.kDetailsPage:
-    //     return RouteData.details(id: 'item-details');
-    //   default:
-    //     return RouteData.details(id: 'item-details');
-    // }
-    // print("========== route_resolver ${this}");
-    // return RouteData.login();
   }
 }

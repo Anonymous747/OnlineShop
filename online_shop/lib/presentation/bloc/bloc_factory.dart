@@ -9,6 +9,7 @@ class BlocFactory extends ServiceLocator {
     await RepositoryProvider.instance.initialize();
 
     this
+      // Blocs
       ..registerFactory<LoginBloc>(LoginBloc.new)
       ..registerFactory<HomeBloc>(() => HomeBloc(
             get(),
@@ -17,11 +18,16 @@ class BlocFactory extends ServiceLocator {
             get(),
           ))
       ..registerFactory<GiftCatalogBloc>(GiftCatalogBloc.new)
+      ..registerFactory<GiftShopSearchBloc>(() => GiftShopSearchBloc(
+            get(),
+          ))
+      // Singletons
       ..registerLazySingleton<NavigationBloc>(NavigationBloc.new)
       ..registerLazySingleton<PrimaryBarBloc>(PrimaryBarBloc.new)
       // Mappers
       ..registerFactory<HomeMapper>(HomeMapper.new)
-      ..registerFactory<DetailsMapper>(DetailsMapper.new);
+      ..registerFactory<DetailsMapper>(DetailsMapper.new)
+      ..registerFactory<GiftShopSearchMapper>(GiftShopSearchMapper.new);
 
     BaseHandler.setDependencies(navigationBloc: get);
   }

@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'gift_catalog_view_model.dart';
@@ -11,21 +12,7 @@ part of 'gift_catalog_view_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$GiftCatalogViewModelTearOff {
-  const _$GiftCatalogViewModelTearOff();
-
-  _GiftCatalogViewModel call({required List<GiftKindViewModel> kinds}) {
-    return _GiftCatalogViewModel(
-      kinds: kinds,
-    );
-  }
-}
-
-/// @nodoc
-const $GiftCatalogViewModel = _$GiftCatalogViewModelTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$GiftCatalogViewModel {
@@ -67,33 +54,33 @@ class _$GiftCatalogViewModelCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$GiftCatalogViewModelCopyWith<$Res>
+abstract class _$$_GiftCatalogViewModelCopyWith<$Res>
     implements $GiftCatalogViewModelCopyWith<$Res> {
-  factory _$GiftCatalogViewModelCopyWith(_GiftCatalogViewModel value,
-          $Res Function(_GiftCatalogViewModel) then) =
-      __$GiftCatalogViewModelCopyWithImpl<$Res>;
+  factory _$$_GiftCatalogViewModelCopyWith(_$_GiftCatalogViewModel value,
+          $Res Function(_$_GiftCatalogViewModel) then) =
+      __$$_GiftCatalogViewModelCopyWithImpl<$Res>;
   @override
   $Res call({List<GiftKindViewModel> kinds});
 }
 
 /// @nodoc
-class __$GiftCatalogViewModelCopyWithImpl<$Res>
+class __$$_GiftCatalogViewModelCopyWithImpl<$Res>
     extends _$GiftCatalogViewModelCopyWithImpl<$Res>
-    implements _$GiftCatalogViewModelCopyWith<$Res> {
-  __$GiftCatalogViewModelCopyWithImpl(
-      _GiftCatalogViewModel _value, $Res Function(_GiftCatalogViewModel) _then)
-      : super(_value, (v) => _then(v as _GiftCatalogViewModel));
+    implements _$$_GiftCatalogViewModelCopyWith<$Res> {
+  __$$_GiftCatalogViewModelCopyWithImpl(_$_GiftCatalogViewModel _value,
+      $Res Function(_$_GiftCatalogViewModel) _then)
+      : super(_value, (v) => _then(v as _$_GiftCatalogViewModel));
 
   @override
-  _GiftCatalogViewModel get _value => super._value as _GiftCatalogViewModel;
+  _$_GiftCatalogViewModel get _value => super._value as _$_GiftCatalogViewModel;
 
   @override
   $Res call({
     Object? kinds = freezed,
   }) {
-    return _then(_GiftCatalogViewModel(
+    return _then(_$_GiftCatalogViewModel(
       kinds: kinds == freezed
-          ? _value.kinds
+          ? _value._kinds
           : kinds // ignore: cast_nullable_to_non_nullable
               as List<GiftKindViewModel>,
     ));
@@ -103,10 +90,15 @@ class __$GiftCatalogViewModelCopyWithImpl<$Res>
 /// @nodoc
 
 class _$_GiftCatalogViewModel implements _GiftCatalogViewModel {
-  const _$_GiftCatalogViewModel({required this.kinds});
+  const _$_GiftCatalogViewModel({required final List<GiftKindViewModel> kinds})
+      : _kinds = kinds;
 
+  final List<GiftKindViewModel> _kinds;
   @override
-  final List<GiftKindViewModel> kinds;
+  List<GiftKindViewModel> get kinds {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_kinds);
+  }
 
   @override
   String toString() {
@@ -116,30 +108,30 @@ class _$_GiftCatalogViewModel implements _GiftCatalogViewModel {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _GiftCatalogViewModel &&
-            (identical(other.kinds, kinds) ||
-                const DeepCollectionEquality().equals(other.kinds, kinds)));
+        (other.runtimeType == runtimeType &&
+            other is _$_GiftCatalogViewModel &&
+            const DeepCollectionEquality().equals(other._kinds, _kinds));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(kinds);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(_kinds));
 
   @JsonKey(ignore: true)
   @override
-  _$GiftCatalogViewModelCopyWith<_GiftCatalogViewModel> get copyWith =>
-      __$GiftCatalogViewModelCopyWithImpl<_GiftCatalogViewModel>(
+  _$$_GiftCatalogViewModelCopyWith<_$_GiftCatalogViewModel> get copyWith =>
+      __$$_GiftCatalogViewModelCopyWithImpl<_$_GiftCatalogViewModel>(
           this, _$identity);
 }
 
 abstract class _GiftCatalogViewModel implements GiftCatalogViewModel {
   const factory _GiftCatalogViewModel(
-      {required List<GiftKindViewModel> kinds}) = _$_GiftCatalogViewModel;
+      {required final List<GiftKindViewModel> kinds}) = _$_GiftCatalogViewModel;
 
   @override
-  List<GiftKindViewModel> get kinds => throw _privateConstructorUsedError;
+  List<GiftKindViewModel> get kinds;
   @override
   @JsonKey(ignore: true)
-  _$GiftCatalogViewModelCopyWith<_GiftCatalogViewModel> get copyWith =>
+  _$$_GiftCatalogViewModelCopyWith<_$_GiftCatalogViewModel> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -15,8 +15,8 @@ class ResponsiveWidget extends StatelessWidget {
     this.large,
     this.other,
     this.byShortestSide = false,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   const ResponsiveWidget.hgoLayouts({
     this.small,
@@ -24,8 +24,8 @@ class ResponsiveWidget extends StatelessWidget {
     this.large,
     this.other,
     this.byShortestSide = false,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

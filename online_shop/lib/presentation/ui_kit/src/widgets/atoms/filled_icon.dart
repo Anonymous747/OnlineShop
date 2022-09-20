@@ -25,8 +25,8 @@ class FilledIcon extends StatefulWidget {
     this.selectionColor,
     this.iconColor,
     this.onPress,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<FilledIcon> createState() => _FilledIconState();

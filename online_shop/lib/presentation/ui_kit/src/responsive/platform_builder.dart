@@ -15,9 +15,8 @@ class PlatformBuilder<T> extends StatelessWidget {
     this.ios,
     this.web,
     this.other,
-    Key? key,
-  })  : assert(android != null || ios != null || web != null || other != null),
-        super(key: key);
+    super.key,
+  }) : assert(android != null || ios != null || web != null || other != null);
 
   @override
   Widget build(BuildContext context) {
@@ -51,8 +50,8 @@ class PlatformWidget extends StatelessWidget {
     this.ios,
     this.web,
     this.other,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

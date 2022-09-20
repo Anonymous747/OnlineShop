@@ -82,7 +82,7 @@ class ScreenInfo {
     bool byShortestSide = false,
   }) {
     final windowSize =
-        MediaQueryData.fromWindow(WidgetsBinding.instance!.window).size;
+        MediaQueryData.fromWindow(WidgetsBinding.instance.window).size;
     final width = byShortestSide ? windowSize.shortestSide : windowSize.width;
 
     return width > _C.minWidthMediumMinus;

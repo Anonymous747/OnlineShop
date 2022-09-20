@@ -6,8 +6,7 @@ import 'package:online_shop/presentation/presentation.dart';
 class UniqueGiftsCategory extends StatelessWidget {
   final List<SelectableCardViewModel> uniqueGifts;
 
-  const UniqueGiftsCategory({required this.uniqueGifts, Key? key})
-      : super(key: key);
+  const UniqueGiftsCategory({required this.uniqueGifts, super.key});
 
   @override
   Widget build(BuildContext context) {

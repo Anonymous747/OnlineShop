@@ -6,14 +6,14 @@ import 'package:online_shop/presentation/presentation.dart';
 class DescriptionBox extends StatelessWidget {
   final DetailsDescriptionViewModel viewModel;
 
-  const DescriptionBox({required this.viewModel, Key? key}) : super(key: key);
+  const DescriptionBox({required this.viewModel, super.key});
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: viewModel.onTagPress,
       child: BoxLayout(
-        separateHeight: 14,
+        separateVerticalPadding: 14,
         padding: const EdgeInsets.all(10),
         topWidget: (context) => Text(viewModel.desription),
         bottomWidget: (context) => Wrap(

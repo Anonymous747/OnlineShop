@@ -18,23 +18,23 @@ class ResponsiveBuilder<T> extends StatelessWidget {
 
   const ResponsiveBuilder({
     required this.builder,
-    Key? key,
+    super.key,
     this.small,
     this.medium,
     this.large,
     this.other,
     this.byShortestSide = false,
-  }) : super(key: key);
+  });
 
   const ResponsiveBuilder.exsoLayouts({
     required this.builder,
-    Key? key,
+    super.key,
     this.large,
     this.medium,
     this.small,
     this.other,
     this.byShortestSide = false,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

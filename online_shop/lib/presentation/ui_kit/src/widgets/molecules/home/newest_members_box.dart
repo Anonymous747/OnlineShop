@@ -8,8 +8,8 @@ class NewestMembersBox extends StatelessWidget {
 
   const NewestMembersBox({
     required this.newestMembers,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'primary_bar_bloc.dart';
@@ -11,25 +12,7 @@ part of 'primary_bar_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$PrimaryBarEventTearOff {
-  const _$PrimaryBarEventTearOff();
-
-  _PrimaryBarInitializeEvent initialize() {
-    return const _PrimaryBarInitializeEvent();
-  }
-
-  _PrimaryBarNavigateEvent navigateTo(int index) {
-    return _PrimaryBarNavigateEvent(
-      index,
-    );
-  }
-}
-
-/// @nodoc
-const $PrimaryBarEvent = _$PrimaryBarEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$PrimaryBarEvent {
@@ -91,23 +74,25 @@ class _$PrimaryBarEventCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$PrimaryBarInitializeEventCopyWith<$Res> {
-  factory _$PrimaryBarInitializeEventCopyWith(_PrimaryBarInitializeEvent value,
-          $Res Function(_PrimaryBarInitializeEvent) then) =
-      __$PrimaryBarInitializeEventCopyWithImpl<$Res>;
+abstract class _$$_PrimaryBarInitializeEventCopyWith<$Res> {
+  factory _$$_PrimaryBarInitializeEventCopyWith(
+          _$_PrimaryBarInitializeEvent value,
+          $Res Function(_$_PrimaryBarInitializeEvent) then) =
+      __$$_PrimaryBarInitializeEventCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$PrimaryBarInitializeEventCopyWithImpl<$Res>
+class __$$_PrimaryBarInitializeEventCopyWithImpl<$Res>
     extends _$PrimaryBarEventCopyWithImpl<$Res>
-    implements _$PrimaryBarInitializeEventCopyWith<$Res> {
-  __$PrimaryBarInitializeEventCopyWithImpl(_PrimaryBarInitializeEvent _value,
-      $Res Function(_PrimaryBarInitializeEvent) _then)
-      : super(_value, (v) => _then(v as _PrimaryBarInitializeEvent));
+    implements _$$_PrimaryBarInitializeEventCopyWith<$Res> {
+  __$$_PrimaryBarInitializeEventCopyWithImpl(
+      _$_PrimaryBarInitializeEvent _value,
+      $Res Function(_$_PrimaryBarInitializeEvent) _then)
+      : super(_value, (v) => _then(v as _$_PrimaryBarInitializeEvent));
 
   @override
-  _PrimaryBarInitializeEvent get _value =>
-      super._value as _PrimaryBarInitializeEvent;
+  _$_PrimaryBarInitializeEvent get _value =>
+      super._value as _$_PrimaryBarInitializeEvent;
 }
 
 /// @nodoc
@@ -122,7 +107,9 @@ class _$_PrimaryBarInitializeEvent implements _PrimaryBarInitializeEvent {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _PrimaryBarInitializeEvent);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_PrimaryBarInitializeEvent);
   }
 
   @override
@@ -196,30 +183,30 @@ abstract class _PrimaryBarInitializeEvent implements PrimaryBarEvent {
 }
 
 /// @nodoc
-abstract class _$PrimaryBarNavigateEventCopyWith<$Res> {
-  factory _$PrimaryBarNavigateEventCopyWith(_PrimaryBarNavigateEvent value,
-          $Res Function(_PrimaryBarNavigateEvent) then) =
-      __$PrimaryBarNavigateEventCopyWithImpl<$Res>;
+abstract class _$$_PrimaryBarNavigateEventCopyWith<$Res> {
+  factory _$$_PrimaryBarNavigateEventCopyWith(_$_PrimaryBarNavigateEvent value,
+          $Res Function(_$_PrimaryBarNavigateEvent) then) =
+      __$$_PrimaryBarNavigateEventCopyWithImpl<$Res>;
   $Res call({int index});
 }
 
 /// @nodoc
-class __$PrimaryBarNavigateEventCopyWithImpl<$Res>
+class __$$_PrimaryBarNavigateEventCopyWithImpl<$Res>
     extends _$PrimaryBarEventCopyWithImpl<$Res>
-    implements _$PrimaryBarNavigateEventCopyWith<$Res> {
-  __$PrimaryBarNavigateEventCopyWithImpl(_PrimaryBarNavigateEvent _value,
-      $Res Function(_PrimaryBarNavigateEvent) _then)
-      : super(_value, (v) => _then(v as _PrimaryBarNavigateEvent));
+    implements _$$_PrimaryBarNavigateEventCopyWith<$Res> {
+  __$$_PrimaryBarNavigateEventCopyWithImpl(_$_PrimaryBarNavigateEvent _value,
+      $Res Function(_$_PrimaryBarNavigateEvent) _then)
+      : super(_value, (v) => _then(v as _$_PrimaryBarNavigateEvent));
 
   @override
-  _PrimaryBarNavigateEvent get _value =>
-      super._value as _PrimaryBarNavigateEvent;
+  _$_PrimaryBarNavigateEvent get _value =>
+      super._value as _$_PrimaryBarNavigateEvent;
 
   @override
   $Res call({
     Object? index = freezed,
   }) {
-    return _then(_PrimaryBarNavigateEvent(
+    return _then(_$_PrimaryBarNavigateEvent(
       index == freezed
           ? _value.index
           : index // ignore: cast_nullable_to_non_nullable
@@ -244,20 +231,21 @@ class _$_PrimaryBarNavigateEvent implements _PrimaryBarNavigateEvent {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _PrimaryBarNavigateEvent &&
-            (identical(other.index, index) ||
-                const DeepCollectionEquality().equals(other.index, index)));
+        (other.runtimeType == runtimeType &&
+            other is _$_PrimaryBarNavigateEvent &&
+            const DeepCollectionEquality().equals(other.index, index));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(index);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(index));
 
   @JsonKey(ignore: true)
   @override
-  _$PrimaryBarNavigateEventCopyWith<_PrimaryBarNavigateEvent> get copyWith =>
-      __$PrimaryBarNavigateEventCopyWithImpl<_PrimaryBarNavigateEvent>(
-          this, _$identity);
+  _$$_PrimaryBarNavigateEventCopyWith<_$_PrimaryBarNavigateEvent>
+      get copyWith =>
+          __$$_PrimaryBarNavigateEventCopyWithImpl<_$_PrimaryBarNavigateEvent>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -323,33 +311,18 @@ class _$_PrimaryBarNavigateEvent implements _PrimaryBarNavigateEvent {
 }
 
 abstract class _PrimaryBarNavigateEvent implements PrimaryBarEvent {
-  const factory _PrimaryBarNavigateEvent(int index) =
+  const factory _PrimaryBarNavigateEvent(final int index) =
       _$_PrimaryBarNavigateEvent;
 
-  int get index => throw _privateConstructorUsedError;
+  int get index;
   @JsonKey(ignore: true)
-  _$PrimaryBarNavigateEventCopyWith<_PrimaryBarNavigateEvent> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$_PrimaryBarNavigateEventCopyWith<_$_PrimaryBarNavigateEvent>
+      get copyWith => throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$PrimaryBarStateTearOff {
-  const _$PrimaryBarStateTearOff();
-
-  _PrimaryBarInitialState initial(List<String> cells) {
-    return _PrimaryBarInitialState(
-      cells,
-    );
-  }
-}
-
-/// @nodoc
-const $PrimaryBarState = _$PrimaryBarStateTearOff();
 
 /// @nodoc
 mixin _$PrimaryBarState {
   List<String> get cells => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(List<String> cells) initial,
@@ -419,33 +392,34 @@ class _$PrimaryBarStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$PrimaryBarInitialStateCopyWith<$Res>
+abstract class _$$_PrimaryBarInitialStateCopyWith<$Res>
     implements $PrimaryBarStateCopyWith<$Res> {
-  factory _$PrimaryBarInitialStateCopyWith(_PrimaryBarInitialState value,
-          $Res Function(_PrimaryBarInitialState) then) =
-      __$PrimaryBarInitialStateCopyWithImpl<$Res>;
+  factory _$$_PrimaryBarInitialStateCopyWith(_$_PrimaryBarInitialState value,
+          $Res Function(_$_PrimaryBarInitialState) then) =
+      __$$_PrimaryBarInitialStateCopyWithImpl<$Res>;
   @override
   $Res call({List<String> cells});
 }
 
 /// @nodoc
-class __$PrimaryBarInitialStateCopyWithImpl<$Res>
+class __$$_PrimaryBarInitialStateCopyWithImpl<$Res>
     extends _$PrimaryBarStateCopyWithImpl<$Res>
-    implements _$PrimaryBarInitialStateCopyWith<$Res> {
-  __$PrimaryBarInitialStateCopyWithImpl(_PrimaryBarInitialState _value,
-      $Res Function(_PrimaryBarInitialState) _then)
-      : super(_value, (v) => _then(v as _PrimaryBarInitialState));
+    implements _$$_PrimaryBarInitialStateCopyWith<$Res> {
+  __$$_PrimaryBarInitialStateCopyWithImpl(_$_PrimaryBarInitialState _value,
+      $Res Function(_$_PrimaryBarInitialState) _then)
+      : super(_value, (v) => _then(v as _$_PrimaryBarInitialState));
 
   @override
-  _PrimaryBarInitialState get _value => super._value as _PrimaryBarInitialState;
+  _$_PrimaryBarInitialState get _value =>
+      super._value as _$_PrimaryBarInitialState;
 
   @override
   $Res call({
     Object? cells = freezed,
   }) {
-    return _then(_PrimaryBarInitialState(
+    return _then(_$_PrimaryBarInitialState(
       cells == freezed
-          ? _value.cells
+          ? _value._cells
           : cells // ignore: cast_nullable_to_non_nullable
               as List<String>,
     ));
@@ -455,10 +429,14 @@ class __$PrimaryBarInitialStateCopyWithImpl<$Res>
 /// @nodoc
 
 class _$_PrimaryBarInitialState implements _PrimaryBarInitialState {
-  const _$_PrimaryBarInitialState(this.cells);
+  const _$_PrimaryBarInitialState(final List<String> cells) : _cells = cells;
 
+  final List<String> _cells;
   @override
-  final List<String> cells;
+  List<String> get cells {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_cells);
+  }
 
   @override
   String toString() {
@@ -468,19 +446,19 @@ class _$_PrimaryBarInitialState implements _PrimaryBarInitialState {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _PrimaryBarInitialState &&
-            (identical(other.cells, cells) ||
-                const DeepCollectionEquality().equals(other.cells, cells)));
+        (other.runtimeType == runtimeType &&
+            other is _$_PrimaryBarInitialState &&
+            const DeepCollectionEquality().equals(other._cells, _cells));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(cells);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(_cells));
 
   @JsonKey(ignore: true)
   @override
-  _$PrimaryBarInitialStateCopyWith<_PrimaryBarInitialState> get copyWith =>
-      __$PrimaryBarInitialStateCopyWithImpl<_PrimaryBarInitialState>(
+  _$$_PrimaryBarInitialStateCopyWith<_$_PrimaryBarInitialState> get copyWith =>
+      __$$_PrimaryBarInitialStateCopyWithImpl<_$_PrimaryBarInitialState>(
           this, _$identity);
 
   @override
@@ -541,13 +519,13 @@ class _$_PrimaryBarInitialState implements _PrimaryBarInitialState {
 }
 
 abstract class _PrimaryBarInitialState implements PrimaryBarState {
-  const factory _PrimaryBarInitialState(List<String> cells) =
+  const factory _PrimaryBarInitialState(final List<String> cells) =
       _$_PrimaryBarInitialState;
 
   @override
-  List<String> get cells => throw _privateConstructorUsedError;
+  List<String> get cells;
   @override
   @JsonKey(ignore: true)
-  _$PrimaryBarInitialStateCopyWith<_PrimaryBarInitialState> get copyWith =>
+  _$$_PrimaryBarInitialStateCopyWith<_$_PrimaryBarInitialState> get copyWith =>
       throw _privateConstructorUsedError;
 }

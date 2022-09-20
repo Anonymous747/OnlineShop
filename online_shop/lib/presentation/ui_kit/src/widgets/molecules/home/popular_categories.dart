@@ -6,8 +6,7 @@ import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
 class PopularCategories extends StatelessWidget {
   final List<SelectableCardViewModel> popularCategories;
 
-  const PopularCategories({required this.popularCategories, Key? key})
-      : super(key: key);
+  const PopularCategories({required this.popularCategories, super.key});
 
   @override
   Widget build(BuildContext context) {

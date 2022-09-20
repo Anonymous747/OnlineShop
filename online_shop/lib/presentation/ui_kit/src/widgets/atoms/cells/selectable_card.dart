@@ -17,8 +17,8 @@ class SelectableCard extends StatefulWidget {
     required this.cardButtonText,
     this.withSeparatedLine = true,
     this.onPress,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<SelectableCard> createState() => _SelectableCardState();

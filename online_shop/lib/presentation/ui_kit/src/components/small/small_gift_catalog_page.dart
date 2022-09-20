@@ -4,9 +4,7 @@ import 'package:online_shop/domain/domain.dart';
 class SmallGiftCatalogPage extends StatelessWidget {
   final GiftCatalogViewModel viewModel;
 
-  const SmallGiftCatalogPage({required this.viewModel, Key? key})
-      : super(key: key);
-
+  const SmallGiftCatalogPage({required this.viewModel, super.key});
   @override
   Widget build(BuildContext context) {
     return const Center(

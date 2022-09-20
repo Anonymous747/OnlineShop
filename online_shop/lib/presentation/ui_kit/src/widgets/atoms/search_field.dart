@@ -5,8 +5,9 @@ import 'package:online_shop/presentation/presentation.dart';
 
 class SearchField extends StatefulWidget {
   final double? width;
-  final double? iconWidth;
+  final IconData? icon;
   final double? iconSize;
+  final double? iconContainerWidth;
   final double? height;
   final double? cursorHeight;
   final TextEditingController? controller;
@@ -14,12 +15,13 @@ class SearchField extends StatefulWidget {
   const SearchField({
     this.controller,
     this.height,
-    this.iconWidth = 50,
+    this.iconContainerWidth = 50,
     this.iconSize,
+    this.icon,
     this.cursorHeight,
-    this.width,
-    Key? key,
-  }) : super(key: key);
+    this.width = 100,
+    super.key,
+  });
 
   @override
   State<SearchField> createState() => _SearchFieldState();
@@ -35,7 +37,7 @@ class _SearchFieldState extends State<SearchField> {
       children: [
         Container(
           height: widget.height,
-          width: widget.iconWidth,
+          width: widget.iconContainerWidth,
           decoration: BoxDecoration(
             color: context.styling.getColor(ExsoColor.detailsBackground),
             border: Border.all(color: _kBorderColor),
@@ -44,11 +46,13 @@ class _SearchFieldState extends State<SearchField> {
               bottomLeft: Radius.circular(6),
             ),
           ),
-          child: Icon(Icons.search, size: widget.iconSize),
+          child: Icon(widget.icon ?? Icons.search, size: widget.iconSize),
         ),
-        SizedBox(
-          width: widget.width,
-          height: widget.height,
+        ConstrainedBox(
+          constraints: BoxConstraints.tightFor(
+            width: (widget.width ?? 0 - (widget.iconContainerWidth ?? 0)),
+            height: widget.height,
+          ),
           child: CustomTextField(
             borderColor: _kBorderColor,
             borderRadius: const BorderRadius.only(

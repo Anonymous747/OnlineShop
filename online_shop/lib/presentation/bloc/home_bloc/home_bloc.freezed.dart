@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'home_bloc.dart';
@@ -11,23 +12,7 @@ part of 'home_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$HomeEventTearOff {
-  const _$HomeEventTearOff();
-
-  _HomeInitializeEvent initialize() {
-    return const _HomeInitializeEvent();
-  }
-
-  _HomeNavigateToDetailsEvent navigateToDetails() {
-    return const _HomeNavigateToDetailsEvent();
-  }
-}
-
-/// @nodoc
-const $HomeEvent = _$HomeEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$HomeEvent {
@@ -88,22 +73,22 @@ class _$HomeEventCopyWithImpl<$Res> implements $HomeEventCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$HomeInitializeEventCopyWith<$Res> {
-  factory _$HomeInitializeEventCopyWith(_HomeInitializeEvent value,
-          $Res Function(_HomeInitializeEvent) then) =
-      __$HomeInitializeEventCopyWithImpl<$Res>;
+abstract class _$$_HomeInitializeEventCopyWith<$Res> {
+  factory _$$_HomeInitializeEventCopyWith(_$_HomeInitializeEvent value,
+          $Res Function(_$_HomeInitializeEvent) then) =
+      __$$_HomeInitializeEventCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$HomeInitializeEventCopyWithImpl<$Res>
+class __$$_HomeInitializeEventCopyWithImpl<$Res>
     extends _$HomeEventCopyWithImpl<$Res>
-    implements _$HomeInitializeEventCopyWith<$Res> {
-  __$HomeInitializeEventCopyWithImpl(
-      _HomeInitializeEvent _value, $Res Function(_HomeInitializeEvent) _then)
-      : super(_value, (v) => _then(v as _HomeInitializeEvent));
+    implements _$$_HomeInitializeEventCopyWith<$Res> {
+  __$$_HomeInitializeEventCopyWithImpl(_$_HomeInitializeEvent _value,
+      $Res Function(_$_HomeInitializeEvent) _then)
+      : super(_value, (v) => _then(v as _$_HomeInitializeEvent));
 
   @override
-  _HomeInitializeEvent get _value => super._value as _HomeInitializeEvent;
+  _$_HomeInitializeEvent get _value => super._value as _$_HomeInitializeEvent;
 }
 
 /// @nodoc
@@ -118,7 +103,8 @@ class _$_HomeInitializeEvent implements _HomeInitializeEvent {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _HomeInitializeEvent);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_HomeInitializeEvent);
   }
 
   @override
@@ -193,24 +179,25 @@ abstract class _HomeInitializeEvent implements HomeEvent {
 }
 
 /// @nodoc
-abstract class _$HomeNavigateToDetailsEventCopyWith<$Res> {
-  factory _$HomeNavigateToDetailsEventCopyWith(
-          _HomeNavigateToDetailsEvent value,
-          $Res Function(_HomeNavigateToDetailsEvent) then) =
-      __$HomeNavigateToDetailsEventCopyWithImpl<$Res>;
+abstract class _$$_HomeNavigateToDetailsEventCopyWith<$Res> {
+  factory _$$_HomeNavigateToDetailsEventCopyWith(
+          _$_HomeNavigateToDetailsEvent value,
+          $Res Function(_$_HomeNavigateToDetailsEvent) then) =
+      __$$_HomeNavigateToDetailsEventCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$HomeNavigateToDetailsEventCopyWithImpl<$Res>
+class __$$_HomeNavigateToDetailsEventCopyWithImpl<$Res>
     extends _$HomeEventCopyWithImpl<$Res>
-    implements _$HomeNavigateToDetailsEventCopyWith<$Res> {
-  __$HomeNavigateToDetailsEventCopyWithImpl(_HomeNavigateToDetailsEvent _value,
-      $Res Function(_HomeNavigateToDetailsEvent) _then)
-      : super(_value, (v) => _then(v as _HomeNavigateToDetailsEvent));
+    implements _$$_HomeNavigateToDetailsEventCopyWith<$Res> {
+  __$$_HomeNavigateToDetailsEventCopyWithImpl(
+      _$_HomeNavigateToDetailsEvent _value,
+      $Res Function(_$_HomeNavigateToDetailsEvent) _then)
+      : super(_value, (v) => _then(v as _$_HomeNavigateToDetailsEvent));
 
   @override
-  _HomeNavigateToDetailsEvent get _value =>
-      super._value as _HomeNavigateToDetailsEvent;
+  _$_HomeNavigateToDetailsEvent get _value =>
+      super._value as _$_HomeNavigateToDetailsEvent;
 }
 
 /// @nodoc
@@ -225,7 +212,9 @@ class _$_HomeNavigateToDetailsEvent implements _HomeNavigateToDetailsEvent {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _HomeNavigateToDetailsEvent);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_HomeNavigateToDetailsEvent);
   }
 
   @override
@@ -300,28 +289,6 @@ abstract class _HomeNavigateToDetailsEvent implements HomeEvent {
 }
 
 /// @nodoc
-class _$HomeStateTearOff {
-  const _$HomeStateTearOff();
-
-  _HomeInitialState initial() {
-    return const _HomeInitialState();
-  }
-
-  _HomeLoadedState loaded({required HomeViewModel viewModel}) {
-    return _HomeLoadedState(
-      viewModel: viewModel,
-    );
-  }
-
-  _HomeLoadingState loading() {
-    return const _HomeLoadingState();
-  }
-}
-
-/// @nodoc
-const $HomeState = _$HomeStateTearOff();
-
-/// @nodoc
 mixin _$HomeState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
@@ -385,22 +352,22 @@ class _$HomeStateCopyWithImpl<$Res> implements $HomeStateCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$HomeInitialStateCopyWith<$Res> {
-  factory _$HomeInitialStateCopyWith(
-          _HomeInitialState value, $Res Function(_HomeInitialState) then) =
-      __$HomeInitialStateCopyWithImpl<$Res>;
+abstract class _$$_HomeInitialStateCopyWith<$Res> {
+  factory _$$_HomeInitialStateCopyWith(
+          _$_HomeInitialState value, $Res Function(_$_HomeInitialState) then) =
+      __$$_HomeInitialStateCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$HomeInitialStateCopyWithImpl<$Res>
+class __$$_HomeInitialStateCopyWithImpl<$Res>
     extends _$HomeStateCopyWithImpl<$Res>
-    implements _$HomeInitialStateCopyWith<$Res> {
-  __$HomeInitialStateCopyWithImpl(
-      _HomeInitialState _value, $Res Function(_HomeInitialState) _then)
-      : super(_value, (v) => _then(v as _HomeInitialState));
+    implements _$$_HomeInitialStateCopyWith<$Res> {
+  __$$_HomeInitialStateCopyWithImpl(
+      _$_HomeInitialState _value, $Res Function(_$_HomeInitialState) _then)
+      : super(_value, (v) => _then(v as _$_HomeInitialState));
 
   @override
-  _HomeInitialState get _value => super._value as _HomeInitialState;
+  _$_HomeInitialState get _value => super._value as _$_HomeInitialState;
 }
 
 /// @nodoc
@@ -415,7 +382,8 @@ class _$_HomeInitialState implements _HomeInitialState {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _HomeInitialState);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_HomeInitialState);
   }
 
   @override
@@ -495,30 +463,31 @@ abstract class _HomeInitialState implements HomeState {
 }
 
 /// @nodoc
-abstract class _$HomeLoadedStateCopyWith<$Res> {
-  factory _$HomeLoadedStateCopyWith(
-          _HomeLoadedState value, $Res Function(_HomeLoadedState) then) =
-      __$HomeLoadedStateCopyWithImpl<$Res>;
+abstract class _$$_HomeLoadedStateCopyWith<$Res> {
+  factory _$$_HomeLoadedStateCopyWith(
+          _$_HomeLoadedState value, $Res Function(_$_HomeLoadedState) then) =
+      __$$_HomeLoadedStateCopyWithImpl<$Res>;
   $Res call({HomeViewModel viewModel});
 
   $HomeViewModelCopyWith<$Res> get viewModel;
 }
 
 /// @nodoc
-class __$HomeLoadedStateCopyWithImpl<$Res> extends _$HomeStateCopyWithImpl<$Res>
-    implements _$HomeLoadedStateCopyWith<$Res> {
-  __$HomeLoadedStateCopyWithImpl(
-      _HomeLoadedState _value, $Res Function(_HomeLoadedState) _then)
-      : super(_value, (v) => _then(v as _HomeLoadedState));
+class __$$_HomeLoadedStateCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res>
+    implements _$$_HomeLoadedStateCopyWith<$Res> {
+  __$$_HomeLoadedStateCopyWithImpl(
+      _$_HomeLoadedState _value, $Res Function(_$_HomeLoadedState) _then)
+      : super(_value, (v) => _then(v as _$_HomeLoadedState));
 
   @override
-  _HomeLoadedState get _value => super._value as _HomeLoadedState;
+  _$_HomeLoadedState get _value => super._value as _$_HomeLoadedState;
 
   @override
   $Res call({
     Object? viewModel = freezed,
   }) {
-    return _then(_HomeLoadedState(
+    return _then(_$_HomeLoadedState(
       viewModel: viewModel == freezed
           ? _value.viewModel
           : viewModel // ignore: cast_nullable_to_non_nullable
@@ -550,20 +519,19 @@ class _$_HomeLoadedState implements _HomeLoadedState {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _HomeLoadedState &&
-            (identical(other.viewModel, viewModel) ||
-                const DeepCollectionEquality()
-                    .equals(other.viewModel, viewModel)));
+        (other.runtimeType == runtimeType &&
+            other is _$_HomeLoadedState &&
+            const DeepCollectionEquality().equals(other.viewModel, viewModel));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(viewModel);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(viewModel));
 
   @JsonKey(ignore: true)
   @override
-  _$HomeLoadedStateCopyWith<_HomeLoadedState> get copyWith =>
-      __$HomeLoadedStateCopyWithImpl<_HomeLoadedState>(this, _$identity);
+  _$$_HomeLoadedStateCopyWith<_$_HomeLoadedState> get copyWith =>
+      __$$_HomeLoadedStateCopyWithImpl<_$_HomeLoadedState>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -635,32 +603,32 @@ class _$_HomeLoadedState implements _HomeLoadedState {
 }
 
 abstract class _HomeLoadedState implements HomeState {
-  const factory _HomeLoadedState({required HomeViewModel viewModel}) =
+  const factory _HomeLoadedState({required final HomeViewModel viewModel}) =
       _$_HomeLoadedState;
 
-  HomeViewModel get viewModel => throw _privateConstructorUsedError;
+  HomeViewModel get viewModel;
   @JsonKey(ignore: true)
-  _$HomeLoadedStateCopyWith<_HomeLoadedState> get copyWith =>
+  _$$_HomeLoadedStateCopyWith<_$_HomeLoadedState> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$HomeLoadingStateCopyWith<$Res> {
-  factory _$HomeLoadingStateCopyWith(
-          _HomeLoadingState value, $Res Function(_HomeLoadingState) then) =
-      __$HomeLoadingStateCopyWithImpl<$Res>;
+abstract class _$$_HomeLoadingStateCopyWith<$Res> {
+  factory _$$_HomeLoadingStateCopyWith(
+          _$_HomeLoadingState value, $Res Function(_$_HomeLoadingState) then) =
+      __$$_HomeLoadingStateCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$HomeLoadingStateCopyWithImpl<$Res>
+class __$$_HomeLoadingStateCopyWithImpl<$Res>
     extends _$HomeStateCopyWithImpl<$Res>
-    implements _$HomeLoadingStateCopyWith<$Res> {
-  __$HomeLoadingStateCopyWithImpl(
-      _HomeLoadingState _value, $Res Function(_HomeLoadingState) _then)
-      : super(_value, (v) => _then(v as _HomeLoadingState));
+    implements _$$_HomeLoadingStateCopyWith<$Res> {
+  __$$_HomeLoadingStateCopyWithImpl(
+      _$_HomeLoadingState _value, $Res Function(_$_HomeLoadingState) _then)
+      : super(_value, (v) => _then(v as _$_HomeLoadingState));
 
   @override
-  _HomeLoadingState get _value => super._value as _HomeLoadingState;
+  _$_HomeLoadingState get _value => super._value as _$_HomeLoadingState;
 }
 
 /// @nodoc
@@ -675,7 +643,8 @@ class _$_HomeLoadingState implements _HomeLoadingState {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _HomeLoadingState);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_HomeLoadingState);
   }
 
   @override

@@ -14,8 +14,8 @@ class SearchBox extends StatefulWidget {
   const SearchBox({
     this.mainAxisAlignment = MainAxisAlignment.start,
     required this.onSearch,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<SearchBox> createState() => _SearchBoxState();
@@ -65,7 +65,7 @@ class _SearchBoxState extends State<SearchBox> {
                     buttonColor: PaletteColor.blue,
                     height: 50,
                     width: _calculateSearchButtonWidth(context),
-                    text: context.s.seachNowButtonText,
+                    text: context.s.searchNowButtonText,
                     onTap: widget.onSearch,
                   ),
                 )

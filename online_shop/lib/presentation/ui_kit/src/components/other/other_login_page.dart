@@ -5,7 +5,7 @@ import 'package:online_shop/domain/domain.dart';
 import 'package:online_shop/presentation/presentation.dart';
 
 class OtherLoginPage extends StatefulWidget {
-  const OtherLoginPage({Key? key}) : super(key: key);
+  const OtherLoginPage({super.key});
 
   @override
   State<OtherLoginPage> createState() => _OtherLoginPageState();

@@ -10,8 +10,8 @@ class ImageSwitcher extends StatefulWidget {
     required this.images,
     required this.onSwitchImage,
     this.currentIndex = 0,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<ImageSwitcher> createState() => _ImageSwitcherState();

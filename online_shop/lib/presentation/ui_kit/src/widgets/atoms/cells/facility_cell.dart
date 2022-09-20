@@ -7,8 +7,8 @@ class FacilityCell extends StatelessWidget {
 
   const FacilityCell({
     required this.facility,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

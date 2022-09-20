@@ -23,8 +23,8 @@ class PersonCardLayout extends StatelessWidget {
     this.height,
     this.margin,
     this.width,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

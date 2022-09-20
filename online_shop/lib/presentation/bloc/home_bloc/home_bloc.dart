@@ -14,7 +14,7 @@ class HomeBloc extends BaseBloc<HomeEvent, HomeState> {
 
   HomeBloc(
     this._mapper,
-  ) : super(const _HomeInitialState()) {
+  ) : super(_HomeInitialState()) {
     on<_HomeInitializeEvent>(_handleInitializeEvent);
     on<_HomeNavigateToDetailsEvent>(_handleNavigateToDetailsEvent);
     add(const HomeEvent.initialize());

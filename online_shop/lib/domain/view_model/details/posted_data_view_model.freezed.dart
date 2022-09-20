@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'posted_data_view_model.dart';
@@ -11,26 +12,7 @@ part of 'posted_data_view_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$PostedDataViewModelTearOff {
-  const _$PostedDataViewModelTearOff();
-
-  _PostedDataViewModel call(
-      {required String author,
-      required String category,
-      required String postDate}) {
-    return _PostedDataViewModel(
-      author: author,
-      category: category,
-      postDate: postDate,
-    );
-  }
-}
-
-/// @nodoc
-const $PostedDataViewModel = _$PostedDataViewModelTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$PostedDataViewModel {
@@ -84,25 +66,25 @@ class _$PostedDataViewModelCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$PostedDataViewModelCopyWith<$Res>
+abstract class _$$_PostedDataViewModelCopyWith<$Res>
     implements $PostedDataViewModelCopyWith<$Res> {
-  factory _$PostedDataViewModelCopyWith(_PostedDataViewModel value,
-          $Res Function(_PostedDataViewModel) then) =
-      __$PostedDataViewModelCopyWithImpl<$Res>;
+  factory _$$_PostedDataViewModelCopyWith(_$_PostedDataViewModel value,
+          $Res Function(_$_PostedDataViewModel) then) =
+      __$$_PostedDataViewModelCopyWithImpl<$Res>;
   @override
   $Res call({String author, String category, String postDate});
 }
 
 /// @nodoc
-class __$PostedDataViewModelCopyWithImpl<$Res>
+class __$$_PostedDataViewModelCopyWithImpl<$Res>
     extends _$PostedDataViewModelCopyWithImpl<$Res>
-    implements _$PostedDataViewModelCopyWith<$Res> {
-  __$PostedDataViewModelCopyWithImpl(
-      _PostedDataViewModel _value, $Res Function(_PostedDataViewModel) _then)
-      : super(_value, (v) => _then(v as _PostedDataViewModel));
+    implements _$$_PostedDataViewModelCopyWith<$Res> {
+  __$$_PostedDataViewModelCopyWithImpl(_$_PostedDataViewModel _value,
+      $Res Function(_$_PostedDataViewModel) _then)
+      : super(_value, (v) => _then(v as _$_PostedDataViewModel));
 
   @override
-  _PostedDataViewModel get _value => super._value as _PostedDataViewModel;
+  _$_PostedDataViewModel get _value => super._value as _$_PostedDataViewModel;
 
   @override
   $Res call({
@@ -110,7 +92,7 @@ class __$PostedDataViewModelCopyWithImpl<$Res>
     Object? category = freezed,
     Object? postDate = freezed,
   }) {
-    return _then(_PostedDataViewModel(
+    return _then(_$_PostedDataViewModel(
       author: author == freezed
           ? _value.author
           : author // ignore: cast_nullable_to_non_nullable
@@ -148,45 +130,41 @@ class _$_PostedDataViewModel implements _PostedDataViewModel {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _PostedDataViewModel &&
-            (identical(other.author, author) ||
-                const DeepCollectionEquality().equals(other.author, author)) &&
-            (identical(other.category, category) ||
-                const DeepCollectionEquality()
-                    .equals(other.category, category)) &&
-            (identical(other.postDate, postDate) ||
-                const DeepCollectionEquality()
-                    .equals(other.postDate, postDate)));
+        (other.runtimeType == runtimeType &&
+            other is _$_PostedDataViewModel &&
+            const DeepCollectionEquality().equals(other.author, author) &&
+            const DeepCollectionEquality().equals(other.category, category) &&
+            const DeepCollectionEquality().equals(other.postDate, postDate));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(author) ^
-      const DeepCollectionEquality().hash(category) ^
-      const DeepCollectionEquality().hash(postDate);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(author),
+      const DeepCollectionEquality().hash(category),
+      const DeepCollectionEquality().hash(postDate));
 
   @JsonKey(ignore: true)
   @override
-  _$PostedDataViewModelCopyWith<_PostedDataViewModel> get copyWith =>
-      __$PostedDataViewModelCopyWithImpl<_PostedDataViewModel>(
+  _$$_PostedDataViewModelCopyWith<_$_PostedDataViewModel> get copyWith =>
+      __$$_PostedDataViewModelCopyWithImpl<_$_PostedDataViewModel>(
           this, _$identity);
 }
 
 abstract class _PostedDataViewModel implements PostedDataViewModel {
   const factory _PostedDataViewModel(
-      {required String author,
-      required String category,
-      required String postDate}) = _$_PostedDataViewModel;
+      {required final String author,
+      required final String category,
+      required final String postDate}) = _$_PostedDataViewModel;
 
   @override
-  String get author => throw _privateConstructorUsedError;
+  String get author;
   @override
-  String get category => throw _privateConstructorUsedError;
+  String get category;
   @override
-  String get postDate => throw _privateConstructorUsedError;
+  String get postDate;
   @override
   @JsonKey(ignore: true)
-  _$PostedDataViewModelCopyWith<_PostedDataViewModel> get copyWith =>
+  _$$_PostedDataViewModelCopyWith<_$_PostedDataViewModel> get copyWith =>
       throw _privateConstructorUsedError;
 }

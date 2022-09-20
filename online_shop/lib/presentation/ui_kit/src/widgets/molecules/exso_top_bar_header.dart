@@ -4,7 +4,7 @@ import 'package:online_shop/domain/domain.dart';
 import 'package:online_shop/presentation/presentation.dart';
 
 class ExsoTopBarHeader extends StatelessWidget {
-  const ExsoTopBarHeader({Key? key}) : super(key: key);
+  const ExsoTopBarHeader({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +33,7 @@ class ExsoTopBarHeader extends StatelessWidget {
                   children: [
                     Text(context.s.generalHeaderLableText,
                         style: context.styling.getTextStyle(
-                          exsoText: ExsoText.headetMBoldText,
+                          exsoText: ExsoText.headerMBoldText,
                           exsoColor: ExsoColor.textPrimary,
                         )),
                     Text(
@@ -77,7 +77,7 @@ class ExsoTopBarHeader extends StatelessWidget {
                   children: [
                     const SearchField(
                       width: 160,
-                      iconWidth: 40,
+                      iconContainerWidth: 40,
                       iconSize: 20,
                       cursorHeight: 14,
                       height: 30,

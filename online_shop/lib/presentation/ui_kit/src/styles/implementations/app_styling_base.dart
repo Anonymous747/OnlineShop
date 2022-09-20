@@ -66,9 +66,11 @@ class AppStylingBase implements AppStyling {
         return appTextstyle.getBodyMSemiBoldTextStyle(color);
       case ExsoText.bodySText:
         return appTextstyle.getBodySTextStyle(color);
+      case ExsoText.bodyS400Text:
+        return appTextstyle.getBodyS400TextStyle(color);
       case ExsoText.headerLText:
         return appTextstyle.getHeaderLTextStyle(color);
-      case ExsoText.headetMBoldText:
+      case ExsoText.headerMBoldText:
         return appTextstyle.getHeaderMBoldTextStyle(color);
       case ExsoText.bodySBoldText:
         return appTextstyle.getBodySBoldTextStyle(color);
@@ -76,6 +78,8 @@ class AppStylingBase implements AppStyling {
         return appTextstyle.getBodySTinyTextStyle(color);
       case ExsoText.headerLSmallerText:
         return appTextstyle.getHeaderLSmallerTextStyle(color);
+      case ExsoText.boxTitle:
+        return appTextstyle.getBoxTitleTextStyle(color);
     }
   }
 }

@@ -18,8 +18,7 @@ class HideableCard extends StatelessWidget {
       required this.buttonText,
       this.withSeparatedLine = true,
       this.onPress,
-      Key? key})
-      : super(key: key);
+      super.key});
 
   @override
   Widget build(BuildContext context) {

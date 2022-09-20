@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'details_bloc.dart';
@@ -11,19 +12,7 @@ part of 'details_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$DetailsEventTearOff {
-  const _$DetailsEventTearOff();
-
-  _DetailsInitializeEvent initialize() {
-    return const _DetailsInitializeEvent();
-  }
-}
-
-/// @nodoc
-const $DetailsEvent = _$DetailsEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$DetailsEvent {
@@ -78,22 +67,23 @@ class _$DetailsEventCopyWithImpl<$Res> implements $DetailsEventCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$DetailsInitializeEventCopyWith<$Res> {
-  factory _$DetailsInitializeEventCopyWith(_DetailsInitializeEvent value,
-          $Res Function(_DetailsInitializeEvent) then) =
-      __$DetailsInitializeEventCopyWithImpl<$Res>;
+abstract class _$$_DetailsInitializeEventCopyWith<$Res> {
+  factory _$$_DetailsInitializeEventCopyWith(_$_DetailsInitializeEvent value,
+          $Res Function(_$_DetailsInitializeEvent) then) =
+      __$$_DetailsInitializeEventCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$DetailsInitializeEventCopyWithImpl<$Res>
+class __$$_DetailsInitializeEventCopyWithImpl<$Res>
     extends _$DetailsEventCopyWithImpl<$Res>
-    implements _$DetailsInitializeEventCopyWith<$Res> {
-  __$DetailsInitializeEventCopyWithImpl(_DetailsInitializeEvent _value,
-      $Res Function(_DetailsInitializeEvent) _then)
-      : super(_value, (v) => _then(v as _DetailsInitializeEvent));
+    implements _$$_DetailsInitializeEventCopyWith<$Res> {
+  __$$_DetailsInitializeEventCopyWithImpl(_$_DetailsInitializeEvent _value,
+      $Res Function(_$_DetailsInitializeEvent) _then)
+      : super(_value, (v) => _then(v as _$_DetailsInitializeEvent));
 
   @override
-  _DetailsInitializeEvent get _value => super._value as _DetailsInitializeEvent;
+  _$_DetailsInitializeEvent get _value =>
+      super._value as _$_DetailsInitializeEvent;
 }
 
 /// @nodoc
@@ -108,7 +98,9 @@ class _$_DetailsInitializeEvent implements _DetailsInitializeEvent {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _DetailsInitializeEvent);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_DetailsInitializeEvent);
   }
 
   @override
@@ -176,24 +168,6 @@ abstract class _DetailsInitializeEvent implements DetailsEvent {
 }
 
 /// @nodoc
-class _$DetailsStateTearOff {
-  const _$DetailsStateTearOff();
-
-  _DetailsInitialState initial() {
-    return const _DetailsInitialState();
-  }
-
-  _DetailsLoadedState loaded(DetailsViewModel viewModel) {
-    return _DetailsLoadedState(
-      viewModel,
-    );
-  }
-}
-
-/// @nodoc
-const $DetailsState = _$DetailsStateTearOff();
-
-/// @nodoc
 mixin _$DetailsState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
@@ -252,22 +226,22 @@ class _$DetailsStateCopyWithImpl<$Res> implements $DetailsStateCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$DetailsInitialStateCopyWith<$Res> {
-  factory _$DetailsInitialStateCopyWith(_DetailsInitialState value,
-          $Res Function(_DetailsInitialState) then) =
-      __$DetailsInitialStateCopyWithImpl<$Res>;
+abstract class _$$_DetailsInitialStateCopyWith<$Res> {
+  factory _$$_DetailsInitialStateCopyWith(_$_DetailsInitialState value,
+          $Res Function(_$_DetailsInitialState) then) =
+      __$$_DetailsInitialStateCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$DetailsInitialStateCopyWithImpl<$Res>
+class __$$_DetailsInitialStateCopyWithImpl<$Res>
     extends _$DetailsStateCopyWithImpl<$Res>
-    implements _$DetailsInitialStateCopyWith<$Res> {
-  __$DetailsInitialStateCopyWithImpl(
-      _DetailsInitialState _value, $Res Function(_DetailsInitialState) _then)
-      : super(_value, (v) => _then(v as _DetailsInitialState));
+    implements _$$_DetailsInitialStateCopyWith<$Res> {
+  __$$_DetailsInitialStateCopyWithImpl(_$_DetailsInitialState _value,
+      $Res Function(_$_DetailsInitialState) _then)
+      : super(_value, (v) => _then(v as _$_DetailsInitialState));
 
   @override
-  _DetailsInitialState get _value => super._value as _DetailsInitialState;
+  _$_DetailsInitialState get _value => super._value as _$_DetailsInitialState;
 }
 
 /// @nodoc
@@ -282,7 +256,8 @@ class _$_DetailsInitialState implements _DetailsInitialState {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _DetailsInitialState);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_DetailsInitialState);
   }
 
   @override
@@ -356,31 +331,31 @@ abstract class _DetailsInitialState implements DetailsState {
 }
 
 /// @nodoc
-abstract class _$DetailsLoadedStateCopyWith<$Res> {
-  factory _$DetailsLoadedStateCopyWith(
-          _DetailsLoadedState value, $Res Function(_DetailsLoadedState) then) =
-      __$DetailsLoadedStateCopyWithImpl<$Res>;
+abstract class _$$_DetailsLoadedStateCopyWith<$Res> {
+  factory _$$_DetailsLoadedStateCopyWith(_$_DetailsLoadedState value,
+          $Res Function(_$_DetailsLoadedState) then) =
+      __$$_DetailsLoadedStateCopyWithImpl<$Res>;
   $Res call({DetailsViewModel viewModel});
 
   $DetailsViewModelCopyWith<$Res> get viewModel;
 }
 
 /// @nodoc
-class __$DetailsLoadedStateCopyWithImpl<$Res>
+class __$$_DetailsLoadedStateCopyWithImpl<$Res>
     extends _$DetailsStateCopyWithImpl<$Res>
-    implements _$DetailsLoadedStateCopyWith<$Res> {
-  __$DetailsLoadedStateCopyWithImpl(
-      _DetailsLoadedState _value, $Res Function(_DetailsLoadedState) _then)
-      : super(_value, (v) => _then(v as _DetailsLoadedState));
+    implements _$$_DetailsLoadedStateCopyWith<$Res> {
+  __$$_DetailsLoadedStateCopyWithImpl(
+      _$_DetailsLoadedState _value, $Res Function(_$_DetailsLoadedState) _then)
+      : super(_value, (v) => _then(v as _$_DetailsLoadedState));
 
   @override
-  _DetailsLoadedState get _value => super._value as _DetailsLoadedState;
+  _$_DetailsLoadedState get _value => super._value as _$_DetailsLoadedState;
 
   @override
   $Res call({
     Object? viewModel = freezed,
   }) {
-    return _then(_DetailsLoadedState(
+    return _then(_$_DetailsLoadedState(
       viewModel == freezed
           ? _value.viewModel
           : viewModel // ignore: cast_nullable_to_non_nullable
@@ -412,20 +387,20 @@ class _$_DetailsLoadedState implements _DetailsLoadedState {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _DetailsLoadedState &&
-            (identical(other.viewModel, viewModel) ||
-                const DeepCollectionEquality()
-                    .equals(other.viewModel, viewModel)));
+        (other.runtimeType == runtimeType &&
+            other is _$_DetailsLoadedState &&
+            const DeepCollectionEquality().equals(other.viewModel, viewModel));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(viewModel);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(viewModel));
 
   @JsonKey(ignore: true)
   @override
-  _$DetailsLoadedStateCopyWith<_DetailsLoadedState> get copyWith =>
-      __$DetailsLoadedStateCopyWithImpl<_DetailsLoadedState>(this, _$identity);
+  _$$_DetailsLoadedStateCopyWith<_$_DetailsLoadedState> get copyWith =>
+      __$$_DetailsLoadedStateCopyWithImpl<_$_DetailsLoadedState>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -491,11 +466,11 @@ class _$_DetailsLoadedState implements _DetailsLoadedState {
 }
 
 abstract class _DetailsLoadedState implements DetailsState {
-  const factory _DetailsLoadedState(DetailsViewModel viewModel) =
+  const factory _DetailsLoadedState(final DetailsViewModel viewModel) =
       _$_DetailsLoadedState;
 
-  DetailsViewModel get viewModel => throw _privateConstructorUsedError;
+  DetailsViewModel get viewModel;
   @JsonKey(ignore: true)
-  _$DetailsLoadedStateCopyWith<_DetailsLoadedState> get copyWith =>
+  _$$_DetailsLoadedStateCopyWith<_$_DetailsLoadedState> get copyWith =>
       throw _privateConstructorUsedError;
 }

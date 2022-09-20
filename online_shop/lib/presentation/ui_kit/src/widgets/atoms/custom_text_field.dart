@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
 
-const _kBorderColor = Colors.black26;
-
 class CustomTextField extends StatefulWidget {
   final String hintText;
   final TextStyle? style;
@@ -20,8 +18,8 @@ class CustomTextField extends StatefulWidget {
     this.style,
     this.cursorHeight,
     this.prefix,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
   @override
   State<CustomTextField> createState() => _CustomTextFieldState();
 }

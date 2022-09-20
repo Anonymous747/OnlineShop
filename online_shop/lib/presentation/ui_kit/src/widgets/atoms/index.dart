@@ -3,6 +3,7 @@ export './checkbox_field.dart';
 export './custom_text_field.dart';
 export './details/index.dart';
 export './filled_icon.dart';
+export './gift_search/index.dart';
 export './hint_column.dart';
 export './image_with_tiny_border.dart';
 export './location_title.dart';

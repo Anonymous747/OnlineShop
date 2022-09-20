@@ -7,8 +7,8 @@ class HintColumn extends StatelessWidget {
 
   const HintColumn({
     required this.viewModel,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

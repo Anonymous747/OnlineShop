@@ -9,8 +9,8 @@ class ImageWithTinyBorder extends StatelessWidget {
   const ImageWithTinyBorder({
     required this.imagePath,
     required this.imageSize,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

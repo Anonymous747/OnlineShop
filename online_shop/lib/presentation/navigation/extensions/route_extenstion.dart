@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:online_shop/presentation/navigation/pages/gift_shop_catalog_page.dart';
 import 'package:online_shop/presentation/presentation.dart';
 
 extension RouteToDelegateExtension on RouteData {
@@ -8,5 +7,6 @@ extension RouteToDelegateExtension on RouteData {
         login: (_) => LoginPage.new(),
         details: (_) => DetailsPage.new(),
         giftCatalog: (_) => GiftShopCatalogPage.new(),
+        giftSearch: (_) => GiftShopSearchPage.new(),
       );
 }

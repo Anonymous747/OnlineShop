@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'login_bloc.dart';
@@ -11,34 +12,7 @@ part of 'login_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$LoginEventTearOff {
-  const _$LoginEventTearOff();
-
-  _LoginInitialEvent initialize() {
-    return const _LoginInitialEvent();
-  }
-
-  _LoginSignInEvent signIn({required String email, required String password}) {
-    return _LoginSignInEvent(
-      email: email,
-      password: password,
-    );
-  }
-
-  _LoginSkipSignInEvent skipSignIn() {
-    return const _LoginSkipSignInEvent();
-  }
-
-  _LoginSuccessEvent success() {
-    return const _LoginSuccessEvent();
-  }
-}
-
-/// @nodoc
-const $LoginEvent = _$LoginEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$LoginEvent {
@@ -111,22 +85,22 @@ class _$LoginEventCopyWithImpl<$Res> implements $LoginEventCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$LoginInitialEventCopyWith<$Res> {
-  factory _$LoginInitialEventCopyWith(
-          _LoginInitialEvent value, $Res Function(_LoginInitialEvent) then) =
-      __$LoginInitialEventCopyWithImpl<$Res>;
+abstract class _$$_LoginInitialEventCopyWith<$Res> {
+  factory _$$_LoginInitialEventCopyWith(_$_LoginInitialEvent value,
+          $Res Function(_$_LoginInitialEvent) then) =
+      __$$_LoginInitialEventCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$LoginInitialEventCopyWithImpl<$Res>
+class __$$_LoginInitialEventCopyWithImpl<$Res>
     extends _$LoginEventCopyWithImpl<$Res>
-    implements _$LoginInitialEventCopyWith<$Res> {
-  __$LoginInitialEventCopyWithImpl(
-      _LoginInitialEvent _value, $Res Function(_LoginInitialEvent) _then)
-      : super(_value, (v) => _then(v as _LoginInitialEvent));
+    implements _$$_LoginInitialEventCopyWith<$Res> {
+  __$$_LoginInitialEventCopyWithImpl(
+      _$_LoginInitialEvent _value, $Res Function(_$_LoginInitialEvent) _then)
+      : super(_value, (v) => _then(v as _$_LoginInitialEvent));
 
   @override
-  _LoginInitialEvent get _value => super._value as _LoginInitialEvent;
+  _$_LoginInitialEvent get _value => super._value as _$_LoginInitialEvent;
 }
 
 /// @nodoc
@@ -141,7 +115,8 @@ class _$_LoginInitialEvent implements _LoginInitialEvent {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _LoginInitialEvent);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_LoginInitialEvent);
   }
 
   @override
@@ -227,30 +202,30 @@ abstract class _LoginInitialEvent implements LoginEvent {
 }
 
 /// @nodoc
-abstract class _$LoginSignInEventCopyWith<$Res> {
-  factory _$LoginSignInEventCopyWith(
-          _LoginSignInEvent value, $Res Function(_LoginSignInEvent) then) =
-      __$LoginSignInEventCopyWithImpl<$Res>;
+abstract class _$$_LoginSignInEventCopyWith<$Res> {
+  factory _$$_LoginSignInEventCopyWith(
+          _$_LoginSignInEvent value, $Res Function(_$_LoginSignInEvent) then) =
+      __$$_LoginSignInEventCopyWithImpl<$Res>;
   $Res call({String email, String password});
 }
 
 /// @nodoc
-class __$LoginSignInEventCopyWithImpl<$Res>
+class __$$_LoginSignInEventCopyWithImpl<$Res>
     extends _$LoginEventCopyWithImpl<$Res>
-    implements _$LoginSignInEventCopyWith<$Res> {
-  __$LoginSignInEventCopyWithImpl(
-      _LoginSignInEvent _value, $Res Function(_LoginSignInEvent) _then)
-      : super(_value, (v) => _then(v as _LoginSignInEvent));
+    implements _$$_LoginSignInEventCopyWith<$Res> {
+  __$$_LoginSignInEventCopyWithImpl(
+      _$_LoginSignInEvent _value, $Res Function(_$_LoginSignInEvent) _then)
+      : super(_value, (v) => _then(v as _$_LoginSignInEvent));
 
   @override
-  _LoginSignInEvent get _value => super._value as _LoginSignInEvent;
+  _$_LoginSignInEvent get _value => super._value as _$_LoginSignInEvent;
 
   @override
   $Res call({
     Object? email = freezed,
     Object? password = freezed,
   }) {
-    return _then(_LoginSignInEvent(
+    return _then(_$_LoginSignInEvent(
       email: email == freezed
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
@@ -281,24 +256,22 @@ class _$_LoginSignInEvent implements _LoginSignInEvent {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _LoginSignInEvent &&
-            (identical(other.email, email) ||
-                const DeepCollectionEquality().equals(other.email, email)) &&
-            (identical(other.password, password) ||
-                const DeepCollectionEquality()
-                    .equals(other.password, password)));
+        (other.runtimeType == runtimeType &&
+            other is _$_LoginSignInEvent &&
+            const DeepCollectionEquality().equals(other.email, email) &&
+            const DeepCollectionEquality().equals(other.password, password));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(email) ^
-      const DeepCollectionEquality().hash(password);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(email),
+      const DeepCollectionEquality().hash(password));
 
   @JsonKey(ignore: true)
   @override
-  _$LoginSignInEventCopyWith<_LoginSignInEvent> get copyWith =>
-      __$LoginSignInEventCopyWithImpl<_LoginSignInEvent>(this, _$identity);
+  _$$_LoginSignInEventCopyWith<_$_LoginSignInEvent> get copyWith =>
+      __$$_LoginSignInEventCopyWithImpl<_$_LoginSignInEvent>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -377,32 +350,33 @@ class _$_LoginSignInEvent implements _LoginSignInEvent {
 
 abstract class _LoginSignInEvent implements LoginEvent {
   const factory _LoginSignInEvent(
-      {required String email, required String password}) = _$_LoginSignInEvent;
+      {required final String email,
+      required final String password}) = _$_LoginSignInEvent;
 
-  String get email => throw _privateConstructorUsedError;
-  String get password => throw _privateConstructorUsedError;
+  String get email;
+  String get password;
   @JsonKey(ignore: true)
-  _$LoginSignInEventCopyWith<_LoginSignInEvent> get copyWith =>
+  _$$_LoginSignInEventCopyWith<_$_LoginSignInEvent> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$LoginSkipSignInEventCopyWith<$Res> {
-  factory _$LoginSkipSignInEventCopyWith(_LoginSkipSignInEvent value,
-          $Res Function(_LoginSkipSignInEvent) then) =
-      __$LoginSkipSignInEventCopyWithImpl<$Res>;
+abstract class _$$_LoginSkipSignInEventCopyWith<$Res> {
+  factory _$$_LoginSkipSignInEventCopyWith(_$_LoginSkipSignInEvent value,
+          $Res Function(_$_LoginSkipSignInEvent) then) =
+      __$$_LoginSkipSignInEventCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$LoginSkipSignInEventCopyWithImpl<$Res>
+class __$$_LoginSkipSignInEventCopyWithImpl<$Res>
     extends _$LoginEventCopyWithImpl<$Res>
-    implements _$LoginSkipSignInEventCopyWith<$Res> {
-  __$LoginSkipSignInEventCopyWithImpl(
-      _LoginSkipSignInEvent _value, $Res Function(_LoginSkipSignInEvent) _then)
-      : super(_value, (v) => _then(v as _LoginSkipSignInEvent));
+    implements _$$_LoginSkipSignInEventCopyWith<$Res> {
+  __$$_LoginSkipSignInEventCopyWithImpl(_$_LoginSkipSignInEvent _value,
+      $Res Function(_$_LoginSkipSignInEvent) _then)
+      : super(_value, (v) => _then(v as _$_LoginSkipSignInEvent));
 
   @override
-  _LoginSkipSignInEvent get _value => super._value as _LoginSkipSignInEvent;
+  _$_LoginSkipSignInEvent get _value => super._value as _$_LoginSkipSignInEvent;
 }
 
 /// @nodoc
@@ -417,7 +391,8 @@ class _$_LoginSkipSignInEvent implements _LoginSkipSignInEvent {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _LoginSkipSignInEvent);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_LoginSkipSignInEvent);
   }
 
   @override
@@ -503,22 +478,22 @@ abstract class _LoginSkipSignInEvent implements LoginEvent {
 }
 
 /// @nodoc
-abstract class _$LoginSuccessEventCopyWith<$Res> {
-  factory _$LoginSuccessEventCopyWith(
-          _LoginSuccessEvent value, $Res Function(_LoginSuccessEvent) then) =
-      __$LoginSuccessEventCopyWithImpl<$Res>;
+abstract class _$$_LoginSuccessEventCopyWith<$Res> {
+  factory _$$_LoginSuccessEventCopyWith(_$_LoginSuccessEvent value,
+          $Res Function(_$_LoginSuccessEvent) then) =
+      __$$_LoginSuccessEventCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$LoginSuccessEventCopyWithImpl<$Res>
+class __$$_LoginSuccessEventCopyWithImpl<$Res>
     extends _$LoginEventCopyWithImpl<$Res>
-    implements _$LoginSuccessEventCopyWith<$Res> {
-  __$LoginSuccessEventCopyWithImpl(
-      _LoginSuccessEvent _value, $Res Function(_LoginSuccessEvent) _then)
-      : super(_value, (v) => _then(v as _LoginSuccessEvent));
+    implements _$$_LoginSuccessEventCopyWith<$Res> {
+  __$$_LoginSuccessEventCopyWithImpl(
+      _$_LoginSuccessEvent _value, $Res Function(_$_LoginSuccessEvent) _then)
+      : super(_value, (v) => _then(v as _$_LoginSuccessEvent));
 
   @override
-  _LoginSuccessEvent get _value => super._value as _LoginSuccessEvent;
+  _$_LoginSuccessEvent get _value => super._value as _$_LoginSuccessEvent;
 }
 
 /// @nodoc
@@ -533,7 +508,8 @@ class _$_LoginSuccessEvent implements _LoginSuccessEvent {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _LoginSuccessEvent);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_LoginSuccessEvent);
   }
 
   @override
@@ -619,18 +595,6 @@ abstract class _LoginSuccessEvent implements LoginEvent {
 }
 
 /// @nodoc
-class _$LoginStateTearOff {
-  const _$LoginStateTearOff();
-
-  _LoginInitialState initial() {
-    return const _LoginInitialState();
-  }
-}
-
-/// @nodoc
-const $LoginState = _$LoginStateTearOff();
-
-/// @nodoc
 mixin _$LoginState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
@@ -683,22 +647,22 @@ class _$LoginStateCopyWithImpl<$Res> implements $LoginStateCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$LoginInitialStateCopyWith<$Res> {
-  factory _$LoginInitialStateCopyWith(
-          _LoginInitialState value, $Res Function(_LoginInitialState) then) =
-      __$LoginInitialStateCopyWithImpl<$Res>;
+abstract class _$$_LoginInitialStateCopyWith<$Res> {
+  factory _$$_LoginInitialStateCopyWith(_$_LoginInitialState value,
+          $Res Function(_$_LoginInitialState) then) =
+      __$$_LoginInitialStateCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$LoginInitialStateCopyWithImpl<$Res>
+class __$$_LoginInitialStateCopyWithImpl<$Res>
     extends _$LoginStateCopyWithImpl<$Res>
-    implements _$LoginInitialStateCopyWith<$Res> {
-  __$LoginInitialStateCopyWithImpl(
-      _LoginInitialState _value, $Res Function(_LoginInitialState) _then)
-      : super(_value, (v) => _then(v as _LoginInitialState));
+    implements _$$_LoginInitialStateCopyWith<$Res> {
+  __$$_LoginInitialStateCopyWithImpl(
+      _$_LoginInitialState _value, $Res Function(_$_LoginInitialState) _then)
+      : super(_value, (v) => _then(v as _$_LoginInitialState));
 
   @override
-  _LoginInitialState get _value => super._value as _LoginInitialState;
+  _$_LoginInitialState get _value => super._value as _$_LoginInitialState;
 }
 
 /// @nodoc
@@ -713,7 +677,8 @@ class _$_LoginInitialState implements _LoginInitialState {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _LoginInitialState);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_LoginInitialState);
   }
 
   @override

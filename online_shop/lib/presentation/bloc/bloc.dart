@@ -2,6 +2,7 @@ export './base_bloc.dart';
 export './bloc_factory.dart';
 export './details_bloc/details_bloc.dart';
 export './gift_catalog_bloc/gift_catalog_bloc.dart';
+export './gift_shop_search_bloc/gift_shop_search_bloc.dart';
 export './home_bloc/home_bloc.dart';
 export './login_bloc/login_bloc.dart';
 export './mixin/index.dart';

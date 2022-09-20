@@ -6,8 +6,7 @@ import 'package:online_shop/presentation/ui_kit/ui_kit.dart';
 class PhotoDemonstrator extends StatefulWidget {
   final PhotoDemonstratorViewModel viewModel;
 
-  const PhotoDemonstrator({required this.viewModel, Key? key})
-      : super(key: key);
+  const PhotoDemonstrator({required this.viewModel, super.key});
 
   @override
   State<PhotoDemonstrator> createState() => _PhotoDemonstratorState();
@@ -16,6 +15,12 @@ class PhotoDemonstrator extends StatefulWidget {
 class _PhotoDemonstratorState extends State<PhotoDemonstrator> {
   final ValueNotifier<int> _currentPhoto = ValueNotifier<int>(0);
   final PageController _pageController = PageController(initialPage: 0);
+
+  @override
+  void dispose() {
+    _pageController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {

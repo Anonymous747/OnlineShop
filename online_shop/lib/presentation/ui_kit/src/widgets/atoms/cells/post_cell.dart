@@ -10,8 +10,8 @@ class PostCell extends StatelessWidget {
 
   const PostCell({
     required this.viewModel,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

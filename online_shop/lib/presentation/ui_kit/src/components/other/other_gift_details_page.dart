@@ -8,8 +8,7 @@ const double _kSpaceBetweenColumns = 40;
 class OtherGiftDetailsPage extends StatelessWidget {
   final DetailsViewModel viewModel;
 
-  const OtherGiftDetailsPage({required this.viewModel, Key? key})
-      : super(key: key);
+  const OtherGiftDetailsPage({required this.viewModel, super.key});
 
   @override
   Widget build(BuildContext context) {

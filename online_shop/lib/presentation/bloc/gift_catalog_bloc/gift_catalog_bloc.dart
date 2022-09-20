@@ -8,7 +8,7 @@ part 'gift_catalog_event.dart';
 part 'gift_catalog_state.dart';
 
 class GiftCatalogBloc extends BaseBloc<GiftCatalogEvent, GiftCatalogState> {
-  GiftCatalogBloc() : super(const _GiftCatalogInitialState()) {
+  GiftCatalogBloc() : super(_GiftCatalogInitialState()) {
     on<_GiftCatalogInitializeEvent>(_handleInitialEvent);
     on<_GiftCatalogSearchCategoryEvent>(_handleSearchCategoryEvent);
   }
@@ -20,8 +20,8 @@ class GiftCatalogBloc extends BaseBloc<GiftCatalogEvent, GiftCatalogState> {
 
   Future<void> _handleSearchCategoryEvent(_GiftCatalogSearchCategoryEvent event,
       Emitter<GiftCatalogState> emitter) async {
-    print(
-        "========== gift_catalog_bloc searchCategory event.keyWord = ${event.searchKeyword}");
+    navigationBloc.add(NavigationEvent.cleanAndPush(
+        info: RouteInfo(data: [RouteData.giftSearch()])));
   }
 }
 

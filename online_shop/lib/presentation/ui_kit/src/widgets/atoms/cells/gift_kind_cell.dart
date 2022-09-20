@@ -10,8 +10,7 @@ class GiftKindCell extends StatelessWidget {
   final void Function(String) onSearchKeyword;
 
   const GiftKindCell(
-      {required this.viewModel, required this.onSearchKeyword, Key? key})
-      : super(key: key);
+      {required this.viewModel, required this.onSearchKeyword, super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'photo_demonstrator_view_model.dart';
@@ -11,32 +12,7 @@ part of 'photo_demonstrator_view_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$PhotoDemonstratorViewModelTearOff {
-  const _$PhotoDemonstratorViewModelTearOff();
-
-  _PhotoDemonstratorViewModel call(
-      {required double cost,
-      required List<String> images,
-      String lable = '',
-      String description = '',
-      void Function()? onScale,
-      void Function()? onView}) {
-    return _PhotoDemonstratorViewModel(
-      cost: cost,
-      images: images,
-      lable: lable,
-      description: description,
-      onScale: onScale,
-      onView: onView,
-    );
-  }
-}
-
-/// @nodoc
-const $PhotoDemonstratorViewModel = _$PhotoDemonstratorViewModelTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$PhotoDemonstratorViewModel {
@@ -44,8 +20,8 @@ mixin _$PhotoDemonstratorViewModel {
   List<String> get images => throw _privateConstructorUsedError;
   String get lable => throw _privateConstructorUsedError;
   String get description => throw _privateConstructorUsedError;
-  void Function()? get onScale => throw _privateConstructorUsedError;
-  void Function()? get onView => throw _privateConstructorUsedError;
+  VoidCallback? get onScale => throw _privateConstructorUsedError;
+  VoidCallback? get onView => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $PhotoDemonstratorViewModelCopyWith<PhotoDemonstratorViewModel>
@@ -62,8 +38,8 @@ abstract class $PhotoDemonstratorViewModelCopyWith<$Res> {
       List<String> images,
       String lable,
       String description,
-      void Function()? onScale,
-      void Function()? onView});
+      VoidCallback? onScale,
+      VoidCallback? onView});
 }
 
 /// @nodoc
@@ -104,43 +80,44 @@ class _$PhotoDemonstratorViewModelCopyWithImpl<$Res>
       onScale: onScale == freezed
           ? _value.onScale
           : onScale // ignore: cast_nullable_to_non_nullable
-              as void Function()?,
+              as VoidCallback?,
       onView: onView == freezed
           ? _value.onView
           : onView // ignore: cast_nullable_to_non_nullable
-              as void Function()?,
+              as VoidCallback?,
     ));
   }
 }
 
 /// @nodoc
-abstract class _$PhotoDemonstratorViewModelCopyWith<$Res>
+abstract class _$$_PhotoDemonstratorViewModelCopyWith<$Res>
     implements $PhotoDemonstratorViewModelCopyWith<$Res> {
-  factory _$PhotoDemonstratorViewModelCopyWith(
-          _PhotoDemonstratorViewModel value,
-          $Res Function(_PhotoDemonstratorViewModel) then) =
-      __$PhotoDemonstratorViewModelCopyWithImpl<$Res>;
+  factory _$$_PhotoDemonstratorViewModelCopyWith(
+          _$_PhotoDemonstratorViewModel value,
+          $Res Function(_$_PhotoDemonstratorViewModel) then) =
+      __$$_PhotoDemonstratorViewModelCopyWithImpl<$Res>;
   @override
   $Res call(
       {double cost,
       List<String> images,
       String lable,
       String description,
-      void Function()? onScale,
-      void Function()? onView});
+      VoidCallback? onScale,
+      VoidCallback? onView});
 }
 
 /// @nodoc
-class __$PhotoDemonstratorViewModelCopyWithImpl<$Res>
+class __$$_PhotoDemonstratorViewModelCopyWithImpl<$Res>
     extends _$PhotoDemonstratorViewModelCopyWithImpl<$Res>
-    implements _$PhotoDemonstratorViewModelCopyWith<$Res> {
-  __$PhotoDemonstratorViewModelCopyWithImpl(_PhotoDemonstratorViewModel _value,
-      $Res Function(_PhotoDemonstratorViewModel) _then)
-      : super(_value, (v) => _then(v as _PhotoDemonstratorViewModel));
+    implements _$$_PhotoDemonstratorViewModelCopyWith<$Res> {
+  __$$_PhotoDemonstratorViewModelCopyWithImpl(
+      _$_PhotoDemonstratorViewModel _value,
+      $Res Function(_$_PhotoDemonstratorViewModel) _then)
+      : super(_value, (v) => _then(v as _$_PhotoDemonstratorViewModel));
 
   @override
-  _PhotoDemonstratorViewModel get _value =>
-      super._value as _PhotoDemonstratorViewModel;
+  _$_PhotoDemonstratorViewModel get _value =>
+      super._value as _$_PhotoDemonstratorViewModel;
 
   @override
   $Res call({
@@ -151,13 +128,13 @@ class __$PhotoDemonstratorViewModelCopyWithImpl<$Res>
     Object? onScale = freezed,
     Object? onView = freezed,
   }) {
-    return _then(_PhotoDemonstratorViewModel(
+    return _then(_$_PhotoDemonstratorViewModel(
       cost: cost == freezed
           ? _value.cost
           : cost // ignore: cast_nullable_to_non_nullable
               as double,
       images: images == freezed
-          ? _value.images
+          ? _value._images
           : images // ignore: cast_nullable_to_non_nullable
               as List<String>,
       lable: lable == freezed
@@ -171,11 +148,11 @@ class __$PhotoDemonstratorViewModelCopyWithImpl<$Res>
       onScale: onScale == freezed
           ? _value.onScale
           : onScale // ignore: cast_nullable_to_non_nullable
-              as void Function()?,
+              as VoidCallback?,
       onView: onView == freezed
           ? _value.onView
           : onView // ignore: cast_nullable_to_non_nullable
-              as void Function()?,
+              as VoidCallback?,
     ));
   }
 }
@@ -185,26 +162,32 @@ class __$PhotoDemonstratorViewModelCopyWithImpl<$Res>
 class _$_PhotoDemonstratorViewModel implements _PhotoDemonstratorViewModel {
   const _$_PhotoDemonstratorViewModel(
       {required this.cost,
-      required this.images,
+      required final List<String> images,
       this.lable = '',
       this.description = '',
       this.onScale,
-      this.onView});
+      this.onView})
+      : _images = images;
 
   @override
   final double cost;
+  final List<String> _images;
   @override
-  final List<String> images;
-  @JsonKey(defaultValue: '')
+  List<String> get images {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_images);
+  }
+
   @override
+  @JsonKey()
   final String lable;
-  @JsonKey(defaultValue: '')
   @override
+  @JsonKey()
   final String description;
   @override
-  final void Function()? onScale;
+  final VoidCallback? onScale;
   @override
-  final void Function()? onView;
+  final VoidCallback? onView;
 
   @override
   String toString() {
@@ -214,64 +197,58 @@ class _$_PhotoDemonstratorViewModel implements _PhotoDemonstratorViewModel {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _PhotoDemonstratorViewModel &&
-            (identical(other.cost, cost) ||
-                const DeepCollectionEquality().equals(other.cost, cost)) &&
-            (identical(other.images, images) ||
-                const DeepCollectionEquality().equals(other.images, images)) &&
-            (identical(other.lable, lable) ||
-                const DeepCollectionEquality().equals(other.lable, lable)) &&
-            (identical(other.description, description) ||
-                const DeepCollectionEquality()
-                    .equals(other.description, description)) &&
-            (identical(other.onScale, onScale) ||
-                const DeepCollectionEquality()
-                    .equals(other.onScale, onScale)) &&
-            (identical(other.onView, onView) ||
-                const DeepCollectionEquality().equals(other.onView, onView)));
+        (other.runtimeType == runtimeType &&
+            other is _$_PhotoDemonstratorViewModel &&
+            const DeepCollectionEquality().equals(other.cost, cost) &&
+            const DeepCollectionEquality().equals(other._images, _images) &&
+            const DeepCollectionEquality().equals(other.lable, lable) &&
+            const DeepCollectionEquality()
+                .equals(other.description, description) &&
+            (identical(other.onScale, onScale) || other.onScale == onScale) &&
+            (identical(other.onView, onView) || other.onView == onView));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(cost) ^
-      const DeepCollectionEquality().hash(images) ^
-      const DeepCollectionEquality().hash(lable) ^
-      const DeepCollectionEquality().hash(description) ^
-      const DeepCollectionEquality().hash(onScale) ^
-      const DeepCollectionEquality().hash(onView);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(cost),
+      const DeepCollectionEquality().hash(_images),
+      const DeepCollectionEquality().hash(lable),
+      const DeepCollectionEquality().hash(description),
+      onScale,
+      onView);
 
   @JsonKey(ignore: true)
   @override
-  _$PhotoDemonstratorViewModelCopyWith<_PhotoDemonstratorViewModel>
-      get copyWith => __$PhotoDemonstratorViewModelCopyWithImpl<
-          _PhotoDemonstratorViewModel>(this, _$identity);
+  _$$_PhotoDemonstratorViewModelCopyWith<_$_PhotoDemonstratorViewModel>
+      get copyWith => __$$_PhotoDemonstratorViewModelCopyWithImpl<
+          _$_PhotoDemonstratorViewModel>(this, _$identity);
 }
 
 abstract class _PhotoDemonstratorViewModel
     implements PhotoDemonstratorViewModel {
   const factory _PhotoDemonstratorViewModel(
-      {required double cost,
-      required List<String> images,
-      String lable,
-      String description,
-      void Function()? onScale,
-      void Function()? onView}) = _$_PhotoDemonstratorViewModel;
+      {required final double cost,
+      required final List<String> images,
+      final String lable,
+      final String description,
+      final VoidCallback? onScale,
+      final VoidCallback? onView}) = _$_PhotoDemonstratorViewModel;
 
   @override
-  double get cost => throw _privateConstructorUsedError;
+  double get cost;
   @override
-  List<String> get images => throw _privateConstructorUsedError;
+  List<String> get images;
   @override
-  String get lable => throw _privateConstructorUsedError;
+  String get lable;
   @override
-  String get description => throw _privateConstructorUsedError;
+  String get description;
   @override
-  void Function()? get onScale => throw _privateConstructorUsedError;
+  VoidCallback? get onScale;
   @override
-  void Function()? get onView => throw _privateConstructorUsedError;
+  VoidCallback? get onView;
   @override
   @JsonKey(ignore: true)
-  _$PhotoDemonstratorViewModelCopyWith<_PhotoDemonstratorViewModel>
+  _$$_PhotoDemonstratorViewModelCopyWith<_$_PhotoDemonstratorViewModel>
       get copyWith => throw _privateConstructorUsedError;
 }
