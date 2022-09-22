@@ -16,7 +16,6 @@ abstract class ServiceLocator {
     return getIt.allReady();
   }
 
-  @mustCallSuper
   static Future<void> reset() {
     return getIt.reset();
   }

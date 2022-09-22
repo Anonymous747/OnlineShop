@@ -16,7 +16,7 @@ class GiftShopSearchBloc
     this._searchMapper,
   ) : super(const _GiftSearchInitialState()) {
     on<_GiftSearchInitializeEvent>(_handleInitializeEvent);
-    // on<_GiftSearchSeekForEvent>(_handleSearchForEvent);
+    on<_GiftSearchSeekForEvent>(_handleSearchForEvent);
   }
 
   Future<void> _handleInitializeEvent(_GiftSearchInitializeEvent event,
@@ -28,7 +28,6 @@ class GiftShopSearchBloc
 
   Future<void> _handleSearchForEvent(_GiftSearchSeekForEvent event,
       Emitter<GiftShopSearchState> emitter) async {
-    print('======= Search for event');
     final viewModel = _searchMapper.getViewModel();
 
     emitter(GiftShopSearchState.loaded(viewModel));
