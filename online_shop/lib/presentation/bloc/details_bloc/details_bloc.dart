@@ -11,7 +11,7 @@ part 'details_state.dart';
 class DetailsBloc extends BaseBloc<DetailsEvent, DetailsState> {
   final DetailsMapper _mapper;
 
-  DetailsBloc(this._mapper) : super(_DetailsInitialState()) {
+  DetailsBloc(this._mapper) : super(const _DetailsInitialState()) {
     on<_DetailsInitializeEvent>(_handleInitializeEvent);
   }
   Future<void> _handleInitializeEvent(
